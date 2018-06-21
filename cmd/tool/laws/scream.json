@@ -1,0 +1,9 @@
+{
+  "mongo": {
+    "collections":        ["law","source","set"],
+    "url":                "mongodb://localhost/argu_test"
+  },
+  "paths": {
+    "fixtures":           "../data/fixture"
+  }
+}
