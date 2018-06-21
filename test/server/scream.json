@@ -1,0 +1,8 @@
+{
+  "colors": {
+    "spec":               "yellow"
+  },
+  "paths": {
+    "fixtures":           "../data/fixture"
+  }
+}
