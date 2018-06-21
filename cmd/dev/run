@@ -1,0 +1,3 @@
+#!/bin/sh
+node ./cmd/dev/reload.js &
+nodemon ./server/index.js -w fs/md -w server -w template -e env,js,hbs,md --quiet
