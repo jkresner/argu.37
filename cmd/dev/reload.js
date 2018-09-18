@@ -4,8 +4,8 @@ const port                       = 35729
 const paths                      = [
  'fs/static/css',
  'fs/static/js',
- 'fs/md',
  'fs/img',
+ 'fs/md',
  'reload.log'
 ]
 
@@ -27,7 +27,8 @@ fs.writeFileSync(__dirname+'/../../reload.log','',{mode:2})
 
 function watchpath(path, em) {
   fs.watch(path, throttle(2000, (ev, file) => {
-    console.log(`dev  FS  ${ev}\t${file}`)
+    // if (!/reload.log/.test(file))
+      console.log(`dev  FS  ${ev}\t${file}`)
     minilr.changed(file)
     // em.emit(ev, filename)
   }))

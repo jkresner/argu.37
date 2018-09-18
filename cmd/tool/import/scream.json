@@ -4,6 +4,7 @@
     "url":                "mongodb://localhost/argu_test"
   },
   "paths": {
-    "fixtures":           "../data/fixture"
+    "fixtures":           "/data",
+    "csv_law":            "/data/law.csv"
   }
 }
