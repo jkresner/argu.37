@@ -1,3 +1,6 @@
+# Deploy / source control separate
+/static/
+
 # Logs
 logs
 *.log
@@ -23,9 +26,6 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-# Bower dependency directory (https://bower.io/)
-bower_components
-
 # node-waf configuration
 .lock-wscript
 
@@ -33,6 +33,7 @@ bower_components
 build/Release
 
 # Dependency directories
+bower_components
 node_modules/
 jspm_packages/
 
@@ -53,9 +54,6 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
-
-# dotenv environment variables file
-.env
 
 # mac
 .DS_Store

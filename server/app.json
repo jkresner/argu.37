@@ -1,0 +1,96 @@
+{
+  "about":                     "package.json:name,version,author,bugs,repository",
+  "auth": {
+    "appKey":                  "ag",
+    "oauth": {
+      "github":                "{{undefine}}",
+      "google": {
+        "short":               "gp",
+        "login":               true,
+        "signup":              true,
+        "clientID":            "{{required}}",
+        "clientSecret":        "{{required}}",
+        "scope":               ["profile",
+                                "email",
+                                "https://www.googleapis.com/auth/plus.profile.emails.read",
+                                "https://www.googleapis.com/auth/gmail.readonly"]
+      }
+    }
+  },
+  "comm": {
+    "mode":                    "stub",
+    "transports":              ["ses"]
+  },
+  "http": {
+    "port":                    3436,
+    "static": {
+      "dirs":                  "fs/static,fs/robots",
+      "favicon":               { "root": "fs/robots" }
+    }
+  },
+  "log": {
+    "appKey":                  "ag",
+    "analytics": {
+      "on":                    false,
+      "gtag":                  false,
+      "model": {
+        "collections":         { "issue": "Issue" },
+        "mongoUrl":            "mongodb://localhost/argu",
+        "enums":               false
+      }
+    },
+    "comm":                    true,
+    "errors": {
+      "mail":                  { "to": "dev@argu.src", "sender": "ERR <err@argu.src>" },
+      "ignore":                "Failed to decode param|authorization code has"
+    }
+  },
+  "logic": {
+    "img":                     true,
+    "pdf":                     false
+  },
+  "middleware": {
+    "ctx": {
+      "ud": {
+        "ban":                 "AhrefsBot|Baiduspider|BuckyOHare|Buzzbot|CCBot|cf-news|coccoc|cognitiveseo|CloudFlare-Always|datasift.com|dataprovider.com|Domain Re-Animator|DotBot|EmailMarketingRobot|Feedly|Genieo|GrapeshotCrawler|GurujiBot|HaosouSpider|Hubspotistellabot|linkdexbot|ltx71|Mediatoolkitbot|MegaIndex|MetaURI|MJ12bot|Nutch|oai-finder|OpenLinkProfiler|panscient.com|Pingdom|Priceonomics|QuerySeekerSpider|R6_CommentReader|rogerbot|scraper|Screaming Frog|ScoutJet|Searchmetrics|SemrushBot|Sentinurl|SeznamBot|Sgrunt|ShowyouBot|SMTBot|Sogou|Turnitin|uk_lddc_bot|WPScan|YisouSpider|yoozBot",
+        "libs":                "WinHttpRequest|Phantom"
+      }
+    },
+    "livereload":              { "port": 35729 },
+    "session": {
+      "authdData":             "_id name",
+      "store":                 { "collection": "sessions" }
+    }
+  },
+  "model": {
+    "cache": {
+      "on":                    true,
+      "require":               "templates:templates"
+    }
+  },
+  "routes": {
+    "redirects":               { "on": false }
+  },
+  "templates": {
+    "dirs": {
+      "attachments":           "fs/atchd",
+      "records":               "fs/recd",
+      "md":                    "fs/md",
+      "helpers":               "template/helper",
+      "partials":              "template/partial",
+      "views":                 "template/view/web,template/view/layout,template/view/argu"
+    }
+  },
+  "wrappers": {
+    "dirs":                    "wrappers",
+    "ses": {
+      "accessKeyId":           "{{required}}",
+      "secretAccessKey":       "{{required}}",
+      "region":                "us-west-2"
+    },
+    "gmail": {
+      "accessToken":          "{{required}}",
+      "refreshToken":         "{{required}}"
+    }
+  }
+}

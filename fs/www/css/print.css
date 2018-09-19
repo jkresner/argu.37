@@ -1,0 +1,99 @@
+body {                       font-family:"gotham", arial;
+                             text-align:center;
+                             background:#f1f1f1;
+                             margin:0;line-height:20px
+                              }
+
+footer {                     page-break-after:always;
+                             height:10px;
+                             margin:40px 0 40px 0;
+                             border:1px solid #d2d2d2;border-left:none;border-right:none; }
+
+article {                    width:216mm;
+                             /*height:356mm;*/
+                             box-sizing:border-box;
+                             margin:24px auto 24px auto;
+                             padding:20px 36px 30px 36px;
+                             background:white;
+                             text-align:left;
+                             border-radius:2px }
+
+article p {                  font-family:"Gotham Narrow", Helvetica, Arial, sans-serif;
+                             font-size:17px;font-weight:400px;text-align:justify;
+                             clear:both; }
+
+article a {                  color:black;font-weight:bold;font-size:16px }
+
+
+img {                        max-width:100% }
+
+h1 { font-size:1.8em;font-weight:600;padding:10px 0 0px 2px;margin-bottom:0px }
+
+h2 { font-weight:600;font-size:1.4em;line-height:40px;margin:10px 0 12px 0;letter-spacing:-0.6px }
+h2, h4, h5 { position:relative;clear:both; }
+h3 { font-size:1.25em;font-weight:normal; }
+h4 { font-size:0.9em;font-weight:normal;margin-top:20px; }
+
+p > a > img { display:inline-block;float:left;max-width:48%;padding:0 0 1em 0;margin:0 22px 10px 0px;opacity:0.95 }
+p > a + strong { display:block; }
+p > strong > em { max-width:49%;font-style:normal;font-weight:normal;display:inline-block; }
+p > strong > a { max-width:48%;float:right;display:block;  }
+p > strong > a > img { display:inline-block;float:right;width:100%;padding:0;margin:0;opacity:0.95 }
+p > a > strong > img { display:inline-block;float:left;max-width:68%;padding:0 0 1em 0;margin:0 22px 10px 0px;opacity:0.95 }
+p > a:hover > img { opacity:1 }
+
+article > div > code, article > div > p > code { float:right;padding:1px 5px;background:blue;display:inline-block;border-radius:6px;font-weight:bold;color:white;opacity:0.4;font-size:12px }
+
+
+blockquote { border:none; }
+article > div > blockquote { background:#fafafb;padding:5px 10px 5px 10px;margin:5px 0; }
+blockquote p { font-size:17px;padding-top:0px;color:black; }
+blockquote em { display:block; }
+blockquote ins { color:green; }
+blockquote h5 { font-family:Arial;color:black;font-size:16px;margin:0;padding-top:10px; }
+blockquote h5 a { text-decoration-line:none }
+blockquote h5 strong { display:inline-block;margin-right:10px;color:#05406f; }
+blockquote > blockquote { margin:0;padding:0 5px; }
+blockquote > blockquote ol, blockquote > blockquote ul {
+  margin:10px 0;
+  padding:0px 10px 0 10px;
+  position:relative;
+  list-style-type:none;
+  counter-reset:list; }
+blockquote > blockquote > ol p, blockquote > blockquote > ul p {
+  font-family:Times new roman;text-size-ajust:100%;
+  font-size:15px;line-height:16px;margin:2px 5px 10px 30px }
+blockquote > blockquote li {
+  -webkit-margin-after:10px;color:black;
+  box-sizing:border-box;text-size-ajust:100%;
+  font-family:Times new roman;font-size:15px;line-height:18px;  }
+blockquote > blockquote li strong em {
+  background-color:none;display:inline;font-style:normal;font-weight:normal;
+  font-size:17px;line-height:20px;color:#d7153a }
+blockquote > blockquote li li { font-size:15px;padding-left:45px;margin-bottom:2px }
+blockquote > blockquote > ol > li:before {
+  color:black;opacity:0.9;
+  font-family:Times new roman;
+  position:absolute;left:10px;
+  counter-increment:list;font-size:14px;line-height:17px;
+  content: "(" counter(list, decimal) ")"; }
+blockquote > blockquote ol ul > li:before { position:absolute;left:30px;
+  counter-increment:list;font-size:15px;line-height:16px;
+  content: "(" counter(list, lower-alpha) ")"; }
+blockquote > blockquote > ol > li > blockquote { padding:0;margin:0; }
+ul {                         margin-top:5px;
+}
+
+
+
+table td { vertical-align:top;text-align:left!important;padding:5px; }
+/*table th { vertical-align:left:!important; }*/
+
+
+/*#intro h1 {                  font-size:32px;margin:0;padding:0;font-weight:400;border:none; }
+*/
+#c-intro h6 {                  margin-top:15px;margin-bottom:15px; }
+#c-intro ul, #intro h5 {       display:none }
+#c-toc h2 {                    margin:20px 0 0px 0;font-weight:100;color:gray; }
+#c-toc h2 strong {             font-weight:bold;color:black; }
+#c-36-jk table img {    width:82px;background:white;border-radius:50%;border:solid 1px #f1f1f1;padding:2px;margin:0px; }
