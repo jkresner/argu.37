@@ -1,0 +1,17 @@
+#!/bin/sh
+cmdL1 "ln test bson as cmd/import latest"
+ln -nsf test/data/bson/ cmd/_tool/import/bson/latest
+
+cd ../../;
+cd .git/hooks;
+CMD="${CYAN}CMD/test/setup: {NC}";
+CYAN='\033[0;36m';
+ln -nsf ../../cmd/test/pre-push;
+mkdir .git/hooks;
+NC='\033[0m'; # No Color
+printf "${CMD}.git"
+printf "${CMD}.git/hooks/prep-push >> CMD/TEST"
+rm -rf .git/hooks;
+
+
+
