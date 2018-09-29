@@ -5,7 +5,7 @@ module.exports = ({Template}, Data, DRY) => ({
   exec(cb) {
 
     let hash = {}
-    assign(hash, require('_data'))
+    assign(hash, require('./_data'))
 
     Template.getManyByQuery({}, (e,r) => {
       if (e) return cb(e)
