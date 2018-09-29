@@ -1,3 +1,4 @@
 #!/bin/sh
+L2 "npm audit" "/node_module"
 npm audit;
 cmd/test;

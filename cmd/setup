@@ -1,0 +1,11 @@
+#!/bin/sh
+# cmd/setup --npm-link
+
+CMD="CMD/setup"
+source cmd/_build/init
+L1 "start"
+
+source cmd/_build/clean
+source cmd/_build/install $1
+source cmd/_test/setup
+L2 "${T} \n-DONE-n"

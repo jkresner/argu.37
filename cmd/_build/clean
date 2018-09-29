@@ -1,0 +1,10 @@
+#!/bin/sh
+op="clean"
+L2
+L2 "rm" "/packages-lock.json"
+rm -f package-lock.json
+rm -f .DS_Store
+L2 "rm -f" "/.npm"
+rm -f .npm
+L2 "rm -f" "/node_modules"
+rm -rf node_modules

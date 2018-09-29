@@ -1,0 +1,27 @@
+#!/bin/sh
+# NAN=\033[0m   # No Color
+# WIT=1;37m'
+# BLK=0;30m'
+# BLU=0;34m'
+# LBLU=1;34m'
+# LGRN=1;32m'
+# CYN=0;36m'
+# LCYN=1;36m'
+# RED=0;31m'
+# LRED=1;31m'
+# PPL=0;35m'
+# LPPL=1;35m'
+# BRN=0;33m'
+# YLW=1;33m'
+# GRY=0;30m'
+# GRY=0;37m'
+
+function L1() {
+  echo  "\n\033[0;32m${CMD}\033[0m \t\t${1}"
+}
+function L2() {
+  echo "\033[0;34m${CMD}/${op}\033[0m\033[0;36m \t${1}\033[0m\t${2}\033[0m"
+}
+function L3() {
+  printf "\033[0;37m${CMD}\033[0m  \t${1}\n"
+}

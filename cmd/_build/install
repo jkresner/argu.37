@@ -1,0 +1,16 @@
+#!/bin/sh
+op="install"
+L2
+if [ "$1" = "--npm-link" ]; then
+  L2 "npm link" "install screamjs + honeycombjs\n"
+  npm link screamjs
+  npm link honeycombjs
+  echo ""
+fi
+L2 "npm install" "/node_modules (may take a minute)"
+npm i;echo;
+
+L2 "npm install -D" "/node_module (--save-dev)\n"
+npm i -D;echo;
+
+# rm -f package-lock.json
