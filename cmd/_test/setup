@@ -1,14 +1,19 @@
 #!/bin/sh
 op="test"
 L2 "ln -nsf" "test bson as cmd/import latest"
-ln -nsf tst/data/bson/ cmd/_data/import/bson/latest
+cd cmd/_data/import/bson
+unlink latest
+ln -ns ../../../../tst/data/bson latest
+cd ../../../../
 
-rm -rf .git/hooks;
-mkdir .git/hooks;
-cd .git/hooks;
-ln -nsf ../../cmd/_test/pre-push;
 L2 "ln -nsf" ".git/hooks/prep-push"
+rm -rf .git/hooks
+mkdir .git/hooks
+cd .git/hooks
+ln -nsf ../../cmd/_test/pre-push
+cd ../../
 
-cd ../../;
 L2 "pre-push" "test"
 source .git/hooks/pre-push
+
+rm -f package-lock.json

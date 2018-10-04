@@ -1,12 +1,12 @@
-name,of,at,in,title,tags,body,see
-Necessities failure,CA00,44,P3.D6,Failure of persons to provide necessities of life,offence,"(1)  A person:
+﻿name,of,at,in,title,tags,body,see
+Necessities failure,CA00,44,P3'D6,Failure of persons to provide necessities of life,offence,"(1)  A person:
 (a)  who is under a legal duty to provide another person with the necessities of life, and
 (b)  who, without reasonable excuse, intentionally or recklessly fails to provide that person with the necessities of life,
 is guilty of an offence if the failure causes a danger of death or causes serious injury, or the likelihood of serious injury, to that person.
 
 Maximum penalty: Imprisonment for 5 years.
 (2)  A person cannot be found guilty of both an offence against section 43A and an offence against this section in respect of the same act or omission.",
-Financial advantage,CA00,192D,P4AA.D1,Obtaining financial advantage or causing financial disadvantage,def,"(1)  In this Part, obtain a financial advantage includes:
+Financial advantage,CA00,192D,P4AA'D1,Obtaining financial advantage or causing financial disadvantage,def,"(1)  In this Part, obtain a financial advantage includes:
 (a)  obtain a financial advantage for oneself or for another person, and
 (b)  induce a third person to do something that results in oneself or another person obtaining a financial advantage, and
 (c)  keep a financial advantage that one has, whether the financial advantage is permanent or temporary.
@@ -14,7 +14,7 @@ Financial advantage,CA00,192D,P4AA.D1,Obtaining financial advantage or causing f
 (a)  cause a financial disadvantage to another person, or
 (b)  induce a third person to do something that results in another person suffering a financial disadvantage,
 whether the financial disadvantage is permanent or temporary.",
-False document,CA00,250,P5.D1,False document—meaning,def,"(1)  For the purposes of this Part, a document is false if, and only if, the document (or any part of the document) purports:
+False document,CA00,250,P5'D1,False document—meaning,def,"(1)  For the purposes of this Part, a document is false if, and only if, the document (or any part of the document) purports:
 (a)  to have been made in the form in which it is made by a person who did not in fact make it in that form, or
 (b)  to have been made in the form in which it is made on the authority of a person who did not in fact authorise its making in that form, or
 (c)  to have been made in the terms in which it is made by a person who did not in fact make it in those terms, or
@@ -25,14 +25,14 @@ False document,CA00,250,P5.D1,False document—meaning,def,"(1)  For the purpose
 (h)  to have been made or altered by, or on the authority of, a person who did not in fact exist.
 (2)  For the purposes of this Part, a person is to be treated as making a false document if the person alters a document so as to make it false within the meaning of this section (whether or not it is false in some other respect apart from that alteration).
 (3)  For the purpose of the application of this section, a document that purports to be a true copy of another document is to be treated as if it were the original document.",
-Make false document,CA00,253,P5.D2,Forgery—making false document,offence,"A person who makes a false document with the intention that the person or another will use it:
+Make false document,CA00,253,P5'D2,Forgery—making false document,offence,"A person who makes a false document with the intention that the person or another will use it:
 (a)  to induce some person to accept it as genuine, and
 (b)  because of its being accepted as genuine:
 (i)  to obtain any property belonging to another, or
 (ii)  to obtain any financial advantage or cause any financial disadvantage, or
 (iii)  to influence the exercise of a public duty,
 is guilty of the offence of forgery.",False document
-Use false document,CA00,254,P5.D3,Using false document,offence,"A person who uses a false document, knowing that it is false, with the intention of:
+Use false document,CA00,254,P5'D3,Using false document,offence,"A person who uses a false document, knowing that it is false, with the intention of:
 (a)  inducing some person to accept it as genuine, and
 (b)  because of its being accepted as genuine:
 (i)  obtaining any property belonging to another, or
@@ -40,20 +40,20 @@ Use false document,CA00,254,P5.D3,Using false document,offence,"A person who use
 (iii)  influencing the exercise of a public duty,
 
 is guilty of an offence.",False document
-False accusation,CA00,314,P7.D2,False accusations etc,offence,"A person who makes an accusation intending a person to be the subject of an investigation of an offence, knowing that other person to be innocent of the offence, is liable to imprisonment for 7 years.",
-Judicial misleading,CA00,317,P7.D2,Tampering etc with evidence,offence,"A person who, with intent to mislead any judicial tribunal in any judicial proceeding:
+False accusation,CA00,314,P7'D2,False accusations etc,offence,"A person who makes an accusation intending a person to be the subject of an investigation of an offence, knowing that other person to be innocent of the offence, is liable to imprisonment for 7 years.",
+Judicial misleading,CA00,317,P7'D2,Tampering etc with evidence,offence,"A person who, with intent to mislead any judicial tribunal in any judicial proceeding:
 (a)  suppresses, conceals, destroys, alters or falsifies anything knowing that it is or may be required as evidence in any judicial proceeding, or
 (b)  fabricates false evidence (other than by perjury or suborning perjury), or
 (c)  knowingly makes use of fabricated false evidence,
 is liable to imprisonment for 10 years.",
-Pervert justice,CA00,319,P7.D2,General offence of perverting the course of justice,offence,"A person who does any act, or makes any omission, intending in any way to pervert the course of justice, is liable to",
-Perjury,CA00,327,P7.D4,Offence of perjury,offence,"(1)  Any person who in or in connection with any judicial proceeding makes any false statement on oath concerning any matter which is material to the proceeding, knowing the statement to be false or not believing it to be true, is guilty of perjury and liable to imprisonment for 10 years.
+Pervert justice,CA00,319,P7'D2,General offence of perverting the course of justice,offence,"A person who does any act, or makes any omission, intending in any way to pervert the course of justice, is liable to",
+Perjury,CA00,327,P7'D4,Offence of perjury,offence,"(1)  Any person who in or in connection with any judicial proceeding makes any false statement on oath concerning any matter which is material to the proceeding, knowing the statement to be false or not believing it to be true, is guilty of perjury and liable to imprisonment for 10 years.
 (2)  A statement can be considered to have been made in connection with a judicial proceeding whether or not a judicial proceeding has commenced, or ever commences, in connection with it.
 (3)  The determination of whether a statement is material to a judicial proceeding that has not commenced is to be made on the basis of any judicial proceeding likely to arise in connection with the statement.
 
 (4)  The question of whether any matter is material to a proceeding is a question of law.",
-False testimony,CA00,335,P7.D4,False statements in evidence on commission,offence,"If a person, in giving any testimony (either orally or in writing) otherwise than on oath, when required to do so by an order under section 33 (Power of the Supreme Court to give effect to application for assistance) of the Evidence on Commission Act 1995, makes any statement that is false in a material particular, knowing the statement to be false or not believing it to be true, is liable to imprisonment for 5 years.",
-Self defence,CA00,418,P11.D3,Self-defence—when available,offence,"(1)  A person is not criminally responsible for an offence if the person carries out the conduct constituting the offence in self-defence.
+False testimony,CA00,335,P7'D4,False statements in evidence on commission,offence,"If a person, in giving any testimony (either orally or in writing) otherwise than on oath, when required to do so by an order under section 33 (Power of the Supreme Court to give effect to application for assistance) of the Evidence on Commission Act 1995, makes any statement that is false in a material particular, knowing the statement to be false or not believing it to be true, is liable to imprisonment for 5 years.",
+Self defence,CA00,418,P11'D3,Self-defence—when available,offence,"(1)  A person is not criminally responsible for an offence if the person carries out the conduct constituting the offence in self-defence.
 (2)  A person carries out conduct in self-defence if and only if the person believes the conduct is necessary:
 (a)  to defend himself or herself or another person, or
 (b)  to prevent or terminate the unlawful deprivation of his or her liberty or the liberty of another person, or
@@ -61,10 +61,10 @@ Self defence,CA00,418,P11.D3,Self-defence—when available,offence,"(1)  A perso
 (d)  to prevent criminal trespass to any land or premises or to remove a person committing any such criminal trespass,
 
 and the conduct is a reasonable response in the circumstances as he or she perceives them",
-Lawful self-defence,CA00,422,P11.D3,Self-defence—response to lawful conduct,offence,"This Division is not excluded merely because:
+Lawful self-defence,CA00,422,P11'D3,Self-defence—response to lawful conduct,offence,"This Division is not excluded merely because:
 (a)  the conduct to which the person responds is lawful, or
 (b)  the other person carrying out the conduct to which the person responds is not criminally responsible for it.",
-Criminal defamation,CA00,529,P14A.D2,Criminal defamation,offence,"(1) Common law misdemeanour of criminal libel abolished The common law misdemeanour of criminal libel remains abolished.
+Criminal defamation,CA00,529,P14A'D2,Criminal defamation,offence,"(1) Common law misdemeanour of criminal libel abolished The common law misdemeanour of criminal libel remains abolished.
 (2) Blasphemous, seditious or obscene libel not affected Subsection (1) does not affect the law relating to blasphemous, seditious or obscene libel.
 (3) Offence of criminal defamation A person who, without lawful excuse, publishes matter defamatory of another living person (the victim):
 (a)  knowing the matter to be false, and
@@ -85,7 +85,7 @@ Maximum penalty: 3 years imprisonment.
 (10) Proof of convictions for offences If the question whether or not a person committed an offence (other than offence under this section) arises in proceedings for an offence under this section, section 42 of the Defamation Act 2005 applies to the proof of the commission of that offence in the same way as it applies to such proof in civil proceedings for defamation.
 (11) Interpretation In this section, publish and defamatory have the meanings that they have in the law of tort (as modified by the Defamation Act 2005) relating to defamation.
 ",
-Intimidation annoyance ,CA00,545B,P14A.D2,Intimidation or annoyance by violence or otherwise,offence,"(1)  Whosoever:
+Intimidation annoyance ,CA00,545B,P14A'D2,Intimidation or annoyance by violence or otherwise,offence,"(1)  Whosoever:
 (a)  with a view to compel any other person to abstain from doing or to do any act which such other person has a legal right to do or abstain from doing, or
 (b)  in consequence of such other person having done any act which he had a legal right to do, or of his having abstained from doing any act which he had a legal right to abstain from doing,
 wrongfully and without legal authority:
@@ -98,7 +98,7 @@ is liable, on conviction before the Local Court, to imprisonment for 2 years, or
 (2)  In this section:
 Intimidation means the causing of a reasonable apprehension of injury to a person or to any member of his family or to any of his dependants, or of violence or damage to any person or property, and intimidate has a corresponding meaning.
 Injury includes any injury to a person in respect of his property, business, occupation, employment, or other source of income, and also includes any actionable wrong of any nature.",
-Unlawful assembly,CA00,545C,P14A.D2,Knowingly joining or continuing in etc an unlawful assembly,offence,"(1)  Whosoever knowingly joins an unlawful assembly or continues in it shall be taken to be a member of that assembly, and shall, on conviction before the Local Court, be liable to imprisonment for a term not exceeding six months or to a fine not exceeding 5 penalty units, or both.
+Unlawful assembly,CA00,545C,P14A'D2,Knowingly joining or continuing in etc an unlawful assembly,offence,"(1)  Whosoever knowingly joins an unlawful assembly or continues in it shall be taken to be a member of that assembly, and shall, on conviction before the Local Court, be liable to imprisonment for a term not exceeding six months or to a fine not exceeding 5 penalty units, or both.
 (2)  Whosoever being armed with any weapon or loaded arms, or with anything which used as a weapon of offence is likely to cause death or grievous bodily harm, is a member of an unlawful assembly, shall be liable, on conviction before the Local Court, to imprisonment for a term not exceeding twelve months or to a fine not exceeding 10 penalty units, or both.
 (3)  Any assembly of five or more persons whose common object is by means of intimidation or injury to compel any person to do what the person is not legally bound to do or to abstain from doing what the person is legally entitled to do, shall be deemed to be an unlawful assembly.",
 Intimidation,CA07,7,P1,Meaning of “intimidation”,def,"(1) For the purposes of this Act, intimidation of a person means:
@@ -119,7 +119,7 @@ Maximum penalty: Imprisonment for 5 years or 50 penalty units, or both.(2) For t
 (4) For the purposes of this section, the prosecution is not required to prove that the person alleged to have been stalked or intimidated actually feared physical or mental harm.
 (5) A person who attempts to commit an offence against subsection (1) is guilty of an offence against that subsection and is punishable as if the offence attempted had been committed.
 ","Stalking,Intimidation"
-APVO application,CA07,18,P5,Application for making of apprehended personal violence order by court,def,"(1)  An application may be made in accordance with Part 10 for an apprehended personal violence order for the protection of one or more persons against another person.
+APVO application,CA07,18,P5,Application for making of apprehended personal violence order by court,action,"(1)  An application may be made in accordance with Part 10 for an apprehended personal violence order for the protection of one or more persons against another person.
 
 (2)  An application is to be treated as an application for an apprehended domestic violence order if one or more of the persons for whose protection the order would be made has or has had a domestic relationship with the person against whom it is sought.",
 ORDER 19 APVO ,CA07,19,P5,Court may make apprehended personal violence order,order,"(1)  A court may, on application, make an apprehended personal violence order if it is satisfied on the balance of probabilities that a person has reasonable grounds to fear and in fact fears:
@@ -143,17 +143,16 @@ APVO consideration,CA07,20,P5,Matters to be considered by court,duty,"(1)  In de
 (d)  any other relevant matter.
 (3)  When making an apprehended personal violence order, the court is to ensure that the order imposes only those prohibitions and restrictions on the defendant that, in the opinion of the court, are necessary for the safety and protection of the protected person, and any child directly or indirectly affected by the conduct of the defendant alleged in the application for the order, and the protected person’s property.
 (4)  If an application is made for an apprehended personal violence order that prohibits or restricts access by the defendant to any premises or place and the court hearing proceedings in respect of the application decides to make an order without the prohibition or restriction sought, the court is to give reasons for that decision.",
-Carriage threat,CL04,474.15,P10.6,Using a carriage service to make a threat,offence,"Threat to kill
-1.  A person (the first person) is guilty of an offence if:
+Carriage threat,CL04,474.15,P10.6'D474,Using a carriage service to make a threat,offence,"Threat to kill
+1.  A person (the first person) is guilty of an offence if: 
 
-(a)  the first person uses a carriage service to make to another person (the second person) a threat to kill the second person or a third person; and
+(a)  the first person uses a carriage service to make to another person (the second person) a threat to kill the second person or a third person; and 
 (b)  the first person intends the second person to fear that the threat will be carried out.Penalty:  Imprisonment for 10 years.
 
 Threat to cause serious harm
-
 2.  A person (the first person) is guilty of an offence if:
-(a)  the first person uses a carriage service to make to another person (the second person) a threat to cause serious harm to the second person or a third person; and (b)  the first person intends the second person to fear that the threat will be carried out.
-Penalty:  Imprisonment for 7 years.
+(a)  the first person uses a carriage service to make to another person (the second person) a threat to cause serious harm to the second person or a third person; and 
+(b)  the first person intends the second person to fear that the threat will be carried out.Penalty:  Imprisonment for 7 years.
 
 Actual fear not necessary
 3.  In a prosecution for an offence against this section, it is not necessary to prove that the person receiving the threat actually feared that the threat would be carried out.
@@ -162,16 +161,72 @@ Definitions
 4.  In this section:
   - fear includes apprehension.
   - threat to cause serious harm to a person includes a threat to substantially contribute to serious harm to the person.",
-Threat harm,CL04,474.15(2),P10.6,Threat to cause serious harm,offence,"A person (the first person) is guilty of an offence if:
+Threat harm,CL04,474.15(2),P10.6'D474,Threat to cause serious harm,offence,"A person (the first person) is guilty of an offence if:
 (a) the first person uses a carriage service to make to another person (the second person) a threat to cause serious harm to the second person or a third person; and
-
 (b) the first person intends the second person to fear that the threat will be carried out
 Penalty: Imprisonment for 7 years.",
-Threat prosecution,CL04,474.15(3),P10.6,Actual fear not necessary,def,"In a prosecution for an offence against this section, it is not necessary to prove that the person receiving the threat actually feared that the threat would be carried out.",
-Defintions (carriage threat),CL04,474.15(4),P10.6,Definitions (carriage service threat),def,"In this section:
+Threat prosecution,CL04,474.15(3),P10.6'D474,Actual fear not necessary,action,"In a prosecution for an offence against this section, it is not necessary to prove that the person receiving the threat actually feared that the threat would be carried out.",
+Defs (carriage threat),CL04,474.15(4),P10.6'D474,Definitions (Using carriage service to threat),def,"In this section:
 - fear includes apprehension.
 - threat to cause serious harm to a person includes a threat to substantially contribute to serious harm to the person.",
-Disqualified PA,PA02,16,P2.D2,Disqualified persons,"sa,def","(1)  A person is a disqualified person for the purposes of this Act if the person:
+Defs (defamation),DA05,4,P1,Definitions (Defamation Act),def,"In this Act:
+Australian court means any court established by or under a law of an Australian jurisdiction (including a court conducting committal proceedings for an indictable offence).
+Australian jurisdiction means:
+(a)  a State, or
+(b)  a Territory, or
+(c)  the Commonwealth.
+Australian tribunal means any tribunal (other than a court) established by or under a law of an Australian jurisdiction that has the power to take evidence from witnesses before it on oath or affirmation (including a Royal Commission or other special commission of inquiry).
+country includes:
+(a)  a federation and a state, territory, province or other part of a federation, and
+(b)  an Australian jurisdiction.
+document means any record of information, and includes:
+(a)  anything on which there is writing, and
+(b)  anything on which there are marks, figures, symbols or perforations having a meaning for persons qualified to interpret them, and
+(c)  anything from which sounds, images or writings can be reproduced with or without the aid of anything else, and
+(d)  a map, plan, drawing or photograph.
+electronic communication includes a communication of information in the form of data, text, images or sound (or any combination of these) by means of guided or unguided electromagnetic energy, or both.
+general law means the common law and equity.
+Health Practitioner Regulation National Law means:
+(a)  the Health Practitioner Regulation National Law:
+(i)  as in force from time to time, set out in the Schedule to the Health Practitioner Regulation National Law Act 2009 of Queensland, and
+(ii)  as it applies (including with any modifications) as a law of New South Wales or another State or Territory, or
+(b)  the law of another State or Territory that substantially corresponds to the law referred to in paragraph (a).
+matter includes:
+(a)  an article, report, advertisement or other thing communicated by means of a newspaper, magazine or other periodical, and
+(b)  a program, report, advertisement or other thing communicated by means of television, radio, the Internet or any other form of electronic communication, and
+(c)  a letter, note or other writing, and
+(d)  a picture, gesture or oral utterance, and
+(e)  any other thing by means of which something may be communicated to a person.
+offer to make amends means an offer to make amends under Division 1 of Part 3.
+parliamentary body means:
+(a)  a parliament or legislature of any country, or
+(b)  a house of a parliament or legislature of any country, or
+(c)  a committee of a parliament or legislature of any country, or
+(d)  a committee of a house or houses of a parliament or legislature of any country.
+substantially true means true in substance or not materially different from the truth.
+Territory means the Australian Capital Territory or the Northern Territory.
+this jurisdiction means New South Wales.",
+DFM action,DA05,8,P2'D2,Single cause of action for multiple defamatory imputations in same matter,action,"A person has a single cause of action for defamation in relation to the publication of defamatory matter about the person even if more than one defamatory imputation about the person is carried by the matter.
+",Defs (defamation)
+DFM amends,DA05,14,P3'D1,When offer to make amends may be made,def,"(1)  An offer to make amends cannot be made if:
+(a)  28 days have elapsed since the publisher was given a concerns notice by the aggrieved person, or
+(b)  a defence has been served in an action brought by the aggrieved person against the publisher in relation to the matter in question.
+(2)  A notice is a concerns notice for the purposes of this section if the notice:
+(a)  is in writing, and
+(b)  informs the publisher of the defamatory imputations that the aggrieved person considers are or may be carried about the aggrieved person by the matter in question (the imputations of concern).
+(3)  If an aggrieved person gives the publisher a concerns notice, but fails to particularise the imputations of concern adequately, the publisher may give the aggrieved person a written notice (a further particulars notice) requesting the aggrieved person to provide reasonable further particulars about the imputations of concern as specified in the further particulars notice.
+(4)  An aggrieved person to whom a further particulars notice is given must provide the reasonable further particulars specified in the notice within 14 days (or any further period agreed by the publisher and aggrieved person) after being given the notice.
+(5)  An aggrieved person who fails to provide the reasonable further particulars specified in a further particulars notice within the applicable period is taken not to have given the publisher a concerns notice for the purposes of this section.",
+DFM loss limit,DA05,35,P4'D3,Damages for non-economic loss limited,def,"(1)  Unless the court orders otherwise under subsection (2), the maximum amount of damages for non-economic loss that may be awarded in defamation proceedings is $250,000 or any other amount adjusted in accordance with this section from time to time (the maximum damages amount) that is applicable at the time damages are awarded.
+(2)  A court may order a defendant in defamation proceedings to pay damages for non-economic loss that exceed the maximum damages amount applicable at the time the order is made if, and only if, the court is satisfied that the circumstances of the publication of the defamatory matter to which the proceedings relate are such as to warrant an award of aggravated damages.
+(3)  The Minister is, on or before 1 July 2006 and on or before 1 July in each succeeding year, to declare, by order published in the Gazette, the amount that is to apply, as from the date specified in the order, for the purposes of subsection (1).
+Editorial note. For orders under this subsection, see Gazettes No 84 of 30.6.2006, p 5043 (amount declared: $259,500); No 80 of 15.6.2007, p 3793 (amount declared: $267,500); No 72 of 20.6.2008, p 5482 (amount declared $280,500); No 90 of 19.6.2009, p 3137 (amount declared: $294,500); No 79 of 18.6.2010, p 2452 (amount declared: $311,000); No 62 of 24.6.2011, p 4588 (amount declared: $324,000); No 60 of 8.6.2012, p 2369 (amount declared: $339,000); No 65 of 31.5.2013, p 2307 ($355,500); No 52 of 26.6.2015, p 1928 (amount declared: $376,500); No 50 of 17.6.2016, p 1406 (amount declared: $381,000); No 56 of 26.5.2017, p 1782 (amount declared: $389,500) and No 66 of 29.6.2018, p 3970 (amount declared: $398,500).
+(4)  The amount declared is to be the amount applicable under subsection (1) (or that amount as last adjusted under this section) adjusted by the percentage change in the amount estimated by the Australian Statistician of the average weekly total earnings of full-time adults in Australia over the 4 quarters preceding the date of the declaration for which those estimates are, at that date, available.
+(5)  An amount declared for the time being under this section applies to the exclusion of the amount of $250,000 or an amount previously adjusted under this section.
+(6)  If the Australian Statistician fails or ceases to estimate the amount referred to in subsection (4), the amount declared is to be determined in accordance with the regulations.
+(7)  In adjusting an amount to be declared for the purposes of subsection (1), the amount determined in accordance with subsection (4) is to be rounded to the nearest $500.
+(8)  A declaration made or published in the Gazette after 1 July in a year and specifying a date that is before the date it is made or published as the date from which the amount declared by the order is to apply has effect as from that specified date.",
+Disqualified PA,PA02,16,P2'D2,Disqualified persons,"sa,def","(1)  A person is a disqualified person for the purposes of this Act if the person:
 (a)  has a conviction in New South Wales or elsewhere for an offence involving dishonesty that was recorded in the last 10 years, unless the Secretary has determined under subsection (2) that the offence should be ignored, or
 (b)  has a conviction that was recorded in the last 5 years for an offence under section 13 (Lending of licence or certificate of registration prohibited) of this Act, unless the Secretary has determined under subsection (2) that the offence should be ignored, or
 (c)–(e)    (Repealed)
@@ -204,11 +259,11 @@ Disqualified PA,PA02,16,P2.D2,Disqualified persons,"sa,def","(1)  A person is a 
 (3)  In this section:
 corresponding law means a law of another Australian jurisdiction that is declared by the Minister from time to time by order published in the Gazette to be a law that corresponds to this Act.
 Editorial note. For orders under this subsection, see Gazette No 74 of 16.4.2004, p 2127.",
-PA dishonest conviction,PA02,16(a),P2.D2,Disqualified persons (a),"sa,def","has a conviction in New South Wales or elsewhere for an offence involving dishonesty that was recorded in the last 10 years, unless the Secretary has determined under subsection (2) that the offence should be ignored",
-PA mental incapacitation,PA02,16(f),P2.D2,Disqualified persons (f),"sa,def",is a mentally incapacitated person,
-PA disqualified discipline,PA02,16(j),P2.D2,Disqualified persons (j),"sa,def",is for the time being declared to be a disqualified person under Part 12 (Complaints and disciplinary action),PA disciplinary ground
-PA disqualified breach,PA02,16(p),P2.D2,Disqualified persons (p),"sa,def",is in breach of any provision of this Act or the regulations that is prescribed by the regulations as a disqualifying breach.,
-PA proper supervision,PA02,32,P3.D2,Duty of licensee and person in charge to properly supervise business,"sa,duty","(1)  A licensee must properly supervise the business carried on by the licensee.
+PA dishonest conviction,PA02,16(a),P2'D2,Disqualified persons (a),"sa,def","has a conviction in New South Wales or elsewhere for an offence involving dishonesty that was recorded in the last 10 years, unless the Secretary has determined under subsection (2) that the offence should be ignored",
+PA mental incapacitation,PA02,16(f),P2'D2,Disqualified persons (f),"sa,def",is a mentally incapacitated person,
+PA disqualified discipline,PA02,16(j),P2'D2,Disqualified persons (j),"sa,def",is for the time being declared to be a disqualified person under Part 12 (Complaints and disciplinary action),PA disciplinary ground
+PA disqualified breach,PA02,16(p),P2'D2,Disqualified persons (p),"sa,def",is in breach of any provision of this Act or the regulations that is prescribed by the regulations as a disqualifying breach.,
+PA proper supervision,PA02,32,P3'D2,Duty of licensee and person in charge to properly supervise business,"sa,duty","(1)  A licensee must properly supervise the business carried on by the licensee.
 (2)  A licensee employed by another licensee (the principal licensee) as the person in charge of business at a place of business of the principal licensee must properly supervise the business of the principal licensee carried on at that place.
 (3)  The requirement to properly supervise the conduct of business includes the following requirements:
 (a)  a requirement to properly supervise persons engaged in the business,
@@ -222,35 +277,35 @@ PA proper supervision,PA02,32,P3.D2,Duty of licensee and person in charge to pro
 Maximum penalty:
 (a)  200 penalty units in the case of a corporation, or
 (b)  100 penalty units in any other case.",
-PA supervising,PA02,32(3),P3.D2,Duty of licensee and person in charge to properly supervise business (3),"sa,def","The requirement to properly supervise the conduct of business includes the following requirements:
+PA supervising,PA02,32(3),P3'D2,Duty of licensee and person in charge to properly supervise business (3),"sa,def","The requirement to properly supervise the conduct of business includes the following requirements:
 (a)  a requirement to properly supervise persons engaged in the business,
 (b)  a requirement to establish procedures designed to ensure that the provisions of this Act and any other laws relevant to the conduct of that business are complied with,
 (c)  a requirement to monitor the conduct of business in a manner that will ensure as far as practicable that those procedures are complied with.",
-PA liscensee rules,PA02,37,P3.D2,Rules of conduct for licensee’s business,"sa,offence","(1)  The regulations may prescribe rules of conduct to be observed in the course of the carrying on of business or the exercise of functions under a licence or certificate of registration.
+PA liscensee rules,PA02,37,P3'D2,Rules of conduct for licensee’s business,"sa,offence","(1)  The regulations may prescribe rules of conduct to be observed in the course of the carrying on of business or the exercise of functions under a licence or certificate of registration.
 (2)  A licensee or registered person who without reasonable excuse contravenes a rule of conduct prescribed for the purposes of this section is guilty of an offence.
 
 
 Maximum penalty:(a)  100 penalty units in the case of a corporation, or
 (b)  50 penalty units in any other case.","PA Knows legislation,PA Fiduciary obligation,PA Fairness,PA Diligence,PA Harassment,PA Client interests,PA According authority,PA According instruction,PA Employees comply,PA Conflict,PA Referrals,PA Mislead solicitation,PA Act representation,SMA Collection agent,SMA Epecific instruction,PA Agency agreement,SMA Agency agreement"
-PA employee liable,PA02,41,P3.D3,Liability of licensee for acts of employees,"sa,def","A licensee who employs a person at any place of business of the licensee is responsible, in tort and in contract, for anything done or not done by the person:
+PA employee liable,PA02,41,P3'D3,Liability of licensee for acts of employees,"sa,def","A licensee who employs a person at any place of business of the licensee is responsible, in tort and in contract, for anything done or not done by the person:
 (a)  within the scope of the employee’s authority, or
 (b)  for the benefit, or the purported or intended benefit, of the licensee or the licensee’s business.",
-PA ad misrepresent,PA02,52,P3.D5,Misrepresentation by licensee or registered person,"sa,offence","(1)  A person who, while exercising or performing any function as a licensee or registered person, by any statement, representation or promise that is false, misleading or deceptive (whether to the knowledge of the person or not) or by any concealment of a material fact (whether intended or not), induces any other person to enter into any contract or arrangement is guilty of an offence against this Act.
+PA ad misrepresent,PA02,52,P3'D5,Misrepresentation by licensee or registered person,"sa,offence","(1)  A person who, while exercising or performing any function as a licensee or registered person, by any statement, representation or promise that is false, misleading or deceptive (whether to the knowledge of the person or not) or by any concealment of a material fact (whether intended or not), induces any other person to enter into any contract or arrangement is guilty of an offence against this Act.
 Maximum penalty: 200 penalty units.
 (2)  Without limiting the generality of subsection (1), a statement, representation or promise is taken to be false, misleading or deceptive if it is of such a nature that it would reasonably tend to lead to a belief in the existence of a state of affairs that does not in fact exist, whether or not the statement, representation or promise indicates that the state of affairs does exist.
 (3)  It is a sufficient defence to a prosecution for an offence under this section if the defendant proves that the defendant did not know, and had no reasonable cause to suspect, that the statement, representation or promise was false, misleading or deceptive.",
-Unjust interpretation,PA02,53A,P3.D6,Unjust conduct by licensees - Interpretation,"sa,def","(1)  For the purposes of this Division, conduct of a licensee is unjust if it is conduct:
+Unjust interpretation,PA02,53A,P3'D6,Unjust conduct by licensees - Interpretation,"sa,def","(1)  For the purposes of this Division, conduct of a licensee is unjust if it is conduct:
 (a)  that is dishonest or unfair, or
 (b)  that consists of anything done, or omitted to be done, in breach of contract, whether or not proceedings in respect of the breach have been brought, or
 (c)  that consists of the contravention of this Act or the regulations or any other enactment administered by the Minister, or
 (d)  that consists of the failure to comply with a condition or restriction to which the licence is subject or an order of the Tribunal applicable to the holder.",
-PA dishonest or unfair,PA02,53A(1a),P3.D6,Unjust conduct by licensees - Interpretation (1a),"sa,def","unjust if it is conduct (a) that is dishonest or unfair,",
-PA contract breach,PA02,53A(1b),P3.D6,Unjust conduct by licensees - Interpretation (1b),"sa,def","unjust if conduct (b) that consists of anything done, or omitted to be done, in breach of contract, whether or not proceedings in respect of the breach have been brought, o",
-PA contrave Acts,PA02,53A(1c),P3.D6,Unjust conduct by licensees - Interpretation (1c),"sa,def","unjust if conduct (c)  that consists of the contravention of this Act or the regulations or any other enactment administered by the Minister, or",
-Commission / expense,PA02,54,P4.D1,Definitions (Agency agreements),def,"In this Division:
+PA dishonest or unfair,PA02,53A(1a),P3'D6,Unjust conduct by licensees - Interpretation (1a),"sa,def","unjust if it is conduct (a) that is dishonest or unfair,",
+PA contract breach,PA02,53A(1b),P3'D6,Unjust conduct by licensees - Interpretation (1b),"sa,def","unjust if conduct (b) that consists of anything done, or omitted to be done, in breach of contract, whether or not proceedings in respect of the breach have been brought, o",
+PA contrave Acts,PA02,53A(1c),P3'D6,Unjust conduct by licensees - Interpretation (1c),"sa,def","unjust if conduct (c)  that consists of the contravention of this Act or the regulations or any other enactment administered by the Minister, or",
+Commission / expense,PA02,54,P4'D1,Definitions (Agency agreements),"sa,def","In this Division:
 commission means remuneration by way of commission, fee, gain or reward for services performed by a licensee in the capacity of licensee.
 expenses means any sum or reimbursement for expenses or charges incurred in connection with services performed by a licensee in the capacity of licensee.",
-Agency remunerartion,PA02,55,P4.D1,No entitlement to commission or expenses without agency agreement,"sa,def","(1)  A licensee is not entitled to any commission or expenses from a person for or in connection with services performed by the licensee in the capacity of licensee for or on behalf of the person unless:
+Agency remunerartion,PA02,55,P4'D1,No entitlement to commission or expenses without agency agreement,"sa,def","(1)  A licensee is not entitled to any commission or expenses from a person for or in connection with services performed by the licensee in the capacity of licensee for or on behalf of the person unless:
 (a)  the services were performed pursuant to an agreement in writing (an agency agreement) signed by or on behalf of:
 (i)  the person, and
 (ii)  the licensee, and
@@ -259,9 +314,9 @@ Agency remunerartion,PA02,55,P4.D1,No entitlement to commission or expenses with
 Note. Section 55A allows a court or tribunal to order that commission and expenses are recoverable in certain circumstances despite subsection (1).
 (2)  The regulations may make provision for or with respect to regulating the form of agency agreements and the terms, conditions and other provisions that an agency agreement must or must not contain. Without limiting this subsection, the regulations may prescribe one or more standard forms of agency agreement.
 (3)  Without limiting the means by which a copy of the agency agreement may be served on a person, it may be served by means of facsimile transmission or by such other means as the regulations may allow.",
-Agency instrument served,PA02,55(1-c),P4.D1,No entitlement to commission or expenses without agency agreement (1-c),"sa,def","(1) A licensee is not entitled to any commission or expenses from a person for or in connection with services performed by the licensee in the capacity of licensee for or on behalf of the person unless:
+Agency instrument served,PA02,55(1-c),P4'D1,No entitlement to commission or expenses without agency agreement (1-c),"sa,def","(1) A licensee is not entitled to any commission or expenses from a person for or in connection with services performed by the licensee in the capacity of licensee for or on behalf of the person unless:
 (c)  a copy of the agency agreement signed by or on behalf of the licensee was served by the licensee on that person within 48 hours after the agreement was signed by or on behalf of the person.",
-Agency disentitle relief,PA02,55A,P4.D1,Relief from disentitlement to commission and expenses,"sa,def","(1)  A court or tribunal before which relevant proceedings are taken may order that commission or expenses are wholly or partly recoverable by a licensee who would otherwise not be entitled to the commission or expenses (under section 55) because of:
+Agency disentitle relief,PA02,55A,P4'D1,Relief from disentitlement to commission and expenses,"sa,def","(1)  A court or tribunal before which relevant proceedings are taken may order that commission or expenses are wholly or partly recoverable by a licensee who would otherwise not be entitled to the commission or expenses (under section 55) because of:
 (a)  a failure by the licensee to serve a copy of the relevant agency agreement on the person within 48 hours after it was signed by or on behalf of the person, or
 (b)  a failure of the relevant agency agreement to comply with the requirements of the regulations.
 (2)  A court or tribunal is not to make such an order in circumstances of a failure to serve a copy of the agency agreement within the required time unless satisfied that:
@@ -274,20 +329,20 @@ Agency disentitle relief,PA02,55A,P4.D1,Relief from disentitlement to commission
 (c)  failure to make the order would be unjust.
 (4)  Proceedings are relevant proceedings if they are proceedings taken by a licensee for the recovery of commission or expenses from a person or proceedings on a consumer claim relating to commission or expenses (as referred to in section 36) in relation to which a licensee is a respondent.
 ",
-Itemised account,PA02,101,P7.D5,Person concerned in transaction may request itemised account,"sa,duty","(1)  A person directly concerned in any transaction by or with a licensee in connection with the licensee’s business as a licensee may request the licensee in writing to render to the person in the manner prescribed by the regulations an itemised account of the transaction.
+Itemised account,PA02,101,P7'D5,Person concerned in transaction may request itemised account,"sa,duty","(1)  A person directly concerned in any transaction by or with a licensee in connection with the licensee’s business as a licensee may request the licensee in writing to render to the person in the manner prescribed by the regulations an itemised account of the transaction.
 (2)  The licensee must comply with the request within 14 days after the request is served on the licensee.
 (3)  A person may not request an itemised account of a transaction that took place more than 6 months before the making of the request.",
-Financial disclosure,PA02,102,P7.D5,Offence (Information about trust accounts or transactions),"sa,offence","(1)  A person directly concerned in any transaction by or with a licensee in connection with the licensee’s business as a licensee may request the licensee in writing to render to the person in the manner prescribed by the regulations an itemised account of the transaction.
+Financial disclosure,PA02,102,P7'D5,Offence (Information about trust accounts or transactions),"sa,offence","(1)  A person directly concerned in any transaction by or with a licensee in connection with the licensee’s business as a licensee may request the licensee in writing to render to the person in the manner prescribed by the regulations an itemised account of the transaction.
 (2)  The licensee must comply with the request within 14 days after the request is served on the licensee.
 (3)  A person may not request an itemised account of a transaction that took place more than 6 months before the making of the request.",
-PA records,PA02,103,P8.D1,Liscensee's records,"sa,duty","(1)  In this Act:
+PA records,PA02,103,P8'D1,Liscensee's records,"sa,duty","(1)  In this Act:
 licensee’s records means:
 (a)  records required to be kept by a licensee by or under this Act that are in the possession, custody or control of the licensee, and
 (b)  records and documents in the possession, custody or control of a licensee that relate to any account (whether or not a trust account) kept by the licensee in connection with the licensee’s business as a licensee or to any transaction by or with the licensee in connection with the licensee’s business as a licensee.
 (2)  If records or documents that were licensee’s records are in the possession, custody or control of a person as a former licensee, as the personal representative of a deceased licensee, or as a result of the transfer of the business of the licensee or otherwise, those records or documents are still licensee’s records for the purposes of this Division.
 (3)  An account on which a strata managing agent operates for or on behalf of an owners corporation, or on which a community managing agent operates on behalf of an association constituted under the Community Land Development Act 1989 is taken to be an account kept by the agent in connection with his or her business as a licensee.
 (4)  This Part extends to records in the possession, custody or control of a person even when the records are located outside the State.",
-PA record keeping,PA02,104,P8.D1,Licensee to make and keep certain records,"sa,duty","(1)  A licensee must make the following records:
+PA record keeping,PA02,104,P8'D1,Licensee to make and keep certain records,"sa,duty","(1)  A licensee must make the following records:
 (a)  a record containing full particulars of all transactions by or with the licensee in connection with his or her business as a licensee,
 (b)  such other records relating to the licensee’s business as a licensee as may be required by the regulations.
 (2)  A record required by this section must be kept for at least 3 years after it is made.
@@ -300,14 +355,14 @@ PA record keeping,PA02,104,P8.D1,Licensee to make and keep certain records,"sa,d
 
 (6)  A person who contravenes a provision of this section is guilty of an offence.
 Maximum penalty: 50 penalty units.",
-SMA instrument requirement,PA02,109,P8.D1,Additional requirements for managing agents,"sa,duty","(1)  A strata managing agent or community managing agent must keep a copy of the following instruments:
+SMA instrument requirement,PA02,109,P8'D1,Additional requirements for managing agents,"sa,duty","(1)  A strata managing agent or community managing agent must keep a copy of the following instruments:
 (a)  an instrument of appointment appointing the agent as strata managing agent or community managing agent, and
 (b)  an instrument of delegation delegating to the agent any powers, authorities, duties or functions of an owners corporation or an association.
 (2)  A copy of an instrument of appointment or delegation kept under this section is a licensee’s record for the purposes of this Part.
 (3)  In this section:
 association means a community association, precinct association or neighbourhood association constituted under section 25 of the Community Land Development Act 1989.
 owners corporation means an owners corporation constituted under the Strata Schemes Management Act 2015.",
-Licensee audit ,PA02,111,P8.D2,Requirement for audit,"sa,duty","(1)  A person who is a licensee, a former licensee or the personal representative of a licensee must, within 3 months after the end of the audit period applicable to the person:
+Licensee audit ,PA02,111,P8'D2,Requirement for audit,"sa,duty","(1)  A person who is a licensee, a former licensee or the personal representative of a licensee must, within 3 months after the end of the audit period applicable to the person:
 (a)  cause the records and documents relating to any money held during that period in a trust account kept by the person in accordance with this Act to be audited by a person qualified to act as an auditor for the purposes of this Division, and
 (b)  if the auditor’s report on the audit is a qualified report, lodge the report with the Secretary.
 (1A)  An auditor’s report is a qualified report if it sets out any discovery by the auditor that any breach of this Act or the regulations has been committed, that there is any discrepancy relating to the trust account to which the audit relates or that the records or documents concerned are not kept in such a manner as to enable them to be properly audited.
@@ -320,21 +375,21 @@ Licensee audit ,PA02,111,P8.D2,Requirement for audit,"sa,duty","(1)  A person wh
 Maximum penalty:
 (a)  100 penalty units in the case of a corporation, or
 (b)  50 penalty units in any other case.",
-Property,PA02,123,P9.D1,"property, in relation to a licensee, means:",def,"(a)  money or other property received by the licensee on behalf of another person in the conduct of the licensee’s business, or
+Property,PA02,123,P9'D1,"property, in relation to a licensee, means:","sa,def","(a)  money or other property received by the licensee on behalf of another person in the conduct of the licensee’s business, or
 (b)  interest, dividends, income, profits or other property derived from or acquired with money or other property referred to in paragraph (a), or
 (c)  documents and records of any description relating to anything referred to in paragraph (a) or (b) or to the licensee’s business, or
 (d)  any means by which any records referred to in paragraph (c) that are not written may be reproduced in writing,",
-Fail to account (P9),PA02,125,P9.D1,Failure to account,def,"(1)  In this Part, failure to account means a failure by a licensee to account for, pay or deliver money or other valuable property:
+Fail to account (P9),PA02,125,P9'D1,Failure to account,"sa,def","(1)  In this Part, failure to account means a failure by a licensee to account for, pay or deliver money or other valuable property:
 (a)  that has been received by or entrusted to the licensee, or an associate of the licensee, in the course of the carrying on of the licensee’s business, and
 (b)  that is, in the case of money or other valuable property received by or entrusted to an associate of the licensee, under the direct or indirect control of the licensee,
 being a failure that arises from an act or omission of the licensee or associate.
 (2)  The reference in the definition of failure to account in subsection (1) to money or other valuable property received by or entrusted to a licensee includes a reference to money or other valuable property that is received by or entrusted to the licensee as trustee, agent, bailee or stakeholder, or in any other capacity.",
-Fail to account (P10),PA02,171,P10.D3,Meaning of “failure to account”,def,"(1)  In this Division, a reference to a failure to account is a reference to a failure by a licensee to account for money or other valuable property entrusted to the licensee or an associate of the licensee in the course of the carrying on of the licensee’s business as a licensee.
+Fail to account (P10),PA02,171,P10'D3,Meaning of “failure to account”,"sa,def","(1)  In this Division, a reference to a failure to account is a reference to a failure by a licensee to account for money or other valuable property entrusted to the licensee or an associate of the licensee in the course of the carrying on of the licensee’s business as a licensee.
 (2)  This Division applies only to a failure to account that arises from an act or omission of the licensee or associate.
 (3)  For the purposes of this Division, it does not matter that the failure to account occurred after the licensee ceased to be licensed, if the money or other valuable property concerned was entrusted to the licensee (or an associate of the licensee) before the licensee ceased to be licensed.
 (4)  This Division applies whether the failure to account, or the act or omission, took place before or after the commencement of this Division.
 (5)  For the purposes of this Division, a licensee’s business includes acting as a selling agent for a home in a residential community under the Residential (Land Lease) Communities Act 2013.",
-Compensation fund claim,PA02,173,P10.D3,Claims against Compensation Fund,"sa,def","(1)  The Compensation Fund is held, and is to be applied, for the purpose of compensating persons who suffer pecuniary loss because of a failure to account.
+Compensation fund claim,PA02,173,P10'D3,Claims against Compensation Fund,"sa,action","(1)  The Compensation Fund is held, and is to be applied, for the purpose of compensating persons who suffer pecuniary loss because of a failure to account.
 (2)  A person who claims to have suffered a pecuniary loss because of a failure to account may make a claim against the Compensation Fund, but only if the claim is made in writing to the Secretary within:
 (a)  a period of 12 months after the person has become aware of the failure to account, or
 (b)  a period of 2 years after the date of the failure to account,
@@ -343,7 +398,7 @@ whichever period ends first.
 (4)  A licensee does not have a claim against the Compensation Fund in respect of a pecuniary loss suffered in connection with the licensee’s business as a licensee because of a failure to account.
 (5)  Subject to this section, the Secretary may receive and allow, in whole or in part, any claim against the Compensation Fund at any time after the relevant failure to account arose.
 (6)  The Secretary may disallow any claim, in whole or in part, in appropriate cases. In particular the Secretary may disallow a claim to the extent that pecuniary loss was suffered as a result of a failure to mitigate loss or was occasioned by unreasonable delay in making a claim.",
-PA disciplinary ground,PA02,191,P12,Grounds for disciplinary action,"sa,offence","Disciplinary action under this Part can be taken against a person who is or was the holder of a licence or certificate of registration on any one or more of the following grounds:
+PA disciplinary ground,PA02,191,P12,Grounds for disciplinary action,"sa,action","Disciplinary action under this Part can be taken against a person who is or was the holder of a licence or certificate of registration on any one or more of the following grounds:
 (a)  the person has contravened a provision of this Act or any other Act administered by the Minister, or the regulations under any such Act, whether or not the person has been prosecuted or convicted of an offence in respect of the contravention,
 (b)  the person has contravened a condition of the licence or certificate of registration,
 (c)  the person has, in the course of carrying on business or exercising functions under the licence or certificate of registration, acted unlawfully, improperly, unfairly or incompetently,
@@ -355,13 +410,13 @@ PA disciplinary ground,PA02,191,P12,Grounds for disciplinary action,"sa,offence"
 (i)  the person has failed to pay a monetary penalty imposed on the person by the Secretary pursuant to the taking of disciplinary action under this Part,
 (j)  the issue of the person’s licence or certificate of registration was obtained by fraud or mistake,
 (k)  grounds specified in the regulations as grounds for the taking of disciplinary action against a person under this Act.",
-PA contravene legislation,PA02,191(a),P12,Grounds for disciplinary action (a),"sa,offence","the person has contravened a provision of this Act or any other Act administered by the Minister, or the regulations under any such Act, whether or not the person has been prosecuted or convicted of an offence in respect of the contravention,",
-PA contravene licence,PA02,191(b),P12,Grounds for disciplinary action (b),"sa,offence","the person has contravened a condition of the license or certificate of registration,",
-PA acting improperly,PA02,191(c),P12,Grounds for disciplinary action (c),"sa,offence","the person has, in the course of carrying on business or exercising functions under the licence or certificate of registration, acted unlawfully, improperly, unfairly or incompetently,",
-PA unfit direction,PA02,191(e),P12,Grounds for disciplinary action (e),"sa,offence","the person is not a fit and proper person to be involved in the direction, management or conduct of the business of a licensee,",
-PA undertaking breach,PA02,191(g),P12,Grounds for disciplinary action (g),"sa,offence"," the person has breached an undertaking given by the person to the Secretary under this Act or the Fair Trading Act 1987, in respect of the person’s conduct of business or exercise of functions under the licence or certificate of registration,
+PA contravene legislation,PA02,191(a),P12,Grounds for disciplinary action (a),"sa,action","the person has contravened a provision of this Act or any other Act administered by the Minister, or the regulations under any such Act, whether or not the person has been prosecuted or convicted of an offence in respect of the contravention,",
+PA contravene licence,PA02,191(b),P12,Grounds for disciplinary action (b),"sa,action","the person has contravened a condition of the license or certificate of registration,",
+PA acting improperly,PA02,191(c),P12,Grounds for disciplinary action (c),"sa,action","the person has, in the course of carrying on business or exercising functions under the licence or certificate of registration, acted unlawfully, improperly, unfairly or incompetently,",
+PA unfit direction,PA02,191(e),P12,Grounds for disciplinary action (e),"sa,action","the person is not a fit and proper person to be involved in the direction, management or conduct of the business of a licensee,",
+PA undertaking breach,PA02,191(g),P12,Grounds for disciplinary action (g),"sa,action"," the person has breached an undertaking given by the person to the Secretary under this Act or the Fair Trading Act 1987, in respect of the person’s conduct of business or exercise of functions under the licence or certificate of registration,
 ",
-PA disciplinary regulations,PA02,191(k),P12,Grounds for disciplinary action (k),"sa,offence",grounds specified in the regulations as grounds for the taking of disciplinary action against a person under this Act.,
+PA disciplinary regulations,PA02,191(k),P12,Grounds for disciplinary action (k),"sa,action",grounds specified in the regulations as grounds for the taking of disciplinary action against a person under this Act.,
 PA Indemnity insured,PA14,10,P2,Professional indemnity insurance,"sa,duty","(1)  A licensee must be insured under a policy of professional indemnity insurance in force with respect to the licensee, or the licensee’s employer, that complies with the requirements of this clause.
 Note. Under section 22 of the Act it is a condition of a licensee’s licence that the licensee be insured as required by this clause.
 (2)  The policy must provide cover for the following types of civil liability arising in the conduct of an agency business:
@@ -645,7 +700,7 @@ Connected person,SM15,7,P1,Connected persons,def,"(1)  For the purposes of this 
 (2)  However, the principal person is not connected with a member of an owners corporation, or the strata committee of an owners corporation, merely because of any dealing, contact or arrangement the member has with the principal person in the capacity of a member of the owners corporation or strata committee.
 (3)  In this section, executive position in a corporation means the position of director, manager or secretary of the corporation, or any other executive position of the corporation, however those positions are designated.
 ",
-OC Manages scheme,SM15,9,P2.D2,Owners corporation responsible for management of strata scheme,"oc,def","(1)  The owners corporation for a strata scheme has the principal responsibility for the management of the scheme.
+OC Manages scheme,SM15,9,P2'D2,Owners corporation responsible for management of strata scheme,"oc,def","(1)  The owners corporation for a strata scheme has the principal responsibility for the management of the scheme.
 (2)  The owners corporation has, for the benefit of the owners of lots in the strata scheme:
 (a)  the management and control of the use of the common property of the strata scheme, and
 (b)  the administration of the strata scheme.
@@ -654,35 +709,35 @@ OC Manages scheme,SM15,9,P2.D2,Owners corporation responsible for management of 
 (b)  keeping accounts and records for the strata scheme (see Parts 5 and 10),
 (c)  maintaining and repairing the common property of the strata scheme (see Part 6),
 (d)  taking out insurance for the strata scheme (see Part 9).",
-OC Principal responsibility,SM15,9(1),P2.D2,Owners corporation responsible for management of strata scheme (1),"oc,def",The owners corporation for a strata scheme has the principal responsibility for the management of the scheme.,
-OC Benfit owners,SM15,9(2),P2.D2,Owners corporation responsible for management of strata scheme (2),"oc,def","The owners corporation has, for the benefit of the owners of lots in the strata scheme:
+OC Principal responsibility,SM15,9(1),P2'D2,Owners corporation responsible for management of strata scheme (1),"oc,def",The owners corporation for a strata scheme has the principal responsibility for the management of the scheme.,
+OC Benfit owners,SM15,9(2),P2'D2,Owners corporation responsible for management of strata scheme (2),"oc,def","The owners corporation has, for the benefit of the owners of lots in the strata scheme:
 (a)  the management and control of the use of the common property of the strata scheme, and
 (b)  the administration of the strata scheme.",
-OC Responsibilities,SM15,9(3),P2.D2,Owners corporation responsible for management of strata scheme (3),"oc,def","The owners corporation has responsibility for the following:
+OC Responsibilities,SM15,9(3),P2'D2,Owners corporation responsible for management of strata scheme (3),"oc,def","The owners corporation has responsibility for the following:
 (a)  managing the finances of the strata scheme (see Part 5),
 (b)  keeping accounts and records for the strata scheme (see Parts 5 and 10),
 (c)  maintaining and repairing the common property of the strata scheme (see Part 6),
 (d)  taking out insurance for the strata scheme (see Part 9).",
-OC functions generally,SM15,10,P2.D2,Functions of owners corporation generally,"oc,def","(1)  An owners corporation has such other functions as may be conferred or imposed on it by or under this or any other Act.
+OC functions generally,SM15,10,P2'D2,Functions of owners corporation generally,"oc,def","(1)  An owners corporation has such other functions as may be conferred or imposed on it by or under this or any other Act.
 (2)  An owners corporation must not delegate any of its functions to a person unless the delegation is specifically authorised by this Act.",
-OC Authorized delegation,SM15,10(2),P2.D2,Functions of owners corporation generally (2),"oc,def",An owners corporation must not delegate any of its functions to a person unless the delegation is specifically authorised by this Act.,
-OC assistance,SM15,11,P2.D2,Other management bodies and persons who assist the owners corporation,"oc,def","The owners corporation for a strata scheme may be assisted in the carrying out of its management functions under this Act by any one or more of the following:
+OC Authorized delegation,SM15,10(2),P2'D2,Functions of owners corporation generally (2),"oc,def",An owners corporation must not delegate any of its functions to a person unless the delegation is specifically authorised by this Act.,
+OC assistance,SM15,11,P2'D2,Other management bodies and persons who assist the owners corporation,"oc,def","The owners corporation for a strata scheme may be assisted in the carrying out of its management functions under this Act by any one or more of the following:
 (a)  the strata committee of the owners corporation established in accordance with this Act,
 (b)  a strata managing agent for the scheme appointed in accordance with Part 4,
 (c)  a building manager for the scheme appointed in accordance with Part 4.",
-OC SC assist,SM15,11(a),P2.D2,Other management bodies and persons who assist the owners corporation (a),"oc,def,sc","the strata committee of the owners corporation established in accordance with this Act,",
-OC SA assist,SM15,11(b),P2.D2,Other management bodies and persons who assist the owners corporation (b),"oc,def,sa","a strata managing agent for the scheme appointed in accordance with Part 4,",
-AGM requirement,SM15,18,P2.D3,AGM must be held,def,An owners corporation must hold an annual general meeting once in each financial year of the corporation.,
-EGM requirement,SM15,19,P2.D3, Other general meetings,def,"(1)  The secretary or a strata committee of an owners corporation may convene a general meeting (that is not an annual general meeting) of the owners corporation at any time.
+OC SC assist,SM15,11(a),P2'D2,Other management bodies and persons who assist the owners corporation (a),"oc,def,sc","the strata committee of the owners corporation established in accordance with this Act,",
+OC SA assist,SM15,11(b),P2'D2,Other management bodies and persons who assist the owners corporation (b),"oc,def,sa","a strata managing agent for the scheme appointed in accordance with Part 4,",
+AGM requirement,SM15,18,P2'D3,AGM must be held,def,An owners corporation must hold an annual general meeting once in each financial year of the corporation.,
+EGM requirement,SM15,19,P2'D3,Other general meetings,def,"(1)  The secretary or a strata committee of an owners corporation may convene a general meeting (that is not an annual general meeting) of the owners corporation at any time.
 (2)  The secretary of the owners corporation, or another officer if the secretary is absent, must convene a general meeting (that is not an annual general meeting) of the owners corporation as soon as practicable, and not later than 14 days after, receiving a qualified request.
 (3)  A meeting may be convened on a qualified request even if the first annual general meeting has not been held.
 (4)  A request is a qualified request for the purposes of this section if it is made by one or more owners of a lot or lots in the strata scheme having a total unit entitlement of at least one-quarter of the aggregate unit entitlements.",
-ORDER General Meeting,SM15,20,P2.D3,Tribunal may appoint person to hold first AGM and other meetings,order,"(1)  The Tribunal may, on application by an owners corporation or an owner or mortgagee of a lot in a strata scheme, order a person to convene and hold a meeting of the owners corporation within the time specified in the order if a meeting has not been convened and held in accordance with this Act.
+ORDER General Meeting,SM15,20,P2'D3,Tribunal may appoint person to hold first AGM and other meetings,order,"(1)  The Tribunal may, on application by an owners corporation or an owner or mortgagee of a lot in a strata scheme, order a person to convene and hold a meeting of the owners corporation within the time specified in the order if a meeting has not been convened and held in accordance with this Act.
 (2)  The person who is to convene and hold the meeting is to be a person nominated by the applicant, or appointed by the Tribunal, who has consented to the nomination or appointment.
 ",
-Resolution reciprocity,SM15,21,P2.D3,Unanimous or special resolutions to be amended or revoked in same way,def,"(1)  A unanimous resolution or special resolution of an owners corporation about a matter that is required by or under this Act or the by-laws of a strata scheme to be determined by a resolution of that kind cannot be amended or revoked other than by a subsequent resolution of the same kind.
+Resolution reciprocity,SM15,21,P2'D3,Unanimous or special resolutions to be amended or revoked in same way,def,"(1)  A unanimous resolution or special resolution of an owners corporation about a matter that is required by or under this Act or the by-laws of a strata scheme to be determined by a resolution of that kind cannot be amended or revoked other than by a subsequent resolution of the same kind.
 (2)  However, a unanimous resolution of an owners corporation dealing with common property may be amended by a special resolution.",
-Strata interest notice ,SM15,22,P2.D3,Notice to be given to owners corporation of right to cast vote at meeting,"oc,def","(1) Person with right to vote at meetings must notify owners corporation A person who has an interest in a lot that, subject to this Act, gives the person a right to cast a vote either personally or by nominee at meetings of an owners corporation must give the owners corporation written notice of that interest (a strata interest notice).
+Strata interest notice ,SM15,22,P2'D3,Notice to be given to owners corporation of right to cast vote at meeting,"oc,def","(1) Person with right to vote at meetings must notify owners corporation A person who has an interest in a lot that, subject to this Act, gives the person a right to cast a vote either personally or by nominee at meetings of an owners corporation must give the owners corporation written notice of that interest (a strata interest notice).
 (2) Contents of strata interest notice The strata interest notice must specify the following information and, if the interest is a mortgage, include confirmation by the mortgagor or be verified by statutory declaration of the mortgagee:
 (a)  the person’s full name and an address for service of notices,
 (b)  the lot concerned and the exact nature of the person’s interest in it,
@@ -699,8 +754,8 @@ Note. An address for service of notices may be an Australian postal address or a
 (b)  if the person is such a person, to give that notice.
 (5) Person prevented from casting vote if certain requirements not met A person is not entitled to cast a vote at a meeting of the owners corporation if the person has not complied with a notice given to the person under subsection (4) or, in the case of a vote to be tendered through a nominee, if the nominee’s full name and address for service of notices have not been notified under this section.
 (6) Changes in certain information to be notified A person who has given notice under this section may by further notice advise any change of nominee or of the person’s or any nominee’s address for service.",
-Strata interest update,SM15,22(6),P2.D3,Changes in certain information to be notified,"oc,def",A person who has given notice under this section may by further notice advise any change of nominee or of the person’s or any nominee’s address for service.,
-ORDER 24 Resolution invalid,SM15,24,P2.D3,Order invalidating resolution of owners corporation,order,"(1)  The Tribunal may, on application by a person entitled to vote on a motion for a resolution of an owners corporation at a general meeting, order that a resolution passed at the general meeting be treated as a nullity on and from the date of the order.
+Strata interest update,SM15,22(6),P2'D3,Changes in certain information to be notified,"oc,def",A person who has given notice under this section may by further notice advise any change of nominee or of the person’s or any nominee’s address for service.,
+ORDER 24 Resolution invalid,SM15,24,P2'D3,Order invalidating resolution of owners corporation,order,"(1)  The Tribunal may, on application by a person entitled to vote on a motion for a resolution of an owners corporation at a general meeting, order that a resolution passed at the general meeting be treated as a nullity on and from the date of the order.
 (2)  The Tribunal must not make the order unless the Tribunal is satisfied that the resolution would not have been passed but for the fact that the applicant for the order:
 (a)  was improperly denied a vote on the motion for the resolution, or
 (b)  was not given due notice of the item of business in relation to which the resolution was passed.
@@ -711,8 +766,8 @@ ORDER 24 Resolution invalid,SM15,24,P2.D3,Order invalidating resolution of owner
 (5)  Subsection (4) is subject to the by-laws having been or being changed in accordance with this Act and to any relevant order made by a superior court.
 (6)  The Tribunal may not make an order under this section if an application for an order has been made under Division 6 of Part 10 of the Strata Schemes Development Act 2015 in relation to the same or a related matter.
 (7)  The Tribunal may not make an order under this section invalidating a decision by an owners corporation to approve, or not to approve, the appointment of a building inspector under Part 11.",
-Improper GM invalidation,SM15,24(1),P2.D3,Order invalidating resolution of owners corporation (1),def,"The Tribunal may, on application by an owner or first mortgagee of a lot in a strata scheme, make an order invalidating any resolution of, or election held by, the persons present at a meeting of the owners corporation if the Tribunal considers that the provisions of this Act or the regulations have not been complied with in relation to the meeting.",
-ORDER 25 Resolution nullity,SM15,25,P2.D3,Order where voting rights denied or due notice of item of business not given,order,"(1)  The Tribunal may, on application by a person entitled to vote on a motion for a resolution of an owners corporation at a general meeting, order that a resolution passed at the general meeting be treated as a nullity on and from the date of the order.
+Improper GM invalidation,SM15,24(1),P2'D3,Order invalidating resolution of owners corporation (1),def,"The Tribunal may, on application by an owner or first mortgagee of a lot in a strata scheme, make an order invalidating any resolution of, or election held by, the persons present at a meeting of the owners corporation if the Tribunal considers that the provisions of this Act or the regulations have not been complied with in relation to the meeting.",
+ORDER 25 Resolution nullity,SM15,25,P2'D3,Order where voting rights denied or due notice of item of business not given,order,"(1)  The Tribunal may, on application by a person entitled to vote on a motion for a resolution of an owners corporation at a general meeting, order that a resolution passed at the general meeting be treated as a nullity on and from the date of the order.
 (2)  The Tribunal must not make the order unless the Tribunal is satisfied that the resolution would not have been passed but for the fact that the applicant for the order:
 (a)  was improperly denied a vote on the motion for the resolution, or
 (b)  was not given due notice of the item of business in relation to which the resolution was passed.
@@ -723,11 +778,11 @@ ORDER 25 Resolution nullity,SM15,25,P2.D3,Order where voting rights denied or du
 (5)  Subsection (4) is subject to the by-laws having been or being changed in accordance with this Act and to any relevant order made by a superior court.
 (6)  The Tribunal may not make an order under this section if an application for an order has been made under Division 6 of Part 10 of the Strata Schemes Development Act 2015 in relation to the same or a related matter.
 (7)  The Tribunal may not make an order under this section invalidating a decision by an owners corporation to approve, or not to approve, the appointment of a building inspector under Part 11",
-SC Appointment,SM15,29,P3.D1,Owners corporation to appoint strata committee,"sc,def","(1)  An owners corporation must appoint a strata committee of the owners corporation in accordance with this Act.
+SC Appointment,SM15,29,P3'D1,Owners corporation to appoint strata committee,"sc,def","(1)  An owners corporation must appoint a strata committee of the owners corporation in accordance with this Act.
 (2)  The owners corporation may appoint the strata committee before the first annual general meeting of the owners corporation.
 (3)  The members of the strata committee must be elected at the first annual general meeting of the owners corporation whether or not members were appointed before that meeting.
 (4)  If there is no strata committee of an owners corporation, the strata scheme must be administered by the owners corporation, but nothing in this subsection prevents a strata managing agent appointed under this Act from exercising any functions conferred on the agent.",
-SC Members,SM15,30,P3.D1,Members of strata committee,"sc,def","(1)  The strata committee of an owners corporation is to consist of the number of persons determined by the owners corporation (not being more than 9).
+SC Members,SM15,30,P3'D1,Members of strata committee,"sc,def","(1)  The strata committee of an owners corporation is to consist of the number of persons determined by the owners corporation (not being more than 9).
 (2)  The strata committee of a large strata scheme must consist of at least 3 members.
 (3)  A strata committee for a strata scheme comprising 2 lots is to consist of the following persons:
 (a)  the owner of each lot who is a sole owner or the company nominee of a lot if the sole owner is a corporation,
@@ -736,7 +791,7 @@ SC Members,SM15,30,P3.D1,Members of strata committee,"sc,def","(1)  The strata c
 (5)  Nomination for election as a member of a strata committee (other than a tenant representative) may be made before or at the meeting at which the election is held.
 
 (6)  The regulations may provide for the procedures for nomination of members of the strata committee.",
-SC Eligible,SM15,31,P3.D1,Persons who are eligible to be appointed or elected to strata committee,"sc,def","(1)  The following persons are eligible for appointment or election to the strata committee of an owners corporation:
+SC Eligible,SM15,31,P3'D1,Persons who are eligible to be appointed or elected to strata committee,"sc,def","(1)  The following persons are eligible for appointment or election to the strata committee of an owners corporation:
 (a)  an individual who is a sole owner of a lot in the strata scheme,
 (b)  a company nominee of a corporation that is a sole owner of a lot in the strata scheme,
 (c)  an individual who is a co-owner of a lot or a company nominee of a corporation that is a co-owner of a lot in the strata scheme, if the person is nominated for election by an owner who is not a co-owner of the lot or by a co-owner of the lot who is not a candidate for election as a member,
@@ -745,7 +800,7 @@ SC Eligible,SM15,31,P3.D1,Persons who are eligible to be appointed or elected to
 (3)  A sole owner of a lot in a strata scheme may not nominate more than one person for election as a member of the strata committee, except as provided by subsection (5).
 (4)  Only one co-owner (including a company nominee of a co-owner) of the same lot may be a member of a strata committee at the same time, except as provided by subsection (5).
 (5)  A person who is an owner of more than one lot in the strata scheme may nominate one person for election as a member of the strata committee for each lot for which the person is an owner.",
-SC Ineligible,SM15,32,P3.D1,Persons who are not eligible to be appointed or elected to strata committee,"sc,def","(1)  The following persons are not eligible for appointment or election to a strata committee or to act as members of a strata committee unless they are also the owners of lots in the strata scheme:
+SC Ineligible,SM15,32,P3'D1,Persons who are not eligible to be appointed or elected to strata committee,"sc,def","(1)  The following persons are not eligible for appointment or election to a strata committee or to act as members of a strata committee unless they are also the owners of lots in the strata scheme:
 (a)  the building manager for the strata scheme,
 (b)  a person who acts as an agent for the leasing of a lot or lots in the strata scheme to tenants,
 (c)  a person who is connected with the original owner of the strata scheme or the building manager for the scheme, unless the person discloses that connection at the meeting at which the election is held and before the election is held or before the person is appointed to act as a member,
@@ -753,7 +808,7 @@ SC Ineligible,SM15,32,P3.D1,Persons who are not eligible to be appointed or elec
 (2)  An owner of a lot in a strata scheme who was an unfinancial owner at the date notice was given of the meeting at which the election of a strata committee is to be held and who did not pay the amounts owing by the owner before the meeting is not eligible for appointment or election to the strata committee.
 (3)  A person who becomes ineligible for appointment or election to a strata committee after being appointed or elected to the strata committee must disclose that fact to the secretary or chairperson of the owners corporation as soon as possible after becoming aware of that fact.
 (4)  A disclosure by a person under this section, other than a disclosure that is made at a meeting of an owners corporation or strata committee, is to be made by written notice given to the secretary or chairperson.",
-SC Tenant rep,SM15,33,P3.D1,Tenant representatives,"sc,def","(1)  This section applies to a strata scheme if there are tenants (being tenants notified in a tenancy notice given in accordance with this Act) for at least half of the number of lots in the scheme.
+SC Tenant rep,SM15,33,P3'D1,Tenant representatives,"sc,def","(1)  This section applies to a strata scheme if there are tenants (being tenants notified in a tenancy notice given in accordance with this Act) for at least half of the number of lots in the scheme.
 (2)  The tenants of lots in a strata scheme (being tenants notified in a tenancy notice given in accordance with this Act) may nominate one tenant representative for the strata committee.
 (3)  The tenant representative on a strata committee, in that capacity:
 (a)  is not entitled to vote on decisions of the committee or to put a motion or nominate a person for office, and
@@ -766,11 +821,11 @@ SC Tenant rep,SM15,33,P3.D1,Tenant representatives,"sc,def","(1)  This section a
 (d)  a strata renewal proposal under Part 10 of the Strata Schemes Development Act 2015 or any related matter,
 (e)  any other financial matter specified by the regulations.
 (5)  The regulations may provide for the procedures for nomination of a tenant representative, including the term for which a tenant representative is appointed, the notification of an appointment and the end of an appointment.",
-SC Acting member,SM15,34,P3.D1,Acting members of strata committee,"sc,def","(1)  A member of a strata committee may, with the consent of the strata committee, appoint an owner or company nominee of a corporation that is an owner who is eligible to be a member to act in his or her place as a member at any meeting of the strata committee.
+SC Acting member,SM15,34,P3'D1,Acting members of strata committee,"sc,def","(1)  A member of a strata committee may, with the consent of the strata committee, appoint an owner or company nominee of a corporation that is an owner who is eligible to be a member to act in his or her place as a member at any meeting of the strata committee.
 (2)  The owner or company nominee appointed is, while so acting as a member, taken to be a member.
 (3)  An owner or company nominee of a corporation may be appointed whether or not he or she is already a member of the strata committee.
 (4)  If a person so appointed is a member of the strata committee, the person may, at any meeting of the strata committee, separately vote in the person’s capacity as such a member and on behalf of the member in whose place the person has been appointed to act.",
-SC Vacation,SM15,35,P3.D1,Vacation of office of elected member of strata committee,"sc,def","(1)  An elected member of a strata committee vacates office as a member:
+SC Vacation,SM15,35,P3'D1,Vacation of office of elected member of strata committee,"sc,def","(1)  An elected member of a strata committee vacates office as a member:
 (a)  if the person was eligible to be a member at the time of election and the person ceases to be so eligible (other than because the person is an unfinancial owner), or
 (b)  if the person was not an owner at the time of election or was a company nominee and the individual who nominated the person for election or the corporation for which the person is a company nominee ceases to be an owner or gives written notice to the owners corporation that the person’s office is vacated, or
 (c)  on the receipt by the owners corporation from the person of notice in writing of the person’s resignation as a member, or
@@ -780,38 +835,38 @@ SC Vacation,SM15,35,P3.D1,Vacation of office of elected member of strata committ
 (2)  A strata committee may appoint a person eligible for election as a member to fill a vacancy in the office of a member of the strata committee, other than a vacancy arising under subsection (1) (d) or a vacancy in the office of an officer of the owners corporation. Any person so appointed holds office, subject to this section, for the balance of his or her predecessor’s term of office.
 Note. Section 45 (2) provides for the filling of vacancies in the office of members who are officers of the owners corporation.
 (3)  A special resolution that determines that the office of a member is vacated may relate to more than one member of a strata committee or to all members of a strata committee.",
-SC Functions,SM15,36,P3.D2,Functions of strata committee,"sc,def","(1)  A strata committee has the functions conferred on it by or under this or any other Act.
+SC Functions,SM15,36,P3'D2,Functions of strata committee,"sc,def","(1)  A strata committee has the functions conferred on it by or under this or any other Act.
 (2)  A decision of a strata committee is taken to be the decision of the owners corporation. However, in the event of a disagreement between the owners corporation and the strata committee, the decision of the owners corporation prevails.
 (3)  The following decisions cannot be made by the strata committee:
 (a)  a decision that is required by or under any Act to be made by the owners corporation by unanimous resolution or special resolution or in general meeting,
 (b)  a decision on any matter or type of matter that the owners corporation has determined in general meeting is to be decided only by the owners corporation in general meeting.
 (4)  An owners corporation may in general meeting continue to exercise all or any of the functions conferred on it by this Act or the by-laws even though a strata committee holds office.",
-SC SM15 functions,SM15,36(1),P3.D2,Functions of strata committee (1),"sc,def",A strata committee has the functions conferred on it by or under this or any other Act.,
-OC prevails SC,SM15,36(2),P3.D2,Functions of strata committee (2),"sc,def","A decision of a strata committee is taken to be the decision of the owners corporation. However, in the event of a disagreement between the owners corporation and the strata committee, the decision of the owners corporation prevails.",
-SC Limitation,SM15,36(3),P3.D2,Functions of strata committee (3),"sc,def","The following decisions cannot be made by the strata committee:
+SC SM15 functions,SM15,36(1),P3'D2,Functions of strata committee (1),"sc,def",A strata committee has the functions conferred on it by or under this or any other Act.,
+OC prevails SC,SM15,36(2),P3'D2,Functions of strata committee (2),"sc,def","A decision of a strata committee is taken to be the decision of the owners corporation. However, in the event of a disagreement between the owners corporation and the strata committee, the decision of the owners corporation prevails.",
+SC Limitation,SM15,36(3),P3'D2,Functions of strata committee (3),"sc,def","The following decisions cannot be made by the strata committee:
 (a) a decision that is required by or under any Act to be made by the owners corporation by unanimous resolution or special resolution or in general meeting,(b) a decision on any matter or type of matter that the owners corporation has determined in general meeting is to be decided only by the owners corporation in general meeting.",
-SC Diligence,SM15,37,P3.D2,Duty of members of strata committee,"sc,def","It is the duty of each member of a strata committee of an owners corporation to carry out his or her functions for the benefit, so far as practicable, of the owners corporation and with due care and diligence.
+SC Diligence,SM15,37,P3'D2,Duty of members of strata committee,"sc,duty","It is the duty of each member of a strata committee of an owners corporation to carry out his or her functions for the benefit, so far as practicable, of the owners corporation and with due care and diligence.
 
 **Note**. Section 260 provides protection from personal liability for members of strata committees who act in good faith.",
-SC Proceedings,SM15,38,P3.D2,Acts and proceedings of strata committee valid despite vacancies or defects,"sc,def","(1)  This section applies if, when any act or proceeding of a strata committee was done, taken or commenced there was:
+SC Proceedings,SM15,38,P3'D2,Acts and proceedings of strata committee valid despite vacancies or defects,"sc,def","(1)  This section applies if, when any act or proceeding of a strata committee was done, taken or commenced there was:
 (a)  a vacancy in the office of an officer of the owners corporation or any other member of the strata committee, or
 (b)  any defect in the appointment, or any disqualification, of any such officer or member.
 (2)  Any act or proceeding of a strata committee done in good faith is as valid as if the vacancy, defect or disqualification did not exist and the strata committee were fully and properly constituted.",
-SC Meetings,SM15,39,P3.D3,Convening meetings,"sc,def","(1)  The secretary of the owners corporation may convene a meeting of the strata committee at any time.
+SC Meetings,SM15,39,P3'D3,Convening meetings,"sc,def","(1)  The secretary of the owners corporation may convene a meeting of the strata committee at any time.
 (2)  The secretary of the owners corporation, or any other member of the strata committee, must convene a meeting of the committee if requested to do so by at least one-third of the members of the committee.
 (3)  The meeting must be held:
 (a)  in the case of a large strata scheme, not later than 28 days after the request is made, or
 (b)  in the case of any other strata scheme, not later than 14 days after the request is made.",
-SC Officers,SM15,41,P3.D4,Strata committee to appoint officers,"sc,def","(1)  The members of a strata committee must, at the first meeting of the strata committee after they assume office as members, appoint a chairperson, secretary and treasurer of the strata committee in accordance with this Act.
+SC Officers,SM15,41,P3'D4,Strata committee to appoint officers,"sc,def","(1)  The members of a strata committee must, at the first meeting of the strata committee after they assume office as members, appoint a chairperson, secretary and treasurer of the strata committee in accordance with this Act.
 (2)  The chairperson, secretary and treasurer of the strata committee are also, respectively, the chairperson, secretary and treasurer of the owners corporation.
 (3)  A person may be appointed to one or more of the offices of chairperson, secretary and treasurer.
 (4)  Nomination for election as an officer of the owners corporation may be made before or at the meeting at which the election is held.
 (5)  The regulations may provide for the procedures for nomination of officers of the strata committee.",
-Chairperson functions,SM15,42,P3.D4,Functions of chairperson of owners corporation,"sc,duty","The functions of the chairperson of an owners corporation include the following:
+Chairperson functions,SM15,42,P3'D4,Functions of chairperson of owners corporation,"sc,duty","The functions of the chairperson of an owners corporation include the following:
 (a)  to preside at meetings of the owners corporation and the strata committee of the owners corporation,
 (b)  to make determinations as to quorums and procedural matters at meetings of the owners corporation and the strata committee of the owners corporation.",
-FN: Determinations,SM15,42(b),P3.D4,Functions of chairperson of owners corporation (b),"sc,duty",to make determinations as to quorums and procedural matters at meetings of the owners corporation and the strata committee of the owners corporation.,
-Secretary functions,SM15,43,P3.D4,Functions of secretary of owners corporation,"sc,duty","The functions of a secretary of an owners corporation include the following:
+FN: Determinations,SM15,42(b),P3'D4,Functions of chairperson of owners corporation (b),"sc,duty",to make determinations as to quorums and procedural matters at meetings of the owners corporation and the strata committee of the owners corporation.,
+Secretary functions,SM15,43,P3'D4,Functions of secretary of owners corporation,"sc,duty","The functions of a secretary of an owners corporation include the following:
 (a)  to prepare and distribute minutes of meetings of the owners corporation and submit a motion for confirmation of the minutes of any meeting of the owners corporation at the next such meeting,
 (b)  to give on behalf of the owners corporation and the strata committee of the owners corporation notices required to be given under this Act,
 (c)  to maintain the strata roll,
@@ -820,14 +875,14 @@ Secretary functions,SM15,43,P3.D4,Functions of secretary of owners corporation,"
 (f)  to convene meetings of the strata committee and (apart from its first annual general meeting) of the owners corporation,
 (g)  to attend to matters of an administrative or secretarial nature in connection with the exercise of functions by the owners corporation or the strata committee of the owners corporation,
 (h)  any other functions conferred on the secretary under any other Act or law.",
-FN: Minutes,SM15,43(a),P3.D4,Functions of secretary of owners corporation (a),"sc,duty","to prepare and distribute minutes of meetings of the owners corporation and submit a motion for confirmation of the minutes of any meeting of the owners corporation at the next such meeting,",
-FN: Notices,SM15,43(b),P3.D4,Functions of secretary of owners corporation (b),"sc,duty","to give on behalf of the owners corporation and the strata committee of the owners corporation notices required to be given under this Act,",
-FN: Strata roll,SM15,43(c),P3.D4,Functions of secretary of owners corporation (c),"sc,duty"," to maintain the strata roll,",
-FN: Enable inspections,SM15,43(d),P3.D4,Functions of secretary of owners corporation (d),"sc,duty"," to enable the inspection of documents on behalf of the owners corporation in accordance with this Act,",
-FN: Answer comms,SM15,43(e),P3.D4,Functions of secretary of owners corporation (e),"sc,duty"," to answer communications addressed to the owners corporation,",
-FN: Convene meetings,SM15,43(f),P3.D4,Functions of secretary of owners corporation (f),"sc,duty","to convene meetings of the strata committee and (apart from its first annual general meeting) of the owners corporation,",
-FN: Attend admin,SM15,43(g),P3.D4,Functions of secretary of owners corporation (g),"sc,duty","to attend to matters of an administrative or secretarial nature in connection with the exercise of functions by the owners corporation or the strata committee of the owners corporation,",
-Treasurer functions,SM15,44,P3.D4,Functions of treasurer of owners corporation,"sc,duty","(1) General functions The functions of a treasurer of an owners corporation include the following:
+FN: Minutes,SM15,43(a),P3'D4,Functions of secretary of owners corporation (a),"sc,duty","to prepare and distribute minutes of meetings of the owners corporation and submit a motion for confirmation of the minutes of any meeting of the owners corporation at the next such meeting,",
+FN: Notices,SM15,43(b),P3'D4,Functions of secretary of owners corporation (b),"sc,duty","to give on behalf of the owners corporation and the strata committee of the owners corporation notices required to be given under this Act,",
+FN: Strata roll,SM15,43(c),P3'D4,Functions of secretary of owners corporation (c),"sc,duty"," to maintain the strata roll,",
+FN: Enable inspections,SM15,43(d),P3'D4,Functions of secretary of owners corporation (d),"sc,duty"," to enable the inspection of documents on behalf of the owners corporation in accordance with this Act,",
+FN: Answer comms,SM15,43(e),P3'D4,Functions of secretary of owners corporation (e),"sc,duty"," to answer communications addressed to the owners corporation,",
+FN: Convene meetings,SM15,43(f),P3'D4,Functions of secretary of owners corporation (f),"sc,duty","to convene meetings of the strata committee and (apart from its first annual general meeting) of the owners corporation,",
+FN: Attend admin,SM15,43(g),P3'D4,Functions of secretary of owners corporation (g),"sc,duty","to attend to matters of an administrative or secretarial nature in connection with the exercise of functions by the owners corporation or the strata committee of the owners corporation,",
+Treasurer functions,SM15,44,P3'D4,Functions of treasurer of owners corporation,"sc,duty","(1) General functions The functions of a treasurer of an owners corporation include the following:
 (a)  to notify owners of any contributions levied in accordance with this Act,
 (b)  to receive, acknowledge, bank and account for any money paid to the owners corporation,
 (c)  to prepare any strata information certificate,
@@ -839,25 +894,25 @@ Treasurer functions,SM15,44,P3.D4,Functions of treasurer of owners corporation,"
 (3)  While a delegate is acting in accordance with the terms of the delegation, the delegate is taken to be the treasurer of the owners corporation.
 (4) Strata committee may require treasurer to exercise functions jointly The strata committee of an owners corporation may, by a written notice given to the treasurer of the owners corporation, order the treasurer not to exercise any of the treasurer’s functions that are specified in the notice unless the treasurer does so jointly with another person so specified.
 ",
-FN: Levy notice,SM15,44(a),P3.D4,Functions of treasurer of owners corporation (a),"sc,duty"," to notify owners of any contributions levied in accordance with this Act,",
-FN: Transact,SM15,44(b),P3.D4,Functions of treasurer of owners corporation (b),"sc,duty","to receive, acknowledge, bank and account for any money paid to the owners corporation,",
-FN: Certificate,SM15,44(c),P3.D4,Functions of treasurer of owners corporation (c),"sc,duty","to prepare any strata information certificate,",
-FN: Financial reports,SM15,44(d),P3.D4,Functions of treasurer of owners corporation (d),"sc,duty",to keep the accounting records and prepare the financial statements.,
-Officer vacation,SM15,45,P3.D4,Vacation of office by officer,"sc,def","(1)  An officer of an owners corporation vacates office as an officer:
+FN: Levy notice,SM15,44(a),P3'D4,Functions of treasurer of owners corporation (a),"sc,duty"," to notify owners of any contributions levied in accordance with this Act,",
+FN: Transact,SM15,44(b),P3'D4,Functions of treasurer of owners corporation (b),"sc,duty","to receive, acknowledge, bank and account for any money paid to the owners corporation,",
+FN: Certificate,SM15,44(c),P3'D4,Functions of treasurer of owners corporation (c),"sc,duty","to prepare any strata information certificate,",
+FN: Financial reports,SM15,44(d),P3'D4,Functions of treasurer of owners corporation (d),"sc,duty",to keep the accounting records and prepare the financial statements.,
+Officer vacation,SM15,45,P3'D4,Vacation of office by officer,"sc,def","(1)  An officer of an owners corporation vacates office as an officer:
 (a)  if the person ceases to be a member of the strata committee, or
 (b)  on the receipt by the owners corporation from the person of written notice of the person’s resignation as an officer, or
 (c)  if another person is appointed by the strata committee to hold that office, or
 (d)  if the owners corporation, by special resolution, declares that the person’s office is vacated, or
 (e)  if the person dies.
 (2)  A strata committee is to appoint a person who is a member of the strata committee, or who is eligible to be a member of the strata committee, to fill a vacancy in the office of an officer of an owners corporation, other than a vacancy referred to in section 35 (1) (d). Any person so appointed holds office, subject to this section, for the balance of his or her predecessor’s term of office.",
-Officer compensation,SM15,46,P3.D4,Payment of officers of owners corporation,"sc,def",An owners corporation may pay to a person who is an officer of the owners corporation or another member of the strata committee of the owners corporation an amount determined by the owners corporation at an annual general meeting in recognition of services performed by the person for the owners corporation in the period since the last annual general meeting.,
-SA Appointment,SM15,49,P4.D1,Appointment of strata managing agents,"sa,def","(1)  An owners corporation for a strata scheme may appoint a person who is the holder of a strata managing agent’s licence under the Property, Stock and Business Agents Act 2002 to be the strata managing agent of the scheme.
+Officer compensation,SM15,46,P3'D4,Payment of officers of owners corporation,"sc,def",An owners corporation may pay to a person who is an officer of the owners corporation or another member of the strata committee of the owners corporation an amount determined by the owners corporation at an annual general meeting in recognition of services performed by the person for the owners corporation in the period since the last annual general meeting.,
+SA Appointment,SM15,49,P4'D1,Appointment of strata managing agents,"sa,def","(1)  An owners corporation for a strata scheme may appoint a person who is the holder of a strata managing agent’s licence under the Property, Stock and Business Agents Act 2002 to be the strata managing agent of the scheme.
 (2)  The appointment is to be made by instrument in writing authorised by a resolution at a general meeting of the owners corporation.
 (3)  The developer of a strata scheme, or a person connected with the developer, is not entitled to be appointed as the strata managing agent of the scheme until after the end of the period of 10 years commencing on the date of registration of the strata plan.
 (4)  A reference in this section to a strata managing agent’s licence under the Property, Stock and Business Agents Act 2002 includes a reference to a corporation licence under that Act that authorises the holder to act as, or carry on the business of, a strata managing agent.
 (5)  An owner who is seeking appointment as a strata managing agent is not entitled to vote or cast a proxy vote on the appointment at a meeting of the owners corporation.
 ",
-SA Delegation,SM15,52,P4.D2,Owners corporation may delegate functions to strata managing agent,"sa,def","(1)  An owners corporation may, by the instrument appointing a strata managing agent or some other instrument, delegate to the strata managing agent:
+SA Delegation,SM15,52,P4'D2,Owners corporation may delegate functions to strata managing agent,"sa,def","(1)  An owners corporation may, by the instrument appointing a strata managing agent or some other instrument, delegate to the strata managing agent:
 (a)  all of its functions, or
 (b)  any one or more of its functions specified in the instrument, or
 (c)  all of its functions except those specified in the instrument.
@@ -869,27 +924,27 @@ SA Delegation,SM15,52,P4.D2,Owners corporation may delegate functions to strata 
 (4)  An owners corporation may delegate the functions only if authorised to do so by a resolution at a general meeting.
 
 (5)  An owners corporation may, if authorised to do so by a resolution at a general meeting, revoke or vary a delegation under this section.",
-SA Delegate limitation,SM15,52(2),P4.D2,Owners corporation may delegate functions to strata managing agent (2),"sa,def","An owners corporation must not delegate to a strata managing agent its power to make:
+SA Delegate limitation,SM15,52(2),P4'D2,Owners corporation may delegate functions to strata managing agent (2),"sa,def","An owners corporation must not delegate to a strata managing agent its power to make:
 (a)  a delegation under this section, or
 (b)  a decision on a matter that is required to be decided by the owners corporation, or
 (c)  a determination relating to the levying or payment of contributions.",
-SA Delegate authorised,SM15,52(4),P4.D2,Owners corporation may delegate functions to strata managing agent (4),"sa,def",An owners corporation may delegate the functions only if authorised to do so by a resolution at a general meeting.,
-SA Delegated exercise,SM15,53,P4.D2,Exercise of delegated functions by strata managing agent,"sa,def","(1)  A function delegated under this Division may, while the delegation remains unrevoked, be exercised from time to time in accordance with the delegation.
+SA Delegate authorised,SM15,52(4),P4'D2,Owners corporation may delegate functions to strata managing agent (4),"sa,def",An owners corporation may delegate the functions only if authorised to do so by a resolution at a general meeting.,
+SA Delegated exercise,SM15,53,P4'D2,Exercise of delegated functions by strata managing agent,"sa,def","(1)  A function delegated under this Division may, while the delegation remains unrevoked, be exercised from time to time in accordance with the delegation.
 (2)  Despite any delegation made under this Division, the owners corporation may continue to exercise all or any of the functions delegated.
 (3)  Any act or thing done or suffered by a strata managing agent while acting in the exercise of a delegation under this Division:
 (a)  has the same effect as if it had been done or suffered by the owners corporation, and
 (b)  is taken to have been done or suffered by the owners corporation.
 (4)  This section is subject to section 56.",
-SA Committee functions,SM15,54,P4.D2,Functions of officers and strata committee may be given to strata managing agent,"sa,def","(1)  The instrument of appointment of a strata managing agent may provide that the strata managing agent has and may exercise all the functions of the chairperson, secretary, treasurer or strata committee of an owners corporation or the functions of those officers or the strata committee specified in the instrument.
+SA Committee functions,SM15,54,P4'D2,Functions of officers and strata committee may be given to strata managing agent,"sa,def","(1)  The instrument of appointment of a strata managing agent may provide that the strata managing agent has and may exercise all the functions of the chairperson, secretary, treasurer or strata committee of an owners corporation or the functions of those officers or the strata committee specified in the instrument.
 (2)  However, the chairperson, secretary, treasurer and strata committee of an owners corporation may continue to exercise all or any of the functions that the strata managing agent is authorised to exercise.
 (3)  Any act or thing done or suffered by a strata managing agent in the exercise of any function of the chairperson, secretary, treasurer or strata committee conferred on the strata managing agent in accordance with this section:
 (a)  has the same effect as if it had been done or suffered by the chairperson, secretary, treasurer or strata committee, and
 (b)  is taken to have been done or suffered by the chairperson, secretary, treasurer or strata committee.
 
 (4)  This section is subject to section 56.",
-SA Exercised record,SM15,55,P4.D2,Strata managing agent to record exercise of functions,"sa,def","(1)  A strata managing agent who exercises a function of the owners corporation or of an officer of the owners corporation must, immediately after its exercise, make a record specifying the function and the manner in which it was exercised.
+SA Exercised record,SM15,55,P4'D2,Strata managing agent to record exercise of functions,"sa,def","(1)  A strata managing agent who exercises a function of the owners corporation or of an officer of the owners corporation must, immediately after its exercise, make a record specifying the function and the manner in which it was exercised.
 (2)  The strata managing agent must give a copy of the records kept for the preceding 12 months to the owners corporation at least once each year.",
-SA Breaches,SM15,57,P4.D2,Breaches by strata managing agent,"sa,def","(1)  If a strata managing agent has been delegated a function by an owners corporation and a breach of the duty by the owners corporation would constitute an offence under a provision of this Act, the agent is guilty of an offence under that provision (instead of the owners corporation) for any breach of the duty by the agent occurring while the delegation remains in force.
+SA Breaches,SM15,57,P4'D2,Breaches by strata managing agent,"sa,def","(1)  If a strata managing agent has been delegated a function by an owners corporation and a breach of the duty by the owners corporation would constitute an offence under a provision of this Act, the agent is guilty of an offence under that provision (instead of the owners corporation) for any breach of the duty by the agent occurring while the delegation remains in force.
 (2)  A strata managing agent must not, in connection with the provision of services as a strata managing agent or the exercise of functions as a strata managing agent, request or accept a gift or other benefit from another person for himself or herself or for another person.
 Maximum penalty: 20 penalty units.
 (3)  Subsection (2) does not apply to:
@@ -900,7 +955,7 @@ Maximum penalty: 20 penalty units.
 (4)  In this section:
 gift has the same meaning as it has in the Electoral Funding Act 2018.
 training service means a training course or service (including attendance at industry events such as conferences).",
-SA Account disclosure,SM15,58,P4.D3,Strata managing agent may be required to provide information about trust account and other accounts,"sa,duty","(1)  An owners corporation may require a strata managing agent to provide the following information relating to the trust account that the agent is required to operate under the Property, Stock and Business Agents Act 2002:
+SA Account disclosure,SM15,58,P4'D3,Strata managing agent may be required to provide information about trust account and other accounts,"sa,duty","(1)  An owners corporation may require a strata managing agent to provide the following information relating to the trust account that the agent is required to operate under the Property, Stock and Business Agents Act 2002:
 (a)  the name and number of the account,
 (b)  the name of the authorised deposit-taking institution in which the account is current,
 (c)  the balance in the account standing to the credit of the owners corporation on a specified date,
@@ -910,11 +965,11 @@ SA Account disclosure,SM15,58,P4.D3,Strata managing agent may be required to pro
 (b)  the names of the authorised deposit-taking institutions in which the accounts are current,
 (c)  the balance in each of the accounts standing to the credit of the owners corporation on a specified date,
 (d)  particulars of all cheques drawn on each of the accounts as at that date and not presented and duly paid.",
-SA Transact disclosure,SM15,59,P4.D3,Provision of information about money received and other transactions,"sa,duty","(1)  An owners corporation may require a strata managing agent to provide:
+SA Transact disclosure,SM15,59,P4'D3,Provision of information about money received and other transactions,"sa,duty","(1)  An owners corporation may require a strata managing agent to provide:
 (a)  full particulars relating to the payment of money to, or the receipt of money by, the agent on behalf of the owners corporation, and
 (b)  if the money is not still held by the agent, the manner and time of disposal of the money.
 (2)  An owners corporation may require a strata managing agent to provide full particulars of any specified transaction that has been entered into by the agent on behalf of the owners corporation.",
-SA Comission disclosure,SM15,60,P4.D3,Disclosure of commissions and training services,"sa,duty,offence","(1)  A strata managing agent for a strata scheme must report the following at the annual general meeting of the owners corporation for the scheme:
+SA Comission disclosure,SM15,60,P4'D3,Disclosure of commissions and training services,"sa,duty,offence","(1)  A strata managing agent for a strata scheme must report the following at the annual general meeting of the owners corporation for the scheme:
 (a)  whether any commissions or training services have been provided to or paid for the agent (other than by the owners corporation) in connection with the exercise by the agent of functions for the scheme during the preceding 12 months and particulars of any such commissions or training services,
 (b)  any such commissions or training services and the estimated amount or value of any such commissions or training services that the agent believes are likely to be provided to or paid for the agent in the following 12 months.
 Maximum penalty: 20 penalty units.
@@ -927,20 +982,20 @@ Maximum penalty: 20 penalty units.
 (4)  In this section:
 
 training service means a training course or service (including attendance at industry events such as conferences)",
-ORDER 60 Agent pay OC,SM15,60(3),P4.D3,Disclosure of commissions and training services (3),"sa,order","(3)  The Tribunal may, on application by an owners corporation, order a strata managing agent to pay to the owners corporation:
+ORDER 60 Agent pay OC,SM15,60(3),P4'D3,Disclosure of commissions and training services (3),"sa,order","(3)  The Tribunal may, on application by an owners corporation, order a strata managing agent to pay to the owners corporation:
 (a)  the whole or part of the amount or value of any commissions or training services provided to or paid for the agent and not disclosed in accordance with this section, or
 (b)  the whole or part of the amount or value of any commissions or training services provided to or paid for the agent that are not of a kind or an amount disclosed by the agent under this section, if the Tribunal is satisfied that the disclosure of those things at the previous annual general meeting was not made in good faith.",
-SA info request ,SM15,61,P4.D3,Procedure for requiring information from strata managing agent,"sa,duty",(1)  An owners corporation is to require information from a strata managing agent under this Division by written notice given to the strata managing agent. (2) The notice must specify a member of the strata committee to whom the information is to be delivered.,
-SA Offence,SM15,62,P4.D3,Offences (Strata Mangaging Agent),"sa,offence","(1)  A strata managing agent must comply with a notice to provide information under this Division by giving a written statement, containing the information required, within 14 days after the notice is given.
+SA info request ,SM15,61,P4'D3,Procedure for requiring information from strata managing agent,"sa,duty",(1)  An owners corporation is to require information from a strata managing agent under this Division by written notice given to the strata managing agent. (2) The notice must specify a member of the strata committee to whom the information is to be delivered.,
+SA Offence,SM15,62,P4'D3,Offences (Strata Mangaging Agent),"sa,offence","(1)  A strata managing agent must comply with a notice to provide information under this Division by giving a written statement, containing the information required, within 14 days after the notice is given.
 Maximum penalty: 20 penalty units.
 (2)  A person is not guilty of failing to comply with the notice if reasonable cause for the failure is shown.
 (3)  A strata managing agent must not knowingly provide information that is false or misleading in a material particular in a statement given in response to a notice to provide information under this Division.",
-SA Interests disclosure,SM15,71,P4.D5,Interests must be disclosed by potential strata managing agents,"sa,offence","(1)  A person appointed as the strata managing agent or building manager for a strata scheme who has an interest that must be disclosed under this section must disclose the interest to the owners corporation before the appointment of the person.
+SA Interests disclosure,SM15,71,P4'D5,Interests must be disclosed by potential strata managing agents,"sa,offence","(1)  A person appointed as the strata managing agent or building manager for a strata scheme who has an interest that must be disclosed under this section must disclose the interest to the owners corporation before the appointment of the person.
 Maximum penalty: 50 penalty units.
 (2)  The following are interests that must be disclosed to the owners corporation by a person:
 (a)  that the person is connected with the original owner,
 (b)  any direct or indirect pecuniary interest in the strata scheme (other than an interest arising only from the prospective appointment).",
-ORDER 72 SA termination,SM15,72,P4.D5,Strata managing agent and building manager agreements may be terminated or varied by Tribunal,"sa,order","(1)  The Tribunal may, on application by an owners corporation for a strata scheme, make any of the following orders in respect of an agreement for the appointment of a strata managing agent or building manager for the scheme:
+ORDER 72 SA termination,SM15,72,P4'D5,Strata managing agent and building manager agreements may be terminated or varied by Tribunal,"sa,order","(1)  The Tribunal may, on application by an owners corporation for a strata scheme, make any of the following orders in respect of an agreement for the appointment of a strata managing agent or building manager for the scheme:
 (a)  an order terminating the agreement,
 (b)  an order requiring the payment of compensation to a party to the agreement,
 (c)  an order varying the term, or varying or declaring void any of the conditions, of the agreement,
@@ -954,20 +1009,20 @@ ORDER 72 SA termination,SM15,72,P4.D5,Strata managing agent and building manager
 (d)  that the strata managing agent has failed to disclose commissions or training services (including estimated commissions or value of training services or variations and explanations for variations) in accordance with section 60 or has failed to make the disclosures in good faith,
 (e)  that the strata managing agent or building manager has failed to disclose an interest under section 71,
 (f)  that the agreement is, in the circumstances of the case, otherwise harsh, oppressive, unconscionable or unreasonable.",
-ORDER 82 Alter contribution,SM15,82,P5.D2,Individual contributions may be larger if greater insurance costs,order,"(1)  If the use to which a lot in a strata scheme is put causes an insurance premium for the strata scheme to be greater than it would be if it were not put to that use, so much of a contribution payable by the owner of the lot as is attributable to insurance premiums may, with the consent of the owner, be increased to reflect the extra amount of the premium.
+ORDER 82 Alter contribution,SM15,82,P5'D2,Individual contributions may be larger if greater insurance costs,order,"(1)  If the use to which a lot in a strata scheme is put causes an insurance premium for the strata scheme to be greater than it would be if it were not put to that use, so much of a contribution payable by the owner of the lot as is attributable to insurance premiums may, with the consent of the owner, be increased to reflect the extra amount of the premium.
 (2)  The Tribunal may, on application, make an order for payment of contributions of a different amount to one or more contributions levied or proposed by an owners corporation on an owner if the Tribunal is of the opinion that the owner’s consent has been unreasonably refused under this section.
 (3)  An application for an order under this section may be made by the lessor of a leasehold strata scheme, an owners corporation, an owner of a lot or a mortgagee in possession.",
-ORDER 87 Vary contribution,SM15,87,P5.D2,Orders varying contributions or payment methods,order,"(1)  The Tribunal may, on application, make either or both of the following orders if the Tribunal considers that any amount levied or proposed to be levied by way of contributions is inadequate or excessive or that the manner of payment of contributions is unreasonable:
+ORDER 87 Vary contribution,SM15,87,P5'D2,Orders varying contributions or payment methods,order,"(1)  The Tribunal may, on application, make either or both of the following orders if the Tribunal considers that any amount levied or proposed to be levied by way of contributions is inadequate or excessive or that the manner of payment of contributions is unreasonable:
 (a)  an order for payment of contributions of a different amount,
 (b)  an order for payment of contributions in a different manner.
 (2)  An application for an order may be made by the lessor of a leasehold strata scheme, an owners corporation, an owner or a mortgagee in possession.",
-ORDER 125 Dispose goods,SM15,125,P6.D5,Disposal of abandoned goods on common property,order,"The regulations may make provision for or with respect to the following matters:
+ORDER 125 Dispose goods,SM15,125,P6'D5,Disposal of abandoned goods on common property,order,"The regulations may make provision for or with respect to the following matters:
 (a)  conferring power on an owners corporation to store or dispose of, or authorise the disposal of, goods left on common property,
 (b)  notices to owners and other persons as to disposal or proposed disposal of goods by an owners corporation,
 (c)  the passing of title to any goods on disposal by an owners corporation,
 (d)  the payment of the proceeds of disposal of goods by an owners corporation,
 (e)  conferring jurisdiction on the Tribunal to make directions and orders relating to the disposal of goods, including orders for the payment of compensation and as to the payment of the costs of disposing of goods.",
-ORDER 126 Property alteration,SM15,126,P6.D6,Orders relating to alterations and repairs to common property and other property,order,"(1) Order requiring owners corporation to carry out work on common property The Tribunal may, on application by a lessor of a leasehold strata scheme or an owner of a lot in a strata scheme, order the owners corporation to consent to work proposed to be carried out by an owner of a lot if the Tribunal considers that the owners corporation has unreasonably refused its consent and the work relates to any of the following:
+ORDER 126 Property alteration,SM15,126,P6'D6,Orders relating to alterations and repairs to common property and other property,order,"(1) Order requiring owners corporation to carry out work on common property The Tribunal may, on application by a lessor of a leasehold strata scheme or an owner of a lot in a strata scheme, order the owners corporation to consent to work proposed to be carried out by an owner of a lot if the Tribunal considers that the owners corporation has unreasonably refused its consent and the work relates to any of the following:
 (a)  minor renovations or other alterations to common property directly affecting the owner’s lot,
 (b)  carrying out repairs to common property or any other property of the owners corporation directly affecting the owner’s lot.
 (2) Order consenting to owner’s work on owners corporation property The Tribunal may, on application by a lessor of a leasehold strata scheme or an owner of a lot in a strata scheme, make an order (a work approval order) approving of minor renovations or alterations or repairs already made by an owner to common property or any other property of the owners corporation directlyaffecting the owner’s lot if the Tribunal considers that the owners corporation unreasonably refused its consent to the minor renovations or alterations or repairs.
@@ -975,12 +1030,12 @@ ORDER 126 Property alteration,SM15,126,P6.D6,Orders relating to alterations and 
 (4)  In deciding whether to grant a work approval order or to provide for the order to have effect from a day that occurred before the date of the order, the Tribunal may take into account the conduct of the parties in the proceedings, for example, if an owner did not first seek the consent of the owners corporation before carrying out the renovations, alterations or repairs.
 (5) Responsibility for ongoing repair and maintenance of affected property The Tribunal may specify in an order under this section whether the owners corporation or the owner of the lot has the ongoing responsibility for the repair and maintenance of any additional property arising out of a minor renovation or alteration or repair to common property approved under the order.
 (6)  If an order provides for the owner of a lot to have the ongoing responsibility for the repair and maintenance of any such additional property, the order also has effect in relation to any subsequent owner of the lot.",
-ORDER 132 Rectification done,SM15,132,P6.D6,Rectification where work done by owner,order,"(1)  The Tribunal may, on application by an owners corporation for a strata scheme, make either of the following orders if the Tribunal is satisfied that work carried out by or for an owner or occupier on any part of the parcel of the scheme has caused damage to common property or another lot:
+ORDER 132 Rectification done,SM15,132,P6'D6,Rectification where work done by owner,order,"(1)  The Tribunal may, on application by an owners corporation for a strata scheme, make either of the following orders if the Tribunal is satisfied that work carried out by or for an owner or occupier on any part of the parcel of the scheme has caused damage to common property or another lot:
 (a)  an order that the owner or occupier performs the work or takes other steps as specified in the order to repair the damage,
 (b)  an order that the owner or occupier pay to the owners corporation or the owner of the lot a specified amount for the cost of repairs of the damage and any associated costs, including insurance and legal costs.
 (2)  An amount payable by an owner or occupier to an owners corporation under this section is payable, and may be recovered, under this Act as if it were an amount of unpaid contributions.
 Note. Section 86 provides for the recovery of unpaid contributions.",
-ORDER 148 By-law revoke,SM15,148,P7.D5,Order revoking amendment of by-law or reviving repealed by-law,order,"(1)  The Tribunal may, on application by a person entitled to vote on the amendment or repeal of a by-law or addition of a new by-law or the lessor of a leasehold strata scheme, make one of the following orders:
+ORDER 148 By-law revoke,SM15,148,P7'D5,Order revoking amendment of by-law or reviving repealed by-law,order,"(1)  The Tribunal may, on application by a person entitled to vote on the amendment or repeal of a by-law or addition of a new by-law or the lessor of a leasehold strata scheme, make one of the following orders:
 (a)  an order that the amendment be revoked,
 (b)  an order that the repealed by-law be revived,
 (c)  an order that the additional by-law be repealed.
@@ -989,10 +1044,10 @@ ORDER 148 By-law revoke,SM15,148,P7.D5,Order revoking amendment of by-law or rev
 (4)  When making an order under this section in relation to a common property rights by-law, the Tribunal may direct the payment by the owners corporation of compensation to the owner of the lot, or owners of the lots, referred to in the by-law.
 Note. Section 78 of the Civil and Administrative Tribunal Act 2013 provides for the recovery as a judgment debt of amounts ordered to be paid by the Tribunal.
 (5)  An order under this section operates on and from the date on which it is so recorded or from an earlier date specified in the order.",
-ORDER 150 By-law invalid,SM15,150,P7.D5,Order invalidating by-law,order,"(1)  The Tribunal may, on the application of a person entitled to vote on the motion to make a by-law or the lessor of a leasehold strata scheme, make an order declaring a by-law to be invalid if the Tribunal considers that an owners corporation did not have the power to make the by-law or that the by-law is harsh, unconscionable or oppressive.
+ORDER 150 By-law invalid,SM15,150,P7'D5,Order invalidating by-law,order,"(1)  The Tribunal may, on the application of a person entitled to vote on the motion to make a by-law or the lessor of a leasehold strata scheme, make an order declaring a by-law to be invalid if the Tribunal considers that an owners corporation did not have the power to make the by-law or that the by-law is harsh, unconscionable or oppressive.
 (2)  The order, when recorded under section 246, has effect as if its terms were a by-law repealing the by-law declared invalid by the order (but subject to any relevant order made by a superior court).
 (3)  An order under this section operates on and from the date on which it is so recorded or from an earlier date specified in the order.",
-OC insure building,SM15,150,P9.D1,Owners corporation to insure building,"oc,duty","(1)  The owners corporation for a strata scheme for the whole of a building must insure the building and keep the building insured under a contract of insurance, in accordance with this Division, that insures the building if it is destroyed or damaged by fire, lightning, explosion or any other occurrence specified in the policy (a damage policy).
+OC insure building,SM15,150,P9'D1,Owners corporation to insure building,"oc,duty","(1)  The owners corporation for a strata scheme for the whole of a building must insure the building and keep the building insured under a contract of insurance, in accordance with this Division, that insures the building if it is destroyed or damaged by fire, lightning, explosion or any other occurrence specified in the policy (a damage policy).
 Maximum penalty: 5 penalty units.
 (2)  The owners corporation for each strata scheme for part of a building and any other person in whom is vested an estate in fee simple in part of the building that is not included in the parcel of the strata scheme must insure the building and keep the building insured under a damage policy.
 Maximum penalty: 5 penalty units.
@@ -1002,24 +1057,24 @@ Maximum penalty: 5 penalty units.
 (b)  the buildings comprised in one of those lots are physically detached from the buildings comprised in the other lot, and
 (c)  no building or part of a building in the strata scheme is situated outside those lots.
 (5)  A damage policy may consist of one or more policies of insurance.",
-ORDER 162 Insurance payable,SM15,162,P9.D1,Insurance premiums where strata scheme is for part only of building,order,"(1)  This section applies if a requirement is imposed on an owners corporation for a strata scheme for part of a building and any other person to insure the building under a damage policy.
+ORDER 162 Insurance payable,SM15,162,P9'D1,Insurance premiums where strata scheme is for part only of building,order,"(1)  This section applies if a requirement is imposed on an owners corporation for a strata scheme for part of a building and any other person to insure the building under a damage policy.
 (2)  The premium for a damage policy is to be paid by the owners corporation or other person according to the proportion that the replacement value of the part (or parts) of the building subject to the strata scheme or held in fee simple by the other person bears to the replacement value of the whole building.
 (3)  The Tribunal may, on application by an owners corporation or other person liable to pay a proportion of a premium, determine the replacement value and proportion payable. The determination is binding on each person liable to pay a proportion.
 (4)  The Tribunal may, on application by any person liable under this section to pay a proportion of a premium, make an order adjusting the proportion payable by a person to reflect that the use to which a part of a building in which that person has the fee simple is put causes an insurance premium under this section to be greater than it would be if it were not put to that use.",
-Insurance quotations,SM15,166,P9.D1,Strata managing agent to obtain insurance quotations,"sa,duty",A strata managing agent must provide the owners corporation with not less than 3 quotations from different providers for each type of insurance proposed by the agent to the owners corporation or provide written reasons to the owners corporation if less than 3 quotations are provided.,
-Owner action,SM15,171,P9.D2,Action against owners corporation by owner,"oc,def","An owner of a lot may bring any action against the owners corporation of which the owner is a member that the owner might have brought against the owners corporation if the owner had not been such a member.
+Insurance quotations,SM15,166,P9'D1,Strata managing agent to obtain insurance quotations,"sa,duty",A strata managing agent must provide the owners corporation with not less than 3 quotations from different providers for each type of insurance proposed by the agent to the owners corporation or provide written reasons to the owners corporation if less than 3 quotations are provided.,
+Owner action,SM15,171,P9'D2,Action against owners corporation by owner,"oc,def","An owner of a lot may bring any action against the owners corporation of which the owner is a member that the owner might have brought against the owners corporation if the owner had not been such a member.
 ",
-ORDER 187 Confirm roll,SM15,187,P10.D3,Order confirming information for strata roll,order,"(1)  The Tribunal may, on application by an owners corporation, owner or other person having or acquiring an estate or interest in a lot in a strata scheme, order an owners corporation to enter information contained in a strata interest notice in the strata roll if a person fails to provide the required written confirmation of the notice.
+ORDER 187 Confirm roll,SM15,187,P10'D3,Order confirming information for strata roll,order,"(1)  The Tribunal may, on application by an owners corporation, owner or other person having or acquiring an estate or interest in a lot in a strata scheme, order an owners corporation to enter information contained in a strata interest notice in the strata roll if a person fails to provide the required written confirmation of the notice.
 (2)  In making the order, the Tribunal may amend the information in the strata interest notice to which the order relates in any manner the Tribunal thinks fit.
 (3)  The Tribunal must dismiss an application for an order if the Tribunal considers that the rights of any person would be prejudiced if the order were made.
 (4)  A copy of an order under this section given to an owners corporation is taken to be a strata interest notice given to the owners corporation and information entered on a strata roll in accordance with the order is taken to have been entered from a notice with any written confirmation required.",
-ORDER 188 Supply records,SM15,188,P10.D3,Order to supply information or documents,order,"(1)  The Tribunal may, on application by a person, order an owners corporation, strata managing agent, officer or former strata managing agent of an owners corporation to supply to the applicant information that the Tribunal considers that the owners corporation, strata managing agent, officer or former strata managing agent has wrongfully withheld from the applicant and to which the applicant is entitled under this Act.
+ORDER 188 Supply records,SM15,188,P10'D3,Order to supply information or documents,order,"(1)  The Tribunal may, on application by a person, order an owners corporation, strata managing agent, officer or former strata managing agent of an owners corporation to supply to the applicant information that the Tribunal considers that the owners corporation, strata managing agent, officer or former strata managing agent has wrongfully withheld from the applicant and to which the applicant is entitled under this Act.
 (2)  The Tribunal may, on application by a person, order an owners corporation, strata managing agent, officer or former strata managing agent of an owners corporation to supply or make available to the applicant a record or document if:
 (a)  the Tribunal considers that the owners corporation, strata managing agent, officer or former strata managing agent has wrongfully failed to make the record or document available for inspection by the applicant or the applicant’s agent, and
 (b)  the applicant is entitled under this Act to inspect the record or document.
 
 (3)  The order may specify the manner in which information is to be supplied or made available",
-ORDER 231 Interim,SM15,231,P12.D4,Interim orders,order,"(1)  If an applicant for an order by the Tribunal under this Act requests the making of an interim order and the Tribunal is satisfied on reasonable grounds that urgent considerations justify the making of the order, the Tribunal may:
+ORDER 231 Interim,SM15,231,P12'D4,Interim orders,order,"(1)  If an applicant for an order by the Tribunal under this Act requests the making of an interim order and the Tribunal is satisfied on reasonable grounds that urgent considerations justify the making of the order, the Tribunal may:
 (a)  make an interim order in the form of any order that could otherwise be made by the Tribunal, and
 (b)  renew the interim order by giving notice that the order is renewed if a request for its renewal is made not later than 3 months after the order was made.
 (2)  The Tribunal may revoke an interim order, or a renewal of an order.
@@ -1035,7 +1090,7 @@ Maximum penalty: 5 penalty units.
 (b)  if application is duly made for its renewal—until the renewal is granted or refused, or
 (c)  if it is renewed—the end of the period of 6 months that commenced with the making of the order or any earlier date specified in the order.
 (7)  Subsection (6) does not apply if the order is revoked by the Tribunal or the application is determined in accordance with another provision of this Act.",
-ORDER 232 Settle dispute,SM15,232,P12.D4,Orders to settle disputes or rectify complaints,order,"(1) Orders relating to complaints and disputes The Tribunal may, on application by an interested person, original owner or building manager, make an order to settle a complaint or dispute about any of the following:
+ORDER 232 Settle dispute,SM15,232,P12'D4,Orders to settle disputes or rectify complaints,order,"(1) Orders relating to complaints and disputes The Tribunal may, on application by an interested person, original owner or building manager, make an order to settle a complaint or dispute about any of the following:
 (a)  the operation, administration or management of a strata scheme under this Act,
 (b)  an agreement authorised or required to be entered into under this Act,
 (c)  an agreement appointing a strata managing agent or a building manager,
@@ -1054,10 +1109,18 @@ ORDER 232 Settle dispute,SM15,232,P12.D4,Orders to settle disputes or rectify co
 (5)  The Tribunal must not make an order relating to a dispute involving a matter to which a strata management statement applies that is inconsistent with the strata management statement.
 (6) Disputes relating to consent to development applications The Tribunal must consider the interests of all the owners of lots in a strata scheme in the use and enjoyment of their lots and the common property in determining whether to make an order relating to a dispute concerning the failure of an owners corporation for a strata scheme to consent to the making of a development application under the Environmental Planning and Assessment Act 1979 relating to common property of the scheme.
 (7) Excluded complaints and disputes This section does not apply to a complaint or dispute relating to an agreement that is not an agreement entered into under this Act, or the exercise of, or failure to exercise, a function conferred or imposed by or under any other Act, if another Act confers jurisdiction on another court or tribunal with respect to the subject-matter of the complaint or dispute and the Tribunal has no jurisdiction under a law (other than this Act) with respect to that subject-matter.",
-ORDER 238 Committee,SM15,238,P12.D4,Orders relating to strata committee and officers,order,"(1)  The Tribunal may, on its own motion or on application by an interested person, make any of the following orders:
+ORDER 238 Committee,SM15,238,P12'D4,Orders relating to strata committee and officers,order,"(1)  The Tribunal may, on its own motion or on application by an interested person, make any of the following orders:
 (a)  an order removing a person from a strata committee,
 (b)  an order prohibiting a strata committee from determining a specified matter and requiring the matter to be determined by resolution of the owners corporation,
 (c)  an order removing one or more of the officers of an owners corporation from office and from the strata committee.
 (2)  Without limiting the grounds on which the Tribunal may order the removal from office of a person, the Tribunal may remove a person if it is satisfied that the person has:
 (a)  failed to comply with this Act or the regulations or the by-laws of the strata scheme, or
 (b)  failed to exercise due care and diligence, or engaged in serious misconduct, while holding the office.",
+Defs (mediation),SM15,217,P12'D2,Definitions (Alternative dispute resolution by Secretary),def,"In this Part:
+mediation - means a structured negotiation process in which the mediator, as a neutral and independent party, assists the parties to a dispute to achieve their own resolution of the dispute.
+mediation session - means a meeting arranged for the mediation of a matter under this Part and, for the purposes of the provisions of this Division relating to privilege, disclosure and admissibility, includes steps taken in the course of arranging or following-up a session.
+mediator - means the Secretary or any person approved by the Secretary in writing to be a mediator for the purposes of this Division.",
+Mediated matter,SM15,218,P12'D2,Matters that may be subject to mediation,action,"(1)  A person may apply to the Secretary for mediation of any matter for which an order may be sought from the Tribunal under this Act.
+(2)  On receipt of an application for mediation, the Secretary must, if the Secretary thinks the circumstances of the case are appropriate, arrange for mediation in accordance with the regulations.
+(3)  The Secretary may dismiss an application for mediation if the Secretary believes that the application is frivolous, vexatious, misconceived or lacking in substance.
+",Defs (mediation)

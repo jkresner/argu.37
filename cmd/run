@@ -1,3 +1,37 @@
 #!/bin/sh
-# node ./server/worker.js &
-node ./server/index.js
+CMD=CMD/run
+source cmd/_build/init
+
+
+
+if [ "$1" = "--dist" ]; then
+  L1 "start dist.env"
+#   cmd/dist/build;
+#   cmdL2 "worker"
+#   cmdL2 "web"
+#   node ./server/worker.js --env dist $2 $3 $4 $5 $6 &
+#   node ./server/index.js --env dist $2 $3 $4 $5 $6;
+  echo 'DIDNT DIST YET'
+else
+  if [ "$1" = "--test" ]; then
+    L1 "start test.env"
+    if [ "$2" = "--worker" ]; then
+      node ./server/worker.js --env test $2 $3 $4 $5 $6 &
+        node ./server/index.js --env test $2 $3 $4 $5 $6;
+    else
+      node ./server/index.js --env test $2 $3 $4 $5 $6;
+    fi
+  else
+    echo
+    if [ "$1" = "--dev" ]; then
+      node ./server/index.js --env dev $2 $3 $4 $5 $6
+    else
+      if [ "$1" = "--dev-worker" ]; then
+        node ./server/worker.js --env dev $2 $3 $4 $5 $6;
+      else
+        clear
+        source cmd/_run/watch $2 $3 $4 $5 $6;
+      fi
+    fi
+  fi
+fi

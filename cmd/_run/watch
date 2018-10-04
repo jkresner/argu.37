@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# killall node;
+
+# nodemon=node_modules/nodemon/bin/nodemon.js;
+# source cmd/_run/cdn;
+node cmd/_run/reload.js $1 $2 $3 $4 $5 $6 &
+node_modules/nodemon/bin/nodemon.js server/index.js -w server -w tmpl -e env,js,hbs --quiet
+ # --argument $1 $2 $3 $4 $5 $6

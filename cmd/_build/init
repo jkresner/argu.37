@@ -20,7 +20,7 @@ function L1() {
   echo  "\n\033[0;32m${CMD}\033[0m \t\t${1}"
 }
 function L2() {
-  echo "\033[0;34m${CMD}/${op}\033[0m\033[0;36m \t${1}\033[0m\t${2}\033[0m"
+  echo "\033[0;34m${CMD}/${op}\033[0m\033[0;36m  \t${1}\033[0m\t${2}\033[0m"
 }
 function L3() {
   printf "\033[0;37m${CMD}\033[0m  \t${1}\n"

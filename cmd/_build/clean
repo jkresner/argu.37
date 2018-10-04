@@ -1,6 +1,7 @@
 #!/bin/sh
 op="clean"
 L2
+L2 "rm" "/reload.log"
 L2 "rm" "/packages-lock.json"
 rm -f package-lock.json
 rm -f .DS_Store

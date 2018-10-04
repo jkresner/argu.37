@@ -1,6 +1,0 @@
-#!/bin/sh
-
-# cmd/tool/run import law --verbose
-# cmd/tool/run import gmail -g sync
-
-coffee cmd/tool/$1/run.coffee -o $2 $3 $4 $5 $6

@@ -1,0 +1,17 @@
+{
+  "mongo": {
+    "collections":        ["content","tag","law","source","set"],
+    "url":                "mongodb://localhost/argu_test",
+    "seed": {
+      "force":            true,
+      "dirty":            false,
+      "timeout":          30000
+    }
+  },
+  "paths": {
+    "bson":               "/migrate/2018-09/bson",
+    "specs":              "/migrate/2018-09",
+    "fixtures":           "/migrate/2018-09/fixture",
+    "csv_law":            "/migrate/2018-09/fixture/init/laws0.csv"
+  }
+}
