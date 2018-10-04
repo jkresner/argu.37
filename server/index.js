@@ -8,7 +8,8 @@ let config         = configure(__dirname+'/cfg', env, true)
 function done(e) {
   console.log(e
     ? 'app  WEB fail: '.red + e.message
-    : `${'app'.dim}  WEB --env ${config.env} ${'up'.green}\t\t      `.blue + `${config.http.host}`)
+    : `${'app'.dim}  WEB `.blue+config.env.cyan.bold+'.env\t\t '.blue
+          + `${config.http.host.replace('http://','')}\n`.cyan.dim)
 
 }
 

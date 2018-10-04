@@ -1,0 +1,18 @@
+<style type="text/css">
+h2 { font-size:18px;margin:10px 0 0 25px;padding:0;color:navy }
+</style>
+
+
+{{#each r}}
+  <h2>{{title}}</h2>
+  {{> ul_laws laws }}
+{{/each}}
+
+
+<script type="text/javascript">
+
+function argu_onload() {
+  console.log('argu.cmd', argu.cmd)
+}
+
+</script>

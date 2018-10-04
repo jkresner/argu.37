@@ -1,7 +1,4 @@
-const TAG = ['sa','sc','order','offence','duty','def']
-
-
-module.exports = ({ Id, Enum, Log },
+module.exports = ({ Id, Enum, Log, RefTag },
   { asSchema, required, sparse, index, unqiue }) => asSchema({
 
   is:     { type: String, required, enum: Enum.LAW.STRUCT, default: 'SECTION' }, // 'DIVISION' etc.
@@ -12,8 +9,9 @@ module.exports = ({ Id, Enum, Log },
   title:  { type: String, required }, // Keeping and inspection of records
   name:   { type: String, required, unqiue }, // Strata records
   body:   { type: String, required },
-  see:    { type: [String] }, // [Name] of other  laws
-  tags:   { type: [String], enum: TAG },
+  see:    { type: [String], required:false }, // [Name] of other  laws
+  // tags:   { type: [String], required },
+  tags:   [RefTag],
   log:    { type: Log }
 
 })

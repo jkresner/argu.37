@@ -4,7 +4,7 @@ Link: #1A0DABCaselaw dark button: #05406f;link:#03579b
 border-top:solid 2px rgb(215, 226, 252); */
 
 body {                       font-family:"Veranda", arial;
-                             font-size:17px;
+                             font-size:16px;
                              text-align:center;
                              background:#f4f8fb }
 
@@ -12,8 +12,8 @@ img {                        max-width:100% }
 
 article {                    width:216mm; /*height:356mm;*/
                              box-sizing:border-box;
-                             margin:24px auto 24px auto;
-                             padding:20px 36px 30px 36px;
+                             margin:14px auto 24px auto;
+                             padding:20px 24px 30px 24px;
                              background:white;
                              text-align:left;
                              border-radius:2px }
@@ -99,9 +99,7 @@ table td em img { width:310px;max-width:310px }
 
 #toc h2 {                    margin:20px 0 0px 0;font-weight:100;color:gray; }
 #toc h2 strong {             color:#d7153a; }
+/*
 #jk table img {              width:82px;background:white;border-radius:50%;border:solid 1px #f1f1f1;padding:2px;margin:0px; }
+*/
 
-
-/*Highlights*/
-.hli1 { background:#ffff8d }
-.hli2 { background:#ffff8d }

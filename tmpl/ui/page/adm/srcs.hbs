@@ -1,0 +1,103 @@
+{{> srxplorer }}
+
+<aside class="set dev">
+{{> ul_srcs r }}
+</aside>
+
+<section id="workbar">
+  <h5><var id="wb_id"></var></h5>
+  <h5>Body (auto)</h5>
+</section>
+{{#each r.list}}
+<input type="hidden" id="{{name}}_d" data-body="{{body}}" data-orig="{{raw}}" >{{/each}}
+
+
+
+<script type="text/javascript">
+
+ag.data.filters = {{{ JSON r.vd.filters }}}
+ag.data.filtered = {{{ JSON r.filtered }}}
+ag.data.lb_static = ['police','ants','losses','innocent','laurie',//,'JK_health'
+'JK_swear','JK_anxiety','JK_cantwork','JK_losses','JK_scapegoat','JK_unrentable',
+'SC_badfaith','SC_misinfo','SA_OC2nd','SA_breach',//'oneill'
+'OC_106_1','OC_noise']
+
+function cpb(id) {
+  if ($('#workbar').getAttribute('data-id') == id) return
+
+  $('#workbar').setAttribute("data-id", id)
+
+  var elm  = $('#'+id+'_d')
+  var orig = elm.data('orig')
+  // var body = elm.data('body')
+
+  $('#workbar').innerHTML ='<h5>'+id+' (original)</h5>'+
+    '<textarea id="cpd_orig" wrap="soft">\''+id+'\'\: { md: `\n'+orig+'</textarea>'+
+    '<h5>Body (auto)</h5>'+
+    '<textarea id="cpd_body" wrap="soft">'+
+        orig.replace(/\n\n/g,'\n\\n')
+            .replace(/\n/g,' ')
+            .replace(/\\n/g,'\n\\n')+'</textarea>'
+}
+
+ag.srcs.insertLBs = function(li) {
+  // var html = ""
+  // ag.data.filters.forEach(function(name) {
+  //   if (ag.data.lb_static.indexOf(name) != -1) return
+  //   var css = ag.data.filtered[name].indexOf(li.id) == -1 ? '' : css = ' class="on"';
+  //   var id = "'"+li.id+"'"
+  //   html += '<var onclick="lb(this, '+id+')"'+css+'>'+
+  //    name.replace('JK_','<i>J</i>')
+  //        .replace('OC_','<i>O</i>')
+  //        .replace('SA_','<i>A</i>')
+  //        .replace('SC_','<i>C</i>')+'</var>';
+  // })
+  // li.getElementsByTagName('footer')[0].innerHTML = html
+}
+// var ups = {}
+ag.srcs.filterLB = function(v, id) {
+  // var f = v.innerHTML.replace('<i>J</i>','JK_')
+  //                    .replace('<i>O</i>','OC_')
+  //                    .replace('<i>A</i>','SA_')
+  //                    .replace('<i>C</i>','SC_')
+  // var on = !/on/.test(v.getAttribute('class'))
+  // v.setAttribute('class', on?'on':'')
+  // ups[f] = ups[f] || { ins: [], rm: [] }
+  // var saved = ag.data.filters[f].indexOf(id) > -1
+  // if (saved) {
+  //   var idxRm = ups[f].rm.indexOf(id)
+  //   if (on && idxRm > -1) ups[f].rm.splice(idxRm, 1)
+  //   else if (idxRm == -1) ups[f].rm.push(id)
+  // }
+  // else {
+  //   var idxIns = ups[f].ins.indexOf(id)
+  //   if (on && idxIns == -1) { ups[f].ins.push(id) }
+  //   else if (idxIns > -1) ups[f].ins.splice(idxIns, 1)
+  // }
+  // var cmd = ''
+  // Object.keys(ups).forEach(function(u) {
+  //   var ins = ups[u].ins
+  //   var rm = ups[u].rm
+  //   if ((ins.length + rm.length) > 0)
+  //     cmd += "up('"+u+"',"
+  //       + (ins.length > 0 ? "'"+ins.join(",")+"'," : "null,")
+  //       + (rm.length > 0 ? "'"+rm.join(",")+"')" : "null)") + '\n'
+  // })
+  // ag.cmd.cp(cmd)
+}
+
+var cpv = function(v) { ag.cmd.cp(v, ag.$('#cpd').value?'\n' : false) }
+var fLb = function(v, id) { ag.srcs.filterLB(v, id) }
+var fTog = function(cbx) { ag.srcs.filter(ag.$('#adm_srcs'), cbx) }
+
+function ag_onload() {
+  ag.$('#stack_{{r.vd.ui.stack}}').checked = true
+  var cbx_load = null // var cbx_load = $('#f_JK_intent')
+  if (cbx_load) cbx_load.checked = true
+  fTog(cbx_load)
+}
+
+</script>
+
+
+

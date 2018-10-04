@@ -1,5 +1,5 @@
-module.exports = ({ Id, Enum, Log, Act },
-  { asSchema, required, sparse, unique, index }) => {
+module.exports = ({ Id, Enum, Log, Act, RefTag, RefLaw, Notate },
+  { asSchema, required, sparse, unique, index, lowercase }) => {
 
 
 let SourceSchema = asSchema({
@@ -16,15 +16,28 @@ let SourceSchema = asSchema({
     // body:       { type: String },
     // clean:      { type: String },
     // {filename}: { type: String },
+    // "1":        { type: String }, "2": { type: String }, "3": { type: String },
   },
 
-  data:            { type: {}, required },
+  tags:            [RefTag],
+  laws:            [RefLaw],
+  // sets:             [RefSet],  // ?? duplication allow easy traversing
+  notation:        [Notate],
+
+  threadId:        { required, type: String },
+  data:            { required, type: {
+    // aliases:      { type: [String] }, // Previous names of the file
+    // mimeType :
+    // size :
+    // threadId:
+  } },
+
   // description:  { type: String },
   log:             { type: Log },
 
-  ignore:          { type: Number, index, sparse } //Act },
-  // approved:     { type: Act },
+  ignore:          { type: Number, index, sparse }
   // deleted:      { type: Act },
+  // approved:     { type: Act },
   // ownerId:      { type: Id, sparse, ref: 'User' },
 
 })
@@ -36,7 +49,11 @@ return SourceSchema
 
 }
 
-
+// let doc = {
+  // authorDetail:         { require:false, type: {} },
+  // threadId:             { require:false, type: Id },
+  // xref:                 { require:false, type: {} },
+//}
 
 // let email = {
   // id:                   { type: String, required },

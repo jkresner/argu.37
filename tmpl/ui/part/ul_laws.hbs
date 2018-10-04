@@ -1,0 +1,14 @@
+<aside class="laws">
+<ul>{{#each this}}
+<li>
+  <nav>
+    {{crumb}} >
+    <a href="#"><b>{{of}}:{{at}}</b> <i>{{name}}</i></a>
+  </nav>
+  <dfn><var>{{at}}</var> {{title}}</dfn>
+  <section>{{emup_law body}}</section>
+  <dl>{{#each tags}}<dt title="{{name}}">{{short}}</dt><dd>{{name}}</dd>{{/each}}</dl>
+</li>{{/each}}
+</ul>
+</aside>
+

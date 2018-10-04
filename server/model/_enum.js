@@ -1,7 +1,17 @@
 module.exports = {
 
-  SOURCE: {
+  CONTENT: {
+    TYPE: ['AD','BIO','BREIF','CHAPTER','ISLAND',
+           'LAYOUT','LEGAL','MENU','POST','TOC'] },
 
+  LAW: {
+    AUTHORITY: [  //-- Make these a collection at some point
+      'CA00','CDV07','CL04','DA05',
+      'PA02','PA14','SM96','SM15','SM16','SD15',
+      'SBL','CONTRACT'],
+    STRUCT: ['DIVISION','PART','SCHEDULE','SECTION','SUBSECTION','ANNEX'] },
+
+  SOURCE: {
     IS: [ //-- In: SM15 P10 Records || PA02 P8 Records
       'agency',        // ???     SA agreement  178(1d) POA, legal rep
       'bill',          // ???     Invoice, Work order, receipt
@@ -28,35 +38,33 @@ module.exports = {
       'title'          // 178(1e) Strata int /reg search  178(1f) Tenancy notice
     ],
     RENDER: [
+      'snippet',
       'doc',
       'gmail',
-      'img',
+      'gravatar',
+      'img',           // simple point to url
+      'imgB64',        // render in src attr
+      'imgR',          // point to a route that serves img (with logic)
+      'imgW',          // watermarked
+      'imgur',         // render id of imgur
       'youtube'
     ]
   },
 
-  LAW: {
-    AUTHORITY: [  //-- Make these a collection at some point
-      'PA02','PA14',
-      'SM96','SM15','SM16','SD15',
-      'CA00','CDV07','CL04',
-      'SBL',
-      'CONTRACT'
-    ],
-    STRUCT:    [
-      'DIVISION', 'PART', 'SCHEDULE', 'SECTION', 'SUBSEC',
-      'ANNEX'
-    ]
+  TEMPLATE: {
+    TYPE: ['rXig','rXCust',
+      'mail','html','xml','json','txt','view','link']
+    // OUT: ['mail','html','xml','json','txt','view','link']
   },
 
-/*ROUTE: {
+  REROUTE: {
     TYPE: [
-      '301',                 // 301 forward (string/pattern) from => to
-      '302',                 // 302 forward (string/pattern) from => to
-      '410',                 // forward (string/pattern) from => to
-      '501',                 // 501 Not implemented
-      'track',               // 302 forward from => to
-      'rewrite'              // 301 forward string.replace from(regex), to(string)
-    ]}*/
+      '301',           // 301 forward (string/pattern) from => to
+      '302',           // 302 forward (string/pattern) from => to
+      '399',           // 200 Rewrite forward regex.replace from(), to(string)
+      '410',           // forward (string/pattern) from => to
+      '501',           // 501 Not implemented
+    ]
+  },
 
 }

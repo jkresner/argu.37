@@ -1,0 +1,27 @@
+{
+  "name": "argu",
+  "description": "Present professional print ready arguments",
+  "version": "0.0.5",
+  "private": true,
+  "author": "jk",
+  "engines": {
+    "node": "10.9.0",
+    "npm": "6.2.0"
+  },
+  "scripts": {
+    "start": "cmd/run",
+    "test": "cmd/test/server"
+  },
+  "dependencies": {
+    "marked": "0.5.0",
+    "honeycombjs": "0.9.5"
+  },
+  "devDependencies": {
+    "googleapis": "32.0.0",
+    "fast-csv": "2.4.1",
+    "mini-lr": "0.1.9",
+    "nodemon": "1.18.4",
+    "screamjs": "0.8.0",
+    "node-tesseract": "0.2.7"
+  }
+}

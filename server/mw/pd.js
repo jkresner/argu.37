@@ -1,7 +1,13 @@
 // pd == "page data"
 module.exports = (app, mw) =>
 
-  (path, opts) =>
+  (path, opts) => {
+    if (path.split('.').length == 1)
+      path = `${path}.${path}`
 
-    mw.data.page(path, opts)
+    if (opts == 'query')
+      opts = { params:['query'] }
+
+    return mw.data.page(path, opts)
+  }
 

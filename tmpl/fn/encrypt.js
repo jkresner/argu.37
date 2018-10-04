@@ -1,57 +1,26 @@
 module.exports = {
 
 
-  navId: id => id.substr(12,4),
+  navId: id => `${id}`.length > 12
+        ? id.substring(`${id}`.length-12) : `${id}`,
 
-
-  encryptMaps() {
-    var maps = Object.values(arguments) // [].slice.call(arguments)
+  mapcrypt() {
+    var maps = Object.values(arguments)
     var str = maps.shift().toString()
     if (!str.replace) return
     if (!maps.length) return str
 
-    // console.log('encryptMaps.str'.white, str.dim)
+    // $log(`mapcrypt.str.in :: "${str.dim}"`.white)
+    // $log('mapcrypt.maps'.white, maps)
 
     maps.forEach(function(map) {
-      // console.log('encryptMaps.replacing'.white, map)
+      // console.log('mapcrypt.map'.dim, map)
       Object.keys(map).forEach(function(mapped) {
         str = str.replace(map[mapped], mapped)
       })
     })
-
-    // console.log('rx_g'.magenta, rx_g)
-    // console.log('rx_ig'.magenta, rx_ig)
-
-    // str = str
-      // .replace(rx_ps, function(matchd) {
-        // console.log('rx_ps', matchd)
-        // return map_p[matchd] })
-      // .replace(rx_ig, function(matchd) {
-
-      //   console.log('matchd.rx_ig', matchd)
-      //   return map_ig[matchd.toLowerCase()]
-      // })
-      // .replace(rx_g, function(matchd) { return map_g[matchd] })
-
-    // console.log('str'.yellow, str)
-
-    // for (let pseudonym in replacers)
-    // str = str.replace(replacers[pseudonym], pseudonym)
-
     return str
   }
-
-
-  // spellfix: function(txt, corrections) {
-  //   var fixed = txt.toString();
-  //   corrections.forEach(function(fix) {
-  //     var pattern = new RegExp(fix.match)
-  //     fixed = fixed.replace(pattern, fix.replace)
-  //   })
-  //   return fixed;
-  // },
-
-
 }
 
 

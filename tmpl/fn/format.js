@@ -2,7 +2,8 @@ let datetime = {
   ago:     function(t) { return moment(t).fromNow() },
   day:     function(t) { return moment(t).format('MMM DD') },
   dayIso:  function(t) { return moment(t).format('YYYY-MM-DD') },
-  daytime: function(t) { return moment(t).format('HH:mm MMM DD YYYY') },
+  daytime: function(t) { return moment(t).format('HH:mm MMM DD YYYY')
+                                         .replace('00:00 ','') },
   tzIso:   function(time, tz) {
     let today = moment.tz(tz.id).startOf('day').unix()
     let t = moment.unix(time).tz(tz.id)
