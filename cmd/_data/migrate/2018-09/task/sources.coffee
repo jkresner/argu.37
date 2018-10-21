@@ -1,4 +1,4 @@
-PRE_MIGRATE_COUNT = 1357#?
+PRE_MIGRATE_COUNT = 1564
 
 
 DESCRIBE "PRE_MIGRATE", ->
@@ -8,10 +8,12 @@ DESCRIBE "PRE_MIGRATE", ->
       expect(r.length).to.equal(PRE_MIGRATE_COUNT)
       DONE()
 
-  IT.skip "import.gmail ? before migrate", ->
-    DB.docsByQuery 'sources', {name:'165adb5cb5084540'}, (r) =>
+  IT "import.gmail before migrate", ->
+    DB.docsByQuery 'sources', {name:'16616c84c64aece3'}, (r) =>
       expect(r.length).to.equal(1)
-      DONE()
+      cleanup = {$unset:{tags:1,laws:1,notation:1}}
+      DB.Collections.sources.updateMany {}, cleanup, (e,r) =>
+        DONE()
 
   IT "Update cleaned gmails", ->
     {cleaned} = FIXTURE.source
@@ -34,7 +36,7 @@ DESCRIBE "SCHEMA Update", ->
     $in = FIXTURE.source.ignore
     DAL.Source.getManyByQuery {name:{$in}}, select:'_id', (e,ups) =>
       ups.forEach (i) => i.ignore = 1
-      $log('ups', ups)
+      # $log('ups', ups)
       DAL.Source.bulkOperation [], ups, [], (e,r) ->
         $log( 'source.ups.err'.red, e or r) if e? # or r.modifiedCount is not FIXTURE.source.ignore.length
         $log(('source.ups('+"#{r.modifiedCount}".green+')').dim)
@@ -65,7 +67,7 @@ DESCRIBE "New render types", ->
       s = assign {}, fixed, {tags,laws}
       delete s.data.threadId
       ins.push(s)
-    honey.model.DAL.Source.bulkOperation ins, [], [], (e,r) ->
+    DAL.Source.bulkOperation ins, [], [], (e,r) ->
         $log('insert e', e) if (e)
         $log('insert prob'.red) if r.insertedCount is not ins.length
         $log('sources.ins docs/imgs'.dim, "ok:#{ins.length}".green)
@@ -73,11 +75,12 @@ DESCRIBE "New render types", ->
 
 
   after (DONE) ->
-    newCount = 1357+Object.keys(FIXTURE.source.init).length
+    newCount = PRE_MIGRATE_COUNT+Object.keys(FIXTURE.source.init).length
     DB.docsByQuery 'sources', {}, (r) =>
       expect(r.length).to.equal(newCount)
       for s in r
+        console.log('s'.yellow, s._id, s.tags)
         expect(s.threadId?).true
-        expect(s.tags[0]._id).bsonId() if s.tags?
+        expect(s.tags[0]._id, "#{s._id} no tags?").bsonId() if s.tags?
         expect(s.laws[0]._id).bsonId() if s.laws?
       DONE()

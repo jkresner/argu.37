@@ -45,11 +45,12 @@ const Projections = ({select,pl8},{chain,view}) => ({
   // saving gmail imported data to DB (as valid source)
   gmail_db: msg => assign({ render:'gmail', is:'comm' },
     { name: msg.id,
+      threadId: msg.threadId,
       uri: `mail.google.com/mail/u/0/#inbox/`+msg.id,
       published: parseInt(msg.internalDate),
-      title: msg.payload.filter(h => /Subject/i.test(h.name))[0].value || "-No subject-",
-      author: msg.payload.filter(h => /From/i.test(h.name))[0].value,
-      data: _.omit(msg, labelIds) }),
+      title: msg.payload.headers.filter(h => /Subject/i.test(h.name))[0].value || "-No subject-",
+      author: msg.payload.headers.filter(h => /From/i.test(h.name))[0].value,
+      data: _.omit(msg, 'labelIds') }),
 
 
   //-- TODO: authorization / tracker url forwarder/middleman
@@ -126,7 +127,7 @@ const Projections = ({select,pl8},{chain,view}) => ({
   },
 
 
-  item: r => chain(r, 'typed', 'annotate'),
+  item: r => chain(r, 'typed'), //, 'annotate'),
 
 
   list_vd: d => {

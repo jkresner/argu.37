@@ -19,10 +19,10 @@ let SourceSchema = asSchema({
     // "1":        { type: String }, "2": { type: String }, "3": { type: String },
   },
 
-  tags:            [RefTag],
-  laws:            [RefLaw],
+  tags:            { required: false, type: [RefTag] },
+  laws:            { required: false, type: [RefLaw] },
   // sets:             [RefSet],  // ?? duplication allow easy traversing
-  notation:        [Notate],
+  notation:        { required: false, type: [Notate] },
 
   threadId:        { required, type: String },
   data:            { required, type: {
@@ -49,21 +49,6 @@ return SourceSchema
 
 }
 
-// let doc = {
-  // authorDetail:         { require:false, type: {} },
-  // threadId:             { require:false, type: Id },
-  // xref:                 { require:false, type: {} },
-//}
-
-// let email = {
-  // id:                   { type: String, required },
-  // threadId:             { type: String, required },
-  // historyId:            { type: String, required },
-  // snippet:              { type: String, required },
-  // internalDate:         { type: String, required },
-  // payload:              { type: {}, required },
-// }
-
 // let img = {
   // address_components:   { type: [], required },
   // formatted_address:    { type: String, required },
@@ -80,7 +65,4 @@ return SourceSchema
   // types:                { type: [String], required },
   // utc_offset:           { type: Number, required },
   // vicinity:             { type: String }
-// }
-
-// let doc = {
 // }
