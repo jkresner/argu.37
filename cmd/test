@@ -1,14 +1,13 @@
 #!/bin/sh
 CMD="CMD/test"
-source cmd/_build/init
-L1 "start"
+source cmd/b/init
 
-L2 "template"
-source cmd/_test/template
-# L2 "${T} \n" "\n--DONE-\n"
 
-# if $T !=''
+L2 "templates"
+source cmd/t/template
+
 L2 "server"
-source cmd/_test/server
-# L2 "${T} \n" "\n--DONE-\n"
-# fi
+source cmd/t/server
+
+# cd cmd/d/migrate/2018-09
+# mongorestore --drop --db argu_test ./bson

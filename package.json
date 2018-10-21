@@ -3,6 +3,7 @@
   "description": "Present professional print ready arguments",
   "version": "0.0.5",
   "private": true,
+  "package-lock": false,
   "author": "jk",
   "engines": {
     "node": "10.9.0",
@@ -10,18 +11,25 @@
   },
   "scripts": {
     "start": "cmd/run",
-    "test": "cmd/test/server"
+    "test": "cmd/test"
   },
   "dependencies": {
-    "marked": "0.5.0",
-    "honeycombjs": "0.9.5"
+    "honeycombjs": "0.9.6"
   },
   "devDependencies": {
-    "googleapis": "32.0.0",
+    "css-loader": "1.0.0",
     "fast-csv": "2.4.1",
-    "mini-lr": "0.1.9",
+    "file-loader": "2.0.0",
+    "googleapis": "32.0.0",
+    "html-webpack-plugin": "3.0.7",
+    "less": "3.8.0",
+    "less-loader": "4.1.0",
     "nodemon": "1.18.4",
     "screamjs": "0.8.0",
-    "node-tesseract": "0.2.7"
+    "style-loader": "0.23.0",
+    "webpack": "4.21.0",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-middleware": "3.4.0",
+    "webpack-hot-middleware": "2.24.3"
   }
 }

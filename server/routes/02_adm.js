@@ -1,7 +1,6 @@
 module.exports = (app, mw, ops) => ops['adm'].off ? 0 :
 
   honey.Router('adm', ops.adm)
-    .use(mw.$.livereload)
     .use(mw.$.nobot)
     .use(mw.$.session)
     // .use(mw.$.adm)

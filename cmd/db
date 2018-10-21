@@ -10,34 +10,33 @@
 
 # MIGRATION
 # cmd/db migrate/2018-09 all
-# -> coffee cmd/_data/migrate/2018-09/run.coffee -o all
+# -> coffee cmd/d/migrate/2018-09/run.coffee -o all
 
 
 CMD=CMD/db
-source cmd/_build/init
-L1 "start"
+source cmd/b/init
+
+
 L2 $1
 
 if [ "$3" = "--law-Export" ]; then
   L1 "using fresh ~/Downloads/law.Export.csv"
-  mv ~/Downloads/law-Export.csv cmd/_data/migrate/2018-09/fixture/init/laws0.csv
-  source cmd/_data/sync-test
+  mv ~/Downloads/law-Export.csv cmd/d/migrate/2018-09/fixture/init/laws0.csv
+  source cmd/d/sync-test
 fi
 
 echo
 
 if [ "$1" = "--replay" ]; then
   # manually update this while developing
-  coffee cmd/_data/run.coffee -c migrate/2018-09/migrate/2018-09 -o all 2 $3 $4 $5 $6
+  coffee cmd/d/run.coffee -c migrate/2018-09/migrate/2018-09 -o all 2 $3 $4 $5 $6
 else
-  coffee cmd/_data/run.coffee -c $1/$1 -o $2 $3 $4 $5 $6
+  coffee cmd/d/run.coffee -c $1/$1 -o $2 $3 $4 $5 $6
 fi
-
-
 
 if [ "$3" = "--sync-test" ]; then
   L1 "sync-tst"
-  source cmd/_data/sync-test
+  source cmd/d/sync-test
 fi
 
-L1 "done"
+L1 "done...\n"

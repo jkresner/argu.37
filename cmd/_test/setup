@@ -1,16 +1,16 @@
 #!/bin/sh
 op="test"
 L2 "ln -nsf" "test bson as cmd/import latest"
-cd cmd/_data/import/bson
+cd cmd/d/import/db
 unlink latest
-ln -ns ../../../../tst/data/bson latest
+ln -ns ../../../../tst/dat/bson latest
 cd ../../../../
 
 L2 "ln -nsf" ".git/hooks/prep-push"
 rm -rf .git/hooks
 mkdir .git/hooks
 cd .git/hooks
-ln -nsf ../../cmd/_test/pre-push
+ln -nsf ../../cmd/t/pre-push
 cd ../../
 
 L2 "pre-push" "test"

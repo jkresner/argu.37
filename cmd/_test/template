@@ -1,4 +1,5 @@
 #!/bin/sh
+op="tst/pl8"
 #
-coffee tst/tmpl/index.coffee $1 $2 $3 $4 $5 $6
+coffee tst/pl8/index.coffee $1 $2 $3 $4 $5 $6
 #)

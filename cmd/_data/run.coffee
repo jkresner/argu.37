@@ -28,7 +28,7 @@ SCREAM(OPTS).run (done) =>
 
   assign(config.model.domain,{mongoUrl})
 
-  worker           = Honey.Worker(config, done)
+  global.worker    = Honey.Worker(config, done)
   model            = Honey.Model(config, done)
 
   model.connect () =>
@@ -37,4 +37,3 @@ SCREAM(OPTS).run (done) =>
       # .merge(Honey.Auth)
       .inflate(config.model.cache)
       .run()
-    # global.worker = worker

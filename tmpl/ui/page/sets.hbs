@@ -1,0 +1,62 @@
+<div id="filters">
+  {{#if r.meta.messages}}
+  <p><input id="mode_message" name="mode" type="radio" val="message" onchange="argu.modeToggle()" /> <label for="mode_message"> messages </label>
+      <span><var id="v_shown">{{r.meta.set}}</var> /{{r.meta.set}}</span></p>
+  <p><input id="mode_thread" name="mode" type="radio" val="thread" onchange="argu.modeToggle()" /> <label for="mode_thread"> threads </label>
+      <span><var id="v_threads">{{r.meta.threads.length}}</var> /{{r.meta.threads.length}}</span></p>
+  {{else}}
+  <p><label for="mode_message"> messages </label>
+      <span><var id="v_shown">{{r.meta.set}}</var> /{{r.meta.set}}</span></p>
+  {{/if}}
+
+  <h6><input type="checkbox" onchange="argu.reverseSet()" checked="checked" /> {{r.meta.newest}}</h6>
+  <p style="display:none">   <span><var id="v_days">{{r.meta.time.days}}</var> days</span></p>
+  <p>from <span><var id="v_from">{{ dayIso r.meta.time.first}}</var></span></p>
+  <p>to <span><var id="v_to">{{ dayIso r.meta.time.last}}</var></span></p>
+
+  <h6>filtered by</h6> <ul>
+  {{#each r.meta.filters}}
+  <li><input type="checkbox" id="f_{{this}}" name="filters" onchange="filtr(this)" /> <label for="f_{{this}}">{{this}}</label></li>{{/each}}</ul>
+</div>
+
+<script type="text/javascript">
+
+function filtr(cb) { argu.filterSet(cb) }
+argu.data.filters = {{{ JSON r.meta.filters }}}
+argu.data.sets = {{{ JSON r.sets }}}
+
+function argu_onload() { {{#if r.meta.messages}}
+  document.getElementById('mode_{{r.meta.mode}}').checked = true{{/if}}
+  filtr()
+
+  // document.getElementById('f_JK_intent').checked = true
+  // filtr(document.getElementById('f_JK_intent'))
+}
+
+</script>
+
+<!--<script src="//js.piio.co/kj0yzh/piio.min.js"></script>
+<img data-piio="/images/myimage.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8+f9vPQAJZAN2rlRQVAAAAABJRU5ErkJggg==" />-->
+
+
+<div id="set" class="static">
+
+<ul id="srcs" data-mode="{{r.meta.mode}}">
+{{#each r.set}}
+  <li id="{{name}}" data-thread="{{threadId}}"{{#if threadSwap}} class="swap"{{/if}}>
+    <header>
+      <h1><a class="goto" href="#{{threadId}}">(cont)</a> {{subject}}</h1>
+      <var>{{navId name}}</var>
+      <time>{{ daytime time }}</time>
+      {{ btw between }}
+    </header>
+    <section id="{{name}}_body">{{#if body}}{{ md_mail body }}{{else}}{{markup raw}}{{/if}}</section>{{#if attached}}
+    <figure>{{#each attached}}
+      <span class="glyphicon glyphicon-{{type}}"><label>{{{atchd file}}}</label><i></i></span>
+      {{#if preview}}<cite>{{markup preview}}</cite>{{/if}}{{/each}}</figure>{{/if}}
+  </li>
+{{/each}}
+</ul>
+
+</div>
+

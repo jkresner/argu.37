@@ -1,7 +1,7 @@
-module.exports = (app, mw, ops) => ops['bots'].off ? 0 :
+module.exports = (app, mw, ops) => ops['bot'].off ? 0 :
 
   honey
-    .Router('bots', ops.bots)
+    .Router('bot', ops.bots)
 
     .head('*',
       (req, res) => res.status(403).send(''))
@@ -9,11 +9,12 @@ module.exports = (app, mw, ops) => ops['bots'].off ? 0 :
     .all(/(\.php|wp-|.txt)/i,
       (req, res) => res.status(200).send(''))
 
-    .all(/^\/(_|admin|cms|system|login\/)/i,
-      (req, res) => res.status(200).send(''))
+    // .all(/^\/(_|admin|cms|system|login\/)/i,
+    //   (req, res) => res.status(200).send(''))
 
     .get(['*favicon*',
           '*apple-icon*',
           '*android-icon*',
           '*ms-icon*'], (req, res) =>
             res.sendFile('favicon.ico', config.http.static.favicon))
+

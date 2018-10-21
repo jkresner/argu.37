@@ -2,17 +2,16 @@
   "auth": {
     "appKey":                  "ag",
     "oauth": {
-      "github":                "{{undefine}}",
       "google": {
         "short":               "gp",
         "login":               true,
         "signup":              true,
         "clientID":            "{{required}}",
         "clientSecret":        "{{required}}",
-        "scope":               ["profile",
-                                "email",
-                                "https://www.googleapis.com/auth/plus.profile.emails.read",
-                                "https://www.googleapis.com/auth/gmail.readonly"]
+        "scope":               ["profile","email",
+                                "https://www.googleapis.com/auth/userinfo.email",
+                                "https://www.googleapis.com/auth/userinfo.profile",
+                                "https://mail.google.com/gmail.readonly"]
       }
     }
   },
@@ -23,19 +22,19 @@
   "http": {
     "port":                    3436,
     "static": {
-      "dirs":                  "tmpl/www/static",
+      "dirs":                  "htp/static",
       "cdn": {
         "atchd":               "ag",
         "post":                "cms/post",
         "ui":                  "ui/v1"
       },
       "favicon": {
-        "root":                "tmpl/www/static",
+        "root":                "htp/static",
         "headers":             { "Content-Type":"image/x-icon" }
       },
       "host":                  "https://cdn.37paulst.com",
       "sitemap": {
-        "file":                "tmpl/www/static/sitemap.xml",
+        "file":                "htp/static/sitemap.xml",
         "host":                "https://www.37paulst.com"
       }
     }
@@ -82,18 +81,18 @@
     }
   },
   "routes": {
-    "bots":                    {},
-    "reroutes":                { "off": true },
+    "bot":                     {},
+    "reroute":                 { "off": true },
     "adm":                     { "type": "html", "mount": "/adm", "layout": "adm" },
-    "sets":                    { "off": true, "type": "html", "mount": "/sets", "layout": "argu" },
+    "set":                     { "off": true, "type": "html", "mount": "/sets", "layout": "argu" },
     "print":                   { "off": true, "type": "html", "mount": "/print" },
-    "web":                     { "type": "html" }
+    "page":                    { "type": "html" }
   },
   "templates": {
     "dirs": {
-      "helpers":               "tmpl/fn",
-      "partials":              "tmpl/ui/part",
-      "views":                 "tmpl/ui/layout,tmpl/ui/page"
+      "helpers":               "pl8/fn",
+      "partials":              "pl8/ui/part",
+      "views":                 "pl8/ui"
     }
   },
   "wrappers": {

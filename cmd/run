@@ -1,37 +1,36 @@
 #!/bin/sh
-CMD=CMD/run
-source cmd/_build/init
-
+CMD=CMD/r
+source cmd/b/init
 
 
 if [ "$1" = "--dist" ]; then
-  L1 "start dist.env"
+  L1 "dist.env"
 #   cmd/dist/build;
 #   cmdL2 "worker"
 #   cmdL2 "web"
 #   node ./server/worker.js --env dist $2 $3 $4 $5 $6 &
 #   node ./server/index.js --env dist $2 $3 $4 $5 $6;
-  echo 'DIDNT DIST YET'
+  echo 'DIDNT dist YET'
+elif [ "$1" = "--test" ]; then
+  L1 "test.env"
+  #   if [ "$2" = "--worker" ]; then
+  #     source cmd/r/worker --env test $3 $4 $5 $6;
+  #   elsev
+  #     source cmd/r/worker --env test $3 $4 $5 $6 &
+  #     source cmd/r/server --env test $3 $4 $5 $6;
+  #   fi
 else
-  if [ "$1" = "--test" ]; then
-    L1 "start test.env"
+  # L1 "dev.env"
+  if [ "$1" = "--dev" ]; then
     if [ "$2" = "--worker" ]; then
-      node ./server/worker.js --env test $2 $3 $4 $5 $6 &
-        node ./server/index.js --env test $2 $3 $4 $5 $6;
+      echo 'DIDNT dev.worker YET'
+  #       source cmd/r/worker --env dev $3 $4 $5 $6;
     else
-      node ./server/index.js --env test $2 $3 $4 $5 $6;
+  #       source cmd/r/worker --env dev $3 $4 $5 $6 &
+      source cmd/b/dev
+      source cmd/r/server --env dev $3 $4 $5 $6;
     fi
   else
-    echo
-    if [ "$1" = "--dev" ]; then
-      node ./server/index.js --env dev $2 $3 $4 $5 $6
-    else
-      if [ "$1" = "--dev-worker" ]; then
-        node ./server/worker.js --env dev $2 $3 $4 $5 $6;
-      else
-        clear
-        source cmd/_run/watch $2 $3 $4 $5 $6;
-      fi
-    fi
+    source cmd/r/watch $1 $2 $3 $4 $5 $6;
   fi
 fi

@@ -1,11 +1,13 @@
 #!/bin/sh
-# cmd/setup --npm-link
-
 CMD="CMD/setup"
-source cmd/_build/init
-L1 "start"
 
-source cmd/_build/clean
-source cmd/_build/install $1
-source cmd/_test/setup
-L1 "done"
+# Usage:
+#    cmd/setup
+#    cmd/setup --npm-link -w -k
+
+source cmd/b/init
+source cmd/b/clean
+source cmd/b/setup
+source cmd/t/setup
+
+L1 "done...\n"

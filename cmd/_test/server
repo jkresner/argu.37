@@ -1,5 +1,5 @@
 #!/bin/sh
-op="test/server"
+op="tst/svr"
 # T=$(
-coffee tst/server/index.coffee $1 $2 $3 $4 $5 $6
+coffee tst/svr/index.coffee $1 $2 $3 $4 $5 $6
 # )

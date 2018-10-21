@@ -10,7 +10,6 @@ module.exports = (app, mw, ops) => {
     ['innocent','lot36','jk','resolution','oneill','disarray'] //,'anxiety']
 
   honey.Router('print', ops.print)
-    .use(mw.$.livereload)
     .use(mw.$.nobot)
     .use(mw.$.session)
 

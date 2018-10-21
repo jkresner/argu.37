@@ -1,3 +1,0 @@
-#!/bin/sh
-node ./cmd/dev/reload.js &
-node_modules/nodemon/bin/nodemon.js ./server/index.js -w fs/md -w server -w tmpl -e env,js,hbs,md --quiet
