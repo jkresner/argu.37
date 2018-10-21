@@ -10,6 +10,6 @@
     "url":                "mongodb://localhost/argu_test"
   },
   "paths": {
-    "fixtures":           "../dat/fix"
+    "fixtures":           "../data/fix"
   }
 }

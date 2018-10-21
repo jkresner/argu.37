@@ -9,9 +9,9 @@
     }
   },
   "paths": {
-    "bson":               "/migrate/2018-09/bson",
+    "bson":               "/migrate/2018-09/bak",
     "specs":              "/migrate/2018-09",
-    "fixtures":           "/migrate/2018-09/fixture",
-    "csv_law":            "/migrate/2018-09/fixture/init/laws0.csv"
+    "fixtures":           "/migrate/2018-09/fix",
+    "csv_law":            "/migrate/2018-09/fix/init/laws0.csv"
   }
 }

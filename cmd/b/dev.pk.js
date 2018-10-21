@@ -54,13 +54,13 @@ module.exports       = {
                              hash:          true,
                              xhtml:         true    }),
                            new webpack.HotModuleReplacementPlugin(),
-                           // new webpack.NoEmitOnErrorsPlugin()
+                           new webpack.NoEmitOnErrorsPlugin()
   ],
 
   stats: {
     all:                   false,
     assets:                false,
-    assetsSort:            false,
+    // assetsSort:            string,
     builtAt:               false,
     cached:                false,
     cachedAssets:          false,
@@ -69,23 +69,23 @@ module.exports       = {
     chunkModules:          false,
     chunkOrigins:          false,
     chunks:                false,
-    chunksSort:            false,
+    // chunksSort:            string,
     colors:                false,
-    context:               false,
+    // context:               string,
     depth:                 false,
     entrypoints:           false,
     env:                   false,
     errorDetails:          false,
     errors:                false,
     exclude:               false,
-    excludeAssets:         false,
-    excludeModules:        false,
+    // excludeAssets:         RegExp,
+    // excludeModules:        RegExp,
     hash:                  false,
-    maxModules:            false,
+    // maxModules:            number,
     moduleAssets:          false,
     moduleTrace:           false,
     modules:               false,
-    modulesSort:           false,
+    // modulesSort:           string,
     nestedModules:         false,
     optimizationBailout:   false,
     outputPath:            false,
@@ -98,7 +98,7 @@ module.exports       = {
     usedExports:           false,
     version:               false,
     warnings:              false,
-    warningsFilter:        false
+    // warningsFilter:        RegExp
   }
 
 }

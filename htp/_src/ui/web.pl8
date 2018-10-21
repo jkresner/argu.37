@@ -10,6 +10,6 @@
 <div>
 {{{body}}}
 </div>
-<script type="text/javascript" src="/ui/v1/ag.js?a601e7bec7adf5c3d0e4"></script></body>
+</body>
 {{#if @analytics}}{{> analytics }}{{/if}}
 </html>

@@ -1,0 +1,13 @@
+{
+  "colors": {
+    "spec":               "yellow"
+  },
+  "mongo": {
+    "collections":        ["content","tag","law","source","set"],
+    "url":                "mongodb://localhost/argu_test"
+  },
+  "paths": {
+    "app":                "../../server/cfg",
+    "fixtures":           "../data/fix"
+  }
+}

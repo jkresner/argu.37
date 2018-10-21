@@ -1,3 +1,5 @@
+{{#with @analytics}}
+{{#if on}}
 {{#if gtag}}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{gtag}}"></script>
 <script>
@@ -7,3 +9,4 @@
 </script>
 {{/if}}
 {{/if}}
+{{/with}}

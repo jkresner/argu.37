@@ -16,7 +16,7 @@ module.exports = {
       "gp":{
         "gender":"male",
         "emails":[{"value":"jkresner@gmail.com","type":"account","primary":true,"verified":true}],
-        "id":"111546642302857408422",
+        "id":"111546642302857408422"
         "displayName":"Jonathon Kresner",
         "name":{"familyName":"Kresner","givenName":"Jonathon"},
         "url":"https://plus.google.com/111546642302857408422",

@@ -5,16 +5,19 @@ let ver = final || current
 
 
 
-module.exports = (app, mw, ops) => ops['web'].off ? 0 :
+module.exports = (app, mw, ops) => ops['page'].off ? 0 :
 
   honey
     .Router('web', ops.web)
-    .use(mw.$.livereload)
+
+    // .use(mw.$.dev)
+
+
     .use(mw.$.nobot)
     .use(mw.$.session)
     .get('/', mw.$.pch("0.1"))
     .get(`${ver}/intro`, (req, res) => res.redirect(301, '/') )
-    .get(`${ver}/toc`, mw.$.pch("0.2"))
+    .get(`/strata-living/toc`, mw.$.pch("0.2"))
     .get(`${ver}/13385-36/474.15-13`, mw.$.pch("1.6"))
     .get(`${ver}/13385-agent/oneill-management`, mw.$.pch("1.4"))
     .get(`${ver}/13385-36/apprehension`, mw.$.pch("1.7"))

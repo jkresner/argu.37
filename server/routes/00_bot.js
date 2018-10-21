@@ -9,8 +9,8 @@ module.exports = (app, mw, ops) => ops['bot'].off ? 0 :
     .all(/(\.php|wp-|.txt)/i,
       (req, res) => res.status(200).send(''))
 
-    // .all(/^\/(_|admin|cms|system|login\/)/i,
-    //   (req, res) => res.status(200).send(''))
+    .all(/^\/(_|admin|cms|system|login\/)/i,
+      (req, res) => res.status(200).send(''))
 
     .get(['*favicon*',
           '*apple-icon*',
