@@ -1,24 +1,22 @@
 #!/bin/sh
-op="init"
+OP="init"
 CWD=$(pwd)
 PATH="node_modules/.bin/:${PATH}"
 
-function L1() {
-  echo  "\033[0;32m${CMD}\033[0m \t\t${1}"
-}
-function L2() {
-  echo "\033[0;34m${CMD}/${op}\033[0m\033[0;36m  \t${1}\033[0m\t${2}\033[0m"
-}
-function L3() {
-  printf "\033[0;37m${CMD}\033[0m  \t${1}\n"
-}
+
+function L1() { echo "\033[0;32m${CMD}\033[0m \t\t${1}"; }
+function L2() { echo "\033[0;34m${CMD}/${OP}\033[0m\033[0;36m  \t${1}\033[0m\t${2}\033[0m"; }
+function L3() { printf "\033[0;37m${CMD}\033[0m  \t${1}\n"; }
 
 
 echo
 
-if [ "$1" = '-w' -o "$2" = '-w' -o "$w" = '-w' -o "$4" = '-w' -o "$5" = '-w' ] ; then
-  clear
-fi
+if [ "$1" = '-w' -o "$2" = '-w' -o "$3" = '-w' -o "$4" = '-w' -o "$5" = '-w' -o "$6" = '-w' ] ; then
+  clear; fi
+
+if [ "$1" = '-v' -o "$2" = '-v' -o "$3" = '-v' -o "$4" = '-v' -o "$5" = '-v' -o "$6" = '-v' ] ; then
+  export LOG_VERBOSE=true; fi
+
 
 L1 "${1} ${2} ${3} ${4} ${5} ${6}"
 
@@ -49,6 +47,3 @@ fi
 
 # OUTPUT="$(ls -1)"
 # echo "${OUTPUT}"
-
-# shopt -s cdable_vars
-# export myFold=$HOME/Files/Scripts/Main

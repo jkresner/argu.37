@@ -25,6 +25,11 @@ const Query = {
       if (/^prop/i.test(l)) q.of = {$in:['PA02','PA14']}
       if (/^strata/i.test(l)) q.of = {$in:['SD15','SM96','SM15','SM16']}
     }
+    if (op.at) {
+      q.at = op.at
+    } else if (op.in) {
+      q.in = op.in
+    }
     return q
   }
 }

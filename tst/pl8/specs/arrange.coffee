@@ -35,3 +35,19 @@ module.exports = -> DESCRIBE "chapter md", ->
     SKIP "WEB chapter"
 
     SKIP "PRINT chapter"
+
+
+
+  DESCRIBE "Highlight", ->
+
+
+    SKIP "Annotate mail source with pdf attachment", ->
+      DONE()
+
+
+    SKIP "Cross annotate pdf document with 2 x laws", ->
+      DONE()
+
+
+    SKIP "Annotate set sources", ->
+      DONE()

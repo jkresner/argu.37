@@ -15,16 +15,8 @@
 
 <script type="text/javascript">
 
-ag.data.filters = {{{ JSON r.vd.filters }}}
-ag.data.filtered = {{{ JSON r.filtered }}}
-ag.data.lb_static = ['police','ants','losses','innocent','laurie',//,'JK_health'
-'JK_swear','JK_anxiety','JK_cantwork','JK_losses','JK_scapegoat','JK_unrentable',
-'SC_badfaith','SC_misinfo','SA_OC2nd','SA_breach',//'oneill'
-'OC_106_1','OC_noise']
-
 function cpb(id) {
   if ($('#workbar').getAttribute('data-id') == id) return
-
   $('#workbar').setAttribute("data-id", id)
 
   var elm  = $('#'+id+'_d')
@@ -40,7 +32,7 @@ function cpb(id) {
             .replace(/\\n/g,'\n\\n')+'</textarea>'
 }
 
-ag.srcs.insertLBs = function(li) {
+function insertLBs(li) {
   // var html = ""
   // ag.data.filters.forEach(function(name) {
   //   if (ag.data.lb_static.indexOf(name) != -1) return
@@ -55,7 +47,7 @@ ag.srcs.insertLBs = function(li) {
   // li.getElementsByTagName('footer')[0].innerHTML = html
 }
 // var ups = {}
-ag.srcs.filterLB = function(v, id) {
+function filterLB(v, id) {
   // var f = v.innerHTML.replace('<i>J</i>','JK_')
   //                    .replace('<i>O</i>','OC_')
   //                    .replace('<i>A</i>','SA_')
@@ -87,10 +79,17 @@ ag.srcs.filterLB = function(v, id) {
 }
 
 var cpv = function(v) { ag.cmd.cp(v, ag.$('#cpd').value?'\n' : false) }
-var fLb = function(v, id) { ag.srcs.filterLB(v, id) }
 var fTog = function(cbx) { ag.srcs.filter(ag.$('#adm_srcs'), cbx) }
+var fLb = function(v, id) { filterLB(v, id) }
 
 function ag_onload() {
+  ag.data.filters = {{{ JSON r.vd.filters }}}
+  ag.data.filtered = {{{ JSON r.filtered }}}
+  ag.data.lb_static = ['police','ants','losses','innocent','laurie',//,'JK_health'
+  'JK_swear','JK_anxiety','JK_cantwork','JK_losses','JK_scapegoat','JK_unrentable',
+  'SC_badfaith','SC_misinfo','SA_OC2nd','SA_breach',//'oneill'
+  'OC_106_1','OC_noise']
+
   ag.$('#stack_{{r.vd.ui.stack}}').checked = true
   var cbx_load = null // var cbx_load = $('#f_JK_intent')
   if (cbx_load) cbx_load.checked = true

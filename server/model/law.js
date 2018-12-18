@@ -10,7 +10,6 @@ module.exports = ({ Id, Enum, Log, RefTag },
   name:   { type: String, required, unqiue }, // Strata records
   body:   { type: String, required },
   see:    { type: [String], required:false }, // [Name] of other  laws
-  // tags:   { type: [String], required },
   tags:   [RefTag],
   log:    { type: Log }
 

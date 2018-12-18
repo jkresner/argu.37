@@ -29,7 +29,9 @@ function layout_chapter(toc, key, tmplt, media) {
 
 
 module.exports = {
+
   linkify: linkify,
+
   web_chapter: function(page) {
     // console.log('web_chapter'.yellow, page.id)
 
@@ -77,6 +79,59 @@ module.exports = {
             .join('___  \n'))
 
     return '<figure id="'+id+'" class="'+css+'">'+body+'</figure>'
+  },
+
+  // datetime: {
+    ago:     function(t) { return moment(t).fromNow() },
+    day:     function(t) { return moment(t).format('MMM DD') },
+    dayIso:  function(t) { return moment(t).format('YYYY-MM-DD') },
+    daytime: function(t) { return moment(t).format('HH:mm MMM DD YYYY')
+                                           .replace('00:00 ','') },
+    tzIso:   function(time, tz) {
+      let today = moment.tz(tz.id).startOf('day').unix()
+      let t = moment.unix(time).tz(tz.id)
+      return `<time>${t.format('MMM')} <i class="fa fa-calendar-o" aria-hidden="true"><b>${t.format('DD')}</b></i></time> <em>${climbing} on <b>${t.format('ddd')}</b></em> `
+    },
+  // },
+
+  annotate: function(input, notations, scope) {
+    if (!scope)
+      scope = 'mk'+input.length // +'_'+notations.map(function(n) { return n[0] })
+
+    var notes = [],
+        ahRefs = [],
+        highlighted = input.toString(),
+        scope_num = 0,
+        mark_num = 0;
+    // scope = scope || 'h2' // if no h1 in input, full scope of input
+    // container #id or section heading
+    // scope = scope||''
+
+    notations.forEach(function(notation) {
+      var color = notation.color||0 // [0-6] also "level/category"
+      var marks = notation.marks // highlights
+      var note = notation.note  // comment
+      var id = scope+'_'+scope_num++ // +'_ml'+color
+      // var m: = 'm'+color // color [1-6] => hl1, hl2, hl3
+      var subs = []
+      marks.forEach(function(str) {
+        mark_num++;
+        // tagCss = 'ml'+color =>  class="'+tagCss+'"
+        var tagId = id+'_'+mark_num
+        highlighted.replace(str, '<mark id="'+tagId+'" class="'+id+'">['+str+']['+id+']</mark>')
+        subs.push('<sub><a href="'+tagId+'">'+str+'</a></sub>')
+      })
+      refs.push('['+id+']: #'+id)
+      annotations.push('<details id="'+id+'" class="ml'+color+'">'+subs+note+'</details>')
+    })
+
+    return highlighted +
+      '  \n>> * * *  '+
+      '  \n>> * * *  '+
+      '  \n>>' + annotations.join(
+      '  \n>> - ') +
+      '  \n>>' + refs.join(
+      '  \n>>')
   }
 
 }

@@ -30,11 +30,11 @@ module.exports = (Id, Enum, {required,trim,lowercase,index,sparse}) => assign(
     byId:                { required, type: Id, ref: 'User' },
     id:                  { required, type: String },
     note:                { required, type: String },
-    marks:               { required, type: [String] },
+    marks:               { required, type: [] },
     laws:                { required: false, type: [{
       _id:               { required, type: Id, ref: 'Law' },
       cite:              { required, type: String },
-      marks:             { required, type: [String] } }] },
+      marks:             { required, type: [] } }] },
     color:               { required, type: Number, default: 1 }
                          // 0 : collapse => irrelevant/not important)
                          // 1 : yellow => meaty ("interesting")

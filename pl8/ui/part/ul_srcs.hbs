@@ -16,7 +16,8 @@
   </section>{{/if}}
   <footer>
     <nav>
-      <a class='nav_id cpv' onclick='cpv('{{name}}')'>{{navId name}}</a>
+      <a class='_id' href="/adm/srcs/{{_id}}" target="_blank">{{navId _id}}</a>
+      <a class='nav_id cpv' onclick='cpv("{{name}}")'>{{navId name}}</a>
       <a class='nav_tid goto' href='#{{threadId}}'>{{navId threadId}}</a>
     </nav>
   </footer>
@@ -24,10 +25,7 @@
 {{/each}}</ul>
 
 
-{{!-- onclick="cpv('![{{filename}}](__{{filename}}__inln.jpg)')" --}}
-{{!--
-<a class="cpb" onmouseover="cpb('{{name}}')" ></a> --}}
-{{!-- <a href="https://{{uri}}" target="_blank" class='gm'>M</a> --}}
-
-
- {{!-- data-s='{{#if threadSwap }} swap{{/if}}' --}}
+{{!-- onclick="cpv('![{{filename}}](__{{filename}}__inln.jpg)')"
+      <a class="cpb" onmouseover="cpb('{{name}}')" ></a>
+      <a href="https://{{uri}}" target="_blank" class='gm'>M</a>
+      data-s='{{#if threadSwap }} swap{{/if}}' --}}

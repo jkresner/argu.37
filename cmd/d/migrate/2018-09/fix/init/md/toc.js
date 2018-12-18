@@ -29,7 +29,7 @@ module.exports=`# Table of contents
 - [My top 100 Strata learning resource links](/stara-library/research-top-100) (obsessed)
 - [Strata research](/stara-library/research-history)
 -->
-
+http://newsletters.hcf.com.au/a/hBcANjxB8tkGhB9u4i1AAD3-2de/link31
 
 ## Part 2: **SP13385 perspectives**
 

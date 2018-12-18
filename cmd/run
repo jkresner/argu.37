@@ -1,36 +1,37 @@
 #!/bin/sh
 CMD=CMD/r
+BUILD=;
+CDN=;
+ENV=dev
+WEB=cmd/r/server
+WKR=;
+
+
 source cmd/b/init
 
+# if [ "$2" = "--worker" ]; then
+#   L2 "r.worker: still TODO"
+#   WKR=cmd/r/worker
+# fi
 
-if [ "$1" = "--dist" ]; then
-  L1 "dist.env"
-#   cmd/dist/build;
-#   cmdL2 "worker"
-#   cmdL2 "web"
-#   node ./server/worker.js --env dist $2 $3 $4 $5 $6 &
-#   node ./server/index.js --env dist $2 $3 $4 $5 $6;
-  echo 'DIDNT dist YET'
-elif [ "$1" = "--test" ]; then
-  L1 "test.env"
-  #   if [ "$2" = "--worker" ]; then
-  #     source cmd/r/worker --env test $3 $4 $5 $6;
-  #   elsev
-  #     source cmd/r/worker --env test $3 $4 $5 $6 &
-  #     source cmd/r/server --env test $3 $4 $5 $6;
-  #   fi
-else
+# if [ "$1" = "--dist" ]; then
+#   L1 "dist.env TODO"
+#   ENV=prod
+#   BUILD=cmd/b/dist
+# elif [ "$1" = "--test" ]; then
+#   L1 "test.env"
+#   CDN=;
+# elif [ "$1" = "--dev" ]; then
   # L1 "dev.env"
-  if [ "$1" = "--dev" ]; then
-    if [ "$2" = "--worker" ]; then
-      echo 'DIDNT dev.worker YET'
-  #       source cmd/r/worker --env dev $3 $4 $5 $6;
-    else
-  #       source cmd/r/worker --env dev $3 $4 $5 $6 &
-      source cmd/b/dev
-      source cmd/r/server --env dev $3 $4 $5 $6;
-    fi
-  else
-    source cmd/r/watch $1 $2 $3 $4 $5 $6;
-  fi
-fi
+  # BUILD=;
+# else
+  # BUILD=cmd/  imm m mm /dev
+  # CDN=cmd/r/cdn
+  WEB=cmd/r/watch
+# fi
+
+
+if [ "$BUILD" != "" ]; then source $BUILD; fi
+if [ "$CDN" != "" ]; then source $CDN; fi
+if [ "$WKR" != "" ]; then source $WKR --env $ENV & fi
+if [ "$WEB" != "" ]; then source $WEB --env $ENV; fi

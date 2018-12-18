@@ -1,6 +1,6 @@
 #!/bin/sh
 CMD=CMD/db
-op=sync
+OP=sync
 OUT=tst/data/bson
 DB=argu_test
 

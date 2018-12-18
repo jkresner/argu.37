@@ -14,11 +14,15 @@ list:         '_id is render name title author published uri threadId md data ta
 const Opts                                                                   = {
 
 list: {       select: Views.list, sort:{published:-1}                          },
+param: {                                                                       },
 item: {       select: Views.item                                               }}
 
 
 const Query                                                                  = {
 
+existing: {
+  id:         id => assign({},{_id:id})                                        ,
+  gmail:      name => assign({type:'gmail'},{name})                            },
 gmail: {      ignore: {$exists:0}, type: 'gmail'                               },
 published: {  ignore: {$exists:0}, published: {$exists:1}                      },
 threads:      (limit, newest) => {
@@ -27,10 +31,7 @@ threads:      (limit, newest) => {
   let all = Object.keys(cache['threads'])  // .filter(id => threads[id].p == 0)
   let ids = newest ? _.reverse(_.takeRight(all, limit)) : _.take(all, limit)
   // $log('threads'.yellow, ids.length, limit, newest)
-  return { 'threadId': { $in: ids } }                                          },
-existing: {
-  id:         id => assign({},{_id:id})                                        ,
-  gmail:      name => assign({type:'gmail'},{name})                            }}
+  return { 'threadId': { $in: ids } }                                          }}
 
 
 
@@ -128,7 +129,7 @@ const Projections = ({select,pl8},{chain,view}) => ({
 
 
   item: r => chain(r, 'typed'), //, 'annotate'),
-
+  param: r => r,
 
   list_vd: d => {
     let op      = d.ops||{},
@@ -225,6 +226,7 @@ const Projections = ({select,pl8},{chain,view}) => ({
 
     if (config.log.verbose) {
       $log('sources.viewData:'.magenta, _.omit(vd,['threads']))
+      $log('sources[0]:'.magenta, sources[0])
       for (let t of vd.threads) $log(`'${t.id}'`.dim+`:\{ p:0, t:"${moment(t.start).format('YYMM-DD')}:${t.days}d<${t.messages.length}>${t.subject}"},`)
     }
 

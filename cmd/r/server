@@ -1,3 +1,4 @@
 #!/bin/sh
-echo "node server/index.js ${1} ${2} ${3} ${4} ${5} ${6}"
+OP="server"
+L2 "node" "server/index.js ${1} ${2} ${3} ${4} ${5} ${6}"
 node ./server/index.js $1 $2 $3 $4 $5 $6

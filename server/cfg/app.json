@@ -2,6 +2,7 @@
   "auth": {
     "appKey":                  "ag",
     "oauth": {
+      "github":                "{{undefine}}",
       "google": {
         "short":               "gp",
         "login":               true,
@@ -65,9 +66,9 @@
         "libs":                "WinHttpRequest|Phantom"
       }
     },
-    "livereload":              { "port": 35729 },
     "session": {
       "authdData":             "_id name",
+      "secret":                "arguing",
       "store":                 { "collection": "sessions" }
     }
   },
@@ -96,7 +97,7 @@
     }
   },
   "wrappers": {
-    "dirs":                    "wrappers",
+    "dirs":                    "wrp",
     "ses": {
       "accessKeyId":           "{{required}}",
       "secretAccessKey":       "{{required}}",

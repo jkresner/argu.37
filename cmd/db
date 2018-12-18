@@ -1,19 +1,19 @@
 #!/bin/sh
-
-# LAWS
-# cmd/db import law --verbose
-
-# SOURCES
-# cmd/db import gmail -g sync
-# cmd/db import doc -g OCR
-
-
-# MIGRATION
-# cmd/db migrate/2018-09 all
-# -> coffee cmd/d/migrate/2018-09/run.coffee -o all
-
-
 CMD=CMD/db
+# Usage:
+#   LAWS
+#   cmd/db import law --verbose
+
+#   SOURCES
+#   cmd/db import gmail -g sync
+#   cmd/db import doc -g OCR
+
+#   MIGRATION
+#   cmd/db migrate/2018-09 all
+#   -> coffee cmd/d/migrate/2018-09/run.coffee -o all
+
+
+
 source cmd/b/init
 
 

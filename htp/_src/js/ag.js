@@ -1,4 +1,4 @@
-window.ag = {
+(function(){ window.ag = {
   timer: {
     start: new Date().getTime(),
     log: function(lb, begin) {
@@ -189,3 +189,4 @@ ag.srcs = {
     ag.timer.log(lb+'['+show.length+']:done', start)
   }
 }
+})()

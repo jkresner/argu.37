@@ -11,7 +11,7 @@
   "paths": {
     "bson":               "/migrate/2018-09/bak",
     "specs":              "/import/task",
-    "fixtures":           "/import/qd",
-    "csv_law":            "/import/qd/law.csv"
+    "fixtures":           "/import/q",
+    "csv_law":            "/import/q/law-Export.csv"
   }
 }

@@ -1,5 +1,5 @@
 #!/bin/sh
-op="watch"
+OP="watch"
 
 source cmd/b/dev
 

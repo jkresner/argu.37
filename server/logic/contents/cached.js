@@ -1,3 +1,15 @@
+let tempMap = {
+  innocent:         '1_innocent',
+  apprehension:     '2_avo',
+  drlyme:           '3_dr',
+  oneill:           '4_ftcomplain',
+  resolve:          '5_jk_resolve',
+  lot36ensuite:     '6_lot36_ensuite',
+  lot36:            '7_lot36',
+  gossary :         'gossary3',
+  toc:              'toc'
+}
+
 module.exports = (DAL, {Query,Opts}, DRY) => ({
 
 
@@ -23,9 +35,7 @@ module.exports = (DAL, {Query,Opts}, DRY) => ({
         if (/TOC/i.test(c.type))
           hash.toc.parts = c.parts
         if (c.type == 'CHAPTER') {
-          let tempMap = { toc:'toc', gossary3:'gossary3', innocent: '1_innocent', apprehension: '2_avo',
-              drlyme: '3_dr', oneill: '4_ftcomplain', resolve: '5_jk_resolve',
-              lot36ensuite: '6_lot36_ensuite', lot36:'7_lot36' }
+
           if (/(toc|gossary3|innocent|apprehension|oneill|resolve|lot36|drlyme)/.test(c.key))
             // $log('key', c.key, tempMap[c.key])
 

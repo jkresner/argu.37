@@ -1,5 +1,5 @@
 #!/bin/sh
-op="clean"
+OP="clean"
 L2
 L2 "rm" "/packages-lock.json"
 rm -f package-lock.json

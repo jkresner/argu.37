@@ -2,7 +2,7 @@ module.exports = {
 
 
   navId: id => `${id}`.length > 12
-        ? id.substring(`${id}`.length-12) : `${id}`,
+        ? `${id}`.substring(`${id}`.length-12) : `${id}`,
 
   mapcrypt() {
     var maps = Object.values(arguments)

@@ -8,6 +8,366 @@
 |              |        |        |
 */
 
+/*
+Wow that sounds awful. Our OC are very hostile as well. let me chat to  my hubby and I will get back to you. We may want to wait a minute to see how the OC respond to the orders we may have another fight on our hands.
+I am a bit jealous the minister got back to you he ignored me hahahah!
+Talk soon keep cool !
+Whoopi
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+16/10/2018 - 4:03 pm
+Im so sorry to hear.
+Apologies for being MIA this past week. My legalities are streched over already 4 separate actions. The worste last week is a criminal charge after my Strata Agent took a phrase from an email way out of context “pull the trigger” and told the police I had threatened to shoot him. Now im getting vexatiously harrassed by their lawyer over unpaid levies in District court and Im going to take AVO out against the Strata Agent. All quite a mess. Would you like to meet next week? Ill buy you guys dinner or lunch :)? Im living in a capsule hotel in the city so its really easy for me if you are happy to come in meet me anywhere in the CBD. Would be happy to publish about your story if you are wanting the details to be public? Also the Minister got back to me and Id be happy to speak to him on “our” behalf,
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+16/10/2018 - 3:47 pm
+Hi Dusty rusty
+Just a quick message to let you know our orders have come down. They are on the the  the NCAT web site go to decisions /appeal/ Rosenthal and SP 20211.
+It appears as if we won and we did but there are ramifications to the win.
+1. We did not get costs. so we paid $200,00 to get the OC to do what they should have down five years ago.
+2. The Tribunal  members threw the OC some crumbs which will more than likely cause more conflict in the future. The first tribunal we won everything out right this time the y overturned the un authorised alterations being common property and turned them into lot property.
+3. By doing this which only appears to be a window and some weep holes we did not win the appeal out right which means we cannot claim Sect 104 of the act  which forces the OC to raise a levy to pay their legals so we are not included in the OC legal bills which we are and have been. So ridiculous  we are fighting our own money.
+4. They have been given three months to do the work. Our lawyer is worried they are going to challenge this and go further.
+5. We did get damages even though it is a token amount it is a principle which means they breeched Sect 106 of the act.
+Must admit to feeling it is a hollow victory.
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+07/10/2018 - 10:23 am
+Great letter,
+We have learned to keep it as simple as we can. We pick our battles. If you over whelm them with ideas and words they stop reading or listening.
+I found the MC yesterday to have a conflict of interest and was dismissive of people. Quite the supercilious type hi jacking nearly every question that was asked. Are you writing to OCN ? I might send a letter to them.
+The reason people were not articulate with their questions was we were told there would be no questions so we were unprepared. Last time I had a written paragraph short and simple and it was very effective.
+Love your work
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+07/10/2018 - 10:03 am
+Funny I sent this yesterday.
+Minister,
+Thanks for spending you Saturday morning in a heated, almost hostile, but I believe underneath to be well meaning and admirably grass rooted forum. Thank you also for listening to my question to learn more of your thought process and current initiatives to deal with the current environment created a long historical evolution of what is current Strata law and the systems and industry surrounding. I was the young recently returned to Sydney Silicon Valley techie in the last row with laptop and wireless headphones. This was the first OCN event. Even though I'd never met a single person in the room prior to this morning, I want to apologize on their behalf. I appreciate their pain first hand and immediately recognize their skin worn down, no longer thick enough to compose and engage you productively in such manner you can easily understand appreciate, repackage and present on their behalf amongst juggling so many diverse concerns amongst the vast body of people you represent.
+I was glad to observe and appreciate your commitment in wanting to do so, with small but obvious gestures like wanting to answer as many questions as time permitted, whist the room was unfortunately squabbling over what is appropriate conduct. I made suggestion to Karen for your next OCN event to disallow open questions. Instead members should submit clearly articulated written queries to be shared with your office ahead of time so we can work together to reach understanding and forward motion every-time you commit your time. I too wish for the same thing from my own invested Saturday mornings!
+I'm not sure many understood what I was trying to get across and think a few jumped to the incorrect assumption, I was like a few others speaking to complain (that I couldn't understand the law) and needed your help. While perhaps the latter is true, only in the sense that I think there are some very deep legislated misalignments and unnecessary complexity. I'm interested in participating in driving the evolution of Strata law to stop situations like my own from reoccurring. One element I wish to publish think pieces online about is how complicated and unrealistic expectation for people to represent themselves in the framework of the current SSMA15 legislation. Understanding the following law and enactment and industry around it has taken me close to 18 months full time:
+Civil and Administrative Tribunal Act
+Electronic Transactions Legislation Amendment (Government Transactions) Act 2017 No 25
+Property, Stock and Business Agents Act 2002 No 66
+Property, Stock and Business Agents Regulation 2014
+Property Stock Agents Regulation 2018
+Strata Schemes Development Act 2015 No 51
+Strata Schemes Management Act 2015 No 50
+Strata Schemes Management Regulation 2016
+Work Health and Safety Act 2011
+I've yet to wrap my head around:
+Dividing Fences Act
+Environment Planning & Assessment Act
+Environment Planning & Assessment Regulation
+Fair Trading Act
+Home Building Act 2014
+Home Building Regulation 2014
+Home Building Amendment (Compensation Reform) Act 2017 No 28
+I truly believe the government invited consumers to climb and unclimbable path. I have controversial questions like "Was this architected by mistake or intention?". I'm glad to hear and very intrigued by your initiatives like the coming Fair trading portal. Fair Trading mediation was a very detrimental waste of time in my circumstance in which the parties could not agree on representatives to negotiate. Unfortunately, I was unable in this morning's environment to grasp what/how with Fair Trading you want to help "mom and pop" take on the big guys. I have so many small to gigantic, conservative to radical, simple to extreme cutting edge tech concepts to fix this picture.
+It was fantastic to read about you cracking down on Strata Agents ripping of OCs with nontransparent, unreasonable fees. In reality there's still a gap that you have got on your radar. There's almost nothing via NCAT/SSMA I can do with my doggy Strata Agent, responsible for extensive unmanaged concrete cancer and leaving my apartment uninhabitable now approaching 2 years. Perhaps the PSBA Compensation fund is a more appropriate course. I don't know if the various lawyers I tried did not make the suggestion because they don't even know about it or it's not really in effect.
+It's fascinating to see a government encourage consumers towards self representation and industry resist. I was trying to arrive this morning at:
+(1) Will the law be made simpler so that vision of self-representation can be successfully realized or;
+(2) Will government stimulate industry to align and achieve harmony (I think that's what you are saying you are working on, do you really think you can pull it off, what do you see as the biggest challenges? I see many...but opportunities for employment and potential application of emerging economic marketplace/gig income models) or; (3) Will no dramatic policies be put in effect and situations like my personal strata hell saga propagate as quickly as the coming exponential growth of the sector (and its constituents)?
+I was running a $2M funded on-demand consultants Startup in San Francisco before buying my Grandma's Bondi Apartment. Finding it was full of concrete cancer too late and falling into complicated entangled legalities has set me on a new path with so much I wish to see changed. From my first impression today, I think that's what you want too and passionately disagree with the MC commenting you have an impossible job. We can made a big impact with consistent unwaivering dedication. But introducing new ideas, whether for profit in tech or setting new hight via government in living standards takes time and resolve. Nobody takes a job like yours to continually absorb heat (hopefully not at every appearance) without deep motivation helping to brush it off chaff and continually focus on the things that matter.
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+07/10/2018 - 9:41 am
+Sent this today as a follow up I do not expect an answer
+Dear Minister Kean,
+Thank you for being brave enough to take questions at the OCN forum. We will be brief and to the point and give you our hopes and suggestions so you may look over these and act on them.
+It seems very clear to us that you are trying to make changes for the better but this of course does not help people like us and those you met at the OCN forum, financially and emotionally bereft. The building defects that people are living with for years with no hope or end in sight cause such intense emotion.
+As a suggestion the government could provide interest free loans to buildings to get the defects repaired. The responsibility re the costs can then be sorted out legally after the work has been completed.
+In our situation we could have had the membrane and fire door fixed immediately rather than suffer the defects, which we did not cause, for nearly 4 years. We believe it will save lives and stop the Tribunal being clogged with unnecessary  conflicts.
+Below some more suggestions for you to consider:
+1. Presently individual owners have the onerous responsibility of enforcing the Strata laws at their own expense.
+   Fair Trading needs to have powers of accountability over rogue Strata committees.
+2. Individual owners are paying levies while their Owners Corporation are using those levies against them in legal actions.
+3. Where there is urgency in regards to health and safety issues of the common property of a Strata building, these need to be dealt with expediently without having to go through the tribunal system. Fair Trading, the council or both need to be given the power to get rectification works done. e.g. failed membrane, non compliant fire door both putting us and the other owners at risk.
+4.  Please address the voting in Strata.  The new laws have not gone far enough. Unlimited company nominees, investors apathy, manipulation of votes, car spaces as a vote. Proxy farming has taken a new guise in harassment, bribes, self interested parties and holding their power over individual lot owners. e.g. if you want your reno done vote with the committee or we will block it. One vote per person.
+5. Transparency in financials, correspondence, orders against the building, invoices, legal costs  etc. should be mandatory. No lot owner should have to pay a fee or be forced to go searching for any information in regard to their building.  Make it compulsory that all documentation regarding the building should automatically be sent to all owners unless you choose to opt out. Section 182 of the Act Schedule 4 Fees/ item 2  This law is being abused by committees and Strata managers who are deliberately withholding information to owners. An owner is already paying their levies they should have access for free. It is  out dated with emails now it is the push of a button to share info.
+6. Our experience with the tribunal system has been atrocious. We have had  significant water ingress and a non compliant fire door since 2015. The failed membrane was discovered in 2013 by the previous owner. No maintenance had been done to the membrane in 35 years. We comprehensively won our first tribunal. The owners corporation were found to be in breach of Section 106. Yet, none of our issues have been resolved. It has cost us $200,000
+Delays of the opposition's appeal and the appeal result (six months still waiting) has significantly drawn the process out. It has been 12 months since the appeal was lodged and we still do not have a result. For us the system is clearly not working. We have done nothing wrong.
+Fair trading although sympathetic have not helped us in anyway. Please do not refer us to them again.They cannot help us. We cannot sell, we cannot repair common property, we cannot repair the damage caused by the ingress, we cannot renovate, we cannot entertain or enjoy our roof top deck nor our home, we cannot plan a holiday as we have no idea when or if the work will ever be done, When it rains we cannot use our kitchen.  Please find attached our Tribunal orders.
+Despite the gaps in the current legislation the government must act to protect owners living in desperate and dangerous situations. The government must protect the health and safety of its constituents.
+There are many people suffering out there we need a compassionate government there is something you can do.
+With best regards
+Tom and Jo-Anne Rosenthal
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+06/10/2018 - 6:56 pm
+Sorry  I did not write coherently. My husband is  a medical specialist and will be able to keep up with you. We would be delighted to speak with you.  We have nothing to lose. look forward to  meeting and speaking.
+Jo Rosenthal
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+06/10/2018 - 6:46 pm
+We would be delighted. I am just an ordinary person with moderate education but my husband who refused to waste his breathe in that arena.  Y0u have my phone number and email so let's do it.
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+06/10/2018 - 6:38 pm
+Often I get context like you've just provided me that I'm making the right choices along along an ultimately unclimbable path. I've conceited to the high probability that I will loose my apartment, have my say publicly, know that I did the best I could and probably "the future" will reap the rewards long after I move far away from Sydney and write of these years as a personal pet project I enjoyed during a day to day experience lower than anyone should have to endure for good reason.
+I would love to meet in person and maybe even interview and publish something about you guys. I base a lot of my decisions and thinking on top what I think I understand about your case.
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+06/10/2018 - 6:08 pm
+Even though we won .... We should have been given interim orders to get the work done. We are up against Grace lawyers they play dirty pool!
+We seem to think the Minister is making changes for the future which leaves all of us behind.
+We do have an idea which we will suggest to the Minister. Fro those of us who have been shafted .
+No we are not satisfied with Dentons. Even though we kept following through with them we were  let down by them over and over.
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+06/10/2018 - 5:59 pm
+Yes yes... I was trying to also get across that the problem is much deeper than even the complicatedness of the legislation.
+Really where to go and how to handle things is currently in flux and you only realize that by reading caselaw and conceiving that understanding the law and it's enforcement are totally different sets of knowledge, both needed to achieve successful resolution via litigation. It's very disabling for owners that have competing interests not aligned with the majority of the rest of an OC. An impossible gauntlet for a normal person to cross and I hope if I fail after dedicating myself to it for 2-3 years completely that point will get across and someone at some stage can fix the problem.
+Reply All Quote to All Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+06/10/2018 - 5:51 pm
+Rosenthal?
+https://www.caselaw.nsw.gov.au/decision/59b867f8e4b058596cbaa413
+I studied you case in great detail. I even hired Ourania Konstantinidis and then fired Dentons after a few weeks because I was not satisfied with their follow through on my initial brief of wanting to be extremely aggressive over sections of the legislation that did not yet have established precedence.
+Are you satisfied with Dentons? You have been at it for a long time from what I gather.
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+06/10/2018 - 5:13 pm
+The rest of the morning was a paid commercial for  the sponsor.
+I would love to see what you write . I understood what you were saying but the MC of the day was shutting people down before they got to the point or before they were able to get answers. The minister had no answer for you. Because you were right!
+
+ I was impressed with you and what you said.
+My name is Jo Rosenthal my phone number is 0409922059 my email is jo_cahill2003@yahoo.com.au
+ My apologies for my group are elderly and emotional.
+
+ Jo
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+06/10/2018 - 5:04 pm
+Yes, this meeting was not the best utilization of my time nor the environment I wanted to give first impression to the minster in. My question was definitely not interpreted with the intent of meaning I was trying to get across or the minster understood but didn't have good answers for. I think the previous as he assumed I was complaining that I couldn't understand the law when really I wanted him to appreciate that if it took me a year and a half to wrap my head around it, it would take someone else 2-3.
+That's ok, I'll write to him in public open letter when I get around to it. How was the rest of the morning?
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+06/10/2018 - 4:57 pm
+ HI Dusty Rusty
+
+ I am sure you were the guy today at the OCN Forum. Which was a bit of a joke. I  was the first woman to speak but my speech was hijacked by over emotional  people who are at their wits end.  If it was you Hi!
+
+ The group is has not got back to me and people seem to be doing their own things,  but I am willing to keep in touch with you.  The  OCN is self interested with sponsors etc. but I was prepared to do what I could to get to the minister. As you can see we are all really up against it.
+
+ Hope I am right in thinking you were the guy with the computer on your lap.
+
+ Cheers Whoopi
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+09/09/2018 - 6:32 pm
+Hi Dusty Rusty
+
+ Sorry we have not forgotten about you and we are  all also members of the OCN so well done. My mum who is 85 and lives with me  had a fall on Friday and is in hospital with quite severe injuries so I was distracted .
+
+ I sent your info off to the others and they too have not got back to me. You could also ask to speak to Karen Stiles  OCN if you have not already spoken to her. I will resend my message re your details etc to the group and will hopefully get a reply. Glad to see you are still onboard . Things move very slowly in Strata land which is one of the problems with it! We are all in our 60s and over,  we have all been through the tribunal experience with wins and no joy after it! So forgive us if we are a little world weary and disillusioned.
+
+ Hang in there
+ Whoopi
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+06/09/2018 - 1:13 pm
+Hope you guys haven't forgotten about me. I would love to join your group and learn more about your experiences. I've joined the Owners Corporation Network and have been speaking with the Director about some advocacy avenues for folks in our position. JK
+Reply All Quote to All Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+29/08/2018 - 3:27 pm
+Let's see I've just setup jk@37paulst.com why don't you give that one a shot?!
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+28/08/2018 - 6:28 pm
+ Wow Jk
+
+ You do my head in! You are certainly an amazing person! Your ideas are neccessary as Strata is an unholy mess and they would confront  and threaten your basic strata rogue crook! That's why they didn't want to know.
+
+ You are obviously very intelligent and float above most of us  who deal with the Strata laws on a daily basis.
+ You forgot to give me an email address this way my friends can contact you if you wish to communicate with them.
+
+ Whoopi
+
+ Here's the draft intro and table of contents to the ebook I'm thinking about publishing.
+
+Welcome. I'm JK, an Aussie born Silicon Valley tech entrepreneur, CEO, software maker and home owner at 37 Paul St. Managing a diligent Strata Scheme is hard. Doing a good job and keeping people happy is even harder. I want to live in a building that strives towards the later and I believe achieving Strata-wide harmony requires all owners to embrace mutual respect, ongoing collaborative effort and complete transparency.
+
+Like almost every other meaningful challenge I come across, I spent weeks researching technology, in this instance to help my neighbors more efficiently communicate, govern and comply our Owners Corporation under NSW Strata guidelines. I pieced together Committee communications and email infrastructure, secure Strata Records document storage, a forum for maintenance and legislative discussions, a shared calendar for occupants to follow construction schedules amongst other noisy disturbances and a pre-meeting e-voting proof of concept making it easier for everyone to get involved.
+
+Sadly we don't all get along, resulting in a multi-year dispute over managing Concrete Cancer in our building. Frustrations put aside, I optimistically purchased 37paulst.com on my own dime, neatly packaged up my Owners Corporation Infrastructure goody bag, everything easily accessible from one website using any browser. I offered to hand over all my efforts (free!), but the Committee refused to even take a look.
+
+Building maintenance and Concrete Cancer throughout my apartment floor eventually derailed my whole life. So I dive head first and deep into Strata legislation, NSW Strata caselaw and meeting Strata lawyers to figure out options next. By that point, I'd launched a $2M funded startup, with the time accumulated on various non-confrontational Strata dispute resolution tactics I tried. Its been an unusual and unpleasant situation to stick out for so long. Luckily entrepreneurs are used to finding opportunity where others see only anarchy and the greatest insights and innovation often incubate during the most painful personal experiences. I came across a few interesting NSW Strata requirements to solve, tangled even with a few. I was learning lots along the way, without a friendly or fair outlet to share, that is, until deciding to cohesively gather my thoughts for you by consume over medium of personal preference:
+
+-----
+Table of contents
+
+Part 1 My perspective on 37 Paul St
+Introduction
+Personal context
+Apartment saga
+Strata management disarray
+Strata Agent anarchy
+Strata dispute resolution attempts
+Part 2 Insight & opinions on Strata living
+Strata Living Get involved - Hindsight
+Concrete Cancer - Who cares?
+Strata harmony or liability... use common sense
+Paperless self-governed Strata? In you dreams!
+Strata Schemes Management Act 2015 caselaw
+NSW Strata legal landscape and litigation in 2018
+Opportunities for NSW Strata startups
+Part 3 Experimental Strata software solutions
+37paulst.com · Easy reading, hybrid print-web publishing
+Google Apps Cheap comprehensive Owners Corp infrastructure
+Airtable · Strata legal case builder
+argu (custom code) · Court application evidence compiler
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+28/08/2018 - 7:27 am
+Please send me your email address plus a short scenario about your situation which I will forward on to one of our group members and they will be in touch.
+
+ Cheers
+ Whoopi
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+28/08/2018 - 4:14 am
+Well in the meantime, the information you've shared so far has greatly assisted how I'm thinking about my situation. I would love to be invited to your group?
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+25/08/2018 - 10:10 am
+Good luck and stay in touch!
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+25/08/2018 - 10:06 am
+Don't stress. I got your back. Gonna shake this picture to the foundation before the year is out.
+I decided I was smarter and going to do a better job than all the 10 lawyers I interviewed back in January. Right now I'm running 3 of the top players all hand in hand trying to muscle me and about to pull the carpet from under their feat.
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+25/08/2018 - 9:56 am
+Hi Dusty Rusty
+
+  Well hi to you and sorry for your traumas. My husband and I live in Surry Hills. We took the committee /Owners Corporation to the tribunal and won.  A year ago. We won comprehensively. The Owners Corporation then appealed. The big mistake we made was not challenging the 'Stay' on the orders. We were advised  we had very little chance of  beating a 'stay' on the orders, we also thought if we let them have procedural fairness it would shorten the legal process .....we were wrong. Even though we won the tribunal and even though we have water pouring into our apartment and five leaking rooms and a non compliant fire door no work has been done.
+
+ Here on flat chat they are very quick to suggest you go to the tribunal. But the tribunal is cumbersome confusing and expensive and not always fair. After three years of fighting we are still waiting for a final judgement on the appeal against our tribunal win. The last court hearing we had was four and half months ago! They do not even send you an email to let you know a due date, you are left in limbo. This is our home we have been living in this water logged apartment  and no one seems to give a fig! Going up and down in the lift with the despot committee members who are just being vindictive now. We have no sanctuary. We have gone to the Minister and Fair trading  to no avail. This is because there are  no consequences for committees, Fair trading only has jurisdiction over Strata managers.
+
+ We had very good lawyers who still made mistakes and it was really our Erin Brokovich style of  personal investigation that helped us get over the line. Having said that, the tribunal is not a place I would like to venture without  really sold legal representation. The lawyers know all of the ins and outs but you have to be proactive in regards to all of your evidence. Expert advice from well respected court appointed people is what you need which costs a lot of money.  Everything must be in writing. It is your documents that make the difference in the tribunal.
+ Our legal fees to date are $200,000 and we have not been granted costs as yet! Even though we won.
+
+ There are legal firms out there who specialise in representing owners corporations against individual owners. They are guns for hire. The Strata companies use them regularly, they know how to elongate the legal proceedings to cost you more and more money to break you financially and emotionally. Meanwhile you pay levies which contribute to the OC's legal fees and also to the insurance fees which they use also for legal defence.  You are effectively paying to fight yourself.They get you coming and going. The system is not set up to help the individual owner, it assumes the democracy of Strata living works which we know it does not work.
+ We have made contact with others in the same boat and they are joining forces with us to go to the press. The press won't touch my husband and I at the moment as we have an imminent finding to come down and until that happens they don't know what their story is. So we wait. We cannot fix it our selves , we cannot sell or move, we cannot renovate or even plan a holiday as we have no idea when the finding will come and massive repair works begin.
+
+ I am sorry to be so dark but if someone had told me what was ahead for me it may have bolstered me for the horrible journey ahead. My husband and I often discuss what we could have done differently and we can't think of what we could have done? We had no choice but to go legal as our committee flatly refused to do anything to fix the leaks.
+ I am happy to include you in our little group if you wish to speak to others. The more of us the merrier they are all lovely people in terrible situations,  they have all gone down the tribunal pathway.
+Be very careful of trying to take out your committee, the Tribunal considers this draconian. The Tribunal believes that owners vote and the will of the people has spoken,  but  in our situation  the owners are not told the truth,  minutes are false and massaged or just information is deleted. Company nominees are used a proxies. We cannot beat our committee. All of the other owners are either unaware, apathetic or afraid of standing up to the committee who have been in power for twenty years.
+ If I have not terrified you completely we believe if we get enough victims ( I hate that word) we can have more of a chance to lobby and get the press involved . So let me know if you want to go ahead and I will give you details of others to speak to. I am also happy to chat on the phone or skype.
+
+ all the best, stay in touch I am interested in helping in any way
+Whoopi
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+25/08/2018 - 9:56 am
+Hi Dusty Rusty
+
+  Well hi to you and sorry for your traumas. My husband and I live in Surry Hills. We took the committee /Owners Corporation to the tribunal and won.  A year ago. We won comprehensively. The Owners Corporation then appealed. The big mistake we made was not challenging the 'Stay' on the orders. We were advised  we had very little chance of  beating a 'stay' on the orders, we also thought if we let them have procedural fairness it would shorten the legal process .....we were wrong. Even though we won the tribunal and even though we have water pouring into our apartment and five leaking rooms and a non compliant fire door no work has been done.
+
+ Here on flat chat they are very quick to suggest you go to the tribunal. But the tribunal is cumbersome confusing and expensive and not always fair. After three years of fighting we are still waiting for a final judgement on the appeal against our tribunal win. The last court hearing we had was four and half months ago! They do not even send you an email to let you know a due date, you are left in limbo. This is our home we have been living in this water logged apartment  and no one seems to give a fig! Going up and down in the lift with the despot committee members who are just being vindictive now. We have no sanctuary. We have gone to the Minister and Fair trading  to no avail. This is because there are  no consequences for committees, Fair trading only has jurisdiction over Strata managers.
+
+ We had very good lawyers who still made mistakes and it was really our Erin Brokovich style of  personal investigation that helped us get over the line. Having said that, the tribunal is not a place I would like to venture without  really sold legal representation. The lawyers know all of the ins and outs but you have to be proactive in regards to all of your evidence. Expert advice from well respected court appointed people is what you need which costs a lot of money.  Everything must be in writing. It is your documents that make the difference in the tribunal.
+ Our legal fees to date are $200,000 and we have not been granted costs as yet! Even though we won.
+
+ There are legal firms out there who specialise in representing owners corporations against individual owners. They are guns for hire. The Strata companies use them regularly, they know how to elongate the legal proceedings to cost you more and more money to break you financially and emotionally. Meanwhile you pay levies which contribute to the OC's legal fees and also to the insurance fees which they use also for legal defence.  You are effectively paying to fight yourself.They get you coming and going. The system is not set up to help the individual owner, it assumes the democracy of Strata living works which we know it does not work.
+ We have made contact with others in the same boat and they are joining forces with us to go to the press. The press won't touch my husband and I at the moment as we have an imminent finding to come down and until that happens they don't know what their story is. So we wait. We cannot fix it our selves , we cannot sell or move, we cannot renovate or even plan a holiday as we have no idea when the finding will come and massive repair works begin.
+
+ I am sorry to be so dark but if someone had told me what was ahead for me it may have bolstered me for the horrible journey ahead. My husband and I often discuss what we could have done differently and we can't think of what we could have done? We had no choice but to go legal as our committee flatly refused to do anything to fix the leaks.
+ I am happy to include you in our little group if you wish to speak to others. The more of us the merrier they are all lovely people in terrible situations,  they have all gone down the tribunal pathway.
+Be very careful of trying to take out your committee, the Tribunal considers this draconian. The Tribunal believes that owners vote and the will of the people has spoken,  but  in our situation  the owners are not told the truth,  minutes are false and massaged or just information is deleted. Company nominees are used a proxies. We cannot beat our committee. All of the other owners are either unaware, apathetic or afraid of standing up to the committee who have been in power for twenty years.
+ If I have not terrified you completely we believe if we get enough victims ( I hate that word) we can have more of a chance to lobby and get the press involved . So let me know if you want to go ahead and I will give you details of others to speak to. I am also happy to chat on the phone or skype.
+
+ all the best, stay in touch I am interested in helping in any way
+Whoopi
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: dustyrusty
+To: Whoopi, dustyrusty
+25/08/2018 - 8:57 am
+We didn't chat before, I just followed on of the FlatChat newsletter links through to one of your forum posts and was satisfied hearing about your story. My apartment is in Bondi, but since it's not inhabitable I've spent most of my time waiting overseas (San Francisco) study legislation and case law collecting knowledge and preparing the biggest case ever.
+Reply All Quote to All Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+25/08/2018 - 8:07 am
+Hey Dusty rusty
+
+ I am unable to find the post you have read which inspired you to reach out to me, have we had a conversation?  Did I comment on  your situation? Just trying to work out how you connected with me to put it into context. We have a similar story to you with bad luck and corrupt people, rogue committees and a system that believes Strata is a democracy which it is not. I am happy to connect I just wanted to put you into some context re Flat Chat. Also happy to introduce you to the group we have rallied in the same boat. Happy to share wars stories.
+
+ Look forward to hearing from you
+
+ Whoopi
+Reply Sender Reply All Quote to Sender Quote to All Mark Unread Delete
+Avatar
+From: Whoopi
+To: dustyrusty, Whoopi
+25/08/2018 - 7:59 am
+Hi Dusty Rusty
+
+There are more people like us out there we have been in contact with them. Where abouts are you situated I am in the heart of Sydney.
+Whoopi
+
+Hi,
+I'm glad to come across your post and looking forward to getting more into your story. My apartment has been uninhabitable due to concrete cancer and I've been homeless already 18 months. I don't think anyone could have written a drama more packed with bad luck and gross people corrupting every effort to get my life back.
+Which lawyer did you use? I'd love to rack your brain.
+Dusty
+Reply All Quote to All Delete
+
+
+*/
+
+
+
 let cleaning = {
 
 '1631a1e7194326e7': { d:1,f: 'allison.kilduff', md: `14`},
@@ -517,7 +877,7 @@ module.exports = {
 
     if (config.log.verbose && up.md!='') $log(` ${m.name} clean md.body`.green.dim, m.name, m.gmail.subject)
     if (!m.md) $log(` ${m.name} : md undefined ${moment(m.published)} ${m.gmail.subject} },`.red.dim) // },`)
-    else if (!m.md.body) $log(`'${m.name}': ${moment(m.published)} ${m.gmail.subject}\n { f: '${m.gmail.from.split('@')[0].split('<')[1]}', md: \`${m.md.raw}\` },`) // },`)
+    else if (!m.md.body) $log(`'${m.name}'`.yellow+` ${moment(m.published).format('YYYY-MM-DD')} ${m.gmail.subject.cyan}\n`.dim, `{ f: '${m.gmail.from.split('@')[0].split('<')[1]}', md: \`${m.md.raw}\` },`) // },`)
 
     return m
   }

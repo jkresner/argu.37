@@ -1,5 +1,8 @@
 #!/bin/sh
-op="webpack"
+OP="webpack"
+
+
+
 L2 "rm -rf   " "htp/cdn"
 rm -rf htp/cdn
 

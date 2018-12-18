@@ -2,12 +2,8 @@
 CMD="CMD/test"
 source cmd/b/init
 
-
 L2 "templates"
 source cmd/t/template
 
 L2 "server"
 source cmd/t/server
-
-# cd cmd/d/migrate/2018-09
-# mongorestore --drop --db argu_test ./bson

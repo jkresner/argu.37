@@ -1,6 +1,11 @@
 /* aside =<>= ag content */
 aside {                        background:white;color:black;width:700px;padding:5px;margin:10px auto; }
-aside * {                      width:100%;margin:0;padding:0;text-align:justify;border:none }
+aside * {
+  // width:100%;
+  margin:0;padding:0;
+  text-align:justify;
+  border:none
+}
 /*aside.dev * { border:solid 1px gray;margin:1px; }*/
 
 aside.laws {
@@ -41,18 +46,18 @@ aside.set  {                   border:2px solid black;border-left:none;border-ri
 
 .set>ul hr {                   margin:10px 0;border-top:1px solid #eeeeee; }
 
-.set > ul img {                max-width:100%;background-color:rgb(248, 248, 248);margin:1px; }
-.set > ul table {              width:101%;vertical-align:top;margin:5px 0 5px -5px; }
-.set > ul table th,
-.set > ul table td {           vertical-align:top;padding:2px 5px;text-align:left  }
-.set > ul blockquote {         background:none;border:none;padding:4px 0 4px 12px;font-size:0.93em;line-height:1.25em;opacity:0.9 }
+.set>ul img {                max-width:100%;background-color:rgb(248, 248, 248);margin:1px; }
+.set>ul table {              width:101%;vertical-align:top;margin:5px 0 5px -5px; }
+.set>ul table th,
+.set>ul table td {           vertical-align:top;padding:2px 5px;text-align:left  }
+.set>ul blockquote {         background:none;border:none;padding:4px 0 4px 12px;font-size:0.93em;line-height:1.25em;opacity:0.9 }
 /*.set > ul blockquote p {       padding:2px 0 1px 0 }*/
-.set > ul p {                  padding:3px 0 2px 0 }
-.set > ul > li {               position:relative;list-style:none; }
-.set > ul > li.n {             display:none }
-.set > ul > li > * {           font-family:'courier'; }
-.set > ul > li ul,
-.set > ul > li ol {            font-family:sans-serif; }
+.set>ul p {                  padding:3px 0 2px 0 }
+.set>ul > li {               position:relative;list-style:none; }
+.set>ul > li.n {             display:none }
+.set>ul > li > * {           font-family:'courier'; }
+.set>ul > li ul,
+.set>ul > li ol {            font-family:sans-serif; }
 .set li ul,
 .set li ul > li {              list-style:none;padding-left:0; }
 .set li ul ul > li {           list-style-type:disc;padding-left:5px; }
@@ -68,21 +73,31 @@ aside.set  {                   border:2px solid black;border-left:none;border-ri
 .set>ul>li header {            padding:0 0 4px 0;line-height:15px;
                                font-size:12px;letter-spacing:-0.9px }
 .set>ul>li header:before {     display:block;height:16px;line-height:16px; }
-.set>ul>li header cite {       display:inline-block;font-style:normal;font-weight:normal;color:gray; }
+.set>ul>li header cite {       display:inline-block;font-style:normal;
+                               clear:both;
+                               font-weight:normal;color:gray; }
 
-.set li.comm cite:before,
-.set li.comm header:before {     margin:2px 0 0 0;font-weight:100;letter-spacing:-1.6px;
-                               overflow:hidden;white-space:nowrap }
-.set li.comm header:before {     color:rgb(209,209,209,.5);
-content:'-------------------------------------------------------------------------------' }
-.set li.comm header cite:before{ height:20px;/*font-weight:400;*//*width:700px;border:solid 1px red;*/
-content:'===============================================================================' }
-.set li.comm header cite {       display:none;padding:2px 0;
+.set li.comm {
+  cite:before,
+  header:before {              margin:2px 0 0 0;font-weight:100;
+                               letter-spacing:-1.6px;
+                               overflow:hidden;
+                               white-space:nowrap }
+  header:before {              color:rgb(209,209,209,.5);
+                               border-top:solid 1px gray; }
+  header cite:before{          height:20px;
+                               display:block;
+                               width:700px;
+                               /*font-weight:400;*//**/
+                               // border:solid 1px blue;
+                               content:'-';
+                               border-top:solid 2px darkgray; }
+  header cite {                display:none;padding:2px 0;
                                line-height:16px;font-size:16px;font-weight:bold;color:black }
+  header time {                float:right;padding:4px 0px 0px 0px;margin-right:50px;letter-spacing:-1.6px }
+}
 .set li.comm.swap header:before{ content:none }
 .set li.comm.swap header cite {  display:block }
-.set li.comm header time {       float:right;padding:4px 0px 0px 0px;margin-right:50px;letter-spacing:-1.6px }
-
 
 .set .doc>header:before {      color:brown;text-align:center;content:'-- [p] + [p] + [p] --' }
 .set .doc>header cite {        text-align:center;width:100%; }
@@ -110,7 +125,13 @@ content:'=======================================================================
      .set header b {          font-size:13px;color:#d7153a }
 
 
-.set .nav_id {                  position:absolute;top:0;right:0;display:inline-block;background:green }
+.set .nav_id {                  position:absolute;
+                                top:4px;right:0;
+                                width:38px;
+                                overflow:hidden;
+                                display:inline-block;
+                                // background:green
+                              }
 .set .goto {           display:none }
 /*.set header nav {             display:inline;background:white;padding-top:10px; }
 .set header nav > a {         line-height:21px;top:-2px;position:absolute; }
@@ -199,17 +220,6 @@ ins > b {                      color:#002664 }
 .set.evidence p {              font-family:courier;font-size:12px }
 */
 
-#filters {                     width:97%;margin:5px 5px 0 5px;float:left;letter-spacing:-0.4px; }
-#filters * {                   padding:0;margin:0;display:inline-block; }
-#filters h6 {                  line-height:24px;width:100% }
-#filters p {                   line-height:12px;width:100%;font-size:12px; }
-#filters input {               height:11px;margin:0px; }
-#filters label {               font-size:11px;color:gray; }
-#filters ul {                  list-style:none;padding:0px;margin:0 0 0 8px; }
-#filters li  {                 height:13px;width:92px }
-#filters span {                font-size:11px;line-height:12px;float:right }
-#filters var {                 color:#d7153a; }
-div.container > #filters {     width:160px;padding:5px 30px 0 8px; }
 
 
 @media (max-width:1499px) {
@@ -219,9 +229,9 @@ div.container > #filters {     width:160px;padding:5px 30px 0 8px; }
 
 @media (max-width:799px) {
   div.container { position:static;padding:2px }
-  div.container #filters { width:100%;padding:3px 0% 0px 0%;margin:0;float:none;position:static; }
-  #filters p, #filters h6 { display:none }
-  #filters li { width:94px; }
+  // div.container #filters { width:100%;padding:3px 0% 0px 0%;margin:0;float:none;position:static; }
+  // #filters p, #filters h6 { display:none }
+  // #filters li { width:94px; }
   .set { width:98%;padding:0px 1% 10px 1%;margin:0; }
   .set.static { float:none; width:100%;margin:0;position:static;z-index:0; }
   .set > ul {                    width:100%;z-index:0;position:static; }
@@ -231,8 +241,8 @@ div.container > #filters {     width:160px;padding:5px 30px 0 8px; }
 @media print
 {
   body { width:800px }
-  #filters { display:none }
-  div.container { position:static;padding:40px 10px 50px 30px; }
+//  #filters { display:none }
+  // div.container { position:static;padding:40px 10px 50px 30px; }
   img { max-height:460px; }
   /*.set { width:750px;margin:0px!important;position:static; }*/
   .set header strong,

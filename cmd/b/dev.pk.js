@@ -7,13 +7,18 @@ let publicPath       = `/ui/v1/` //http://localhost:5436
 let hmr              = `webpack-hot-middleware/client?path=${publicPath}hmr`
 
 
+let htmlOps          = name => Object.assign({hash:true,xhtml:true,chunks:'ag'},
+  { filename: p(`pl8/ui/${name}.hbs`), template: `ui/${name}.pl8`})
+
+
 module.exports       = {
 
   mode:                    'development',
 
   entry: {
-    ag:                    ['./37', hmr],
-    // adm:                ['./ad', hmr]
+    // lib:             ['./37', hmr],
+    // ag:              ['./37', hmr],
+    adm:             ['./ad', hmr]
   },
 
   context,           // home dir for entry + rules.loader
@@ -26,8 +31,8 @@ module.exports       = {
       { test:              /\.less$/,
         // issuer:         /\.less$/,
         include:           context+'/css',
-        use: [            'style-loader',
-               {           loader: 'css-loader'   },
+        use: [ {           loader: 'style-loader' } ,
+               {           loader: 'css-loader'   } ,
                {           loader: 'less-loader'  } ]
       },
 
@@ -48,56 +53,52 @@ module.exports       = {
   },
 
   plugins: [
-                           new html({         // title: '{{html.Title}}',
-                             filename:      p('pl8/ui/web.hbs'),
-                             template:      `ui/web.pl8`,
-                             hash:          true,
-                             xhtml:         true    }),
+                           // new html(htmlOps('web')),
+                           new html(htmlOps('adm')),
                            new webpack.HotModuleReplacementPlugin(),
-                           new webpack.NoEmitOnErrorsPlugin()
-  ],
+                           new webpack.NoEmitOnErrorsPlugin()         ],
 
   stats: {
-    all:                   false,
-    assets:                false,
+    all:                   true,
+    assets:                true,
     // assetsSort:            string,
     builtAt:               false,
-    cached:                false,
-    cachedAssets:          false,
+    cached:                true,
+    cachedAssets:          true,
     children:              false,
     chunkGroups:           false,
-    chunkModules:          false,
-    chunkOrigins:          false,
+    chunkModules:          true,
+    chunkOrigins:          true,
     chunks:                false,
     // chunksSort:            string,
     colors:                false,
     // context:               string,
-    depth:                 false,
+    depth:                 true,
     entrypoints:           false,
-    env:                   false,
-    errorDetails:          false,
-    errors:                false,
-    exclude:               false,
+    env:                   true,
+    errorDetails:          true,
+    errors:                true,
+    exclude:               true,
     // excludeAssets:         RegExp,
     // excludeModules:        RegExp,
     hash:                  false,
     // maxModules:            number,
-    moduleAssets:          false,
-    moduleTrace:           false,
-    modules:               false,
+    moduleAssets:          true,
+    moduleTrace:           true,
+    modules:               true,
     // modulesSort:           string,
-    nestedModules:         false,
-    optimizationBailout:   false,
+    nestedModules:         true,
+    optimizationBailout:   true,
     outputPath:            false,
-    performance:           false,
-    providedExports:       false,
+    performance:           true,
+    providedExports:       true,
     publicPath:            false,
-    reasons:               false,
-    source:                false,
+    reasons:               true,
+    source:                true,
     timings:               false,
     usedExports:           false,
     version:               false,
-    warnings:              false,
+    warnings:              true,
     // warningsFilter:        RegExp
   }
 

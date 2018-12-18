@@ -1,5 +1,3 @@
 #!/bin/sh
-op="tst/svr"
-# T=$(
+OP="tst/svr"
 coffee tst/svr/index.coffee $1 $2 $3 $4 $5 $6
-# )
