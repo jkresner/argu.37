@@ -1,12 +1,11 @@
-<article>
-<header>
-  <a href="/" title="Home" class="home"><img src="/favicon.ico" /> 37paulst.com</a>
-  <a href="/toc" title="Home"><img src="/img/author.jpg" /> {{page.part.title}}</a>
-</header>
-{{ web_chapter page }}
-<footer>
-  <hr />
-  Jump to >
-  {{#if page.next}}<a href="{{page.next.url}}">Next chapter</a>{{/if}}
-</footer>
-</article>
+<main>
+  <header>
+{{!--     <a href="/toc" title="Introduction"><img src="/favicon.ico" /></a> --}}
+{{!--     {{page.part.title}} --}}
+    <a href="/" title="Table of contents" class="toc"><img src="/favicon.ico" /></a>
+  </header>
+  <article>{{ web_chapter page }}</article>
+  <footer>
+    - {{#if page.next}}Jump to > <a href="{{page.next.url}}">Next chapter</a>{{/if}}
+  </footer>
+</main>

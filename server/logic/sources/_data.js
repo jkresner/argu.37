@@ -1,3 +1,11 @@
+// Move into logic / make dynamic
+const jk_sets               = require('../../../37/2019-01/sets.jk')
+const jk_filters            = Object.keys(jk_sets).sort()
+
+const {gmail}               = require('../../../37/gmail')
+const {gmailUp}             = require('../../../37/2019-01/inbox1')
+
+
 const Lookup                                                                 = {
 
 cdn_atchd:    `${config.http.static.host}/${config.http.static.cdn.atchd}`     ,
@@ -26,19 +34,11 @@ existing: {
 gmail: {      ignore: {$exists:0}, type: 'gmail'                               },
 published: {  ignore: {$exists:0}, published: {$exists:1}                      },
 threads:      (limit, newest) => {
-  if (!cache['threads']) cache['threads'] = // hack (not great)
-    require('../../../cmd/tool/import/data/gmail/threads')
+  if (!cache['threads']) cache['threads'] = gmail.threads; // hack (not great)
   let all = Object.keys(cache['threads'])  // .filter(id => threads[id].p == 0)
   let ids = newest ? _.reverse(_.takeRight(all, limit)) : _.take(all, limit)
   // $log('threads'.yellow, ids.length, limit, newest)
   return { 'threadId': { $in: ids } }                                          }}
-
-
-
-// Move into logic / make dynamic
-const jk_sets               = require('../sets/_data.jk')
-const jk_filters            = Object.keys(jk_sets).sort()
-const {gmailUp}             = require('./gmail/cleanup')
 
 
 const Projections = ({select,pl8},{chain,view}) => ({
@@ -74,8 +74,11 @@ const Projections = ({select,pl8},{chain,view}) => ({
   body: src => assign(src, { md: assign(src.md, {
                 body: pl8('source_figure', src) }) }),
 
-  typed: src =>
-    _.omit(chain(assign(src,{md:src.md||{}}),`typed_${src.render}`), ['data']),
+  typed: src => {
+    $log(`typed_${src.render}`)
+    return 
+    _.omit(chain(assign(src,{md:src.md||{}}),`typed_${src.render}`), ['data'])
+  },
 
   typed_img: src => chain(src,'fileInfo','body'),
   typed_doc: src => chain(src,'fileInfo','body'),

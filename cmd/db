@@ -1,42 +1,43 @@
 #!/bin/sh
-CMD=CMD/db
-# Usage:
-#   LAWS
+# Usage:LAWS
+#
 #   cmd/db import law --verbose
-
-#   SOURCES
+#
+# Usage:SOURCES
+#
 #   cmd/db import gmail -g sync
 #   cmd/db import doc -g OCR
-
-#   MIGRATION
+#
+# Usage:MIGRATION
+#
 #   cmd/db migrate/2018-09 all
-#   -> coffee cmd/d/migrate/2018-09/run.coffee -o all
+#   -> coffee cmd/db.coffee -c migrate/2018-09/migrate/2018-09 -o all
 
+CMD=db
 
-
-source cmd/b/init
-
+source cmd/init
 
 L2 $1
 
 if [ "$3" = "--law-Export" ]; then
   L1 "using fresh ~/Downloads/law.Export.csv"
-  mv ~/Downloads/law-Export.csv cmd/d/migrate/2018-09/fixture/init/laws0.csv
-  source cmd/d/sync-test
+  mv ~/Downloads/law-Export.csv cmd/d/import/q/law.csv
+  # source cmd/d/sync-test
 fi
 
 echo
 
 if [ "$1" = "--replay" ]; then
   # manually update this while developing
-  coffee cmd/d/run.coffee -c migrate/2018-09/migrate/2018-09 -o all 2 $3 $4 $5 $6
+  # coffee cmd/db.coffee migrate/2018-09/migrate/2018-09 -o all $3 $4 $5 $6
+  coffee cmd/db.coffee -c import/import -o law --verbose $4 $5 $6  
 else
-  coffee cmd/d/run.coffee -c $1/$1 -o $2 $3 $4 $5 $6
+  coffee cmd/db.coffee -c $1/$1 -o $2 $3 $4 $5 $6
 fi
 
 if [ "$3" = "--sync-test" ]; then
-  L1 "sync-tst"
-  source cmd/d/sync-test
+  source cmd/db-snap argu_cmd tst/data/bson laws
+  source cmd/db-snap argu_cmd tst/data/bson tags  
 fi
 
 L1 "done...\n"

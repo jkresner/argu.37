@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = function() {
 
   DESCRIBE("_data",    () => require("./sources/data")    )
   // DESCRIBE("Gmail",    () => require("./sources/gmail")   )

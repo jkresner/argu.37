@@ -1,0 +1,6 @@
+#!/bin/sh
+# source cmd/b/init
+# L2 "npm audit" "/node_module"
+npm i --package-lock-only;
+npm audit;
+cmd/test;

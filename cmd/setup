@@ -1,13 +1,49 @@
 #!/bin/sh
-CMD="CMD/setup"
-
 # Usage:
 #    cmd/setup
 #    cmd/setup --npm-link -w -k
 
-source cmd/b/init
-source cmd/b/clean
-source cmd/b/setup
-source cmd/t/setup
+CMD="setup"
+
+source cmd/init
+source cmd/clean
+
+OP="build"
+L2
+if [ "$1" = "--npm-link" ]; then
+  L2 "npm link" "install screamjs + honeycombjs\n"
+  npm link screamjs
+  npm link honeycombjs
+  echo ""`
+fi
+L2 "npm install" "/node_modules (may take a minute)"
+npm i;echo;
+
+L2 "npm install -D" "/node_module (--save-dev)\n"
+npm i -D;echo;
+
+# rm -f package-lock.json
+
+
+OP="test"
+L2 "ln -nsf" "test bson as cmd/import latest"
+cd cmd/d/import/db
+unlink latest
+ln -ns ../../../tst/dat/bson latest
+cd ../../../
+
+L2 "ln -nsf" ".git/hooks/prep-push"
+rm -rf .git/hooks
+mkdir .git/hooks
+cd .git/hooks
+ln -nsf ../../cmd/pre-push
+cd ../../
+
+L2 "pre-push" "test"
+source .git/hooks/pre-push
+
+rm -f package-lock.json
+
+
 
 L1 "done...\n"

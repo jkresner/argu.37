@@ -5,8 +5,11 @@
     {{crumb}} >
     <a href="#"><b>{{of}}:{{at}}</b> <i>{{name}}</i></a>
   </nav>
+  <textarea id="{{elmId}}_b"
+    onmouseover="auto_grow(this)"
+    onchange="law_render('{{elmId}}')">{{body}}</textarea>
   <dfn><var>{{at}}</var> {{title}}</dfn>
-  <section>{{emup_law body}}</section>
+  <section id="{{elmId}}_h">{{mup_law body}}</section>
   <dl>{{#each tags}}<dt title="{{name}}">{{short}}</dt><dd>{{name}}</dd>{{/each}}</dl>
 </li>{{/each}}
 </ul>

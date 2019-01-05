@@ -1,226 +1,66 @@
 /* aside =<>= ag content */
-aside {                        background:white;color:black;width:700px;padding:5px;margin:10px auto; }
-aside * {
-  // width:100%;
-  margin:0;padding:0;
-  text-align:justify;
-  border:none
-}
+aside {                       
+  margin:10px auto; 
+  padding:5px;
+  width:700px;
+  background:hsla(255,100%,100%,0.99);
+  color:black;
+  * {
+    margin:0;padding:0;
+    border:none } }
 /*aside.dev * { border:solid 1px gray;margin:1px; }*/
 
 aside.laws {
-  border:2px solid #d7e2fc;border-left:none;border-right:none;
+  > ul > li { 
+    padding:5px 1px;
+    font-size:14px;
+    font-family:arial; }
 
-  > ul { list-style:none;padding:0;margin:0 }
-  > ul > li { position:relative;padding:5px 3px;font-size:17px;font-family:arial; }
-  dfn { clear:both;font-weight:bold;font-style:normal;display:block;margin:5px 0 0 0;padding:0;  }
-  dfn var { opacity:0.7;text-align:right;padding-right:8px;display:inline-block;font-style:normal;font-weight:normal;min-width:40px  }
-  dl { position:absolute;opacity:0.65;top:0;right:-5px;line-height:18px;text-align:right;font-size:12px }
-  dt { background:#a3a3a3;color:white;font-weight:normal;font-family:arial;display:inline-block;float:right;margin:5px;padding:0px 7px;border-radius:4px; }
-  dd { display:none }
-  p,
-  li { padding:0;margin:1px 0 0 0;font-family:'Times New Roman';font-size:0.9em;line-height:1.25em }
-  section { padding:0;margin:0 0 0 44px; }
-  blockquote { border:none;margin:0;padding:0; }
-  section>blockquote ol { list-style:none;padding:4px 0 }
-  section>blockquote ol li { margin-left:6px;margin-top:4px; }
-  section>blockquote>blockquote > ol { margin-left:0px;font-size:0.95em }
-  section>blockquote>blockquote>blockquote > ol { margin-left:0px }
-  section>blockquote > ol > li { counter-increment:c1; }
-  section>blockquote blockquote > ol > li { counter-increment:c2 }
-  section>blockquote blockquote blockquote > ol > li { counter-increment:c3; }
-  section>blockquote li:before { display:inline-block;
-                                vertical-align:top;
-                                margin-top:-1px;
-                                margin-left:-24px;
-                              width:24px;padding:0 10px 0 0;color:#17394d;font-size:0.9em;font-weight:100;letter-spacing:-0.03em; }
-  section>blockquote > ol > li:before { content: "(" counter(c1,decimal) ")" }
-  section>blockquote blockquote > ol > li:before { content: "(" counter(c2,lower-alpha) ")" }
-  section>blockquote blockquote blockquote > ol > li:before { content: "(" counter(c3,lower-roman) ")"; }
-  nav { font-size:12px;color:#337ab7;text-align:center;margin:-5px -5px 0 0;padding:5px 0 1px 0  ;display:block;opacity:0.5; }
-  nav a { font-size:13px;color:#d7153a; }
+  section { padding:0;margin:0 0 0 40px; }
+  nav { 
+    font-size:12px;color:#337ab7;text-align:center;
+    margin:-5px -5px 0 0;padding:5px 0 1px 0;
+    display:block;opacity:0.5; 
+  a { font-size:13px;color:#d7153a; } }
 }
 
-aside.set  {                   border:2px solid black;border-left:none;border-right:none }
+aside.set  {                 border:2px solid black;border-left:none;border-right:none }
 .set>ul {                      display:none } /* onload no render*/
-
-.set>ul hr {                   margin:10px 0;border-top:1px solid #eeeeee; }
-
-.set>ul img {                max-width:100%;background-color:rgb(248, 248, 248);margin:1px; }
-.set>ul table {              width:101%;vertical-align:top;margin:5px 0 5px -5px; }
-.set>ul table th,
-.set>ul table td {           vertical-align:top;padding:2px 5px;text-align:left  }
-.set>ul blockquote {         background:none;border:none;padding:4px 0 4px 12px;font-size:0.93em;line-height:1.25em;opacity:0.9 }
-/*.set > ul blockquote p {       padding:2px 0 1px 0 }*/
-.set>ul p {                  padding:3px 0 2px 0 }
-.set>ul > li {               position:relative;list-style:none; }
-.set>ul > li.n {             display:none }
-.set>ul > li > * {           font-family:'courier'; }
-.set>ul > li ul,
-.set>ul > li ol {            font-family:sans-serif; }
-.set li ul,
-.set li ul > li {              list-style:none;padding-left:0; }
-.set li ul ul > li {           list-style-type:disc;padding-left:5px; }
-/*.set li ul > li > ul > li {    list-style:none;margin-left:5px; }*/
-.set li ul {                   margin:3px 0 8px 10px }
-.set li ol {                   margin:3px 0 8px 20px }
-.set li ol > li {              list-style:decimal;padding-left:5px }
-.set li ol > li > ol {         margin:6px 8px 6px 0 }
-.set li ol > li > ol > li {    list-style:lower-roman;padding:1px 1px 1px 4px;font-size:0.95em }
-/*swear words*/
-.set u b {                     background:#222;coor:white;font-weight:normal;padding:1px 3px;margin:0 1px; }
-
+/*.set header var {             font-style:normal;color:#999; }*/
+/*.set header p {               display:inline-block;padding-top:4px } /*letter-spacing:-0.2px;*/
 .set>ul>li header {            padding:0 0 4px 0;line-height:15px;
                                font-size:12px;letter-spacing:-0.9px }
 .set>ul>li header:before {     display:block;height:16px;line-height:16px; }
 .set>ul>li header cite {       display:inline-block;font-style:normal;
                                clear:both;
                                font-weight:normal;color:gray; }
-
-.set li.comm {
-  cite:before,
-  header:before {              margin:2px 0 0 0;font-weight:100;
-                               letter-spacing:-1.6px;
-                               overflow:hidden;
-                               white-space:nowrap }
-  header:before {              color:rgb(209,209,209,.5);
-                               border-top:solid 1px gray; }
-  header cite:before{          height:20px;
-                               display:block;
-                               width:700px;
-                               /*font-weight:400;*//**/
-                               // border:solid 1px blue;
-                               content:'-';
-                               border-top:solid 2px darkgray; }
-  header cite {                display:none;padding:2px 0;
-                               line-height:16px;font-size:16px;font-weight:bold;color:black }
-  header time {                float:right;padding:4px 0px 0px 0px;margin-right:50px;letter-spacing:-1.6px }
-}
-.set li.comm.swap header:before{ content:none }
-.set li.comm.swap header cite {  display:block }
-
-.set .doc>header:before {      color:brown;text-align:center;content:'-- [p] + [p] + [p] --' }
-.set .doc>header cite {        text-align:center;width:100%; }
-
-.set li.img {                    display:inline-block;width:47%;margin:1%;vertical-align:top;position:relative; }
-.dev.set li.img { border:solid 1px red; }
-.set li.img>header:before {      background:#e3e3e3;width:100%;height:20px;content:' [ ] ';padding-left:3px  }
-.set li.img.swap>header:before { background:#c3c3c3;color:navy;content:' [ ] ' }
-.set li.img>header {             position:absolute; }
-.set li.img>header cite {        position:absolute;line-height:19px;top:0;left:26px;color:black;z-index:2  }
-.set li.img>header time {        display:inline-block;padding:4px }
-.set li.img tt {                 margin:20px 80px;display:inline-block;padding:3px;font-size:11px }
-.set li.img figure {             width:100%; }
-.set li.img figure > img {       width:100%!important }
-.set li.img figcaption {         width:100%;height:28px;color:black;font-weight:bold;
-    margin:-40px 0 0 6px;padding:4px;background:white;display:block;opacity:0.75; }
-
-
-/*.set header var {             font-style:normal;color:#999; }*/
-/*.set header p {               display:inline-block;padding-top:4px } /*letter-spacing:-0.2px;*/
-
-
-
+/*
 .set header strong,
      .set header b {          font-size:13px;color:#d7153a }
-
-
-.set .nav_id {                  position:absolute;
-                                top:4px;right:0;
-                                width:38px;
-                                overflow:hidden;
-                                display:inline-block;
-                                // background:green
-                              }
-.set .goto {           display:none }
-/*.set header nav {             display:inline;background:white;padding-top:10px; }
+.set header nav {             display:inline;background:white;padding-top:10px; }
 .set header nav > a {         line-height:21px;top:-2px;position:absolute; }
 .set header nav > a:first-child { background:#d1d1d1;opacity:0.02;
                                top:8%;bottom:3%;right:-35px;width:8%;height:95% }
 .set header nav > a:first-child:hover { opacity:0.1  }
 */
-
-
-.set section a > img {        opacity:0.98;margin:10px; }
-.set section em {             font-size:0.8em;color:#78909c; }
-
-.set section {                padding:0px 0px 3px 0px;line-height:18px;font-family:sans-serif;color:#222 }
-.set section p {              font-family:sans-serif; }
-.set section > p {            font-size:14px;margin:0;padding:3px 0 4px 0; }
-.set section > p:last-child { padding-bottom:1px }
-.set section h3 {             font-family:'courier';font-weight:bold;
-                              font-size:13px;line-height:14px;letter-spacing:-0.7px;
-                              color:#777;display:block;border-top:solid 1px #f0f0f0;
-                              padding:5px 0 0px 0px;margin:7px 1px 3px 0px  }
-.set section h3 u {           font-weight:normal;text-decoration:none;  }
-.set section h3 em {          display:block;font-style:normal;color:inherit; }
-.set section > table td { font-size:.9em;padding:1px 4px }
-.set section > table tr { font-size:.95em;padding:1px 3px }
-
-.set section > blockquote > blockquote { opacity:1 }
-.set section > blockquote > blockquote > ul { width:104%;height:180px;overflow:hidden;display:table;
-                                               table-layout:fixed;margin:-5px 0 0 -30px;padding:6px 1px }
-.set section > blockquote > blockquote > ul > li { display:inline;width:auto;display:table-cell;padding:0px 4px }
-.set section > blockquote > blockquote > ul > li img { width:100% }
-
-
-.set figure { color:#752f8a;font-size:12px;padding:5px 2px 7px 2px;text-align:right; }
-.set figure img { max-width:23%; }
-.set figure > img { max-width:100%; }
-.set figure > b {
-  display:inline-block;
-  margin:0 0 0 14px;padding:0px 0px 0px 0px;
-  letter-spacing:-.2px;line-height:11px;
-  font-size:13px;
-  font-weight:bold;
-  opacity:0.9;
-}
-.set dt { font-family:courier;padding:3px;font-size:11px;font-weight:normal; }
-/*.set dt i {  }*/
-.set figure > span::before {
-  padding-top:2px;
-  display:inline-block;line-height:20px;font-size:12px;padding-right:5px;font-weight:normal; }
-.set figure cite { color:rgb(117, 47, 138, 0.85);text-align:left;display:block;
-  border:dashed 1px #752f8a;border-bottom:none;border-top-width:2px;border-top-left-radius:6px;
-  font-style:normal;margin:-22px -2px 15px 8px;padding:5px 15px 0px 15px }
-.set figure cite p,
-.set figure cite li { padding-bottom:4px;font-size:0.95em }
-.set figure cite h4,
-.set figure cite h5,
-.set figure cite h6 { padding:1px 0 5px 0 }
-.set figure cite th,
-.set figure cite td { font-size:0.85em;border-bottom:solid 1px rgb(209,209,209,.25) }
-.set figure cite > blockquote > ul { display:block;width:230px;float:right;font-size:11px;margin-right:5px;letter-spacing:-0.4px }
-
-
+.set .nav_id {                  position:absolute;
+                                top:4px;right:0;
+                                width:38px;
+                                overflow:hidden;
+                                display:inline-block; }
+/*
 .set footer { padding:2px }
 .set footer > var { display:inline-block;padding:.1em .5em .2em;font-size:80%;width:85px;font-style:normal;letter-spacing:-0.5px;
   line-height:1.2;color: #ffffff;background-color:#555;text-align:left;border-radius:.25em;margin:0px 2px 0px 0px;opacity:0.65; }
 .set footer > var i { padding-right:4px;font-size:.7em }
 .set footer > var.on { background-color:green;font-weight:bold }
 .set footer > var:hover { cursor:pointer;opacity:1 }
-
-
-/*Highlights*/
-.hli1 { background:#ffff8d }
-.hli2 { background:#ffff8d }
-
-ins, ins > * {                 font-style:italic;font-weight:normal;
-                               font-size:0.9em;line-height:0.9em;
-                               color:#69b32d;text-decoration:none }
-ins > strong {                 color:red }
-ins > em {                     color:#ff7f2f }
-ins > i {                      color:#752f8a }
-ins > b {                      color:#002664 }
-
+*/
 
 /*.set.static {                  position:static;padding:5px }
 .set.evidence {                width:740px;background-color:rgb(211,211,211,0.1) }
 .set.evidence > ul {           display:block;margin:auto; }
-.set.evidence p {              font-family:courier;font-size:12px }
 */
-
-
 
 @media (max-width:1499px) {
   /*.set { width:780px;padding:0 0 0 40px  }*/

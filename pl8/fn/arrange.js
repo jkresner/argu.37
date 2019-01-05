@@ -27,37 +27,38 @@ function layout_chapter(toc, key, tmplt, media) {
 </div>`))(id, body)
 }
 
+//
+function web_chapter(page) {
+  // console.log('web_chapter'.yellow, page.id)
+  return layout_chapter(page.toc, page.id, (page.tp||{}).ch_w, 'w') 
+}
+
+//
+function print_chapter(key, toc, tp) {
+// return layout_chapter(toc, key, (tp||{}).ch_p, 'p')
+}
+
+function mail_btw(msg) {
+  if (!msg.from) return ''
+  // var htmEncode = function(str) { return str }
+    // .replace(/[\u00A0-\u9999<>\&]/gim, i => `&#${i.charCodeAt(0)};`) }
+  var cc = !msg.cc?'':(' CC '+msg.cc.replace(/(,|;)/g,' '))
+  var r = '<tt>'+msg.from+'</tt> to <tt>+'+msg.to+'</tt>'+cc
+
+  return r
+  // return (mail.from+' to '+mail.to
+  //       +(mail.cc?' CC '+mail.cc:''))
+  //          .replace(/[\u00A0-\u9999<>\&]/gim,
+  //             function(i) { return `&#${i.charCodeAt(0)};` })
+  //          .replace(/(\,|;)/g,'')
+}
+
 
 module.exports = {
-
   linkify: linkify,
-
-  web_chapter: function(page) {
-    // console.log('web_chapter'.yellow, page.id)
-
-
-    return layout_chapter(page.toc, page.id, (page.tp||{}).ch_w, 'w') },
-  print_chapter: function(key, toc, tp) {
-    // return layout_chapter(toc, key, (tp||{}).ch_p, 'p')
-  },
-
-
-  mail_btw: function(mail) {
-    if (!mail.from) return ''
-    // $log('mail_btw', mail, !mail.cc?'':' CC '+mail.cc.replace(/(\,|;)/g,' '))
-    // var htmEncode = function(str) { return str }
-      // .replace(/[\u00A0-\u9999<>\&]/gim, i => `&#${i.charCodeAt(0)};`) }
-    var cc = !mail.cc?'':(' CC '+mail.cc.replace(/(,|;)/g,' '))
-    var r = `<tt>${mail.from}</tt> to <tt>${mail.to}</tt>`+cc
-
-    return r
-
-    // return (mail.from+' to '+mail.to
-    //       +(mail.cc?' CC '+mail.cc:''))
-    //          .replace(/[\u00A0-\u9999<>\&]/gim,
-    //             function(i) { return `&#${i.charCodeAt(0)};` })
-    //          .replace(/(\,|;)/g,'')
-  },
+  web_chapter: web_chapter,  
+  print_chapter: print_chapter,
+  mail_btw: mail_btw,
 
   source_figure: function(src, scope) {
     // $log('source_figure',src)
@@ -81,57 +82,44 @@ module.exports = {
     return '<figure id="'+id+'" class="'+css+'">'+body+'</figure>'
   },
 
-  // datetime: {
-    ago:     function(t) { return moment(t).fromNow() },
-    day:     function(t) { return moment(t).format('MMM DD') },
-    dayIso:  function(t) { return moment(t).format('YYYY-MM-DD') },
-    daytime: function(t) { return moment(t).format('HH:mm MMM DD YYYY')
-                                           .replace('00:00 ','') },
-    tzIso:   function(time, tz) {
-      let today = moment.tz(tz.id).startOf('day').unix()
-      let t = moment.unix(time).tz(tz.id)
-      return `<time>${t.format('MMM')} <i class="fa fa-calendar-o" aria-hidden="true"><b>${t.format('DD')}</b></i></time> <em>${climbing} on <b>${t.format('ddd')}</b></em> `
-    },
-  // },
+  // annotate: function(input, notations, scope) {
+  //   if (!scope)
+  //     scope = 'mk'+input.length // +'_'+notations.map(function(n) { return n[0] })
 
-  annotate: function(input, notations, scope) {
-    if (!scope)
-      scope = 'mk'+input.length // +'_'+notations.map(function(n) { return n[0] })
+  //   var notes = [],
+  //       ahRefs = [],
+  //       highlighted = input.toString(),
+  //       scope_num = 0,
+  //       mark_num = 0;
+  //   // scope = scope || 'h2' // if no h1 in input, full scope of input
+  //   // container #id or section heading
+  //   // scope = scope||''
 
-    var notes = [],
-        ahRefs = [],
-        highlighted = input.toString(),
-        scope_num = 0,
-        mark_num = 0;
-    // scope = scope || 'h2' // if no h1 in input, full scope of input
-    // container #id or section heading
-    // scope = scope||''
+  //   notations.forEach(function(notation) {
+  //     var color = notation.color||0 // [0-6] also "level/category"
+  //     var marks = notation.marks // highlights
+  //     var note = notation.note  // comment
+  //     var id = scope+'_'+scope_num++ // +'_ml'+color
+  //     // var m: = 'm'+color // color [1-6] => hl1, hl2, hl3
+  //     var subs = []
+  //     marks.forEach(function(str) {
+  //       mark_num++;
+  //       // tagCss = 'ml'+color =>  class="'+tagCss+'"
+  //       var tagId = id+'_'+mark_num
+  //       highlighted.replace(str, '<mark id="'+tagId+'" class="'+id+'">['+str+']['+id+']</mark>')
+  //       subs.push('<sub><a href="'+tagId+'">'+str+'</a></sub>')
+  //     })
+  //     refs.push('['+id+']: #'+id)
+  //     annotations.push('<details id="'+id+'" class="ml'+color+'">'+subs+note+'</details>')
+  //   })
 
-    notations.forEach(function(notation) {
-      var color = notation.color||0 // [0-6] also "level/category"
-      var marks = notation.marks // highlights
-      var note = notation.note  // comment
-      var id = scope+'_'+scope_num++ // +'_ml'+color
-      // var m: = 'm'+color // color [1-6] => hl1, hl2, hl3
-      var subs = []
-      marks.forEach(function(str) {
-        mark_num++;
-        // tagCss = 'ml'+color =>  class="'+tagCss+'"
-        var tagId = id+'_'+mark_num
-        highlighted.replace(str, '<mark id="'+tagId+'" class="'+id+'">['+str+']['+id+']</mark>')
-        subs.push('<sub><a href="'+tagId+'">'+str+'</a></sub>')
-      })
-      refs.push('['+id+']: #'+id)
-      annotations.push('<details id="'+id+'" class="ml'+color+'">'+subs+note+'</details>')
-    })
-
-    return highlighted +
-      '  \n>> * * *  '+
-      '  \n>> * * *  '+
-      '  \n>>' + annotations.join(
-      '  \n>> - ') +
-      '  \n>>' + refs.join(
-      '  \n>>')
-  }
+  //   return highlighted +
+  //     '  \n>> * * *  '+
+  //     '  \n>> * * *  '+
+  //     '  \n>>' + annotations.join(
+  //     '  \n>> - ') +
+  //     '  \n>>' + refs.join(
+  //     '  \n>>')
+  // }
 
 }

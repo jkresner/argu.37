@@ -1,0 +1,4 @@
+#!/bin/sh
+OP="pl8"
+L2 "templates"
+coffee tst/tmpl/index.coffee $1 $2 $3 $4 $5 $6

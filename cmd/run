@@ -1,37 +1,37 @@
 #!/bin/sh
-CMD=CMD/r
+# Usage:
+#    cmd/run
+#    cmd/run --test --worker
+
+CMD=run
 BUILD=;
 CDN=;
 ENV=dev
-WEB=cmd/r/server
-WKR=;
+WEB=cmd/server
+# WKR=;
 
-
-source cmd/b/init
-
-# if [ "$2" = "--worker" ]; then
-#   L2 "r.worker: still TODO"
-#   WKR=cmd/r/worker
-# fi
+source cmd/init
 
 # if [ "$1" = "--dist" ]; then
-#   L1 "dist.env TODO"
 #   ENV=prod
 #   BUILD=cmd/b/dist
 # elif [ "$1" = "--test" ]; then
-#   L1 "test.env"
+#   ENV=test
 #   CDN=;
 # elif [ "$1" = "--dev" ]; then
-  # L1 "dev.env"
-  # BUILD=;
+#   BUILD=cmd/b/dev;
 # else
-  # BUILD=cmd/  imm m mm /dev
-  # CDN=cmd/r/cdn
-  WEB=cmd/r/watch
+#   CDN=cmd/r/cdn
+    WEB=cmd/watch;
 # fi
 
+L1 "${ENV}.env"
+
+# if [ "$2" = "--worker" ];
+#   then WKR=cmd/r/worker;
+# fi
 
 if [ "$BUILD" != "" ]; then source $BUILD; fi
 if [ "$CDN" != "" ]; then source $CDN; fi
-if [ "$WKR" != "" ]; then source $WKR --env $ENV & fi
+# if [ "$WKR" != "" ]; then source $WKR --env $ENV & fi
 if [ "$WEB" != "" ]; then source $WEB --env $ENV; fi

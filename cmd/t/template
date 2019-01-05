@@ -1,3 +1,0 @@
-#!/bin/sh
-OP="tst/pl18"
-coffee tst/pl8/index.coffee $1 $2 $3 $4 $5 $6

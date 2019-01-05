@@ -10,7 +10,7 @@ const ebook = {
 
 
 ebook.toc.forEach(c => {
-  c.byId = ID("5af6da2ea7d95b1016b45fed") //  jk: { "name" : "Jonathon Kresner", "_id" :
+  c.byId = ID("5af6da2ea7d95b1016b45fed") //  jk: { "name" : "J. Kresner" }
   c.type = "CHAPTER"
   c.rx = new RegExp(`\\]\\(${c.key}\\)`,'g'),
   c.w = c.url

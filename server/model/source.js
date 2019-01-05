@@ -13,7 +13,9 @@ let SourceSchema = asSchema({
   uri:             { type: String, required, unique },
 
   md:              {
+    // raw:        { type: String },
     // body:       { type: String },
+    // edit:       { type: String },    
     // clean:      { type: String },
     // {filename}: { type: String },
     // "1":        { type: String }, "2": { type: String }, "3": { type: String },

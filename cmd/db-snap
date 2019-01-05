@@ -1,0 +1,26 @@
+#!/bin/sh
+# Usage:
+#    cmd/db-snap {dbname} {dest} -c collection 
+#    cmd/db-snap argu_test /tst/data/bson -laws
+#    cmd/db-snap argu_dev ~/Documents 
+
+OP=db-snapshot
+
+DB=$1
+OUT=$2
+COLLECTION=$3
+
+if [ $COLLECTION != '' ]; then
+  L2 "mongodump" "-h localhost -d ${DB} -o ${OUT} -c ${COLLECTION}\n"
+  mongodump -h localhost -d $DB -o $OUT -c $COLLECTION
+else
+  L2 "mongodump" "-h localhost -d ${DB} -o ${OUT}\n"
+  mongodump -h localhost -d $DB -o $OUT
+fi
+
+cd $OUT/$DB;
+for bson in $(ls *.bson); do
+  mv $bson ../$bson
+done
+cd ../../../../;
+rm -rf $OUT/$DB

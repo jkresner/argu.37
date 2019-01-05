@@ -4,7 +4,7 @@ let dev = x => null
 if (config.env == 'dev') {
 
   let webpack      = require('webpack')
-  let pk           = require('../../cmd/b/dev.pk.js')
+  let pk           = require('../../cmd/dev.pk.js')
   let plugins      = [new webpack.HotModuleReplacementPlugin(),new webpack.NoEmitOnErrorsPlugin()]
   let cfg          = assign({}, pk, {plugins})
   let compiler     = webpack(cfg)

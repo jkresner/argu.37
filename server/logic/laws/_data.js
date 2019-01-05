@@ -1,13 +1,4 @@
-const Lookup = { authority: {
-  CA00: "Crimes Act 1900 [NSW]",
-  CA07: "Crimes (Domestic and Personal Violence) Act 2007 [NSW]",
-  CL04: "Crimes Legislation Amendment (Telecommunications Offences) Act 2004",
-  DA05: "Defamation Act 2005 [NSW]",
-  PA02: "Property, Stock and Business Agents Act 2002",
-  PA14: "Property, Stock and Business Agents Regulation 2014",
-  SD15: "Strata Schemes Development Act 2015",
-  SM15: "Strata Schemes Management Act 2015",
-  SM16: "Strata Schemes Management Regulation 2016" }}
+const Lookup = { authority: require('../../../37/authority') }
 
 
 const Views = {
@@ -36,7 +27,7 @@ const Query = {
 
 
 const Opts = {
-  list:         { select: Views.list },
+  list:         { select: Views.list, sort: { of: 1, at: 1} },
   cache:        { select: Views.cache } }
 
 
@@ -46,6 +37,7 @@ const Projections = ({select,util,id,inflate},{chain,view}) => ({
     tags:r.tags.map(t=>CAL['tagIdx'][t._id]) }),
 
   crumb: l => assign(l, {
+    elmId: l.ttl.replace(':','__'),
     crumb: `${Lookup.authority[l.of]} `
          + `${l.in.replace("P",   ' • Part ')
                   .replace("Sch", ' • Schedule ')

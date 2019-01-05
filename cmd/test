@@ -1,9 +1,10 @@
 #!/bin/sh
-CMD="CMD/test"
-source cmd/b/init
+# Usage:
+#    cmd/test
+#    cmd/test --npm-link -w -k
 
-L2 "templates"
-source cmd/t/template
+CMD="test"
 
-L2 "server"
-source cmd/t/server
+source cmd/init
+source cmd/test-pl8
+source cmd/test-svr

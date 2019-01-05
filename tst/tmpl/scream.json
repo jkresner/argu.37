@@ -1,0 +1,15 @@
+{
+  "colors": {
+    "spec":               "gray"
+  },
+  "mocha": {
+    "fullStackTrace":     true
+  },
+  "mongo": {
+    "collections":        ["templates","contents"],
+    "url":                "mongodb://localhost/argu_test"
+  },
+  "paths": {
+    "fixtures":           "../data/fix"
+  }
+}

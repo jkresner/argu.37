@@ -1,15 +1,3 @@
-let tempMap = {
-  innocent:         '1_innocent',
-  apprehension:     '2_avo',
-  drlyme:           '3_dr',
-  oneill:           '4_ftcomplain',
-  resolve:          '5_jk_resolve',
-  lot36ensuite:     '6_lot36_ensuite',
-  lot36:            '7_lot36',
-  gossary :         'gossary3',
-  toc:              'toc'
-}
-
 module.exports = (DAL, {Query,Opts}, DRY) => ({
 
 
@@ -31,16 +19,12 @@ module.exports = (DAL, {Query,Opts}, DRY) => ({
     // cache.get('reroutes', getter, (rule) => {
     // })
     DAL.Content.getManyByQuery(Query.cached, Opts.cached, (e,r) => {
+      if (e) return cb(e, r)
+
       for (let c of r) {
         if (/TOC/i.test(c.type))
           hash.toc.parts = c.parts
-        if (c.type == 'CHAPTER') {
-
-          if (/(toc|gossary3|innocent|apprehension|oneill|resolve|lot36|drlyme)/.test(c.key))
-            // $log('key', c.key, tempMap[c.key])
-
-c.parts.body.live = require(join('../../../cmd/d/migrate/2018-09/fix/init/md',tempMap[c.key]))
-
+        if (c.type == 'CHAPTER') 
           hash.toc.chapters.push({
             id: c.key,
             url: c.uri,
@@ -48,14 +32,15 @@ c.parts.body.live = require(join('../../../cmd/d/migrate/2018-09/fix/init/md',te
             md: c.parts.body.live || c.parts.body.draft || c.parts.body.edit,
             idx: c.parts.chapter.idx
           })
-        }
       }
 
-
-      // console.log('cached.toc', hash.toc)
-      global.toc = hash.toc
-      cb(e, hash)
+      hash.toc.parts['0'] = { title: 'Strata Living Hell' }
+      
+      CAL.get('toc', done => done(null, hash.toc), (e) => {
+        cb(e, hash)
+      })
     })
   }
+
 
 })

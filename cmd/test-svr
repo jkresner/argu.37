@@ -1,0 +1,4 @@
+#!/bin/sh
+OP="test/svr"
+L2 "web"
+coffee tst/svr/index.coffee $1 $2 $3 $4 $5 $6
