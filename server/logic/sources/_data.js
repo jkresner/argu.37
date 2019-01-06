@@ -1,10 +1,8 @@
 // Move into logic / make dynamic
+const SRC                   = require('../../../37/src')
+const GMAILUP               = require('../../../37/2019-01/inbox.1').gmailUp
 const jk_sets               = require('../../../37/2019-01/sets.jk')
 const jk_filters            = Object.keys(jk_sets).sort()
-
-const {gmail}               = require('../../../37/gmail')
-const {gmailUp}             = require('../../../37/2019-01/inbox1')
-
 
 const Lookup                                                                 = {
 
@@ -12,47 +10,38 @@ cdn_atchd:    `${config.http.static.host}/${config.http.static.cdn.atchd}`     ,
 mime_css: {   jpg:'img',jpeg:'img',png:'img',pdf:'pdf',doc:'docx',docx:'docx'  },
 atch_ignore:  /((image0\d\d)|(\~WRD\d\d\d|twitter|facebook|linkedin))\.(gif|jpg|jpeg|png)/i }
 
-
+/*
+ */
 const Views                                                                  = {
 
 item:         '_id is render name title author published uri threadId md data tags laws notation',
 list:         '_id is render name title author published uri threadId md data tags laws' }
 
-
+/*
+ */
 const Opts                                                                   = {
 
 list: {       select: Views.list, sort:{published:-1}                          },
 param: {                                                                       },
 item: {       select: Views.item                                               }}
 
-
+/*
+ */
 const Query                                                                  = {
-
-existing: {
-  id:         id => assign({},{_id:id})                                        ,
-  gmail:      name => assign({type:'gmail'},{name})                            },
-gmail: {      ignore: {$exists:0}, type: 'gmail'                               },
-published: {  ignore: {$exists:0}, published: {$exists:1}                      },
-threads:      (limit, newest) => {
-  if (!cache['threads']) cache['threads'] = gmail.threads; // hack (not great)
+  existing: { id: id => assign({},{_id:id}) },
+  published: {  ignore: {$exists:0}, published: {$exists:1} },
+threads: (limit, newest) => {
+  if (!cache['threads']) cache['threads'] = SRC.threads; // hack (not great)
   let all = Object.keys(cache['threads'])  // .filter(id => threads[id].p == 0)
   let ids = newest ? _.reverse(_.takeRight(all, limit)) : _.take(all, limit)
   // $log('threads'.yellow, ids.length, limit, newest)
-  return { 'threadId': { $in: ids } }                                          }}
+  return { 'threadId': { $in: ids } }                                          
+  }
+}
 
-
+/*
+ */
 const Projections = ({select,pl8},{chain,view}) => ({
-
-  // saving gmail imported data to DB (as valid source)
-  gmail_db: msg => assign({ render:'gmail', is:'comm' },
-    { name: msg.id,
-      threadId: msg.threadId,
-      uri: `mail.google.com/mail/u/0/#inbox/`+msg.id,
-      published: parseInt(msg.internalDate),
-      title: msg.payload.headers.filter(h => /Subject/i.test(h.name))[0].value || "-No subject-",
-      author: msg.payload.headers.filter(h => /From/i.test(h.name))[0].value,
-      data: _.omit(msg, 'labelIds') }),
-
 
   //-- TODO: authorization / tracker url forwarder/middleman
   atchdUrl: f => assign(f, { url:
@@ -74,11 +63,12 @@ const Projections = ({select,pl8},{chain,view}) => ({
   body: src => assign(src, { md: assign(src.md, {
                 body: pl8('source_figure', src) }) }),
 
-  typed: src => {
+  typed: src => /*{
     $log(`typed_${src.render}`)
-    return 
+    return */
     _.omit(chain(assign(src,{md:src.md||{}}),`typed_${src.render}`), ['data'])
-  },
+  //}
+  ,
 
   typed_img: src => chain(src,'fileInfo','body'),
   typed_doc: src => chain(src,'fileInfo','body'),
@@ -127,7 +117,7 @@ const Projections = ({select,pl8},{chain,view}) => ({
     })(src.data.payload)
 
     if (!src.md.raw) src.md.raw = Buffer.from(gmail.text64, 'base64').toString()
-    return gmailUp(assign(src,{gmail}))
+    return GMAILUP(assign(src,{gmail}))
   },
 
 
@@ -163,6 +153,7 @@ const Projections = ({select,pl8},{chain,view}) => ({
     let threads = {}, runThread,
         sources = chain(d.sources, 'typed') //.filter(s => !s.skip)
         vd = chain(d, 'list_vd')
+    // $log('vd'.magenta, vd)    
 
     // mmmmmm ? hack
     vd.threads = []
@@ -246,7 +237,7 @@ const Projections = ({select,pl8},{chain,view}) => ({
       let btw = pl8('mail_btw', m)
       src.md.between = pl8('mapcrypt', btw, psudo)
       if (/(@|'|")/.test(src.md.between))
-        $log('map.miss'.magenta, src.md.between, m.from.dim, m.to.dim, (m.cc||'CC:none').dim)
+        $log('map.miss'.magenta, src.md.between, `${m.from}`.dim, `${m.to}`.dim, (m.cc||'CC:none').dim)
     }
 
     Object.keys(src.md)
@@ -257,48 +248,6 @@ const Projections = ({select,pl8},{chain,view}) => ({
     return r
   }
 
-  /*listGmail: d => {
-    let threads = {}, runThread = null
-    let messages = chain(d.sources, 'typed').filter(m => !m.skip)
-    let meta = assign(chain(d, 'list_meta'), { messages: messages.length, threads: [], mode: d.mode, view: d.raw?'raw':'normal' })
-    function aggThreadMsg(m) {
-      let {threadId} = m
-      if (/thread/.test(d.mode)) {
-        if (!threads[threadId]) { m.threadSwap = true }
-      } else { m.threadSwap = runThread != threadId
-               runThread = threadId }
-      let {messages, atchd} = threads[threadId] || { idx: meta.threads.push(threadId) }
-      atchd = (atchd||[]).concat(m.attached.map(f=>f.file))
-      messages = (messages||[]).concat([m])
-      let start = messages[0].time, end = messages[messages.length-1].time
-      let dur = moment.duration(moment(end).diff(moment(start)))
-      let days = parseInt(dur.asDays())
-      let subject = days >= 0 ? messages[0].subject : m.subject
-      if (days < 0) days = days * -1
-      threads[threadId] = assign({ messages, subject, start, end, days }, atchd.length > 0 ? {atchd} : {})
-      return m }
-    let set = messages.map(m => {
-      let {md,name} = m
-      let {threadId,subject,to,cc} = m.gmail
-      if (d.raw) { delete md.body
-        md.between = tmpl.mail_btw(m.gmail)
-      } else md = chain(m, 'pseudofix')
-      let attached = m.gmail.attached
-        .filter( f => ((threads[threadId]||{}).atchd||[]).indexOf(f.file) < 0 )
-        .map( f => assign({ name, preview: md[f.file] }, f) )
-        .map( f => assign({ url: chain(f,'fileUrl') }, f) )
-      if (m.oneill) sets.oneill.push(name)
-      return aggThreadMsg(assign(md, { attached, name, threadId, subject, _id: m._id, uri: m.uri, time: m.published })) })
-
-    if (/thread/.test(d.mode)) { set = []
-      for (let id of meta.threads)
-        set = set.concat(threads[id].messages) }
-
-    meta.set = set.length
-    meta.threads = meta.threads.map(tId => assign(threads[tId], { id: tId , messages: threads[tId].messages.map(m => m.name) } ))
-
-    let r = {messages,set,meta,sets}//setName:setKey||'mail-all'}}
-    return r }*/
 
 })
 

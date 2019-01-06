@@ -1,16 +1,19 @@
-{{> srxplorer }}
+<div class="container">
+  <main>
+    {{> nav_srcs }}
 
-<aside class="set dev">
-{{> ul_srcs r }}
-</aside>
+    <aside class="set dev">
+    {{> ul_srcs r }}
+    </aside>
 
-<section id="workbar">
-  <h5><var id="wb_id"></var></h5>
-  <h5>Body (auto)</h5>
-</section>
-{{#each r.list}}
-<input type="hidden" id="{{name}}_d" data-body="{{body}}" data-orig="{{raw}}" >{{/each}}
-
+    <section id="workbar">
+      <h5><var id="wb_id"></var></h5>
+      <h5>Body (auto)</h5>
+    </section>
+    {{#each r.list}}
+    <input type="hidden" id="{{name}}_d" data-body="{{body}}" data-orig="{{raw}}" >{{/each}}
+  </main>
+</div>
 
 
 <script type="text/javascript">

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>37 {{bodycss}}</title>
+  <title>{{ html.title }} 37paulst</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
 </head>
 <body class="{{bodycss}}">
-<div class="container">
-<main>
 {{{body}}}
-</main>
-</div>
-<script type="text/javascript" src="/ui/v1/adm.js?6bb2d5598b2bcf3d4eb4"></script></body>
+</body>
+{{#if @analytics}}{{> analytics }}{{/if}}
 </html>

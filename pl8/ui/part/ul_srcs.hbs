@@ -6,7 +6,7 @@
   </header>{{#if between }}
   <section id="btw_{{navId name}}">{{{between}}}</section>{{/if}}{{#if fileinfo}}
   <section id="fil_{{navId name}}">{{{fileinfo}}}</section>{{/if}}{{#if body}}
-  <section id="bdy_{{navId name}}">{{{emup_mail body}}}</section>{{else}}{{#if raw}}
+  <section id="bdy_{{navId name}}">{{{mup_mail body}}}</section>{{else}}{{#if raw}}
   <section id="bdy_{{navId name}}">{{{raw}}}{{/if}}{{/if}}{{#if attached}}
   <section id="atc_{{navId name}}"><dl>{{#each attached}}
     <dt><b>{{lb}}</b>.{{ext}} <a href="{{url}}" target="_blank"><var>{{kb}}</var>Kb</a>

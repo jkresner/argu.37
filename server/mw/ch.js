@@ -1,5 +1,3 @@
-const layout = 'web'
-
 module.exports = (app, mw) =>
 
   idx =>
@@ -10,16 +8,17 @@ module.exports = (app, mw) =>
       let pos = chapters.map(c=>c.idx).indexOf(idx)
       let {id} = chapters[pos]
       let page = { id, pos, next: chapters[pos+1], toc: chapters }
+      let title = parts[p].title || 'intro'
 
       let view = 'page/chapter'
       if (/intro/.test(id)) 
         view = 'page/landing'
       else
-        page.part = { idx:p, title: parts[p].title }
+        page.part = { idx:p, title }
 
       // $log('ch'.red, id, view, '\nidx'.cyan, idx, 'pos:'.cyan+ pos)
       // $log('chapters[pos]'.yellow, chapters[pos])
 
-      let opts = { layout, page, view }
+      let opts = { page, view, html: { title } }
       return mw.res.page(view, opts)(req, res, next)
     }

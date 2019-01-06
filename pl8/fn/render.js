@@ -27,7 +27,7 @@ var fns = {
   },
 
   mup_mail: function(md) {
-    return str
+    return md
       .replace(/Subject: /g, '<br />')
       .replace(/From: /g, '')
       .replace(/(Sent|Date): /g, ' <u>on ')

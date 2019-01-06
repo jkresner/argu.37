@@ -1,4 +1,16 @@
-(function(){ window.ag = {
+(function(){
+
+  var markup =  {
+    mup_law: function(md) { return marked((`\n`+md)
+      .replace(/\n\(i\)\s*/g, '\n - ')
+      .replace(/\n\s*\((i|ii|iii|iv|v|vi)\)\s*/g, '\n1. ')
+      .replace(/\n\s*\([1-9]\)\s*/g, '\n1. ')
+      .replace(/\n\s*\([a-z]\)\s*/g, '\n - ')
+      .trim()).trim()
+    }
+  }
+
+  window.ag = {
   timer: {
     start: new Date().getTime(),
     log: function(lb, begin) {
@@ -30,8 +42,10 @@
     return elm
   },
   dom:{},
-  data:{}
+  data:{},
+  mup: markup
 }
+
 
 var $log = console.log
 var $ = ag.$
@@ -41,7 +55,7 @@ var search = window.location.search
 
 document.addEventListener("DOMContentLoaded", function(event) {
   ag.timer.log('DOMLoaded')
-  if (ag_onload) { ag_onload(); ag.timer.log('ag_onloaded') }
+  if (window.ag_onload) { ag_onload(); ag.timer.log('ag_onloaded') }
   else { ag.timer.log('ag_loaded') }
 })
 

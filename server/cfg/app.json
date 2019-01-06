@@ -80,10 +80,10 @@
   "routes": {
     "bot":                     { "off": false },
     "reroute":                 { "off": true },
-    "adm":                     { "type": "html", "mount": "/adm", "layout": "adm" },
-    "set":                     { "off": true, "type": "html", "mount": "/sets", "layout": "argu" },
+    "adm":                     { "layout": "layout", "type": "html", "mount": "/adm" },
+    "set":                     { "off": true, "type": "html", "mount": "/sets" },
     "print":                   { "off": true, "type": "html", "mount": "/print" },
-    "page":                    { "type": "html" }
+    "page":                    { "layout": "layout", "type": "html" }
   },
   "templates": {
     "dirs": {
@@ -93,7 +93,7 @@
     }
   },
   "wrappers": {
-    "dirs":                    "wrp",
+    "dirs":                    null,
     "ses": {
       "accessKeyId":           "{{required}}",
       "secretAccessKey":       "{{required}}",

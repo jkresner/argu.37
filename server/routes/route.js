@@ -24,9 +24,11 @@ module.exports = (app, mw, ops) => {
       .use(mw.$.session)
       .use(mw.$.adm)
       .use((req,res,next) => {
+        let layout = "layout"
         let name = req.originalUrl.split('?')[0].replace("/","")
-        let bodycss = name.replace('/',' ')
-        mw.res.page(`page/${name}`,{bodycss,layout:'adm'})(req,res,next)
+        let bodycss = name.replace('adm/',' ')
+        let html = { title: bodycss }
+        mw.res.page(`page/${name}`,{layout,bodycss,html})(req,res,next)
       }, {end:1})
       .get('/law', mw.data.page('laws.law', '?'))
       .get('/srcs', mw.data.page('sources.published','?'))
@@ -64,7 +66,7 @@ module.exports = (app, mw, ops) => {
       // .get('/strata-living/13385-36/stop-gap', mw.$.ch("1.2.2"))
 
       .get('/strata-research',  mw.data.page('contents.read'), 
-        mw.res.page('page/reading', {layout:'web'}) )
+        mw.res.page('page/reading') )
 
 }
 

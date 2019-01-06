@@ -8,24 +8,22 @@ module.exports = ({Source}, {Query,Project}, DRY) => ({
 
 
   exec(msgId, cb) {
-    Source.getByQuery(Query.existing.gmail(msgId), (e, existing) => {
-      if (e) return cb(e)
-      if (existing) return cb(
-        null,
-        $log(`src.gmail[${msgId}] exists`.green.dim),
-        existing)
-      Wrappers.gmail.getMsg(msgId, {}, (e2,r) => e2 ? cb(e2) :
-        Source.create(Project.gmail_db(r), cb))
-    })
+    var existing = CAL['existing']
+
+    if (existing.indexOf(msgId) > -1) return cb(
+      null,
+      $log(`src.gmail[${msgId}] exists`.green.dim))
+      // existing[existing.indexOf(msgId)])
+
+    Wrappers.gmail.getMsg(msgId, {}, (e,r) => e 
+      ? cb(e) 
+      : Source.create(Project.db(r), cb) )
 
     // data.log = DRY.logAct(null, 'create', user)
     // data.time = localDayStart.utc().add(data.day,'day').toDate()
     // data.tz = { id: place.geo.tz, utc_offset:
     //   moment.tz.zone('America/Los_Angeles').offset(localDayStart) }
-  },
-
-
-  project: Project.item
+  }
 
 
 })

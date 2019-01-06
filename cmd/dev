@@ -1,8 +1,8 @@
 #!/bin/sh
 OP="dev"
 
-L2 "rm -rf   " "htp/cdn"
-rm -rf htp/cdn
+L2 "rm -rf   " "htp/cdn/ui/v1"
+rm -rf htp/cdn/ui/v1
 
 L2 "npx webpack" "--config cmd/dev.pk.js --bail --hide-modules\n"
 npx webpack --config cmd/dev.pk.js --bail --hide-modules

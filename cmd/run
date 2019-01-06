@@ -7,31 +7,37 @@ CMD=run
 BUILD=;
 CDN=;
 ENV=dev
-WEB=cmd/server
-# WKR=;
+WEB=;
+WKR=;
 
 source cmd/init
 
-# if [ "$1" = "--dist" ]; then
+if [ "$1" = "--cmd" ]; then
+  ENV=cmd
+# elif [ "$1" = "--dist" ]; then
 #   ENV=prod
-#   BUILD=cmd/b/dist
+#   BUILD=cmd/dist
 # elif [ "$1" = "--test" ]; then
 #   ENV=test
 #   CDN=;
-# elif [ "$1" = "--dev" ]; then
-#   BUILD=cmd/b/dev;
-# else
+elif [ "$1" = "--dev" ]; then
+  BUILD=cmd/dev;
+  WEB=cmd/server;
+else
 #   CDN=cmd/r/cdn
-    WEB=cmd/watch;
-# fi
+  WEB=cmd/watch;
+fi
 
+export ENV=$ENV
 L1 "${ENV}.env"
 
 # if [ "$2" = "--worker" ];
 #   then WKR=cmd/r/worker;
 # fi
 
+
+
 if [ "$BUILD" != "" ]; then source $BUILD; fi
 if [ "$CDN" != "" ]; then source $CDN; fi
 # if [ "$WKR" != "" ]; then source $WKR --env $ENV & fi
-if [ "$WEB" != "" ]; then source $WEB --env $ENV; fi
+if [ "$WEB" != "" ]; then source $WEB; fi

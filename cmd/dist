@@ -1,0 +1,11 @@
+#!/bin/sh
+CMD="dist"
+source cmd/init
+source cmd/clean
+source cmd/db import read
+
+L2 "npx webpack" "--config cmd/dist.pk.js --bail\n"
+npx webpack --config cmd/dist.pk.js --bail
+
+echo
+L2 "npx webpack done..."

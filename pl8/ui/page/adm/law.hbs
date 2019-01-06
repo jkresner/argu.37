@@ -1,18 +1,40 @@
+<div class="container">
+  <main>
+{{#each r}}
+    <h2>{{title}}</h2>
+    {{> ul_laws laws }}
+{{/each}}
+  </main>
+</div>
+
+
 <style type="text/css">
 h2 { font-size:18px;margin:10px 0 0 25px;padding:0;color:navy }
+textarea { font-size:10px;background:#d3d3d3;line-height:12px;
+  letter-spacing:-0.25px;padding:5px;color:gray;width:100%;
+    resize: none;
+    overflow: hidden;
+   }
+aside { margin:5px }
 </style>
-
-
-{{#each r}}
-  <h2>{{title}}</h2>
-  {{> ul_laws laws }}
-{{/each}}
 
 
 <script type="text/javascript">
 
-function argu_onload() {
-  console.log('argu.cmd', argu.cmd)
+function auto_grow(element) {
+  element.style.height = "5px";
+  element.style.height = (element.scrollHeight)+"px";
+}
+
+function law_render(id) {
+  var txtId = '#'+id+'_b', htmId = '#'+id+'_h'
+  var txtEl = ag.$(txtId), htmEl = ag.$(htmId)
+  htmEl.innerHTML = ag.mup.mup_law(txtEl.value)
+}
+
+function ag_onload() {
+  console.log('ag_onload', ag)
+  // console.log('marked', marked('## hey'))
 }
 
 </script>
