@@ -1,6 +1,6 @@
 SCREAM                       = require('screamjs')
 Honey                        = require('honeycombjs')
-marked                       = require('../../htp/_src/js/marked')
+marked                       = require('marked')
 templates_cached             = require('../../37/maps')
 
 

@@ -2,7 +2,7 @@ let {resolve}          = require('path')
 let webpack            = Object.assign(require('webpack'),
   { HtmlPlugin:          require('html-webpack-plugin') })
 
-let context            = resolve('htp/_src/')
+let context            = resolve('htp/')
 let dest               = resolve('htp/cdn/ui/v1')
 
 let publicPath         = `/ui/v1/`
@@ -11,7 +11,7 @@ let html               = {
   chunks:             'app', 
   filename:           resolve('pl8/ui')+'/layout.hbs', 
   hash:               true, 
-  template:           'ui/layout.pl8',  
+  template:           resolve('pl8/ui')+'/layout.pl8',
   xhtml:              true
 }
 
@@ -25,15 +25,14 @@ module.exports       = {
   devtool:           'inline-source-map',
 
   entry: {
-//  lib:             ['./lib'],
-    app:             ['./app', hmr],
+    app:             ['./client', hmr],
   },
 
   module: {
     rules: [
       { test:              /\.less$/,
         // issuer:         /\.less$/,
-        include:           context+'/css',
+        include:           context+'/less',
         use: [ {           loader: 'style-loader' } ,
                {           loader: 'css-loader'   } ,
                {           loader: 'less-loader'  } ]

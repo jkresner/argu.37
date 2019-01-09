@@ -8,13 +8,21 @@ CMD="setup"
 source cmd/init
 source cmd/clean
 
-OP="build"
+OP="node_modules"
 L2
 if [ "$1" = "--npm-link" ]; then
-  L2 "npm link" "install screamjs + honeycombjs\n"
+  cd ../scream
+  cmd/npmln
+  cd ../honey
+  cmd/npmln
+  cd ../focusd
+  cmd/npmln 
+  cd ../ag 
+  L2 "npm link" "install screamjs + honeycombjs + focusd\n"
   npm link screamjs
   npm link honeycombjs
-  echo ""`
+  npm link focusd  
+  echo ""
 fi
 L2 "npm install" "/node_modules (may take a minute)"
 npm i;echo;
@@ -22,17 +30,18 @@ npm i;echo;
 L2 "npm install -D" "/node_module (--save-dev)\n"
 npm i -D;echo;
 
+
 # rm -f package-lock.json
 
+# L2 "ln -nsf" "test bson as cmd/import latest"
+# cd cmd/db import 
+# unlink latest
+# ln -ns ../../../tst/dat/bson latest
+# cd ../../../
 
-OP="test"
-L2 "ln -nsf" "test bson as cmd/import latest"
-cd cmd/d/import/db
-unlink latest
-ln -ns ../../../tst/dat/bson latest
-cd ../../../
+OP="pre-push"
 
-L2 "ln -nsf" ".git/hooks/prep-push"
+L2 "ln -nsf" ".git/hooks/pre-push"
 rm -rf .git/hooks
 mkdir .git/hooks
 cd .git/hooks
@@ -43,7 +52,5 @@ L2 "pre-push" "test"
 source .git/hooks/pre-push
 
 rm -f package-lock.json
-
-
 
 L1 "done...\n"

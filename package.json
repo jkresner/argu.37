@@ -4,30 +4,28 @@
   "version": "0.0.8",
   "private": true,
   "author": "jk",
-  "engines": {
-    "node": "11.4.0",
-    "npm": "6.5.0"
-  },
   "scripts": {
     "start": "cmd/run",
     "test": "cmd/test"
   },
   "dependencies": {
-    "honeycombjs": "0.9.6"
+    "honeycombjs": "0.9.7",
+    "focusd": "0.1.0",
+    "marked": "0.5.0",
+    "moment-timezone": "0.5.21"
   },
   "devDependencies": {
-    "css-loader": "2.0.1",
+    "css-loader": "2.1.0",
     "fast-csv": "2.4.1",
-    "file-loader": "2.0.0",
     "googleapis": "36.0.0",
     "html-webpack-plugin": "3.2.0",
     "less": "3.9.0",
     "less-loader": "4.1.0",
-    "screamjs": "0.8.0",
-    "style-loader": "0.23.0",
-    "webpack": "4.27.0",
-    "webpack-cli": "3.1.2",
-    "webpack-dev-middleware": "3.4.0",
+    "screamjs": "0.8.2",
+    "style-loader": "0.23.1",
+    "webpack": "4.28.3",
+    "webpack-cli": "3.2.0",
+    "webpack-dev-middleware": "3.5.0",
     "webpack-hot-middleware": "2.24.3"
   }
 }

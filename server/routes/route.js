@@ -25,15 +25,17 @@ module.exports = (app, mw, ops) => {
       .use(mw.$.adm)
       .use((req,res,next) => {
         let layout = "layout"
-        let name = req.originalUrl.split('?')[0].replace("/","")
-        let bodycss = name.replace('adm/',' ')
-        let html = { title: bodycss }
-        mw.res.page(`page/${name}`,{layout,bodycss,html})(req,res,next)
+        let slug = req.originalUrl.split('?')[0].replace("/","")
+        let title = slug.replace('adm/','').split('/')[0]
+        let html = { title }
+        let bodycss = title;
+        mw.res.page(`page/adm/${name}`,{layout,bodycss,html})(req,res,next)
       }, {end:1})
+   // .get('/pl8', mw.$.pd('templates'))
       .get('/law', mw.data.page('laws.law', '?'))
       .get('/srcs', mw.data.page('sources.published','?'))
-      .get('/srcs/:source', mw.$.param('source'), mw.data.page('sources.edit',{param:'source'}))
-    // .get('/pl8', mw.$.pd('templates'))
+      .get('/src/:source', mw.$.param('source'), 
+        mw.data.page('sources.edit',{param:'source'}))
   
   //
     // honey.Router('sets', ops.sets)

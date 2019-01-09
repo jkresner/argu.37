@@ -53,8 +53,8 @@ const Projections = ({select,util,id,inflate},{chain,view}) => ({
       aut[l.of] = aut[l.of] || []
       aut[l.of].push(l)
     })
-    return Object.keys(aut).map(key => assign({key},{
-      title: Lookup.authority[key], laws: aut[key] }))
+    return Object.keys(aut).map(key => assign(
+      {key}, {title: Lookup.authority[key], laws: aut[key] }))
   },
 
 })

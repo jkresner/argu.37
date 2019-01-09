@@ -1,31 +1,25 @@
 <ul id='{{vd.ui.ul}}' data-stack='{{vd.ui.stack}}'>{{#each list}}
-<li id='li_{{name}}' data-thread='{{threadId}}' data-is='{{tis}}' class='src'>
-  <header>
-    <cite>{{subject}}</cite>
-    <time>{{daytime time}}</time>
-  </header>{{#if between }}
-  <section id="btw_{{navId name}}">{{{between}}}</section>{{/if}}{{#if fileinfo}}
-  <section id="fil_{{navId name}}">{{{fileinfo}}}</section>{{/if}}{{#if body}}
-  <section id="bdy_{{navId name}}">{{{mup_mail body}}}</section>{{else}}{{#if raw}}
-  <section id="bdy_{{navId name}}">{{{raw}}}{{/if}}{{/if}}{{#if attached}}
-  <section id="atc_{{navId name}}"><dl>{{#each attached}}
-    <dt><b>{{lb}}</b>.{{ext}} <a href="{{url}}" target="_blank"><var>{{kb}}</var>Kb</a>
-</dt>{{#if preview}}
-    <dd><figure class='{{css}}'>{{{preview}}}</figure></dd>{{/if}}
-{{/each}}</dl>
-  </section>{{/if}}
-  <footer>
-    <nav>
-      <a class='_id' href="/adm/srcs/{{_id}}" target="_blank">{{navId _id}}</a>
-      <a class='nav_id cpv' onclick='cpv("{{name}}")'>{{navId name}}</a>
-      <a class='nav_tid goto' href='#{{threadId}}'>{{navId threadId}}</a>
-    </nav>
-  </footer>
-</li>
-{{/each}}</ul>
+  <li id='li_{{name}}' data-thread='{{threadId}}' data-is='{{tis}}' class='src'>
+    <header>
+      <cite>{{subject}}</cite>
+      <time>{{daytime time}}</time>
+    </header>{{#if between }}
+    <section id="btw_{{navId name}}">{{{between}}}</section>{{/if}}{{#if fileinfo}}
+    <section id="fil_{{navId name}}">{{{fileinfo}}}</section>{{/if}}{{#if body}}
+    <section id="bdy_{{navId name}}">{{{mup this}}}</section>{{else}}{{#if raw}}
+    <section id="bdy_{{navId name}}">{{{raw}}}{{/if}}{{/if}}{{#if attached}}
+    <section id="atc_{{navId name}}">{{dl_atcd}}</section>{{/if}}
+    <footer>
+      <nav>
+        <a class='_id' href="/adm/srcs/{{_id}}" target="_blank">{{navId _id}}</a>
+        <a class='nav_id cpv' onclick='cpv("{{name}}")'>{{navId name}}</a>
+        <a class='nav_tid goto' href='#{{threadId}}'>{{navId threadId}}</a>
+        <a class='original' href="https://{{uri}}" target="_blank"></a>
+      </nav>
+    </footer>
+  </li>{{/each}}
+</ul>
 
 
 {{!-- onclick="cpv('![{{filename}}](__{{filename}}__inln.jpg)')"
-      <a class="cpb" onmouseover="cpb('{{name}}')" ></a>
-      <a href="https://{{uri}}" target="_blank" class='gm'>M</a>
-      data-s='{{#if threadSwap }} swap{{/if}}' --}}
+      <a class="cpb" onmouseover="cpb('{{name}}')" ></a> --}}

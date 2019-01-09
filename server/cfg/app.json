@@ -23,19 +23,19 @@
   "http": {
     "port":                    3436,
     "static": {
-      "dirs":                  "htp/static",
       "cdn": {
         "atchd":               "ag",
         "post":                "cms/post",
         "ui":                  "ui/v1"
       },
+      "dirs":                  "htp/bot",
       "favicon": {
-        "root":                "htp/static",
+        "root":                "htp/bot",
         "headers":             { "Content-Type":"image/x-icon" }
       },
-      "host":                  "https://cdn.37paulst.com",
+      "host":                  "//cdn.37paul.st",
       "sitemap": {
-        "file":                "htp/static/sitemap.xml",
+        "file":                "htp/bot/sitemap.xml",
         "host":                "https://www.37paulst.com"
       }
     }
@@ -80,10 +80,10 @@
   "routes": {
     "bot":                     { "off": false },
     "reroute":                 { "off": true },
-    "adm":                     { "layout": "layout", "type": "html", "mount": "/adm" },
+    "adm":                     { "type": "html", "mount": "/adm" },
     "set":                     { "off": true, "type": "html", "mount": "/sets" },
     "print":                   { "off": true, "type": "html", "mount": "/print" },
-    "page":                    { "layout": "layout", "type": "html" }
+    "page":                    { "type": "html" }
   },
   "templates": {
     "dirs": {

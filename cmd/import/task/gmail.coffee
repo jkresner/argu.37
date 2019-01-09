@@ -1,97 +1,103 @@
-# A bit manual at the moment:
-# 1 => /google/auth/callback
-# 2 => .only 1
-# 3 =>  Copy + paste additions to ../data/Label_75.js
-# 4 => .only 2
-# 5 => .only 3 (apply manual clean md)
+GMAIL = require('../../../37/gmail')
+UNIQ = []
+
+# PRE_COUNT=1457
+# PRE_COUNT=1541
+# PRE_IMPORT_COUNT=1664
+# PRE_IMPORT_COUNT=1626
+# POST_COUNT=1612
+POST_EXPECTED_COUNT=1612
+
+getter = (cb) => 
+  DAL.Source.getManyByQuery {render:'gmail'}, (e, r) => 
+    cb(e, r)
+
+
+# 3 => .only 3 (apply manual clean md)
 # 6 => .only 4 (update hard-copy thread list)
-
-
 # saving gmail data to DB
 # $log('src.data.gmail_db', data)
-
+# A bit manual at the moment:
 module.exports = ->
 
 
-  IT "label:37 messages list", ->
+  before (cb) ->
+    for {id} in GMAIL.msgs
+      expect(UNIQ.indexOf(id) < 0, "#{id} msg dup").true
+      UNIQ.push(id)
+
+    getter (e,r) -> 
+      $del = []
+      for s in r
+        delete s.data
+        if UNIQ.indexOf(s.name) < 0
+          console.log("{ id: '#{s.name}', threadId: '#{s.threadId}' }".magenta)     
+        if GMAIL.deletable.indexOf(s.name) > -1          
+          $del.push(s._id)
+          console.log('$del', s._id, s.name)     
+      DB.removeDocs 'Source', {_id:{$in:$del}}, (e) =>
+        # console.log(e)
+        cb()
+
+
+  IT.skip "Step 0 >> /google/auth/call", ->
+    # uncomment app.merge(Honey.auth)
+    # cmd/run --cmd -v
+
+
+  # TODO : Store Labels => Tags on Source
+  IT "Step 1 >> copy-paste >> gmail.msgs", ->
     @timeout 1000000
     q = { labelIds:'Label_75', maxResults:100 }
-    existing = FIXTURE.mail.labels['75'].msgs.map((m)=>m.id)
+    existing = FIXTURE.gmail.msgs.map((m)=>m.id)
+    # expect(existing.length).to.equal(PRE_COUNT)
     Wrappers.gmail.listMsg q, (e, r) =>
       if !e
         additions = r.filter((m)=>existing.indexOf(m.id)<0)
-        $log('existing'.cyan, existing.length,
-             'r.raw'.cyan, r.length,
-             'additions'.cyan, additions.length)
-        $log(item,",") for item in additions
+        $log('\.existing'.cyan, existing.length,
+             'r.raw'.yellow, r.length,
+             'additions'.green, additions.length)
+        if additions.length > 0
+          $log(item,",") for item in additions
+          for m in r
+            $log("  { id: '#{m.id}', threadId: '#{m.threadId}, labelIds: '#{m.labelIds}' },")        
+        expect(additions.length).to.equal(0)
       DONE(e)
 
 
-  IT "label:37 sync", ->
+  IT "Step 2 >> label:37 sync", ->
     @timeout 1000000
-    {deletable,labels} = FIXTURE.mail
-    todo = labels['75'].msgs.map((i) => i.id)
-                       .filter((id) => deletable.indexOf(id) < 0)
-    remaining = todo.length
-    $log "queued [#{remaining}] mail downloads",
-    worker.queueJob 5, 'sources.importGmail', todo, (e,r) =>
-      DONE(e) if e
-      DONE() if --remaining is 0
+    {deletable,msgs} = FIXTURE.gmail
+    CAL.get 'existing', getter, () => 
+      # expect(CAL.existing.length).to.equal(PRE_COUNT)
+
+      existing = CAL.existing.map((m)=>m.name)
+      existing.forEach (name) => 
+        expect(UNIQ.indexOf(name) > -1, "#{name} looks gone from gmail").true
 
 
-  IT "Delete downloaded deleteable messages", ->
-    list = FIXTURE.mail.deletable.map((name) => {name})
-    $log('deletable'.magenta, list.length)
-    DAL.Source.bulkOperation [], [], list, (e, r) ->
-      if r.modifiedCount is 0
-        $log('No message left to delete'.yellow)
-      else
-        expect(r.deletedCount, 'sources removed').to.equal(list.length)
-      DONE()
+      todo = msgs
+        .map((i) => i.id)
+        .filter((id) => deletable.indexOf(id) < 0)
+        .filter((id) => existing.indexOf(id) < 0)
+
+      $log('FIX.deletable', deletable.length)
+      $log('FIX.msgs', msgs.length)    
+      $log('FIX.existing', existing.length)          
+        
+      remaining = todo.length
+      if remaining is 0
+        DONE()
+
+      # expect(remaining).to.equal(PRE_IMPORT_COUNT-PRE_COUNT)
+      $log "queued [#{remaining}] mail msg imports"
+      worker.queueJob 5, 'gmail.import', todo, (e,r) =>
+        $log "e", e
+        DONE(e) if e
+        $log "saved", r.name, r._id
+        DONE() if --remaining is 0
 
 
-      # Now under migrate
-  # IT "Set ignore flag", ->
-  #   {ignore} = FIXTURE.mail
-  #   DAL.Source.getManyByQuery {name:{$in:ignore}}, (e,srcs) =>
-  #     ups = srcs.map(({_id})=>assign({_id},{ignore:1}))
-  #     names = srcs.map((s)=>s.name)
-  #     for n in ignore
-  #       $log("gone "+ig) if names.indexOf(n) < 0
-  #     $log('ignore'.gray, ignore.length)
-  #     honey.model.DAL.Source.updateSetBulk ups, (e, r) ->
-  #       $log('update prob'.red) if r.modifiedCount is not ups.length
-  #       DONE()
-
-
-  IT.skip "Add new threads", ->
-    additions = {}
-    threads = require("../qd/gmail/threads")
-    existing = FIXTURE.mail.labels['75'].msgs
-      .filter( ({threadId}) => !threads[threadId] )
-      .forEach ({threadId}) =>
-        # console.log('threadId',threadId)
-        additions[threadId] = 0 if !additions[threadId]
-        additions[threadId]++
-    $log('All threads exist already!'.green) if Object.keys(additions).length is 0
-    Object.keys(additions).forEach (tId) =>
-      $log('add:'.yellow, " thread[#{tId}](#{additions[tId]})")
-    DONE()
-
-
-
-  #   additions = r.filter((m)=>existing.indexOf(m.id)<0)
-  #   console.log('r.raw'.cyan, r.length)
-  #   # Wrappers.gmail.listMsg q, (e,r) =>
-  #     # DONE(e) if e
-  #   console.log('additions'.cyan, additions.length)
-  #   for item in additions
-  #     console.log(item, ',' )
-    # Wrappers.gmail.getTheadMsgs todo[6], {}, (e,r) =>
-      # for {id,snippet} in r.messages
-        # console.log(id,snippet.substr(0,30).gray)
-      # DONE(e)
-      # existing = FIXTURE.gmail.msgList.map((m)=>m.id)
 
   ## ? ? ?
   # IT "Check threads", ->
@@ -118,3 +124,25 @@ module.exports = ->
   #       else
   #         $log('thread,inserts', "[#{++ok}/#{count}]".green, r.length)
           # DONE() if ok is count
+
+
+
+  after (cb) ->
+    getter (e, r) =>
+      expect(r.length).to.equal(POST_EXPECTED_COUNT) 
+      # expect(GMAIL.msgs.length+deletable.length).to.equal(r.length)
+      i = 0
+      pos = {}
+      r.forEach (s) => 
+        pos[s.name] = i++ 
+
+      for m in GMAIL.msgs
+        p = pos[m.id]
+        lb = "{ id: '#{m.id.yellow}', threadId: '#{m.threadId}' }, #{pos[m.id]}"
+        if GMAIL.deletable.indexOf(m.id) > -1
+          expect(p, lb).to.be.undefined
+        else 
+          expect(p > -1, lb).to.be.true
+
+      $log('***'.magenta, 'cmd/db import src', '***'.magenta, 'run required!')
+      cb()

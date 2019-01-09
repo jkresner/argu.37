@@ -1,0 +1,50 @@
+﻿ref,yr,by,title,no,ver,type,start,see,url
+CT13,2013,NSW,Civil and Administrative Tribunal Act,2,2017-09-25,legislation,,,legislation.nsw.gov.au/~/view/act/2013/2
+CT14,2014,NSW,Civil and Administrative Tribunal Rules 2014,26,,legislation,,,legislation.nsw.gov.au/~/view/regulation/2014/26
+CD89,1989,NSW,Community Land Development Act,201,,legislation,,,legislation.nsw.gov.au/~/view/act/1989/201
+CM89,1989,NSW,Community Land Management Act,202,,legislation,,,legislation.nsw.gov.au/~/view/act/1989/202
+CR80,1980,NSW,Contracts Review Act,16,,legislation,,,legislation.nsw.gov.au/~/view/act/1980/16
+CN19,1919,NSW,Conveyancing Act,6,,legislation,,,legislation.nsw.gov.au/~/view/act/1919/6
+CA00,1900,NSW,Crimes Act [NSW],40,,legislation,,,legislation.nsw.gov.au/~/view/act/1900/40
+CV07,2007,NSW,Crimes (Domestic and Personal Violence) Act,80,2014-01-30,legislation,,,legislation.nsw.gov.au/~/view/act/2007/80
+CL04,2004,AU,Crimes Legislation Amendment (Telecommunications Offences and Other Measures) Act,2,2006-06-13,legislation,,,legislation.gov.au/Details/C2006C00305
+DA05,2005,NSW,Defamation Act,77,2018-07-01,legislation,2016-01-01,,legislation.nsw.gov.au/~/view/act/2005/77
+DF91,1991,NSW,Dividing Fences Act ,72,,legislation,,,legislation.nsw.gov.au/~/view/act/1991/72
+EF18,2018,NSW,Electoral Funding Act,20,,legislation,2018-07-01,,legislation.nsw.gov.au/~/view/act/2018/20
+ED81,1981,NSW,"Election Funding, Expenditure and Disclosures Act",78,2017-07-07,legislation,,,legislation.nsw.gov.au/~/view/act/1981/78
+ET17,2017,NSW,Electronic Transactions Legislation Amendment (Government Transactions) Act 2017 No 25,25,,legislation,2017-06-27,,legislation.nsw.gov.au/~/view/act/2017/25
+EP79,1979,NSW,Environment Planning & Assessment Act,203,,legislation,,,legislation.nsw.gov.au/~/view/act/1979/203
+FT87,1987,NSW,Fair Trading Act,68,2017-07-07,legislation,,,legislation.nsw.gov.au/~/view/act/1987/68
+HB89,1989,NSW,Home Building Act 1989,147,,legislation,,,legislation.nsw.gov.au/~/view/act/1989/147
+HB17,2017,NSW,Home Building Amendment (Compensation Reform) Act 2017 No 28,28,,legislation,,,legislation.nsw.gov.au/#/view/act/2017/28
+IN87,1987,NSW, Interpretation Act,15,2018-04-30,legislation,,,legislation.nsw.gov.au/~/view/act/1987/15
+LG93,1993,NSW,Local Government Act,30,,legislation,,,legislation.nsw.gov.au/~/view/act/1993/30
+PA02,2002,NSW,"Property, Stock and Business Agents Act",66,2017-11-21,legislation,2003-09-01,,legislation.nsw.gov.au/#/view/act/2002/66
+PA14,2014,NSW,"Property, Stock and Business Agents Regulation",563,2018-01-14,legislation,2014-12-16,,legislation.nsw.gov.au/#/view/regulation/2014/563
+RP00,1900,NSW,Real Property Act 1900,25,,legislation,,,legislation.nsw.gov.au/~/view/act/1900/25
+SD15,2015,NSW,Strata Schemes Development Act 2015 No 51,51,2017-09-25,legislation,,,legislation.nsw.gov.au/#/view/act/2015/51
+SFD73,1973,NSW,Strata Schemes (Freehold Development) Act 1973,68,,legislation,,,legislation.nsw.gov.au/~/view/act/1973/68
+SM96,1996,NSW,Strata Schemes Management Act 1996 No 138,138,,legislation,,,legislation.nsw.gov.au/#/view/act/1996/138
+SM15,2015,NSW,Strata Schemes Management Act 2015 No 50,50,2017-07-07,legislation,2016-11-30,"SM16,SD15,CD89,LG93,PA02,EP79,CN19",legislation.nsw.gov.au/#/view/act/2015/50
+SM16,2016,NSW,Strata Schemes Management Regulation 2016,501,2017-06-27,legislation,2016-11-30,"IN87,SM15,CP01,EP79,SD15,SFD73,WH11",legislation.nsw.gov.au/#/view/regulation/2016/501
+WC87,1987,NSW,Workers Compensation Act 1987,70,,legislation,,,legislation.nsw.gov.au/~/view/act/1987/70
+WI98,1998,NSW,Workplace Injury Management and Workers Compensation Act 1998,86,,legislation,,,legislation.nsw.gov.au/~/view/act/1998/86
+Anderson2,2018,NSWCATCD,The Owners – Strata Plan No 82306 v Anderson (2),1,2018-02-05,court,2018-02-05,Anderson,www.caselaw.nsw.gov.au/decision/5a7784d9e4b074a7c6e1c05b
+Anderson,2017,NSWCATCD,The Owners – Strata Plan No 82306 v Anderson,85,2017-10-31,court,2017-08-28,Anderson2,www.caselaw.nsw.gov.au/decision/59f79b7ce4b074a7c6e19bac
+Shum2,2018,NSWCATAP,The Owners Strata Plan No 30621 v Shum (2),15,2018-01-08,court,2017-11-30,"Shum,Thoo3,Rosenthal,McElwain,McElwain2,Ridis",www.caselaw.nsw.gov.au/decision/5a4ee813e4b074a7c6e1b88e
+Shum,2017,NSWCATCD,The Owners Strata Plan No 30621 v Shum,68,2017-08-30,court,2017-05-24,Shum2,www.caselaw.nsw.gov.au/decision/59b1ed09e4b074a7c6e18818
+Mullen,2017,NSWCATCD,Mullen v Owners Corporation SP 15342,97,2017-10-16,court,2017-08-10,,www.caselaw.nsw.gov.au/decision/5a7012abe4b058596cbadca2
+Melani,2017,NSWCATCD,Melani v The Owners Strata Plan No 22214,73,2017-09-19,court,2017-08-10,,www.caselaw.nsw.gov.au/decision/59b77e2be4b074a7c6e1891e
+Shahbzian,2017,NSWCATCD,Shahbazian v Owners Corporation SP 56466,83,2017-09-22,court,2017-08-28,,www.caselaw.nsw.gov.au/decision/59c44a1fe4b058596cbaa8e7
+McElwain2,2017,NSWCA,McElwaine v The Owners – Strata Plan No. 75975 (2),239,2017-09-20,court,2017-07-17,McElwain,www.caselaw.nsw.gov.au/decision/59c04df0e4b074a7c6e18b74
+McElwain,2016,NSWSC,McElwaine v The Owners – Strata Plan No. 75975,1589,2016-11-10,court,2015-06-19,"Thoo3,Ridis",www.caselaw.nsw.gov.au/decision/5822ce49e4b058596cba1387
+Rosenthal2,2018,NSWCATAP,The Owners – Strata Plan SP20211 v Rosenthal,243,2018-10-15,court,2018-10-15,"Mullen,Ridis,Seiwa,Seiwa4,Shum2",www.caselaw.nsw.gov.au/decision/5bbffdeae4b06629b6c62a2a
+Rosenthal,2017,NSWCATCD,Rosenthal v The Owners SP20211,80,2017-08-29,court,2017-06-26,,www.caselaw.nsw.gov.au/decision/59b867f8e4b058596cbaa413
+Thoo3,2013,NSWCA,The Owners Strata Plan 50276 v Thoo,270,2013-08-22,court,2013-05-20,,www.caselaw.nsw.gov.au/decision/54a63b143004de94513dafb7
+Sahade,2013,NSWSC,The Owners - Strata Plan No 62022 v Sahade,2002,2013-12-30,court,2013-09-10,,www.caselaw.nsw.gov.au/decision/54a63cd53004de94513db7e7
+Thoo2,2012,NSWSC,Thoo v The Owners Strata Plan No. 50276 (No. 2),1313,2012-10-29,court,2011-08-12,"Ridis,Seiwa,Thoo",www.caselaw.nsw.gov.au/decision/54a638ed3004de94513da1a2
+Thoo,2011,NSWSC,Thoo v The Owners Strata Plan No. 50276,657,2011-06-28,court,2010-08-16,,www.caselaw.nsw.gov.au/decision/54a635173004de94513d89a3
+Seiwa4,2007,NSWCA, The Owners SP 35042 v Seiwa Australia Pty Ltd [2007] NSWCA 272 ,272,2007-04-10,court,2007-09-05,,www.caselaw.nsw.gov.au/decision/549fd6573004262463bf5063
+Seiwa,2006,NSWSC, Seiwa Australia Pty Ltd v Owners Strata Plan 25042 [2006] NSWSC 1157 ,1157,2006-11-06,court,2016-10-18,,www.caselaw.nsw.gov.au/decision/549fc98c3004262463bc490c
+Ridis,2005,NSWCA,Ridis v Strata Plan No 10308,246,2015-08-01,court,2005-05-10,,www.caselaw.nsw.gov.au/decision/549fb8543004262463b98648
+BL96,1996,NSW,By-laws for pre-1996 strata schemes,501,2017-06-27,bylaw,,,legislation.nsw.gov.au/#/view/regulation/2016/501/sch2

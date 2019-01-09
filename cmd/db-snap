@@ -10,7 +10,7 @@ DB=$1
 OUT=$2
 COLLECTION=$3
 
-if [ $COLLECTION != '' ]; then
+if [[ $COLLECTION != '' ]]; then
   L2 "mongodump" "-h localhost -d ${DB} -o ${OUT} -c ${COLLECTION}\n"
   mongodump -h localhost -d $DB -o $OUT -c $COLLECTION
 else
@@ -22,5 +22,5 @@ cd $OUT/$DB;
 for bson in $(ls *.bson); do
   mv $bson ../$bson
 done
-cd ../../../../;
-rm -rf $OUT/$DB
+cd ..
+rm -rf $DB

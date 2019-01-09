@@ -18,12 +18,20 @@ if [ "$1" = '-v' -o "$2" = '-v' -o "$3" = '-v' -o "$4" = '-v' -o "$5" = '-v' -o 
   export LOG_VERBOSE=true; fi
 
 
-L1 "${1} ${2} ${3} ${4} ${5} ${6}"
 
 if [ "$1" = '-k' -o "$2" = '-k' -o "$3" = '-k' -o "$4" = '-k' -o "$5" = '-k' ] ; then
   L2 "killall " "node\n"
   killall node
   echo
+fi
+
+
+if [ "$1" = '-r' ] ; then
+  CMD="cmd"
+  source cmd/$2
+  echo
+else 
+  L1 "${1} ${2} ${3} ${4} ${5} ${6}"
 fi
 
 

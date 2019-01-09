@@ -1,15 +1,34 @@
 <div class="container">
   <main>
-    <aside class="set dev">
-    {{> ul_srcs r }}
-    </aside>
+    <aside class="dev">
+    
 
+      <ul>{{#with r.source}}
+      <li id='li_{{name}}' data-thread='{{threadId}}' class='src'>
+        <header>
+          <cite>{{title}}</cite>
+          <time>{{daytime time}}</time>
+        </header>{{#if between }}
+        <section id="btw_{{navId name}}">{{{between}}}</section>{{/if}}{{#if fileinfo}}
+        <section id="fil_{{navId name}}">{{{fileinfo}}}</section>{{/if}}{{#if md.body}}
+        <section id="bdy_{{navId name}}">{{{mup_mail md.body}}}</section>{{else}}{{#if raw}}
+        <section id="bdy_{{navId name}}">{{{md.raw}}}{{/if}}{{/if}}
+        {{!-- <footer>
+          <nav>
+            <a class='_id' href="/adm/srcs/{{_id}}" target="_blank">{{navId _id}}</a>
+            <a class='nav_id cpv' onclick='cpv("{{name}}")'>{{navId name}}</a>
+            <a class='nav_tid goto' href='#{{threadId}}'>{{navId threadId}}</a>
+          </nav>
+        </footer> --}}
+      </li>{{/with}}
+    </ul>
+
+
+    </aside>
     <section id="workbar">
       <h5><var id="wb_id"></var></h5>
-      <h5>Body (auto)</h5>
+      <h5>Body</h5>
     </section>
-    {{#each r.list}}
-    <input type="hidden" id="{{name}}_d" data-body="{{body}}" data-orig="{{raw}}" >{{/each}}
   </main>
 </div>
 
@@ -18,6 +37,7 @@
 <script type="text/javascript">
 
 function ag_onload() {
+  console.log('src')
 }
 
 </script>

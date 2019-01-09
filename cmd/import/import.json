@@ -1,17 +1,19 @@
 {
   "mongo": {
-    "collections":        ["tag","law","source"],
+    "collections":        ["tag","law","source","content"],
     "url":                "mongodb://localhost/argu_cmd",
     "seed": {
-      "force":            true,
+      "force":            false,
       "dirty":            false,
+      "without":          "FIXTURE.tags.reg._id",
       "timeout":          30000
     }
   },
   "paths": {
-    "bson":               "/import/db",
-    "specs":              "/import/task",
+    "bson":               "../37/2019-01/bak",
+    "csv_law":            "../37/_law.csv",
     "fixtures":           "../37",
-    "csv_law":            "../37/laws.csv"
+    "read":               "../../37.sttc/cms/read",
+    "specs":              "/import/task"
   }
 }

@@ -7,7 +7,7 @@ CMD=run
 BUILD=;
 CDN=;
 ENV=dev
-WEB=;
+WEB=cmd/server;
 WKR=;
 
 source cmd/init

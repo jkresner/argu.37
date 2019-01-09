@@ -1,12 +1,12 @@
 <div class="container">
-  <main>
-{{#each r}}
-    <h2>{{title}}</h2>
-    {{> ul_laws laws }}
-{{/each}}
+  <main>{{#each r}}
+    <h2>{{title}}</h2>{{> ul_laws laws }}{{/each}}
   </main>
 </div>
 
+<section id="workbar">
+  <h5>Section</h5>
+</section>
 
 <style type="text/css">
 h2 { font-size:18px;margin:10px 0 0 25px;padding:0;color:navy }
@@ -34,7 +34,6 @@ function law_render(id) {
 
 function ag_onload() {
   console.log('ag_onload', ag)
-  // console.log('marked', marked('## hey'))
 }
 
 </script>

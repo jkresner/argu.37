@@ -20,14 +20,18 @@ source cmd/init
 L2 $1
 
 if [ "$3" = "--law-Export" ]; then
-  L1 "using fresh ~/Downloads/law.Export.csv"
+  L2 "using fresh ~/Downloads/law.Export.csv"
   mv ~/Downloads/law-Export.csv cmd/d/import/q/law.csv
   # source cmd/d/sync-test
 fi
 
 echo
 
-if [ "$1" = "--replay" ]; then
+if [ "$1" = "sync" ]; then
+  source cmd/db-sync $2 $3 $4 $5 $6
+elif [ "$1" = "snapshot" ]; then
+  source cmd/db-snap $2 $3 $4 $5 $6
+elif [ "$1" = "--replay" ]; then
   # manually update this while developing
   # coffee cmd/db.coffee migrate/2018-09/migrate/2018-09 -o all $3 $4 $5 $6
   coffee cmd/db.coffee -c import/import -o law --verbose $4 $5 $6  
@@ -41,3 +45,6 @@ if [ "$3" = "--sync-test" ]; then
 fi
 
 L1 "done...\n"
+
+
+# ln -s ../../../../src/37.sttc/cms/read

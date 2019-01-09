@@ -2,7 +2,7 @@ module.exports = ({ Id, Enum, Log, Act, RefTag, RefLaw, Notate },
   { asSchema, required, sparse, unique, index, lowercase }) => {
 
 
-let SourceSchema = asSchema({
+let schema = asSchema({
 
   is:              { type: String, required, enum: Enum.SOURCE.IS },
   render:          { type: String, required, enum: Enum.SOURCE.RENDER },
@@ -11,15 +11,6 @@ let SourceSchema = asSchema({
   author:          { type: String, required },
   published:       { type: Number, required },
   uri:             { type: String, required, unique },
-
-  md:              {
-    // raw:        { type: String },
-    // body:       { type: String },
-    // edit:       { type: String },    
-    // clean:      { type: String },
-    // {filename}: { type: String },
-    // "1":        { type: String }, "2": { type: String }, "3": { type: String },
-  },
 
   tags:            { required: false, type: [RefTag] },
   laws:            { required: false, type: [RefLaw] },
@@ -34,24 +25,37 @@ let SourceSchema = asSchema({
     // threadId:
   } },
 
-  // description:  { type: String },
-  log:             { type: Log },
+  md:              {
+    // raw:        { type: String },
+    // body:       { type: String },
+    // edit:       { type: String },    
+    // clean:      { type: String },
+    // {filename}: { type: String },
+    // "1":        { type: String }, "2": { type: String }, "3": { type: String },
+  },
 
-  ignore:          { type: Number, index, sparse }
+  weight:          { type: Number, required, default: 5 }, // between 0 - 100
+  ignore:          { type: String, sparse }, // reason to ignore
+  
   // deleted:      { type: Act },
   // approved:     { type: Act },
   // ownerId:      { type: Id, sparse, ref: 'User' },
+  // desc:  { type: String },
 
+  log:             { type: Log },
 })
 
-SourceSchema.index({published:1}, { name: 'pub_1' })
 
+schema.index({published:1}, { name: 'pub_1' })
+schema.index({ignore:1}, {  name: 'idx_src_ignore_spr', sparse: true })
+schema.index({name:1}, { name: 'idx_src_name_unq', unique: true })
+schema.index({uri:1}, { name: 'idx_src_uri_unq', unique: true })
 
-return SourceSchema
+return schema
 
 }
 
-// let img = {
+// data[img] = {
   // address_components:   { type: [], required },
   // formatted_address:    { type: String, required },
   // geometry: {

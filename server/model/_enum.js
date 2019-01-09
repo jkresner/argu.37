@@ -1,3 +1,5 @@
+const authority = require('../../37/authority')
+
 module.exports = {
 
   CONTENT: {
@@ -5,11 +7,8 @@ module.exports = {
            'LAYOUT','LEGAL','MENU','POST','TOC'] },
 
   LAW: {
-    AUTHORITY: [  //-- Make these a collection at some point
-      'CA00','CDV07','CL04','DA05',
-      'PA02','PA14','SM96','SM15','SM16','SD15',
-      'SBL','CONTRACT'],
-    STRUCT: ['DIVISION','PART','SCHEDULE','SECTION','SUBSECTION','ANNEX'] },
+    AUTHORITY: Object.keys(authority),
+    STRUCT: ['DIVISION','PART','SCHEDULE','SECTION','SUBSECTION','ANNEX', 'NOTE'] },
 
   SOURCE: {
     IS: [ //-- In: SM15 P10 Records || PA02 P8 Records
@@ -51,7 +50,7 @@ module.exports = {
     ]
   },
 
-  TEMPLATE: {
+/*  TEMPLATE: {
     TYPE: ['rXig','rXCust',
       'mail','html','xml','json','txt','view','link']
     // OUT: ['mail','html','xml','json','txt','view','link']
@@ -66,5 +65,5 @@ module.exports = {
       '501',           // 501 Not implemented
     ]
   },
-
+*/
 }

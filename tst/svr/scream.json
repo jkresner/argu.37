@@ -8,6 +8,6 @@
   },
   "paths": {
     "app":                "../../server/cfg",
-    "fixtures":           "../data/fix"
+    "fixtures":           "../fixt"
   }
 }

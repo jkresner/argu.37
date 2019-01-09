@@ -1,0 +1,31 @@
+#!/bin/sh
+# Usage:
+#    cmd/db-sync {dbsrc} {dbdest}
+#    cmd/db-sync argu_cmd argu_dev
+#    cmd/db-sync {dbsrc} {dbdest} {collection}
+#    cmd/db-sync argu_dev argu_test laws
+
+OP=db-sync
+
+TMP=tst/data/bson
+DB_SRC=$1
+DB_DEST=$2
+COLLECTION=$3
+
+rm -rf $TMP/$DB_SRC
+
+if [[ $COLLECTION != '' ]]; then
+  L2 "mongodump" "-h localhost -d ${DB_SRC} -o ${TMP} -c ${COLLECTION}\n"
+  mongodump -h localhost -d $DB_SRC -o $TMP -c $COLLECTION
+else
+  L2 "mongodump" "-h localhost -d ${DB_SRC} -o ${TMP}\n"
+  mongodump -h localhost -d $DB_SRC -o $TMP
+fi
+
+echo
+L2 "mongorestore" "--db ${DB_DEST} ${TMP}/${DB_SRC}\n"
+mongorestore --drop --db $DB_DEST $TMP/$DB_SRC
+
+echo
+rm -rf $TMP/$DB_SRC
+L2 "rm" " -rf ${TMP}/${DB_SRC}"
