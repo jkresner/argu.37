@@ -10,22 +10,9 @@ window.focusd = focusd
 
 if (module.hot) {
   module.hot.accept('./script/ag', function() {
-    console.log('HOT ag.js');
+    console.log('HOT ag.js')
   })
   // module.hot.dispose(function() {
     // clearInterval(timer);
   // });
 }
-
-// import Favicon from './static/favicon.ico';
-// function component() {
-  // let element = document.createElement('div')
-  // let now = moment()
-  // element.classList.add(s+now.format('YYYY'))
-  // var ico = new Image()
-  // ico.src = Favicon
-  // element.appendChild(ico)
-  // return element
-// }
-
-

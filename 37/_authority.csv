@@ -1,34 +1,52 @@
 ﻿ref,yr,by,title,no,ver,type,start,see,url
-CT13,2013,NSW,Civil and Administrative Tribunal Act,2,2017-09-25,legislation,,,legislation.nsw.gov.au/~/view/act/2013/2
-CT14,2014,NSW,Civil and Administrative Tribunal Rules 2014,26,,legislation,,,legislation.nsw.gov.au/~/view/regulation/2014/26
-CD89,1989,NSW,Community Land Development Act,201,,legislation,,,legislation.nsw.gov.au/~/view/act/1989/201
-CM89,1989,NSW,Community Land Management Act,202,,legislation,,,legislation.nsw.gov.au/~/view/act/1989/202
-CR80,1980,NSW,Contracts Review Act,16,,legislation,,,legislation.nsw.gov.au/~/view/act/1980/16
-CN19,1919,NSW,Conveyancing Act,6,,legislation,,,legislation.nsw.gov.au/~/view/act/1919/6
-CA00,1900,NSW,Crimes Act [NSW],40,,legislation,,,legislation.nsw.gov.au/~/view/act/1900/40
-CV07,2007,NSW,Crimes (Domestic and Personal Violence) Act,80,2014-01-30,legislation,,,legislation.nsw.gov.au/~/view/act/2007/80
-CL04,2004,AU,Crimes Legislation Amendment (Telecommunications Offences and Other Measures) Act,2,2006-06-13,legislation,,,legislation.gov.au/Details/C2006C00305
-DA05,2005,NSW,Defamation Act,77,2018-07-01,legislation,2016-01-01,,legislation.nsw.gov.au/~/view/act/2005/77
-DF91,1991,NSW,Dividing Fences Act ,72,,legislation,,,legislation.nsw.gov.au/~/view/act/1991/72
-EF18,2018,NSW,Electoral Funding Act,20,,legislation,2018-07-01,,legislation.nsw.gov.au/~/view/act/2018/20
-ED81,1981,NSW,"Election Funding, Expenditure and Disclosures Act",78,2017-07-07,legislation,,,legislation.nsw.gov.au/~/view/act/1981/78
-ET17,2017,NSW,Electronic Transactions Legislation Amendment (Government Transactions) Act 2017 No 25,25,,legislation,2017-06-27,,legislation.nsw.gov.au/~/view/act/2017/25
-EP79,1979,NSW,Environment Planning & Assessment Act,203,,legislation,,,legislation.nsw.gov.au/~/view/act/1979/203
-FT87,1987,NSW,Fair Trading Act,68,2017-07-07,legislation,,,legislation.nsw.gov.au/~/view/act/1987/68
-HB89,1989,NSW,Home Building Act 1989,147,,legislation,,,legislation.nsw.gov.au/~/view/act/1989/147
-HB17,2017,NSW,Home Building Amendment (Compensation Reform) Act 2017 No 28,28,,legislation,,,legislation.nsw.gov.au/#/view/act/2017/28
-IN87,1987,NSW, Interpretation Act,15,2018-04-30,legislation,,,legislation.nsw.gov.au/~/view/act/1987/15
-LG93,1993,NSW,Local Government Act,30,,legislation,,,legislation.nsw.gov.au/~/view/act/1993/30
-PA02,2002,NSW,"Property, Stock and Business Agents Act",66,2017-11-21,legislation,2003-09-01,,legislation.nsw.gov.au/#/view/act/2002/66
-PA14,2014,NSW,"Property, Stock and Business Agents Regulation",563,2018-01-14,legislation,2014-12-16,,legislation.nsw.gov.au/#/view/regulation/2014/563
-RP00,1900,NSW,Real Property Act 1900,25,,legislation,,,legislation.nsw.gov.au/~/view/act/1900/25
-SD15,2015,NSW,Strata Schemes Development Act 2015 No 51,51,2017-09-25,legislation,,,legislation.nsw.gov.au/#/view/act/2015/51
-SFD73,1973,NSW,Strata Schemes (Freehold Development) Act 1973,68,,legislation,,,legislation.nsw.gov.au/~/view/act/1973/68
-SM96,1996,NSW,Strata Schemes Management Act 1996 No 138,138,,legislation,,,legislation.nsw.gov.au/#/view/act/1996/138
-SM15,2015,NSW,Strata Schemes Management Act 2015 No 50,50,2017-07-07,legislation,2016-11-30,"SM16,SD15,CD89,LG93,PA02,EP79,CN19",legislation.nsw.gov.au/#/view/act/2015/50
-SM16,2016,NSW,Strata Schemes Management Regulation 2016,501,2017-06-27,legislation,2016-11-30,"IN87,SM15,CP01,EP79,SD15,SFD73,WH11",legislation.nsw.gov.au/#/view/regulation/2016/501
-WC87,1987,NSW,Workers Compensation Act 1987,70,,legislation,,,legislation.nsw.gov.au/~/view/act/1987/70
-WI98,1998,NSW,Workplace Injury Management and Workers Compensation Act 1998,86,,legislation,,,legislation.nsw.gov.au/~/view/act/1998/86
+AT90,1990,NSW,Agricultural Tenancies Act 1990,64,,statute,,,legislation.nsw.gov.au/~/view/act/1990/64
+CT13,2013,NSW,Civil and Administrative Tribunal Act,2,2017-09-25,statute,,,legislation.nsw.gov.au/~/view/act/2013/2
+CT14,2014,NSW,Civil and Administrative Tribunal Rules,26,,statute,,,legislation.nsw.gov.au/~/view/regulation/2014/26
+CA10,2010,NSW,Commercial Arbitration Act 2010,61,,statute,,,legislation.nsw.gov.au/~/view/act/2010/61
+CD89,1989,NSW,Community Land Development Act,201,,statute,,,legislation.nsw.gov.au/~/view/act/1989/201
+CM89,1989,NSW,Community Land Management Act,202,,statute,,,legislation.nsw.gov.au/~/view/act/1989/202
+CR80,1980,NSW,Contracts Review Act,16,,statute,,,legislation.nsw.gov.au/~/view/act/1980/16
+CN19,1919,NSW,Conveyancing Act,6,,statute,,,legislation.nsw.gov.au/~/view/act/1919/6
+CP01,2001,AU,Corporations Act,50,,statute,,,legislation.gov.au/Details/C2018C00424
+CR00,1900,NSW,Crimes Act,40,,statute,,,legislation.nsw.gov.au/~/view/act/1900/40
+CV06,2006,NSW,Crimes Amendment (Apprehended Violence) Act,73,,statute,,,legislation.nsw.gov.au/~/view/act/2006/73
+CV07,2007,NSW,Crimes (Domestic and Personal Violence) Act,80,2014-01-30,statute,,,legislation.nsw.gov.au/~/view/act/2007/80
+CL04,2004,AU,Crimes Legislation Amendment (Telecommunications Offences and Other Measures) Act,2,2006-06-13,statute,,,legislation.gov.au/Details/C2006C00305
+CC95,1995,AU,Criminal Code Act,12,,statute,,,legislation.gov.au/Details/C2019C00003
+DA05,2005,NSW,Defamation Act,77,2018-07-01,statute,2016-01-01,,legislation.nsw.gov.au/~/view/act/2005/77
+DD92,1992,AU,Disability Discrimination Act 1992,135,,statute,,,legislation.gov.au/Details/C2018C00125
+DF91,1991,NSW,Dividing Fences Act ,72,,statute,,,legislation.nsw.gov.au/~/view/act/1991/72
+EF18,2018,NSW,Electoral Funding Act,20,,statute,2018-07-01,,legislation.nsw.gov.au/~/view/act/2018/20
+ED81,1981,NSW,"Election Funding, Expenditure and Disclosures Act",78,2017-07-07,statute,,,legislation.nsw.gov.au/~/view/act/1981/78
+ET17,2017,NSW,Electronic Transactions Legislation Amendment (Government Transactions) Act,25,,statute,2017-06-27,,legislation.nsw.gov.au/~/view/act/2017/25
+EP79,1979,NSW,Environment Planning & Assessment Act,203,,statute,,,legislation.nsw.gov.au/~/view/act/1979/203
+FT87,1987,NSW,Fair Trading Act,68,2017-07-07,statute,,,legislation.nsw.gov.au/~/view/act/1987/68
+HB89,1989,NSW,Home Building Act,147,,statute,,,legislation.nsw.gov.au/~/view/act/1989/147
+HB14,2014,NSW,Home Building Regulation 2014,811,,statute,,,legislation.nsw.gov.au/~/view/regulation/2014/811
+HB17,2017,NSW,Home Building Amendment (Compensation Reform),28,,statute,,,legislation.nsw.gov.au/#/view/act/2017/28
+IN87,1987,NSW,Interpretation Act,15,2018-04-30,statute,,,legislation.nsw.gov.au/~/view/act/1987/15
+IS73,1973,AU,Insurance Act,76,,statute,,,legislation.gov.au/Details/C2018C00389
+IA69,1969,NSW,Imperial Acts Application Act 1969,30,,statute,,,legislation.nsw.gov.au/~/view/act/1969/30
+LG93,1993,NSW,Local Government Act,30,,statute,,,legislation.nsw.gov.au/~/view/act/1993/30
+PA02,2002,NSW,"Property, Stock and Business Agents Act",66,2017-11-21,statute,2003-09-01,,legislation.nsw.gov.au/#/view/act/2002/66
+PA14,2014,NSW,"Property, Stock and Business Agents Regulation",563,2018-01-14,statute,2014-12-16,,legislation.nsw.gov.au/#/view/regulation/2014/563
+PA18,2018,NSW,Property Stock Agents Regulation 2018,5,,statute,,,legislation.nsw.gov.au/#/view/act/2018/5
+RP00,1900,NSW,Real Property Act,25,,statute,,,legislation.nsw.gov.au/~/view/act/1900/25
+SD15,2015,NSW,Strata Schemes Development Act,51,2017-09-25,statute,,,legislation.nsw.gov.au/#/view/act/2015/51
+SD73,1973,NSW,Strata Schemes (Freehold Development) Act,68,,statute,,,legislation.nsw.gov.au/~/view/act/1973/68
+SM15,2015,NSW,Strata Schemes Management Act,50,2017-07-07,statute,2016-11-30,"SM16,SD15,CD89,LG93,PA02,EP79,CN19",legislation.nsw.gov.au/#/view/act/2015/50
+SD86,1986,NSW,Strata Schemes (Leasehold Development) Act,219,,statute,,,legislation.nsw.gov.au/~/view/act/1986/219
+SM96,1996,NSW,Strata Schemes Management Act,138,,statute,,,legislation.nsw.gov.au/#/view/act/1996/138
+SM16,2016,NSW,Strata Schemes Management Regulation,501,2017-06-27,statute,2016-11-30,"IN87,SM15,CP01,EP79,SD15,SD73,WH11",legislation.nsw.gov.au/#/view/regulation/2016/501
+SL17,2017,NSW,Statute Law (Miscellaneous Provisions) Act (No 2) 2017 No 63,63,,statute,,,legislation.nsw.gov.au/#/view/act/2017/63
+SC70,1970,NSW,Supreme Court Act,52,,statute,,,legislation.nsw.gov.au/~/view/act/1970/52
+WC87,1987,NSW,Workers Compensation Act,70,,statute,,,legislation.nsw.gov.au/~/view/act/1987/70
+WI98,1998,NSW,Workplace Injury Management and Workers Compensation Act,86,,statute,,,legislation.nsw.gov.au/~/view/act/1998/86
+WH11,2011,NSW,Work Health and Safety Act 2011,137,,statute,,,legislation.gov.au/Details/C2017C00305
+LE02,2002,NSW,Law Enforcement (Powers and Responsibilities) Act,103,,statute,,,legislation.nsw.gov.au/~/view/act/2002/103
+EV95,1995,NSW,Evidence Act,25,,statute,,,legislation.nsw.gov.au/~/view/act/1995/25
+CC67,1967,NSW,Costs in Criminal Cases Act,13,,statute,,,legislation.nsw.gov.au/~/view/act/1967/13
+CL02,2002,NSW,Civil Liability Act,22,,statute,,,legislation.nsw.gov.au/#/view/act/2002/22
 Anderson2,2018,NSWCATCD,The Owners – Strata Plan No 82306 v Anderson (2),1,2018-02-05,court,2018-02-05,Anderson,www.caselaw.nsw.gov.au/decision/5a7784d9e4b074a7c6e1c05b
 Anderson,2017,NSWCATCD,The Owners – Strata Plan No 82306 v Anderson,85,2017-10-31,court,2017-08-28,Anderson2,www.caselaw.nsw.gov.au/decision/59f79b7ce4b074a7c6e19bac
 Shum2,2018,NSWCATAP,The Owners Strata Plan No 30621 v Shum (2),15,2018-01-08,court,2017-11-30,"Shum,Thoo3,Rosenthal,McElwain,McElwain2,Ridis",www.caselaw.nsw.gov.au/decision/5a4ee813e4b074a7c6e1b88e

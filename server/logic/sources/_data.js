@@ -1,8 +1,8 @@
 // Move into logic / make dynamic
 const SRC                   = require('../../../37/src')
-const GMAILUP               = require('../../../37/2019-01/inbox.1').gmailUp
 const jk_sets               = require('../../../37/2019-01/sets.jk')
 const jk_filters            = Object.keys(jk_sets).sort()
+
 
 const Lookup                                                                 = {
 
@@ -116,8 +116,20 @@ const Projections = ({select,pl8},{chain,view}) => ({
       else $log('?mimeType'.red, mimeType, load, 'mail', src.data)
     })(src.data.payload)
 
+    // $log('src'.green, src.data.payload.parts[0], gmail)
     if (!src.md.raw) src.md.raw = Buffer.from(gmail.text64, 'base64').toString()
-    return GMAILUP(assign(src,{gmail}))
+   
+
+    // let up = cleaning[m.name]||{md:''}
+    // $log(` ${m.name} `.yellow, up.d == 1)
+    // if (up.d == 1) //&& up.md && up.md != '')
+    // assign(m,{skip:true})
+    // if (up.a)       assign(m.md, up.a)  // atchd previews
+  
+    if (config.log.verbose && !src.md.body) 
+      $log(` ${src.name} clean md.body ${moment(src.published)}`.red.dim, src.name)
+
+    return (assign(src,{gmail}))
   },
 
 
@@ -215,8 +227,20 @@ const Projections = ({select,pl8},{chain,view}) => ({
       // $log(`gmailMsgs[${d.mode}_mode].thread`.yellow, threads[id].length, id, threads[id][0].subject)
     }
 
+    let names = sources.map(s=>s.name)
+
     vd.threads = vd.threads.map(tId => assign(threads[tId],
           { id: tId , messages: threads[tId].messages.map(m => m.name) } ))
+
+    vd.filtered = {}
+    for (var s in jk_sets)
+      vd.filtered[s] = jk_sets[s].filter(n=>names.indexOf(n) > -1)
+
+    // vd.lb_static = ['police','ants','losses','innocent','laurie',//,'JK_health'
+    // 'JK_swear','JK_anxiety','JK_cantwork','JK_losses','JK_scapegoat','JK_unrentable',
+    // 'SC_badfaith','SC_misinfo','SA_OC2nd','SA_breach',//'oneill'
+    // 'OC_106_1','OC_noise']
+
 
     if (config.log.verbose) {
       $log('sources.viewData:'.magenta, _.omit(vd,['threads']))
@@ -224,7 +248,7 @@ const Projections = ({select,pl8},{chain,view}) => ({
       for (let t of vd.threads) $log(`'${t.id}'`.dim+`:\{ p:0, t:"${moment(t.start).format('YYMM-DD')}:${t.days}d<${t.messages.length}>${t.subject}"},`)
     }
 
-    return {vd,sources,list,filtered:jk_sets}
+    return {vd,sources,list}
   },
 
   pseudofix: src => {
@@ -246,8 +270,13 @@ const Projections = ({select,pl8},{chain,view}) => ({
               .replace(/\]\(\_\_/g,`](${Lookup.cdn_atchd}/${src.name}__`) )
 
     return r
-  }
+  },
 
+
+  edit: (r) => {
+    // console.log('sources._data.edit', r)
+    return r
+  }
 
 })
 

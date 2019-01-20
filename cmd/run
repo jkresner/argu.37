@@ -7,13 +7,14 @@ CMD=run
 BUILD=;
 CDN=;
 ENV=dev
-WEB=cmd/server;
+WEB=;
 WKR=;
 
 source cmd/init
 
 if [ "$1" = "--cmd" ]; then
   ENV=cmd
+  WEB=cmd/server;
 # elif [ "$1" = "--dist" ]; then
 #   ENV=prod
 #   BUILD=cmd/dist
@@ -29,7 +30,7 @@ else
 fi
 
 export ENV=$ENV
-L1 "${ENV}.env"
+L1 "-env ${ENV}"
 
 # if [ "$2" = "--worker" ];
 #   then WKR=cmd/r/worker;

@@ -31,6 +31,8 @@ if [ "$1" = "sync" ]; then
   source cmd/db-sync $2 $3 $4 $5 $6
 elif [ "$1" = "snapshot" ]; then
   source cmd/db-snap $2 $3 $4 $5 $6
+elif [ "$1" = "md" ]; then
+  source cmd/db-md $2 $3 $4 $5 $6  
 elif [ "$1" = "--replay" ]; then
   # manually update this while developing
   # coffee cmd/db.coffee migrate/2018-09/migrate/2018-09 -o all $3 $4 $5 $6

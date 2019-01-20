@@ -45,13 +45,14 @@
 }
 
 
+window.$ = ag.$
 var $log = console.log
-var $ = ag.$
 var url = window.location.href
 var search = window.location.search
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
+  $.mtz = window.moment
   ag.timer.log('DOMLoaded')
   if (window.ag_onload) { ag_onload(); ag.timer.log('ag_onloaded') }
   else { ag.timer.log('ag_loaded') }
@@ -116,10 +117,6 @@ ag.srcs = {
     else window.location = url.replace("newest=1","")
   },
   filter: function(ul, cbx) {
-    var moment = window.moment
-    console.log('moment', moment)
-
-
     var start = new Date()
     var stack = ul.data('stack')
     var fltr = cbx ? cbx.id.replace('f_','') : 'none'
@@ -191,10 +188,10 @@ ag.srcs = {
     $('#v_shown').innerHTML = show.length
 
     if (first) {
-      var time_from = moment($('time',first)[0].innerHTML, "HH:mm DD MMM YYYY")
-      var time_to = moment($('time',last)[0].innerHTML, "HH:mm DD MMM YYYY")
+      var time_from = $.mtz($('time',first)[0].innerHTML, "HH:mm DD MMM YYYY")
+      var time_to = $.mtz($('time',last)[0].innerHTML, "HH:mm DD MMM YYYY")
       var time_dif = time_from.diff(time_to)
-      var time_days = parseInt(moment.duration(time_dif).asDays()) * (time_dif>0?1:-1)
+      var time_days = parseInt($.mtz.duration(time_dif).asDays()) * (time_dif>0?1:-1)
       $('#v_from').innerHTML = time_from.format('YYYY DD-MM')
       $('#v_to').innerHTML = time_to.format('YYYY DD-MM')
       $('#v_days').innerHTML = time_days
@@ -205,4 +202,5 @@ ag.srcs = {
     ag.timer.log(lb+'['+show.length+']:done', start)
   }
 }
+
 })()

@@ -1,6 +1,6 @@
 <nav id="xplorer">
 
-  <div id="filters">{{#with r.vd}}  
+  <div id="filters">{{#with vd}}  
     <p><label for="stack_off"> total </label><input id="stack_off" name="stack" type="radio" val="message" onchange="ag.srcs.toggleStack()" /><span><var id="v_shown">{{agg.src}}</var> /{{agg.src}}</span></p>
     <p><label for="stack_thread"> threads </label><input id="stack_thread" name="stack" type="radio" val="thread" onchange="ag.srcs.toggleStack()" /><span><var id="v_threads">{{agg.thread}}</var> /{{agg.thread}}</span></p>
     <p><label for="sets"> sets </label></p>

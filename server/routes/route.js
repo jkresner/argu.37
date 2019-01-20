@@ -1,7 +1,11 @@
 module.exports = (app, mw, ops) => {
 
+  delete app.locals.static
+  delete app.locals.about
+  // delete app.locals.settings  
+
   if (honey.cfg('log').verbose)
-    console.log('routes'.yellow, ops)
+    console.log('routes'.yellow, ops, 'app.locals', app.locals)
 
   //
   ops['bot'].off ? 0 : honey.
@@ -24,12 +28,19 @@ module.exports = (app, mw, ops) => {
       .use(mw.$.session)
       .use(mw.$.adm)
       .use((req,res,next) => {
-        let layout = "layout"
         let slug = req.originalUrl.split('?')[0].replace("/","")
-        let title = slug.replace('adm/','').split('/')[0]
-        let html = { title }
-        let bodycss = title;
-        mw.res.page(`page/adm/${name}`,{layout,bodycss,html})(req,res,next)
+        let bodycss = slug.replace('adm/','').split('/')[0]
+        let vd = req.locals.r.vd
+        let pd = { 
+          layout: "layout", 
+          bodycss, 
+          html: { title: bodycss },
+          vd,
+          r: _.omit(req.locals.r,'vd')
+        }
+        // console.log('pd', pd)
+        // console.log('req.locals', req.locals)        
+        res.render(`page/adm/${bodycss}`, pd)
       }, {end:1})
    // .get('/pl8', mw.$.pd('templates'))
       .get('/law', mw.data.page('laws.law', '?'))
@@ -37,7 +48,6 @@ module.exports = (app, mw, ops) => {
       .get('/src/:source', mw.$.param('source'), 
         mw.data.page('sources.edit',{param:'source'}))
   
-  //
     // honey.Router('sets', ops.sets)
     // .use(mw.$.nobot)
     // .use(mw.$.session)
@@ -45,30 +55,21 @@ module.exports = (app, mw, ops) => {
     // .get('/mail', mw.$.pd('sources.listGmail',{params:['query']}))
     // .get('/published', mw.$.pd('sources.listPublished',{params:['query']}))
 
-  //
-  let final = null // '/strata-living/'
-  let current = '' //'/draft-v1.1'
-  let ver = final || current
+
+  // let final = null // '/strata-living/'
+  // let current = '' //'/draft-v1.1'
+  // let ver = final || current
   let web = ops['page'].off ? 0 : honey
     .Router('web', ops.web)
       .use(mw.$.nobot)
       .use(mw.$.session)
-// for (let {url,idx} of toc.chapters)
-//   web.get(url, mw.data.page(idx))
-      .get('/', mw.$.ch("0.1"))
-      .get(`/strata-living/toc`, mw.$.ch("0.2"))
-      .get(`/intro`, (req, res) => res.redirect(301, '/') )
-      .get(`${ver}/13385-36/474.15-13`, mw.$.ch("1.6"))
-      .get(`${ver}/13385-agent/oneill-management`, mw.$.ch("1.4"))
-      .get(`${ver}/13385-36/apprehension`, mw.$.ch("1.7"))
-      // .get('/strata-living/13385-36/background', mw.$.ch("1.1"))
-      // .get('/strata-living/13385-36/dispute-resolution', mw.$.ch("1.5"))
-      // .get('/strata-living/13385-36/apartment-saga', mw.$.ch("1.2"))
-      // .get('/strata-living/13385-36/shower-leak', mw.$.ch("1.2.1"))
-      // .get('/strata-living/13385-36/stop-gap', mw.$.ch("1.2.2"))
-
+      .get('/', mw.$.ch('0.1')) 
       .get('/strata-research',  mw.data.page('contents.read'), 
         mw.res.page('page/reading') )
 
+  for (let {url,idx,md} of CAL['toc'].chapters) web
+      .get(url, mw.$.ch(idx)) 
+    // + $log(idx.dim, '\t', url.yellow, (md||'\n').split('\n')[0])
+  
 }
 

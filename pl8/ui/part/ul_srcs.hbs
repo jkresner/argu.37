@@ -1,4 +1,4 @@
-<ul id='{{vd.ui.ul}}' data-stack='{{vd.ui.stack}}'>{{#each list}}
+<ul id='{{vd.ui.ul}}' data-stack='{{vd.ui.stack}}'>{{#each r.list}}
   <li id='li_{{name}}' data-thread='{{threadId}}' data-is='{{tis}}' class='src'>
     <header>
       <cite>{{subject}}</cite>
@@ -6,7 +6,7 @@
     </header>{{#if between }}
     <section id="btw_{{navId name}}">{{{between}}}</section>{{/if}}{{#if fileinfo}}
     <section id="fil_{{navId name}}">{{{fileinfo}}}</section>{{/if}}{{#if body}}
-    <section id="bdy_{{navId name}}">{{{mup this}}}</section>{{else}}{{#if raw}}
+    <section id="bdy_{{navId name}}">{{{markup this}}}</section>{{else}}{{#if raw}}
     <section id="bdy_{{navId name}}">{{{raw}}}{{/if}}{{/if}}{{#if attached}}
     <section id="atc_{{navId name}}">{{dl_atcd}}</section>{{/if}}
     <footer>

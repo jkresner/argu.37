@@ -12,7 +12,7 @@ module.exports = ->
     lookup = "module.exports = {\n"
     add = (a) =>
       # $log('a'.magenta, a)
-      lookup += "  '#{a.ref}': '#{a.title}',\n"
+      lookup += "  '#{a.ref}': { title: '#{a.title}', by: '#{a.by}', yr: '#{a.yr}', no: '#{a.no}', url: '#{a.url}' },\n"
     upsert = (rows) =>
       fs.writeFileSync(paths.fixtures+"/authority.js", lookup+"}\n")
       DONE()

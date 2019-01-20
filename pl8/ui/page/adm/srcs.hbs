@@ -3,7 +3,7 @@
     {{> nav_srcs }}
 
     <aside class="set dev">
-    {{> ul_srcs r }}
+    {{> ul_srcs }}
     </aside>
 
     <section id="workbar">
@@ -49,8 +49,8 @@ function insertLBs(li) {
   // })
   // li.getElementsByTagName('footer')[0].innerHTML = html
 }
-// var ups = {}
-function filterLB(v, id) {
+var ups = {}
+function fLb(v, id) {
   // var f = v.innerHTML.replace('<i>J</i>','JK_')
   //                    .replace('<i>O</i>','OC_')
   //                    .replace('<i>A</i>','SA_')
@@ -82,18 +82,10 @@ function filterLB(v, id) {
 }
 
 var cpv = function(v) { ag.cmd.cp(v, ag.$('#cpd').value?'\n' : false) }
-var fTog = function(cbx) { ag.srcs.filter(ag.$('#adm_srcs'), cbx) }
-var fLb = function(v, id) { filterLB(v, id) }
+var fTog = function(cbx) { ag.srcs.filter(ag.$('#{{vd.ui.ul}}'), cbx) }
 
 function ag_onload() {
-  ag.data.filters = {{{ JSON r.vd.filters }}}
-  ag.data.filtered = {{{ JSON r.filtered }}}
-  ag.data.lb_static = ['police','ants','losses','innocent','laurie',//,'JK_health'
-  'JK_swear','JK_anxiety','JK_cantwork','JK_losses','JK_scapegoat','JK_unrentable',
-  'SC_badfaith','SC_misinfo','SA_OC2nd','SA_breach',//'oneill'
-  'OC_106_1','OC_noise']
-
-  ag.$('#stack_{{r.vd.ui.stack}}').checked = true
+  ag.$('#stack_{{vd.ui.stack}}').checked = true
   var cbx_load = null // var cbx_load = $('#f_JK_intent')
   if (cbx_load) cbx_load.checked = true
   fTog(cbx_load)
@@ -101,5 +93,4 @@ function ag_onload() {
 
 </script>
 
-
-
+{{VD}}

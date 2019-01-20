@@ -1,0 +1,34 @@
+#!/bin/sh
+OP="md";
+FS_ROOT=$(pwd)
+FS_SRC=$FS_ROOT/37/md
+SET=''
+
+cat_in() {
+  cd $FS_SRC
+  L2 "cat_in" "${FS_SRC}"
+  IN="var set = {}; "
+  for f in $(find *.md -type f); do 
+    IN+="set['${f%.*}'] = \`$(cat $f)\`; "
+  done
+  IN+=$(printf "module.exports = set;")
+  printf "%s" "$IN" > $FS_SRC/_md.js  
+}
+
+
+cat_in
+cd $FS_ROOT
+
+source cmd/db import content
+
+# chsum1=""
+# while [[ true ]] ; do
+#   chsum2=`find -s $FS_SRC -type f -exec md5 {} \;`
+#   if [[ $chsum1 != $chsum2 ]] ; then           
+#     cat_in 
+#     chsum1=$chsum2
+#   fi
+#   sleep 2
+# done
+
+
