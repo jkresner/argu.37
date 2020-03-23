@@ -5,7 +5,7 @@ before (DONE) ->
 IT "INIT", ->
   {chapters,toc} = FIXTURE.content
   for i in chapters
-    i.tags = i.tags.split(',').map((t) => _.select(FIXTURE.tag[t], '_id short'))
+    i.tags = i.tags.split(',').map (t) => _.select(FIXTURE.tags[t], '_id short')
 
   ins = chapters.concat([toc])
   DAL.Content.bulkOperation ins, [], [], (e,r) ->

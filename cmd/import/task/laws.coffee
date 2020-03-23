@@ -14,13 +14,14 @@ tags = null
 paths = OPTS.config.paths
 
 # latest
-ROWS = 423
-INSERTS = 240
-UPDATES = 53 
-PRE_COUNT = 188
+ROWS = 423 # 188
+PRE_COUNT = 0 # 188 
 MATCHED_COUNT = 183 # not sure about the odd 5 yet
-POST_COUNT = 428 
-SS_COUNT = 310 
+UPDATES = 0 # 53 
+INSERTS = 423 # 
+TAG_COUNT = 22
+POST_COUNT = 423 # 188 # 428 
+SS_COUNT = 308
 
 module.exports = ->
 
@@ -29,12 +30,11 @@ module.exports = ->
       PRE_COUNT = LAW_IMPORT.PRE_COUNT if LAW_IMPORT.PRE_COUNT?
       POST_COUNT = LAW_IMPORT.POST_COUNT if LAW_IMPORT.POST_COUNT?
     tags = CAL.tags_cached
-    expect(Object.keys(CAL.tags_cached).length).to.equal(22)
+    expect(Object.keys(CAL.tags_cached).length).to.equal(TAG_COUNT)
     DAL.Law.getManyByQuery {}, (e, r) =>
       for l in r
         existing[l.ttl.replace('CA07','CV07')] = l._id 
         console.log(l.ttl, '\t', l.name.yellow, '\t', l.title)
-      console.log('LAW BEFORE', PRE_COUNT)
       expect(r.length).equal(PRE_COUNT)
       cb()
 
@@ -47,7 +47,7 @@ module.exports = ->
       i.see = c.see if c.see and c.see.length > 0
       i.is = if i.title.indexOf("(") > -1 then 'SUBSECTION' else 'SECTION'
       i.ttl = if /^S/.test(i.in) then "#{i.of}:#{i.in}(#{i.at})" else "#{i.of}:#{i.at}"
-      $log('i.tags'.magenta, i.ttl, c.tags)
+      # $log('i.tags'.magenta, i.ttl, c.tags)
       i.tags = c.tags.split(',').map((t) => _.select(tags[t], '_id short'))
       $log("  #{i.ttl}\t  ".blue, i.tags.map((t)=>"#{tagMap[t.short]||t.short}".dim).join(' ').gray, ' \t', i.title)
       _id = existing[i.ttl]
@@ -63,19 +63,22 @@ module.exports = ->
       $log("laws(inserts[#{inserts.length}]) updates[#{updates.length}] from #{OPTS.config.paths.csv_law}".green.dim)
       DAL.Law.bulkOperation inserts, updates, [], (e, r) =>
         expect(e, "#{e}".red).to.be.null
-        $log('laws.r'.dim, r, 'inserts', inserts.length, 'updates', updates.length)
+        $log('laws.r'.dim, 'inserts', inserts.length, 'updates', updates.length)
         expect(inserts.length).to.equal(INSERTS)
         expect(r.insertedCount).to.equal(INSERTS)
-        expect(updates.length).to.equal(MATCHED_COUNT)        
+        expect(updates.length).to.equal(UPDATES) # MATCHED_COUNT)        
         expect(r.modifiedCount).to.equal(UPDATES)
         # $log('laws.ins laws0.csv'.dim, "ok:#{r.n}".green)
         DB.docsByQuery 'law', {of:"PA02"}, (laws) =>
           expect(laws.length).to.equal(35)
-          expect(laws[20].at).equal('53A(1a)')
-          expect(laws[20].is).equal('SUBSECTION')
-          expect(laws[20].tags.length).equal(2)
-          expect(laws[20].tags[0].short).equal("sa")
-          expect(laws[20].tags[1].short).equal("def")
+          # console.log('laws[20]', laws[20])
+          # l = at: '103', is: 'SECTION'
+          l = at: '53A(1a)', is: 'SUBSECTION', tags: 2, t1: "sa", t2: "def"
+          expect(laws[20].at).equal(l.at)
+          expect(laws[20].is).equal(l.is)
+          expect(laws[20].tags.length).equal(l.tags)
+          expect(laws[20].tags[0].short).equal(l.t1)
+          expect(laws[20].tags[1].short).equal(l.t2)
           DONE(e)        
     DB.Collections.laws.find {}, (e, r) =>
       for l in r
@@ -86,18 +89,23 @@ module.exports = ->
 
 
   after (cb) ->
+    expect(CAL.laws_cached).to.be.undefined
     CAL.flush('laws')
     CAL.get 'laws_cached', honey.logic.laws.cached.chain, (e,r) =>
+      console.log('laws.r', r.length)
+      console.log('CAL.laws_cached', Object.keys(CAL.laws_cached), Object.keys(CAL.laws_cached).length)
       expect(Object.keys(CAL.laws_cached).length).to.equal(POST_COUNT)
+      console.log('after.laws_cached.ok'.green.dim)
       honey.logic.laws.list.chain {legislation:'Strata Scheme'}, (e1, ss) =>
+        # $log('after.laws.list', ss)
         expect(e1, "#{e1}".red).to.be.null
         expect(ss.length).equal(SS_COUNT)
-        # console.log('ss[1]', ss[1])
+        console.log('ss[1]', ss[1])
         expect(ss[1].of).equal('SM15')
         expect(ss[1].tags.length).equal(2)
         expect(ss[1].tags[0]._id).eqId('5ba3b2a48e32d36ba15ecf12')
         expect(ss[1].tags[0].short).equal('oc')
         expect(ss[1].tags[0].name).equal('Owners Corporation')
         expect(ss[1].tags[0].slug).equal('owners-corporation')
-        expect(ss[90].of).equal('SM15')
+        # expect(ss[90].of).equal('SM15')
         cb()

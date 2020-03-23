@@ -6,87 +6,58 @@
     {{> ul_srcs }}
     </aside>
 
-    <section id="workbar">
-      <h5><var id="wb_id"></var></h5>
-      <h5>Body (auto)</h5>
-    </section>
+    <section id="workbar"></section>
     {{#each r.list}}
-    <input type="hidden" id="{{name}}_d" data-body="{{body}}" data-orig="{{raw}}" >{{/each}}
+    <input type="hidden" id="{{name}}_d" 
+      data-body="{{body}}" 
+      data-orig="{{raw}}" 
+      data-header="{{header}}">{{/each}}
   </main>
 </div>
 
 
 <script type="text/javascript">
 
-function cpb(id) {
-  if ($('#workbar').getAttribute('data-id') == id) return
-  $('#workbar').setAttribute("data-id", id)
-
-  var elm  = $('#'+id+'_d')
-  var orig = elm.data('orig')
-  // var body = elm.data('body')
-
-  $('#workbar').innerHTML ='<h5>'+id+' (original)</h5>'+
-    '<textarea id="cpd_orig" wrap="soft">\''+id+'\'\: { md: `\n'+orig+'</textarea>'+
-    '<h5>Body (auto)</h5>'+
-    '<textarea id="cpd_body" wrap="soft">'+
-        orig.replace(/\n\n/g,'\n\\n')
-            .replace(/\n/g,' ')
-            .replace(/\\n/g,'\n\\n')+'</textarea>'
-}
-
-function insertLBs(li) {
-  // var html = ""
-  // ag.data.filters.forEach(function(name) {
-  //   if (ag.data.lb_static.indexOf(name) != -1) return
-  //   var css = ag.data.filtered[name].indexOf(li.id) == -1 ? '' : css = ' class="on"';
-  //   var id = "'"+li.id+"'"
-  //   html += '<var onclick="lb(this, '+id+')"'+css+'>'+
-  //    name.replace('JK_','<i>J</i>')
-  //        .replace('OC_','<i>O</i>')
-  //        .replace('SA_','<i>A</i>')
-  //        .replace('SC_','<i>C</i>')+'</var>';
-  // })
-  // li.getElementsByTagName('footer')[0].innerHTML = html
-}
 var ups = {}
-function fLb(v, id) {
-  // var f = v.innerHTML.replace('<i>J</i>','JK_')
-  //                    .replace('<i>O</i>','OC_')
-  //                    .replace('<i>A</i>','SA_')
-  //                    .replace('<i>C</i>','SC_')
-  // var on = !/on/.test(v.getAttribute('class'))
-  // v.setAttribute('class', on?'on':'')
-  // ups[f] = ups[f] || { ins: [], rm: [] }
-  // var saved = ag.data.filters[f].indexOf(id) > -1
-  // if (saved) {
-  //   var idxRm = ups[f].rm.indexOf(id)
-  //   if (on && idxRm > -1) ups[f].rm.splice(idxRm, 1)
-  //   else if (idxRm == -1) ups[f].rm.push(id)
-  // }
-  // else {
-  //   var idxIns = ups[f].ins.indexOf(id)
-  //   if (on && idxIns == -1) { ups[f].ins.push(id) }
-  //   else if (idxIns > -1) ups[f].ins.splice(idxIns, 1)
-  // }
-  // var cmd = ''
-  // Object.keys(ups).forEach(function(u) {
-  //   var ins = ups[u].ins
-  //   var rm = ups[u].rm
-  //   if ((ins.length + rm.length) > 0)
-  //     cmd += "up('"+u+"',"
-  //       + (ins.length > 0 ? "'"+ins.join(",")+"'," : "null,")
-  //       + (rm.length > 0 ? "'"+rm.join(",")+"')" : "null)") + '\n'
-  // })
-  // ag.cmd.cp(cmd)
+var $wkb;
+
+function cpb(id) {
+  if ($wkb.data('id') == id) return
+  $wkb.setAttribute("data-id", id)
+  var elm  = $('#'+id+'_d')
+  var head = elm.data('header')
+  var body = elm.data('body')
+  var orig = elm.data('orig')
+  var oprv = orig.replace(/\n\n/g,'\n\\n')
+    .replace(/\n/g,' ')
+    .replace(/\\n/g,'\n\\n')
+
+  $wkb.innerHTML ='<h5>'+id+' (raw)</h5>'
+    +'<textarea id="cpd_orig" wrap="soft">\''+id+'\'\: { md: `\n'+orig+'</textarea>'
+    +'<h5>Body (edit+transforms)</h5>'
+    +'<textarea id="cpd_edit" wrap="soft">'+head+body+'</textarea>'
+    +'<h5>Body (auto)</h5>'
+    +'<textarea id="cpd_body" wrap="soft">'+oprv+'</textarea>'
 }
 
-var cpv = function(v) { ag.cmd.cp(v, ag.$('#cpd').value?'\n' : false) }
-var fTog = function(cbx) { ag.srcs.filter(ag.$('#{{vd.ui.ul}}'), cbx) }
+
+// var fLb = function(v, id) { ag.srcs.togglefilterLb(v, id) }
+var cpv = function(v) { ag.cmd.cp(v, $('#cpd').value?'\n' : false) }
+var fTog = function(cbx) { ag.srcs.filter($('#{{vd.ui.ul}}'), cbx) }
+var trmv = function(name) { 
+  var el = document.getElementById('li_'+name)
+  el.parentNode.removeChild(el)
+}  
 
 function ag_onload() {
+  ag.data.filtered = window.vd.filtered
+
+  for (var f in ag.data.filtered)
+    $('#f_'+f).parentNode.innerHTML += ' <b>'+ag.data.filtered[f].length+'</b>'
+
+  $wkb = $('#workbar')
   ag.$('#stack_{{vd.ui.stack}}').checked = true
-  var cbx_load = null // var cbx_load = $('#f_JK_intent')
+  var cbx_load = null // $('#f_stopgap') 
   if (cbx_load) cbx_load.checked = true
   fTog(cbx_load)
 }
@@ -94,3 +65,4 @@ function ag_onload() {
 </script>
 
 {{VD}}
+ 

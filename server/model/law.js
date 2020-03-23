@@ -1,7 +1,9 @@
 module.exports = ({ Id, Enum, Log, RefTag },
   { asSchema, required, sparse, index, unqiue }) => {
 
+/*
 
+*/
 let schema = asSchema({
   is:     { type: String, required, enum: Enum.LAW.STRUCT, default: 'SECTION' }, // 'DIVISION' etc.
   of:     { type: String, required, enum: Enum.LAW.AUTHORITY }, // 'SM15'
@@ -16,6 +18,8 @@ let schema = asSchema({
   log:    { type: Log }
 })
 
+/*
+*/
 schema.index({ttl:1}, { name: 'Idx_law_ttl', unique: true })
 schema.index({name:1}, { name: 'Idx_law_name', unique: true })
 schema.index({of:1,in:1}, { name: 'Idx_from' })

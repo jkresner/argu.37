@@ -1,4 +1,3 @@
-
 function linkify(md, toc, media) {
   var txt = md.toString()
   for (let id in toc) {
@@ -29,8 +28,8 @@ function layout_chapter(toc, key, tmplt, media) {
 
 //
 function web_chapter(page) {
-  // console.log('web_chapter'.yellow, page.id)
-  return layout_chapter(page.toc, page.id, (page.tp||{}).ch_w, 'w') 
+  console.log('web_chapter'.yellow, page.id)
+  return layout_chapter(CAL.toc.chapters, page.id, (page.tp||{}).ch_w, 'w') 
 }
 
 //
@@ -38,28 +37,20 @@ function print_chapter(key, toc, tp) {
 // return layout_chapter(toc, key, (tp||{}).ch_p, 'p')
 }
 
-function mail_btw(msg) {
-  if (!msg.from) return ''
-  // var htmEncode = function(str) { return str }
-    // .replace(/[\u00A0-\u9999<>\&]/gim, i => `&#${i.charCodeAt(0)};`) }
-  var cc = !msg.cc?'':(' CC '+msg.cc.replace(/(,|;)/g,' '))
-  var r = '<tt>'+msg.from+'</tt> to <tt>+'+msg.to+'</tt>'+cc
-
-  return r
-  // return (mail.from+' to '+mail.to
-  //       +(mail.cc?' CC '+mail.cc:''))
-  //          .replace(/[\u00A0-\u9999<>\&]/gim,
-  //             function(i) { return `&#${i.charCodeAt(0)};` })
-  //          .replace(/(\,|;)/g,'')
-}
-
-
-module.exports = {
+module.exports = { 
   linkify: linkify,
   web_chapter: web_chapter,  
   print_chapter: print_chapter,
-  mail_btw: mail_btw,
+  // mail_btw: mail_header,
 
+  // src_header: function(src, ops) {
+    // console.log("src_header", src)
+    // if (src.tis == 'comm gmail')
+      // return mail_header(src, ops)
+    // if (src.
+    // return
+  // },
+ 
   source_figure: function(src, scope) {
     // $log('source_figure',src)
     scope = scope || 'fig'
@@ -80,46 +71,6 @@ module.exports = {
             .join('___  \n'))
 
     return '<figure id="'+id+'" class="'+css+'">'+body+'</figure>'
-  },
-
-  // annotate: function(input, notations, scope) {
-  //   if (!scope)
-  //     scope = 'mk'+input.length // +'_'+notations.map(function(n) { return n[0] })
-
-  //   var notes = [],
-  //       ahRefs = [],
-  //       highlighted = input.toString(),
-  //       scope_num = 0,
-  //       mark_num = 0;
-  //   // scope = scope || 'h2' // if no h1 in input, full scope of input
-  //   // container #id or section heading
-  //   // scope = scope||''
-
-  //   notations.forEach(function(notation) {
-  //     var color = notation.color||0 // [0-6] also "level/category"
-  //     var marks = notation.marks // highlights
-  //     var note = notation.note  // comment
-  //     var id = scope+'_'+scope_num++ // +'_ml'+color
-  //     // var m: = 'm'+color // color [1-6] => hl1, hl2, hl3
-  //     var subs = []
-  //     marks.forEach(function(str) {
-  //       mark_num++;
-  //       // tagCss = 'ml'+color =>  class="'+tagCss+'"
-  //       var tagId = id+'_'+mark_num
-  //       highlighted.replace(str, '<mark id="'+tagId+'" class="'+id+'">['+str+']['+id+']</mark>')
-  //       subs.push('<sub><a href="'+tagId+'">'+str+'</a></sub>')
-  //     })
-  //     refs.push('['+id+']: #'+id)
-  //     annotations.push('<details id="'+id+'" class="ml'+color+'">'+subs+note+'</details>')
-  //   })
-
-  //   return highlighted +
-  //     '  \n>> * * *  '+
-  //     '  \n>> * * *  '+
-  //     '  \n>>' + annotations.join(
-  //     '  \n>> - ') +
-  //     '  \n>>' + refs.join(
-  //     '  \n>>')
-  // }
+  }
 
 }

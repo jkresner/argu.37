@@ -1,1 +1,1 @@
-module.exports = require('../tags.0')
+module.exports = require('../../tags')

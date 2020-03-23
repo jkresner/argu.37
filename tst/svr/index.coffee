@@ -17,6 +17,6 @@ opts =
 
 SCREAM(opts).run (done) ->
   appDir                     = path.join(__dirname, '/../../server')
-  config                     = Honey.Configure(appDir+'/cfg', 'test', true)
+  config                     = Honey.Configure(appDir+'/cfg', 'test')
   # config.routes.auth.test    = { on:true, login: opts.login }
   app                        = require(path.join(appDir,'web.js'))({config,done})

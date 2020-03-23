@@ -64,7 +64,11 @@ DESCRIBE "New render types", ->
     ins = []
     for fixed in FIXTURE.source.init
       tags = fixed.tags.map((short)=>assign({short},_id:CAL['tags_cached'][short]._id))
-      laws = fixed.laws.map((ttl)=>assign({ttl},_id:CAL['laws_cached'][ttl]._id))
+      laws = []
+      for ttl in fixed.laws
+        console.log('ttl'.yellow, ttl)
+        laws.push(assign({ttl},_id:CAL['laws_cached'][ttl]._id))
+      # laws = fixed.laws.map((ttl)=>assign({ttl},_id:CAL['laws_cached'][ttl]._id))
       s = assign {}, fixed, {tags,laws}
       delete s.data.threadId
       ins.push(s)
@@ -82,6 +86,8 @@ DESCRIBE "New render types", ->
       for s in r
         console.log('s'.yellow, s._id, s.tags)
         expect(s.threadId?).true
+        expect(s.type).to.be.undefined        
+        expect(s.is).to.exist
         expect(s.tags[0]._id, "#{s._id} no tags?").bsonId() if s.tags?
         expect(s.laws[0]._id).bsonId() if s.laws?
       DONE()

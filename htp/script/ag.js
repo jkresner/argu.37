@@ -1,12 +1,8 @@
 (function(){
-
-  // var markup =  {
-  //   mup_law: function(md) { return 
-  //     focusd([md],{},{})
-  //   }
-  // }
-
-  window.ag = {
+/*
+*/
+window.$log = function () { if (true) console.log.apply(this, arguments) }
+window.ag = {
   timer: {
     start: new Date().getTime(),
     log: function(lb, begin) {
@@ -26,7 +22,7 @@
           elm.data = function(key) { return elm.getAttribute('data-'+key) }
         }
       }
-    }
+    } 
     else {
       var key = (scope?scope.id+' ':'')+selector
       if (ag.dom[key]) elm = ag.dom[key]
@@ -39,22 +35,22 @@
   },
   dom:{},
   data:{},
-  mup: function() {
+  /*mup: function() {
     focusd([md],{},{})
-  }
+  }*/
 }
-
-
+/*
+*/
 window.$ = ag.$
-var $log = console.log
-var url = window.location.href
-var search = window.location.search
-
 
 document.addEventListener("DOMContentLoaded", function(event) {
   $.mtz = window.moment
+
   ag.timer.log('DOMLoaded')
-  if (window.ag_onload) { ag_onload(); ag.timer.log('ag_onloaded') }
+  if (window.ag_onload) { 
+    ag_onload(); 
+    ag.timer.log('ag_onloaded') 
+  }
   else { ag.timer.log('ag_loaded') }
 })
 
@@ -66,12 +62,10 @@ ag.cmd = {
 
     if (scoped)
       scoped.addEventListener('scroll', ag.cmd.img2g)
-      // console.log("scroll.addEventListener")
-
+      
     if ((imd||[]).length==0) {
       if (scoped)
         scoped.removeEventListener('scroll', ag.cmd.img2g)
-      // console.log("scroll.removeEventListener")
       return
     }
 
@@ -82,6 +76,8 @@ ag.cmd = {
 
     return $('imd', scoped) // update ag.dom cache
   },
+  // Copy to clipboard 
+  // + set or append value in nav textarea
   cp: function(val, join) {
     var cdp = $('#cpd')
     var prev = cpd.value
@@ -95,10 +91,55 @@ ag.cmd = {
   }
 }
 
-
+var url = window.location.href
+var search = window.location.search
 var f_chkd = []
 
 ag.srcs = {
+   // function fLb(v, id) {
+     // var f = v.innerHTML.replace('<i>J</i>','JK_')
+     //                    .replace('<i>O</i>','OC_')
+     //                    .replace('<i>A</i>','SA_')
+     //                    .replace('<i>C</i>','SC_')
+     // var on = !/on/.test(v.getAttribute('class'))
+     // v.setAttribute('class', on?'on':'')
+     // ups[f] = ups[f] || { ins: [], rm: [] }
+     // var saved = ag.data.filters[f].indexOf(id) > -1
+     // if (saved) {
+     //   var idxRm = ups[f].rm.indexOf(id)
+     //   if (on && idxRm > -1) ups[f].rm.splice(idxRm, 1)
+     //   else if (idxRm == -1) ups[f].rm.push(id)
+     // }
+     // else {
+     //   var idxIns = ups[f].ins.indexOf(id)
+     //   if (on && idxIns == -1) { ups[f].ins.push(id) }
+     //   else if (idxIns > -1) ups[f].ins.splice(idxIns, 1)
+     // }
+     // var cmd = ''
+     // Object.keys(ups).forEach(function(u) {
+     //   var ins = ups[u].ins
+     //   var rm = ups[u].rm
+     //   if ((ins.length + rm.length) > 0)
+     //     cmd += "up('"+u+"',"
+     //       + (ins.length > 0 ? "'"+ins.join(",")+"'," : "null,")
+     //       + (rm.length > 0 ? "'"+rm.join(",")+"')" : "null)") + '\n'
+     // })
+     // ag.cmd.cp(cmd)
+   // },
+  // function insLbs(li) {
+    // var html = ""
+    // ag.data.filters.forEach(function(name) {
+    //   if (ag.data.lb_static.indexOf(name) != -1) return
+    //   var css = ag.data.filtered[name].indexOf(li.id) == -1 ? '' : css = ' class="on"';
+    //   var id = "'"+li.id+"'"
+    //   html += '<var onclick="lb(this, '+id+')"'+css+'>'+
+    //    name.replace('JK_','<i>J</i>')
+    //        .replace('OC_','<i>O</i>')
+    //        .replace('SA_','<i>A</i>')
+    //        .replace('SC_','<i>C</i>')+'</var>';
+    // })
+    // li.getElementsByTagName('footer')[0].innerHTML = html
+  // }
   toggleStack: function() {
     var isThreads = $('#stack_thread').checked
     if (search == "") {
@@ -120,21 +161,26 @@ ag.srcs = {
     var start = new Date()
     var stack = ul.data('stack')
     var fltr = cbx ? cbx.id.replace('f_','') : 'none'
-    var lb = 'srcs.filter['+ul.children.length+']('+fltr+',stack:'+stack+')'
+    var lb = 'filters['+ul.children.length+']('+fltr+',stack:'+stack+')'
+    
     ag.timer.log(lb, start)
     ul.removeAttribute('style')
 
-    $log('srcs.filter.cbx', cbx, 'fltr', fltr, 'stack', stack)
-    $log('srcs.filter.lb', lb, 'ul', ul)
-    $log('srcs.filter.f_chkd', f_chkd)
+    $log('ag.cbx', cbx, 'fltr', fltr, 'stack', stack)
+    $log('ag.lb', lb, 'ul', ul)
+    $log('ag.chkd', f_chkd)
 
     var filtered = [], show = [], swap = [], hide = [], thrds = {}
     if (cbx) {
       var idx = f_chkd.indexOf(fltr)
       if (idx == -1 && cbx.checked) f_chkd.push(fltr)
       else if (!cbx.checked && idx > -1) f_chkd.splice(idx, 1)
-      $log('srcs.filter.['+f_chkd.join(',')+']matched', filtered.length)
-      f_chkd.forEach(function(f) { filtered = filtered.concat(ag.data.filtered[f]) })
+      
+      $log('srcs.filter.['+f_chkd.join(',')+'] matched', filtered.length)
+      f_chkd.forEach(function(f) { 
+        filtered = filtered.concat(ag.data.filtered[f]||[]) })
+      
+      if (f_chkd.length == 0 && !cbx.checked) cbx = null
     }
 
     var currentt = null
@@ -160,19 +206,20 @@ ag.srcs = {
       }
     }
     else {
+      $log('cbx', cbx, filtered.length, filtered)
       for (var i = 0; i < srcs.length; i++) {
         var m = srcs[i]
-        //console.log('cbx', cbx)
-        if (cbx && (filtered.length == 0 || filtered.indexOf(m.id) == -1)) hide.push(m)
+        var mid = m.id.replace('li_','')
+        if (cbx && (filtered.length == 0 || filtered.indexOf(mid) == -1)) hide.push(m)
         else {
           var t = m.getAttribute('data-thread')
-          // var is = m.data('is')
-          // console.log('m.is', is)
+          //var is = m.getAttribute('data-is')
+          //$log('mm.is', is, t)
           show.push(m)
           if (!thrds[t]) thrds[t] = 1
           if (currentt != t) swap.push(m.id)
           currentt = t
-          // console.log('m.li id=', id, 'data-thread=', thread, '==', threadCurrent, threadCurrent != thread)
+          // $log('m.li is=', is, 'data-thread=', thread, '==', threadCurrent, threadCurrent != thread)
         }
       }
     }
@@ -188,6 +235,7 @@ ag.srcs = {
     $('#v_shown').innerHTML = show.length
 
     if (first) {
+      console.log('$.mtz', first)
       var time_from = $.mtz($('time',first)[0].innerHTML, "HH:mm DD MMM YYYY")
       var time_to = $.mtz($('time',last)[0].innerHTML, "HH:mm DD MMM YYYY")
       var time_dif = time_from.diff(time_to)

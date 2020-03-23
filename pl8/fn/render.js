@@ -1,43 +1,15 @@
-var fns = {
+var fcd  = require('focusd')
 
-  mup_law: function(md) {
-    return (`\n`+md) // so we match the first list item
-  //     // .replace(/\nMaximum penalty/g, `  \n**Maximum penalty**`)
-  //     // .replace(/penalty units/g, `**Penalty units**`)
-  //     // .replace(/penalty/g, `**penalty**`)
-  //     // .replace(/is liable to/g, `  **is liable to**`)
-  //     // .replace(/\n\n/g, `\n`)
-  //     // .replace(/\n/g, `  \n`)
-  //     // .replace(/\n\s*\((i|ii|iii|iv|v|vi)\)\s*/g, '  \n>>>1. ')
-  //     // .replace(/\n\s*\([a-z]\)\s*/g, '  \n>>  1. ')
-  //     // .replace(/\n\s*\([1-9]\)\s*/g, '  \n>1. ')
-      .replace(/\n\(i\)\s*/g, '\n - ')
-      .replace(/\n\s*\((i|ii|iii|iv|v|vi)\)\s*/g, '\n1. ')
-      .replace(/\n\s*\([1-9]\)\s*/g, '\n1. ')
-      .replace(/\n\s*\([a-z]\)\s*/g, '\n - ')
-      .trim()
-  //     // .replace(/\n\n/g, `\n`)
-  //     // .replace(/\n/g, `  \n`)
-  //     // .replace(/  \n/g, `\n`)
-  //     // .replace(/\n  \((i|ii|iii|iv|v|vi)\)/g, '\n>>> 1.')
-  //     // .replace(/\n  \([1-9]\)/g, '\n> 1.')
-  //     // .replace(/\n  \([a-z]\)/g, '\n>> 1.')
-  //     // .replace(/\n\([1-9]\)/g, '\n1.')
-  //     // .replace(/\n\([a-z]\)/g, '\n-')
-  },
+var fns = {
 
   mup_mail: function(md) {
     return md
-      .replace(/Subject: /g, '<br />')
-      .replace(/From: /g, '')
-      .replace(/(Sent|Date): /g, ' <u>on ')
-      .replace(/To\: /g, '</u><u>to</u> ')
-      .replace(/CC\: /ig, ' <u>CC</u> ')
-      .replace(/\bfuck/ig, '<u><b>FUCK</b></u>')
-      .replace(/bullshit/ig, '<u><b>BULLSHIT</b></u>')
-      .replace(/\bshit/ig, '<u><b>SHIT</b></u>')
       .replace(/<img src/g, '<imd src') // <imd> (delay image load)
+  //     // .replace(/\bfuck/ig, '<u><b>FUCK</b></u>')
+  //     // .replace(/bullshit/ig, '<u><b>BULLSHIT</b></u>')
+  //     // .replace(/\bshit/ig, '<u><b>SHIT</b></u>')
   }
+  
 }
 
 function mup(str, ops) {
@@ -57,6 +29,30 @@ Object.keys(fns).forEach(function(f) {
   var fn = fns[f]
   fns[f] = function(str, ops) { return mup(fn(str), ops) }
 })
+
+var pos = 0
+fns.markup = function(src) {
+  pos++;
+  // console.log("markup", src.subject)
+  if (/comm/.test(src.tis))
+    return fns.mup_mail(src.body||src.snippet)
+  else if (/img/.test(src.tis)) {
+    // console.log(pos, "img.markup", src.name)
+    return fns.mup_mail(src.body)
+  } else if (/doc/.test(src.tis)) {
+    // console.log(pos, "doc,markup", src.subject)
+    return fcd.fig(src.body,'doc',src.name)
+  }
+  else
+    console.log('ohww', src.tis)
+}
+
+
+fns.VD = function(ctx) {
+ // console.log('VD'.yellow, ctx.data.root.vd))  
+ return '<script> window.vd = '+
+    JSON.stringify(ctx.data.root.vd||{})+'; </script>';
+}
 
 
 module.exports = fns

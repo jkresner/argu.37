@@ -6,7 +6,7 @@ EDITS = assign(INBOX0, INBOX1)
 
 
 # PRE_RUN_COUNT = 1630 # ? until end of Sep 2018
-PRE_RUN_COUNT = 1629
+PRE_RUN_COUNT = 1640
 # PRE_RUN_COUNT = 1578
 POST_RUN_COUNT = PRE_RUN_COUNT
 
@@ -50,25 +50,33 @@ module.exports = ->
       else 
         $log('Add'.yellow, Object.keys(additions).length)
         Object.keys(additions).forEach (tId) =>
-          thread = additions[tId]
-          first = additions[tId][0]
-          $log(" '#{tId}': { t:'YYDD:[#{thread.length}:dd]#{first.title}'},")
+          thread = _.sortBy(additions[tId], (t) => t.published)
+          first = thread[0]
+          last = thread[thread.length-1]
+          # console.log('thread', tId, thread.map((t)=>moment(t.published).format('YYYY-MM-DD HH:mm')))
+          days = 0
+          if thread.length > 1
+            end = moment(last.published)
+            start = moment(first.published)
+            days = parseInt(moment.duration(end.diff(start)).asDays())
+          time = moment(first.published).format('YYMM-DD[')+thread.length+':'+days+']'
+          $log(" '#{tId.cyan}': { t:'#{time}#{first.title}'},")
       DONE()
 
 
-  IT "Delete deleteable src", ->
+  IT "Delete deletable", ->
     # $log('del'.magenta, FIXTURE.src)
     list = Object.keys(FIXTURE.src.deletable).map((name) => {name})
-    $log('deletable'.magenta, list.length)
+    $log('deletable'.yellow, list.length)
     DAL.Source.bulkOperation [], [], list, (e, r) ->
       if r.modifiedCount is 0
-        $log('No message left to delete'.yellow)
+        $log('No message left to delete'.green.dim)
       else
         expect(r.deletedCount, 'sources removed').to.equal(list.length)
       DONE()
 
 
-  IT "Update ignore lookup", ->
+  IT.only "Update ignore lookup", ->
     ig = "module.exports = {"
     ups = []
     names = []
@@ -81,7 +89,7 @@ module.exports = ->
         names.push(name)
       for n in $in
         $log("gone "+n) if names.indexOf(n) < 0
-      $log('ignore'.gray, $in.length)
+      $log('ignore'.yellow, $in.length)
       honey.model.DAL.Source.updateSetBulk ups, (e, r) ->
         $log('update prob'.red, e) if e
         $log('update prob'.red) if r.modifiedCount is not ups.length
@@ -93,12 +101,12 @@ module.exports = ->
     ups = []
     todo = 0
     for m in CAL.srcs
-      edit = EDITS[m.name]
+      edit = EDITS[m.name] || 'null'.gray
       mdcurrent = (m.md||{}).body
       # $log('m', m.name, 'edit', edit?, 'mcurrent', mdcurrent?)
       if !mdcurrent? or mdcurrent is '' and (edit||{}).md == mdcurrent
         if !mdcurrent
-          $log("#{todo++} [#{m._id}] #{m.name} edit:#{edit} needing md.body".green.dim, (m.data||{}).snippet)
+          $log("#{todo++} [#{m._id}] #{m.name} edit:#{edit} need md.body".green.dim, (m.data||{}).snippet)
       if edit?  
         up = {_id:m._id }
         up.weight = edit.weight || 5

@@ -10,7 +10,7 @@
   },
   "paths": {
     "bson":               "../37/2018-09/bak",
-    "csv_law":            "../37/2018-09/_law.0.csv",
+    "csv_law":            "../37/_law.csv",
     "fixtures":           "../37/2018-09/fix",
     "specs":              "/migrate/2018-09"
   }

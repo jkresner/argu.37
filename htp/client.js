@@ -8,6 +8,8 @@ window.moment = moment
 window.marked = marked
 window.focusd = focusd
 
+
+
 if (module.hot) {
   module.hot.accept('./script/ag', function() {
     console.log('HOT ag.js')
@@ -16,3 +18,4 @@ if (module.hot) {
     // clearInterval(timer);
   // });
 }
+

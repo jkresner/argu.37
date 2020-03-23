@@ -2,8 +2,7 @@ module.exports = function(cfg={}, done) {
 
   let Honey    = require('honeycombjs')
   
-  let env      = process.env.ENV||'dev'
-  let config   = Honey.Configure(__dirname+'/cfg', env, true)
+  let config   = Honey.Configure(__dirname+'/cfg', process.env.ENV||'dev')
 
   var cb = e => console.log('app '.dim, e
     ? 'WORKER fail: '.red + e.message

@@ -71,7 +71,7 @@
   "model": {
     "cache": {
       "on":                    true,
-      "require":               "templates:cached,tags:cached,laws:cached,contents:cached"
+      "require":               "templates,tags,laws,contents"
     },
     "domain": {
       "mongodb":               "mongodb://localhost/argu"

@@ -1,26 +1,23 @@
 // Move into logic / make dynamic
-const SRC                   = require('../../../37/src')
+const SRC                   = { threads: require('../../../37/src.thread') }
 const jk_sets               = require('../../../37/2019-01/sets.jk')
 const jk_filters            = Object.keys(jk_sets).sort()
 
 
 const Lookup                                                                 = {
-
 cdn_atchd:    `${config.http.static.host}/${config.http.static.cdn.atchd}`     ,
 mime_css: {   jpg:'img',jpeg:'img',png:'img',pdf:'pdf',doc:'docx',docx:'docx'  },
-atch_ignore:  /((image0\d\d)|(\~WRD\d\d\d|twitter|facebook|linkedin))\.(gif|jpg|jpeg|png)/i }
+atch_ignore:  /((map_*)|((image0\d\d)|(\~WRD\d\d\d|twitter|facebook|linkedin)\.(gif|jpg|jpeg|png)))/i }
 
 /*
  */
 const Views                                                                  = {
-
 item:         '_id is render name title author published uri threadId md data tags laws notation',
 list:         '_id is render name title author published uri threadId md data tags laws' }
 
 /*
  */
 const Opts                                                                   = {
-
 list: {       select: Views.list, sort:{published:-1}                          },
 param: {                                                                       },
 item: {       select: Views.item                                               }}
@@ -43,13 +40,16 @@ threads: (limit, newest) => {
  */
 const Projections = ({select,pl8},{chain,view}) => ({
 
+  item: r => chain(r, 'typed'), //, 'annotate'),
+  param: r => r,
+
   //-- TODO: authorization / tracker url forwarder/middleman
   atchdUrl: f => assign(f, { url:
     `${Lookup.cdn_atchd}/${f.name}_${encodeURI(f.filename)}` }),
 
+
   fileUrl: f => assign(f, { url:
     `${Lookup.cdn_atchd}/${encodeURI(f.filename)}` }),
-
 
 
   fileInfo: src => assign(src, { file: assign({ title: src.title,
@@ -60,8 +60,10 @@ const Projections = ({select,pl8},{chain,view}) => ({
     , select(chain(src.data, 'fileUrl'),'url')
     , src.data.aliases?{alias:src.data.aliases}:{} ) }),
 
+
   body: src => assign(src, { md: assign(src.md, {
                 body: pl8('source_figure', src) }) }),
+
 
   typed: src => /*{
     $log(`typed_${src.render}`)
@@ -72,7 +74,6 @@ const Projections = ({select,pl8},{chain,view}) => ({
 
   typed_img: src => chain(src,'fileInfo','body'),
   typed_doc: src => chain(src,'fileInfo','body'),
-  typed_snippet: src => chain(src,'fileInfo','body'),
   typed_gmail: src => {
     let gmail = { attached:[] }
     src.data.payload.headers
@@ -80,6 +81,14 @@ const Projections = ({select,pl8},{chain,view}) => ({
       .forEach( ({value,name}) => gmail[name.toLowerCase()] = value )
 
     if (!src.md) { src.md = {} }
+
+//Message-ID: <...>    
+    src.md.header = `
+Date: ${gmail.date}
+Subject: ${gmail.subject}
+From: ${gmail.from}
+To: ${gmail.to}` + (gmail.cc ? `\nCC: ${gmail.cc}\n` : '') + '\n--Content\n\n';
+    // $log('FROM:'.magenta, src.md.header);
 
     (function inspectPayload(load) {
       let {mimeType,parts,body,filename} = load
@@ -104,11 +113,11 @@ const Projections = ({select,pl8},{chain,view}) => ({
         // if (body.size != 0) { gmail.text64 = body.data } else {  }
         // else $log('gmail.typed.body'.magenta, r.data)
       }
-      else if (filename) {
+      else if (load.hasOwnProperty('filename')) {
         let fbts = filename.replace(/[ ,'()]/g,'').split('.')
         let ext = fbts.pop()
         let lb = fbts.join('.')
-        if (!Lookup.atch_ignore.test(filename))
+        if (filename!='' && !Lookup.atch_ignore.test(filename))
           gmail.attached.push({ name:src.name, filename, lb, ext,
             css: Lookup.mime_css[ext], kb: parseInt(body.size/1024) })
       }
@@ -118,23 +127,15 @@ const Projections = ({select,pl8},{chain,view}) => ({
 
     // $log('src'.green, src.data.payload.parts[0], gmail)
     if (!src.md.raw) src.md.raw = Buffer.from(gmail.text64, 'base64').toString()
-   
-
-    // let up = cleaning[m.name]||{md:''}
-    // $log(` ${m.name} `.yellow, up.d == 1)
-    // if (up.d == 1) //&& up.md && up.md != '')
-    // assign(m,{skip:true})
-    // if (up.a)       assign(m.md, up.a)  // atchd previews
   
-    if (config.log.verbose && !src.md.body) 
-      $log(` ${src.name} clean md.body ${moment(src.published)}`.red.dim, src.name)
+    if (!src.md.body) {
+      src.md.snippet =  src.data.snippet
+      // if (config.log.verbose)
+        $log(` ${src.name} ${moment(src.published).format('YYMMDD')}`.magenta, src.md.snippet)
+    }
 
     return (assign(src,{gmail}))
   },
-
-
-  item: r => chain(r, 'typed'), //, 'annotate'),
-  param: r => r,
 
   list_vd: d => {
     let op      = d.ops||{},
@@ -156,14 +157,14 @@ const Projections = ({select,pl8},{chain,view}) => ({
     }
     agg.thread = Object.keys(trdz).length
     // agg.threads = trdz
-
     return {filters:jk_filters, ui, agg, time}
   },
 
 
   list: d => {
     let threads = {}, runThread,
-        sources = chain(d.sources, 'typed') //.filter(s => !s.skip)
+        sources = chain(d.sources, 'typed') 
+              //.filter(s => !s.skip)
         vd = chain(d, 'list_vd')
     // $log('vd'.magenta, vd)    
 
@@ -202,14 +203,15 @@ const Projections = ({select,pl8},{chain,view}) => ({
       if (s.file) subject = s.file.name
 
       if (s.file)
-        md.fileinfo = `<tt>• ${s.author}</tt>`
+        md.fileinfo = `
+    <tt>${s.author}</tt>
+    <time>${moment(s.published).format('ddd MMM DD YYYY hh:mm')}</time>`
       // if (d.ops.raw)
         // delete md.body
       // else
       md = chain(s, 'pseudofix')
 
-
-      let attached = !gmail ? null : gmail.attached
+      let attached = !(gmail||{}).attached ? null : gmail.attached
           .filter( f => ((threads[threadId]||{}).atchd||[]).indexOf(f.filename) < 0 )
           .map( f => chain(assign(f,{preview:md[f.filename]}),'atchdUrl') )
 
@@ -219,6 +221,9 @@ const Projections = ({select,pl8},{chain,view}) => ({
         assign(md, { attached, name, threadId, subject, //orig: m.gmail,
           tis: s.is+' '+s.render, _id: s._id, uri: s.uri, time: s.published }))
     })
+
+    // list = list.filter(s => jk_sets.stopgap.indexOf(s.name) > -1)
+    // list = list.filter(s => s._id > )
 
     if (/thread/.test(d.mode)) {
       list = []
@@ -236,38 +241,38 @@ const Projections = ({select,pl8},{chain,view}) => ({
     for (var s in jk_sets)
       vd.filtered[s] = jk_sets[s].filter(n=>names.indexOf(n) > -1)
 
-    // vd.lb_static = ['police','ants','losses','innocent','laurie',//,'JK_health'
-    // 'JK_swear','JK_anxiety','JK_cantwork','JK_losses','JK_scapegoat','JK_unrentable',
-    // 'SC_badfaith','SC_misinfo','SA_OC2nd','SA_breach',//'oneill'
-    // 'OC_106_1','OC_noise']
-
-
-    if (config.log.verbose) {
-      $log('sources.viewData:'.magenta, _.omit(vd,['threads']))
+    /*if (config.log.verbose) {
+     $log('sources.viewData:'.magenta, _.omit(vd,['threads']))
       $log('sources[0]:'.magenta, sources[0])
-      for (let t of vd.threads) $log(`'${t.id}'`.dim+`:\{ p:0, t:"${moment(t.start).format('YYMM-DD')}:${t.days}d<${t.messages.length}>${t.subject}"},`)
-    }
+     for (let t of vd.threads) $log(`'${t.id}'`.dim+`:\{ p:0, t:"${moment(t.start).format('YYMM-DD')}:${t.days}d<${t.messages.length}>${t.subject}"},`)
+    }*/
+    
 
-    return {vd,sources,list}
+    return {vd,list}
   },
 
-  pseudofix: src => {
+  pseudofix: s => {
     let r = {}
     let {psudo,alias} = CAL['templates_cached']
 
-    if (src.gmail) {
-      r.raw = src.md.raw
-      let m = src.gmail
-      let btw = pl8('mail_btw', m)
-      src.md.between = pl8('mapcrypt', btw, psudo)
-      if (/(@|'|")/.test(src.md.between))
-        $log('map.miss'.magenta, src.md.between, `${m.from}`.dim, `${m.to}`.dim, (m.cc||'CC:none').dim)
+    if (s.gmail) {
+      r.raw = s.md.raw
+      r.header = s.md.header
+      let m = s.gmail
+      let btw = pl8('mail_header', s.md.header)
+      // $log('btw'.yellow, btw, src.md.header)
+      s.md.between = pl8('mapcrypt', btw, psudo)
+      if (/(@|'|")/.test(s.md.between.split('cite')[0]))
+        $log(`[${s.name}]map.miss`.magenta, s.md.between.split('cite')[0], 
+        `${m.from}`.dim, `${m.to}`.dim + (m.cc?m.cc:'').dim)
+      if (!s.md.body)
+        s.md.body = `> ### PREVIEW: ` + s.md.snippet  
     }
 
-    Object.keys(src.md)
-          .filter( key => key != 'raw' )
-          .forEach( key => r[key] = pl8('mapcrypt', src.md[key], alias)
-              .replace(/\]\(\_\_/g,`](${Lookup.cdn_atchd}/${src.name}__`) )
+    Object.keys(s.md)
+      .filter( key => !/raw|snippet|header/.test(key) )
+      .forEach( key => r[key] = pl8('mapcrypt', s.md[key], psudo, alias)
+      .replace(/\]\(\_\_/g,`](${Lookup.cdn_atchd}/${s.name}__`) )
 
     return r
   },

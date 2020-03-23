@@ -1,6 +1,6 @@
 let env            = process.env.ENV||'dev'
 let configure      = require('honeycombjs').Configure
-let config         = configure(__dirname+'/cfg', env, true)
+let config         = configure(__dirname+'/cfg', env)
 
 
 function done(e) {

@@ -6,6 +6,7 @@ module.exports = ({Law}, {Opts}, DRY) => ({
       for (let l of r)
         hash[l.ttl] = l
 
+      // console.log('laws.cached'.yellow, Object.keys(hash), hash)
       cb(null, hash)
     })
   }

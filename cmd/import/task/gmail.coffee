@@ -6,7 +6,7 @@ UNIQ = []
 # PRE_IMPORT_COUNT=1664
 # PRE_IMPORT_COUNT=1626
 # POST_COUNT=1612
-POST_EXPECTED_COUNT=1612
+POST_EXPECTED_COUNT=1871
 
 getter = (cb) => 
   DAL.Source.getManyByQuery {render:'gmail'}, (e, r) => 
@@ -48,7 +48,9 @@ module.exports = ->
   # TODO : Store Labels => Tags on Source
   IT "Step 1 >> copy-paste >> gmail.msgs", ->
     @timeout 1000000
-    q = { labelIds:'Label_75', maxResults:100 }
+    ag = 'Label_75'
+    labelIds = 'Label_97' # 'Label_6035473039549601149'
+    q = { labelIds, maxResults:100 }
     existing = FIXTURE.gmail.msgs.map((m)=>m.id)
     # expect(existing.length).to.equal(PRE_COUNT)
     Wrappers.gmail.listMsg q, (e, r) =>
@@ -92,38 +94,37 @@ module.exports = ->
       # expect(remaining).to.equal(PRE_IMPORT_COUNT-PRE_COUNT)
       $log "queued [#{remaining}] mail msg imports"
       worker.queueJob 5, 'gmail.import', todo, (e,r) =>
-        $log "e", e
         DONE(e) if e
-        $log "saved", r.name, r._id
+        # $log "saved", r.name, r._id
         DONE() if --remaining is 0
 
 
 
-  ## ? ? ?
-  # IT "Check threads", ->
-  #   @timeout 80000
-  #   threads = {}
-  #   {deletable,labels} = FIXTURE.gmail
-  #   honey.model.DAL.getManyByQuery {}, {select:'name title data.threadId'}, (e,r) =>
-  #     for s in r
-  #       {threadId} = s.data
-  #       $log('id: ', s.name, ', threadId: ', threadId, ', subject: ', s.title)
-  #       if (threads[threadId])
-  #         threads[threadId].existing.push(s.name)
-  #       else
-  #         threads[threadId] = {id:threadId,existing:[s.name],deletable}
-  #     count = Object.keys(threads).length
-  #     ok = 0
-  #     todo = Object.keys(threadProblems)
-  #     todo = Object.values(threads)
-  #     # console.log('todo', todo, Wrappers.gmail.getTheadMsgs)
-  #     worker.queueJob 100, 'sources.importGmailThread', todo, (e,r) =>
-  #       $log('thread,e,inserts'.cyan, e) if (!e)
-  #
-  #         DONE(e)
-  #       else
-  #         $log('thread,inserts', "[#{++ok}/#{count}]".green, r.length)
-          # DONE() if ok is count
+  # For some reason not all messages get downloaded via sync
+  # So we have to verify each thread
+  IT.only "Check threads", ->
+    @timeout 80000
+    threads = {}
+    {deletable,labels} = FIXTURE.gmail
+    DAL.Source.getManyByQuery {}, {select:'name title data.threadId'}, (e,r) =>
+      for s in r
+        {threadId} = s.data
+        $log('id: ', s.name, ', threadId: ', threadId, ', subject: ', s.title)
+        if (threads[threadId])
+          threads[threadId].existing.push(s.name)
+        else
+          threads[threadId] = {id:threadId,existing:[s.name],deletable}
+      count = Object.keys(threads).length
+      ok = 0
+      # todo = Object.keys(threadProblems)
+      todo = [{id:'166994e5f16633fb',existing:['166994e5f16633fb','16761f5ab7e6f49e'x],deletable:[]}] # Object.values(threads)
+      console.log('todo', todo, Wrappers.gmail.getTheadMsgs)
+      worker.queueJob 100, 'gmail.saveThread', todo, (e,r) =>
+        console.log('thread,e,inserts'.cyan, e) if (!e)
+          DONE(e)
+        else
+          console.log('thread,inserts', "[#{++ok}/#{count}]".green, r.length)
+          DONE() if ok is count
 
 
 

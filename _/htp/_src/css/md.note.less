@@ -1,0 +1,40 @@
+/*
+Example 1
+>###### Note
+>> Body of your note
+
+Example 2
+>###### NOTE:
+>> - List item 1
+>> - List item 2
+
+<p>Example 1 </p>
+<blockquote><h6>Note</h6>
+  <blockquote><p>Body of your note</p></blockquote>
+</blockquote>
+
+<p>Example 2</p>
+<blockquote><h6>Note.</h6>
+  <blockquote><ul><li>List item 1 </li><li>List item 2</li></ul></blockquote>
+</blockquote>
+*/
+
+blockquote > h6 {
+  font-size:0.75em;
+  font-style:italic;
+  font-weight:bold;
+  display:inline;
+  margin:0;
+  padding:0 2px 0 0;
+
+  blockquote > h6 + blockquote {
+    font-size:0.75em;
+    font-weight:normal;
+    display:inline;
+    margin:0;
+    padding:0;
+
+    > * {
+      display:inline;
+
+}}}

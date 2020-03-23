@@ -8,6 +8,10 @@ module.exports = {
     return parts.join('.') +'.' +ext
   },
 
+  cssmap: function(val) {
+    if (/jk/.test(val)) return 'jk'
+  },
+
   mapcrypt: function() {
     var maps = Object.values(arguments)
     var str = maps.shift().toString()

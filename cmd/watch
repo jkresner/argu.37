@@ -2,5 +2,5 @@
 OP="watch"
 
 ## RUN cmd/run --dev for new layout.hbs 
-L2 "nodemon  " "server/index.js -w server -w pl8 -e env,js,hbs --quiet"
-nodemon server/index.js -w server -w pl8 -e env,js,hbs --quiet 
+L2 "nodemon  " "server/index.js -w server -w pl8 -w 37 -e env,js,hbs --quiet"
+nodemon server/index.js -w server -w pl8 -w 37 -e env,js,hbs --quiet 

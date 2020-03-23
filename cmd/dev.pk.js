@@ -30,6 +30,7 @@ module.exports       = {
 
   module: {
     rules: [
+      // { test: /\.handlebars$/, loader: "handlebars-loader" },
       { test:              /\.less$/,
         // issuer:         /\.less$/,
         include:           context+'/less',

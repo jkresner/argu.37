@@ -12,7 +12,7 @@ let imgs = {
 
 "__________180224_burrowed": { _id: ID('598963d08240d60004106121'),
   published: '2018-02-24',
-  title: 'Lava burrowing through masonry',
+  title: 'Larva burrowing through masonry',
   data: { filename: '162224157c497008__F4A61EDB-F66C-44FE-8C96-04EC9ED8976F.jpeg',
     mimeType : "img/jpg", size : 0,
     threadId: "ants" },

@@ -1,25 +1,19 @@
 <ul id='{{vd.ui.ul}}' data-stack='{{vd.ui.stack}}'>{{#each r.list}}
-  <li id='li_{{name}}' data-thread='{{threadId}}' data-is='{{tis}}' class='src'>
-    <header>
-      <cite>{{subject}}</cite>
-      <time>{{daytime time}}</time>
-    </header>{{#if between }}
-    <section id="btw_{{navId name}}">{{{between}}}</section>{{/if}}{{#if fileinfo}}
-    <section id="fil_{{navId name}}">{{{fileinfo}}}</section>{{/if}}{{#if body}}
+  <li id='li_{{name}}' data-thread='{{threadId}}' data-is='{{tis}}' class='src' onmouseover="cpb('{{name}}')">
+    {{#if between}}{{{between}}}{{/if}}{{#if fileinfo}}
+    <header id="fil_{{navId name}}">{{{fileinfo}}}</header>{{/if}}{{#if body}}
     <section id="bdy_{{navId name}}">{{{markup this}}}</section>{{else}}{{#if raw}}
     <section id="bdy_{{navId name}}">{{{raw}}}{{/if}}{{/if}}{{#if attached}}
-    <section id="atc_{{navId name}}">{{dl_atcd}}</section>{{/if}}
+    <section id="atc_{{navId name}}">{{>dl_atcd}}</section>{{/if}}
     <footer>
       <nav>
-        <a class='_id' href="/adm/srcs/{{_id}}" target="_blank">{{navId _id}}</a>
-        <a class='nav_id cpv' onclick='cpv("{{name}}")'>{{navId name}}</a>
-        <a class='nav_tid goto' href='#{{threadId}}'>{{navId threadId}}</a>
-        <a class='original' href="https://{{uri}}" target="_blank"></a>
+        <a class='uri' href="https://{{uri}}" target="_blank">{{navId uri}}</a>
+        <a class='eid' href="/adm/src/{{_id}}" target="_blank">{{navId _id}}</a>
+        <a class='nid cpv' href='#' onclick='cpv("{{name}}")'>{{navId name}}</a>
+        <a class='tid goto' href='#li_{{threadId}}'>{{navId threadId}}</a>
+        <a class="rmv" onclick="trmv('{{name}}')">x</a>
+        <a class="ign">i</a>      
       </nav>
     </footer>
   </li>{{/each}}
 </ul>
-
-
-{{!-- onclick="cpv('![{{filename}}](__{{filename}}__inln.jpg)')"
-      <a class="cpb" onmouseover="cpb('{{name}}')" ></a> --}}

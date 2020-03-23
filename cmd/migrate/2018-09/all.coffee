@@ -1,4 +1,4 @@
-global.LAW_IMPORT = PRE_COUNT: 0, POST_COUNT: 93
+global.LAW_IMPORT = PRE_COUNT: 0, POST_COUNT: 423 # 93
 
 module.exports = () =>
 

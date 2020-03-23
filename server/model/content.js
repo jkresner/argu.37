@@ -8,7 +8,7 @@ module.exports = ({ Id, Enum, Htmlhead, Log, RefTag, RefLaw, RefSet, RefContent 
   type:             { required, type: String, enum: Enum.CONTENT.TYPE },
   // tmplId:           { required, type: Id, ref: 'Template' },
   tmpl:             { required, type: String }, //, ref: 'Template' },
-  byId:             { required, type: Id, ref: 'User', index },
+  byId:             { type: Id, ref: 'User', index }, //required
 
   parts:            { required, type: {
     html:           { required:false, type: Htmlhead },
@@ -24,7 +24,7 @@ module.exports = ({ Id, Enum, Htmlhead, Log, RefTag, RefLaw, RefSet, RefContent 
   laws:             [RefLaw],
   contents:         [RefContent],
 
-  set:              RefSet,
+  // set:              RefSet,
                     // Sets are incorporated via child content
                     // If more than one set needed, use two RefContent
 
@@ -37,7 +37,7 @@ module.exports = ({ Id, Enum, Htmlhead, Log, RefTag, RefLaw, RefSet, RefContent 
     publish:        { type: Date }, // first time
     updated:        { type: Date } }},
 
-  log:              Log,
+  // log:              Log,
 
 })
 
